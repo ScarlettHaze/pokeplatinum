@@ -15,11 +15,14 @@ typedef struct AreaDataManagerLoadData {
     int dummy0C;
 } AreaDataManagerLoadData;
 
+#define GROUND_ANIMATION_NONE 0
+
 typedef struct AreaDataFile {
     u16 mapPropArchivesID;
     u16 mapTextureArchiveID;
-    // The value of this changes in the NARC, but is unused in the code
-    u16 dummy04;
+    // Unused in Sinnoh's areas. Kanto's areas (from HGSS) store their ground
+    // animation here, as its bm_anime archive ID + 1 or GROUND_ANIMATION_NONE.
+    u16 groundAnimation;
     u16 areaLightArchiveID;
 } AreaDataFile;
 
@@ -35,6 +38,8 @@ typedef struct AreaDataManager {
     AreaDataManagerLoadData *loadData;
     // Note: the first element is the size of this array
     u16 *mapPropModelIDs;
+    void *groundAnimationFile;
+    NNSG3dAnmObj *groundAnimationObj;
 } AreaDataManager;
 
 AreaDataManager *AreaDataManager_Alloc(int areaDataArchiveID, MapPropAnimationManager *mapPropAnimMan);
@@ -48,5 +53,7 @@ BOOL AreaDataManager_IsOutdoorsLighting(const AreaDataManager *areaDataManager);
 u8 AreaDataManager_GetAreaLightArchiveID(const AreaDataManager *areaDataManager);
 int AreaDataManager_GetMapPropModelID(const AreaDataManager *areaDataManager, const int index);
 BOOL AreaDataManager_HasMapPropModelFile(const AreaDataManager *areaDataManager, const int mapPropModelID);
+void AreaDataManager_AdvanceGroundAnimation(AreaDataManager *areaDataManager);
+void AreaDataManager_AddGroundAnimationToRenderObj(const AreaDataManager *areaDataManager, NNSG3dRenderObj *mapRenderObj, const int landDataID);
 
 #endif // POKEPLATINUM_OV5_AREA_DATA_H

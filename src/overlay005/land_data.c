@@ -1215,7 +1215,9 @@ static void LandDataManager_RenderLoadedMap(const u8 index, const LandDataManage
     if (landDataMan->loadedMaps[index]->valid == TRUE) {
         VecFx32 scale = { FX32_ONE, FX32_ONE, FX32_ONE };
         MtxFx33 rotationMatrix = { FX32_ONE, 0, 0, 0, FX32_ONE, 0, 0, 0, FX32_ONE };
+        int landDataID = MapMatrix_GetLandDataIDByIndex(landDataMan->loadedMaps[index]->mapMatrixIndex, landDataMan->mapMatrix);
 
+        AreaDataManager_AddGroundAnimationToRenderObj(landDataMan->areaDataMan, &landDataMan->loadedMaps[index]->mapRenderObj, landDataID);
         Easy3D_DrawRenderObj(&landDataMan->loadedMaps[index]->mapRenderObj, &position, &rotationMatrix, &scale);
     }
 
@@ -2537,4 +2539,30 @@ void LandDataManager_SetLoadedMapValid(LandDataManager *landDataMan, int index, 
 void LandDataManager_DistortionWorldUpdateTrackedTargetValues(LandDataManager *landDataMan, int trackedTargetTileX, int trackedTargetTileZ)
 {
     LandDataManager_UpdateTrackedTargetValues(trackedTargetTileX, trackedTargetTileZ, landDataMan->offsetTileX, landDataMan->offsetTileZ, landDataMan);
+}
+
+void LandDataManager_UpdateTimeOfDayPropAnimations(LandDataManager *landDataMan)
+{
+    u8 prevTimeOfDayAnimIndex;
+
+    if (landDataMan == NULL || landDataMan->ending || landDataMan->mapPropAnimMan == NULL
+        || !MapPropAnimationManager_UpdateTimeOfDay(landDataMan->mapPropAnimMan, &prevTimeOfDayAnimIndex)) {
+        return;
+    }
+
+    for (u8 i = 0; i < QUADRANT_COUNT; i++) {
+        if (landDataMan->loadedMaps[i] == NULL || landDataMan->loadedMaps[i]->mapPropManager == NULL) {
+            continue;
+        }
+
+        MapPropManager *mapPropMan = landDataMan->loadedMaps[i]->mapPropManager;
+
+        for (int j = 0; j < MAX_LOADED_MAP_PROPS; j++) {
+            MapProp *mapProp = &mapPropMan->loadedProps[j];
+
+            if (mapProp->loaded) {
+                MapPropAnimationManager_SwapTimeOfDayAnimation(mapProp->modelID, &mapProp->renderObj, prevTimeOfDayAnimIndex, landDataMan->mapPropAnimMan);
+            }
+        }
+    }
 }

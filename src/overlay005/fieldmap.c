@@ -483,6 +483,8 @@ static void ov5_021D134C(FieldSystem *fieldSystem, u8 param1)
 
     if ((param1 & 8) != 0) {
         MapPropAnimationManager_AdvanceAnimations(fieldSystem->mapPropAnimMan);
+        AreaDataManager_AdvanceGroundAnimation(fieldSystem->areaDataManager);
+        LandDataManager_UpdateTimeOfDayPropAnimations(fieldSystem->landDataMan);
     }
 
     if ((param1 & 2) != 0) {

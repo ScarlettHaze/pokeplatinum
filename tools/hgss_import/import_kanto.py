@@ -40,6 +40,7 @@ HG_BM_ROOM_MATSHP = "files/fielddata/build_model/bm_room_matshp.dat"
 HG_BM_INFO_OUT = "files/a/1/0/7"
 HG_BM_INFO_IN = "files/a/1/0/8"
 HG_BM_ANM = "files/a/1/0/6"
+HG_GROUND_ANM = "files/a/1/4/0"
 
 # The Kanto block of HGSS's world matrix (map_matrix_0000_EVERYWHERE), with a
 # one block border so the filler terrain around Kanto's edge is drawn too.
@@ -57,6 +58,10 @@ TILE_BEHAVIOR_REMAP = {
     0x2C: 0x00,  # HGSS magma: no Platinum equivalent
     0x2D: 0x2C,  # HGSS reflective -> Platinum reflective
 }
+
+# HGSS and Platinum ship the same four area light files, but HGSS's area data
+# stores a light type: AreaDataManager_GetAreaLightArchiveID maps it to the file.
+HGSS_AREA_LIGHT = {0: 1, 1: 0, 2: 3}
 
 ANIME_EXT = {b"BTA0": "nsbta", b"BCA0": "nsbca", b"BTP0": "nsbtp", b"BMA0": "nsbma", b"BVA0": "nsbva"}
 
@@ -186,6 +191,14 @@ class Importer:
             # HGSS F3D_MDL_INFO adds door/anmNum/setNum, which the engine port reads from
             # the dummy byte (door) for now; type 8 (time-of-day animation) is kept as-is.
             records.append(struct.pack("<BBBB4i", flg, typ, suicide, door, *codes))
+        # HGSS keeps the terrain animations (NSBTA played on the land models of
+        # an area) in their own archive; they ride along in the prop one here.
+        self.ground_anim_ids = {}
+        for g, data in enumerate(self.narc(HG_GROUND_ANM)):
+            self.ground_anim_ids[g] = base_anims + len(names)
+            name = f"kanto_ground_anime_{g:03}.nsbta"
+            names.append(name)
+            (PL / "res/field/props/animations" / name).write_bytes(data)
         self._append_animations(names)
         base = read_narc(BASE / "bm_anime_list.narc")
         assert len(base) == base_models, (len(base), base_models)
@@ -267,10 +280,10 @@ class Importer:
             data = {
                 "mapPropSet": set_names[ar["modelSet"]],
                 "mapTextureSet": tex_names[ar["texSet"]],
-                # Platinum's unused area field sits where HGSS keeps the ground animation.
-                "dummy": ar["groundAnime"],
-                # HGSS and Platinum ship the same four area light files in the same order.
-                "lightingSet": f"lighting_set_{ar['light']:03}",
+                # Platinum's unused area field sits where HGSS keeps the ground animation;
+                # it holds the prop animation archive ID + 1, or 0 for none.
+                "dummy": 0 if ar["groundAnime"] == 0xFFFF else self.ground_anim_ids[ar["groundAnime"]] + 1,
+                "lightingSet": f"lighting_set_{HGSS_AREA_LIGHT[ar['light']]:03}",
             }
             (PL / "res/field/area_data" / f"{name}.json").write_text(json.dumps(data, indent=4) + "\n")
         update_meson_files(PL / "res/field/area_data/meson.build", "json", [f"{n}.json" for n in area_names.values()])

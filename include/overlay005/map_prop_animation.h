@@ -7,6 +7,9 @@
 
 #define MAP_PROP_ANIME_LIST_FILE_ARCHIVE_IDS_COUNT 4
 
+// HGSS: the prop plays one of its four animations depending on the time of day.
+#define MAP_PROP_ANIME_FLAGS_TIME_OF_DAY (1 << 3)
+
 #define MAP_PROP_ANIMATION_MANAGER_MAX_ANIMATIONS               16
 #define MAP_PROP_ANIMATION_MANAGER_MAX_BICYCLE_SLOPE_ANIMATIONS 2
 
@@ -50,6 +53,7 @@ typedef struct MapPropAnimationManager {
     BicycleSlopeAnimation bicycleSlopeAnimations[MAP_PROP_ANIMATION_MANAGER_MAX_BICYCLE_SLOPE_ANIMATIONS];
     NARC *animeNARC;
     NARC *animeListNARC;
+    u8 timeOfDayAnimIndex;
 } MapPropAnimationManager;
 
 typedef struct MapPropOneShotAnimationList {
@@ -83,6 +87,8 @@ MapPropAnimation *MapPropAnimationManager_GetAnimation(const int mapPropModelID,
 void MapPropAnimationManager_AdvanceAnimations(MapPropAnimationManager *manager);
 u16 MapPropAnimationManager_GetAnimeListNARCFileCount(MapPropAnimationManager *manager);
 const u8 MapPropAnimationManager_GetPropAnimationCount(MapPropAnimationManager *manager, const int mapPropModelID);
+BOOL MapPropAnimationManager_UpdateTimeOfDay(MapPropAnimationManager *manager, u8 *prevTimeOfDayAnimIndex);
+void MapPropAnimationManager_SwapTimeOfDayAnimation(const int mapPropModelID, NNSG3dRenderObj *mapPropRenderObj, const u8 prevTimeOfDayAnimIndex, MapPropAnimationManager *manager);
 
 void MapPropAnimation_SetAnimationPaused(MapPropAnimation *animation, const BOOL paused);
 void MapPropAnimation_StartLoop(MapPropAnimation *animation);

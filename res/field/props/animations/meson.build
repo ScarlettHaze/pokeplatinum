@@ -221,6 +221,8 @@ prop_animation_files = copy_gen.process(files(
     'kanto_bm_anime_270.nsbta',
     'kanto_bm_anime_271.nsbma',
     'kanto_bm_anime_272.nsbca',
+    'kanto_ground_anime_000.nsbta',
+    'kanto_ground_anime_001.nsbta',
 ))
 
 prop_animation_narc = custom_target('prop_animations.narc',

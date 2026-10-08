@@ -5,6 +5,7 @@
 
 #include "constants/graphics.h"
 #include "constants/heap.h"
+#include "generated/maps.h"
 
 #include "overlay005/map_prop_animation.h"
 #include "overlay005/map_prop_material_shape.h"
@@ -35,12 +36,52 @@ static const GXRgb sOutdoorsEdgeMarkings[8] = {
     COLOR_DARK_GRAY
 };
 
+// Land data that HGSS never plays the ground animation on.
+static const u16 sLandDataWithoutGroundAnimation[] = {
+    MAP_KANTO_208,
+    MAP_KANTO_210,
+};
+
 static void AreaData_StripTextureData(void *resourceFile, NNSG3dResTex *texture)
 {
     u8 *textureData = (u8 *)texture + texture->texInfo.ofsTex;
     u32 strippedTextureDataSize = (u32)(textureData - (u8 *)resourceFile);
 
     Heap_Realloc(resourceFile, strippedTextureDataSize);
+}
+
+// HGSS's ground animations are texture SRT animations whose entries apply to
+// the land model's materials by index, so the animation object is built by hand
+// instead of being bound to a model by material name.
+static void AreaDataManager_LoadGroundAnimation(AreaDataManager *areaDataManager)
+{
+    areaDataManager->groundAnimationFile = NULL;
+    areaDataManager->groundAnimationObj = NULL;
+
+    if (areaDataManager->areaData.groundAnimation == GROUND_ANIMATION_NONE) {
+        return;
+    }
+
+    areaDataManager->groundAnimationFile = NARC_AllocAndReadWholeMemberByIndexPair(NARC_INDEX_ARC__BM_ANIME, areaDataManager->areaData.groundAnimation - 1, HEAP_ID_FIELD1);
+
+    NNSG3dResTexSRTAnm *animation = (NNSG3dResTexSRTAnm *)NNS_G3dGetAnmByIdx(areaDataManager->groundAnimationFile, 0);
+    u8 entryCount = animation->dict.numEntry;
+    NNSG3dAnmObj *animationObj = Heap_Alloc(HEAP_ID_FIELD1, (sizeof(NNSG3dAnmObj) + sizeof(u16) * entryCount) & ~3);
+
+    animationObj->frame = 0;
+    animationObj->ratio = FX32_ONE;
+    animationObj->resAnm = animation;
+    animationObj->funcAnm = (void *)NNS_G3dFuncAnmMatNsBtaDefault;
+    animationObj->next = NULL;
+    animationObj->resTex = NULL;
+    animationObj->priority = 127;
+    animationObj->numMapData = entryCount;
+
+    for (u8 i = 0; i < entryCount; i++) {
+        animationObj->mapData[i] = i | NNS_G3D_ANMOBJ_MAPDATA_EXIST;
+    }
+
+    areaDataManager->groundAnimationObj = animationObj;
 }
 
 AreaDataManager *AreaDataManager_Alloc(const int areaDataArchiveID, MapPropAnimationManager *mapPropAnimMan)
@@ -51,6 +92,8 @@ AreaDataManager *AreaDataManager_Alloc(const int areaDataArchiveID, MapPropAnima
     areaDataManager->loadData->areaDataArchiveID = areaDataArchiveID;
     areaDataManager->loadData->mapPropAnimMan = mapPropAnimMan;
     areaDataManager->loadData->dummy0C = 0;
+    areaDataManager->groundAnimationFile = NULL;
+    areaDataManager->groundAnimationObj = NULL;
 
     return areaDataManager;
 }
@@ -144,6 +187,8 @@ void AreaDataManager_Load(AreaDataManager *areaDataManager)
     sprintf(mapPropMaterialShapeFilePath, "fielddata/build_model/build_model_matshp.dat");
     MapPropMaterialShape_Load(mapPropMaterialShapeFilePath, areaDataManager->mapPropMatShp);
 
+    AreaDataManager_LoadGroundAnimation(areaDataManager);
+
     Heap_Free(areaDataManager->loadData);
     areaDataManager->loadData = NULL;
 }
@@ -174,6 +219,12 @@ void AreaDataManager_Free(AreaDataManager **areaDataManager)
     }
 
     Heap_Free((*areaDataManager)->mapPropModelIDs);
+
+    if ((*areaDataManager)->groundAnimationObj != NULL) {
+        Heap_Free((*areaDataManager)->groundAnimationObj);
+        Heap_Free((*areaDataManager)->groundAnimationFile);
+    }
+
     Heap_Free((*areaDataManager)->mapTextureFile);
 
     (*areaDataManager)->mapTextureFile = NULL;
@@ -224,4 +275,33 @@ int AreaDataManager_GetMapPropModelID(const AreaDataManager *areaDataManager, co
 BOOL AreaDataManager_HasMapPropModelFile(const AreaDataManager *areaDataManager, const int mapPropModelID)
 {
     return areaDataManager->mapPropModelFiles[mapPropModelID] != NULL;
+}
+
+void AreaDataManager_AdvanceGroundAnimation(AreaDataManager *areaDataManager)
+{
+    if (areaDataManager == NULL || areaDataManager->groundAnimationObj == NULL) {
+        return;
+    }
+
+    NNSG3dAnmObj *animationObj = areaDataManager->groundAnimationObj;
+    animationObj->frame += FX32_ONE;
+
+    if (animationObj->frame >= NNS_G3dAnmObjGetNumFrame(animationObj)) {
+        animationObj->frame = 0;
+    }
+}
+
+void AreaDataManager_AddGroundAnimationToRenderObj(const AreaDataManager *areaDataManager, NNSG3dRenderObj *mapRenderObj, const int landDataID)
+{
+    if (areaDataManager->groundAnimationObj == NULL || mapRenderObj->anmMat != NULL) {
+        return;
+    }
+
+    for (int i = 0; i < NELEMS(sLandDataWithoutGroundAnimation); i++) {
+        if (landDataID == sLandDataWithoutGroundAnimation[i]) {
+            return;
+        }
+    }
+
+    NNS_G3dRenderObjAddAnmObj(mapRenderObj, areaDataManager->groundAnimationObj);
 }

@@ -22,6 +22,7 @@ LandDataManager *LandDataManager_New(MapMatrix *mapMatrix, AreaDataManager *area
 void LandDataManager_InitialLoad(LandDataManager *landDataMan, const int playerTileX, const int playerTileZ);
 void LandDataManager_CheckLazyLoadNextMapPair(const u8 trackedTargetDirection, LandDataManager *landDataMan);
 void LandDataManager_RenderLoadedMaps(const LandDataManager *landDataMan, ModelAttributes *const modelAttrs);
+void LandDataManager_UpdateTimeOfDayPropAnimations(LandDataManager *landDataMan);
 void LandData_ObjectPosToTilePos(fx32 objectPositionX, fx32 objectPositionZ, int *tileX, int *tileZ);
 void LandDataManager_End(LandDataManager *landDataMan);
 void LandDataManager_FreeNARCAndLoadedMapBuffers(LandDataManager *landDataMan);

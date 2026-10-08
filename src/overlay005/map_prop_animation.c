@@ -8,9 +8,19 @@
 
 #include "heap.h"
 #include "narc.h"
+#include "rtc.h"
 #include "sound_playback.h"
 
 #define ANIME_ARCHIVE_ID_NONE -1
+
+// Which of a time of day prop's animations plays, from HGSS.
+static const u8 sTimeOfDayAnimIndexes[] = {
+    [TIMEOFDAY_MORNING] = 0,
+    [TIMEOFDAY_DAY] = 1,
+    [TIMEOFDAY_TWILIGHT] = 2,
+    [TIMEOFDAY_NIGHT] = 3,
+    [TIMEOFDAY_LATE_NIGHT] = 3,
+};
 
 static BOOL BicycleSlopeAnimation_Load(BicycleSlopeAnimation *bicycleSlopeAnims, NNSG3dRenderObj *renderObj, MapPropAnimation *animation, const u8 animeArchiveID)
 {
@@ -109,6 +119,7 @@ MapPropAnimationManager *MapPropAnimationManager_New(void)
 
     manager->animeNARC = NARC_ctor(NARC_INDEX_ARC__BM_ANIME, HEAP_ID_FIELD1);
     manager->animeListNARC = NARC_ctor(NARC_INDEX_ARC__BM_ANIME_LIST, HEAP_ID_FIELD1);
+    manager->timeOfDayAnimIndex = sTimeOfDayAnimIndexes[GetTimeOfDay()];
 
     return manager;
 }
@@ -276,6 +287,21 @@ BOOL MapPropAnimationManager_AddAnimationToRenderObj(const int mapPropModelID, c
     return FALSE;
 }
 
+static MapPropAnimation *MapPropAnimationManager_FindAnimation(const int animeArchiveID, MapPropAnimationManager *manager)
+{
+    if (animeArchiveID == ANIME_ARCHIVE_ID_NONE) {
+        return NULL;
+    }
+
+    for (int i = 0; i < MAP_PROP_ANIMATION_MANAGER_MAX_ANIMATIONS; i++) {
+        if (manager->animations[i].loaded && manager->animations[i].animeArchiveID == animeArchiveID) {
+            return &manager->animations[i];
+        }
+    }
+
+    return NULL;
+}
+
 BOOL MapPropAnimationManager_AddAllAnimationsToRenderObj(const int mapPropModelID, NNSG3dRenderObj *mapPropRenderObj, MapPropAnimationManager *manager)
 {
     int i, j;
@@ -293,6 +319,17 @@ BOOL MapPropAnimationManager_AddAllAnimationsToRenderObj(const int mapPropModelI
 
     MapPropAnimeListFile animeListFile;
     NARC_ReadWholeMember(manager->animeListNARC, mapPropModelID, &animeListFile);
+
+    if (animeListFile.flags == MAP_PROP_ANIME_FLAGS_TIME_OF_DAY) {
+        MapPropAnimation *animation = MapPropAnimationManager_FindAnimation(animeListFile.animeArchiveIDs[manager->timeOfDayAnimIndex], manager);
+
+        if (animation == NULL) {
+            return FALSE;
+        }
+
+        NNS_G3dRenderObjAddAnmObj(mapPropRenderObj, animation->animationObj);
+        return TRUE;
+    }
 
     if (MapPropAnimation_CheckDeferredAddToRenderObjFlag(animeListFile.flags)) {
         return FALSE;
@@ -795,4 +832,43 @@ const int MapPropOneShotAnimationManager_GetAnimationMapPropModelID(MapPropOneSh
 {
     MapPropOneShotAnimation *oneShotAnimation = MapPropOneShotAnimationManager_GetAnimation(oneShotAnimMan, tag);
     return oneShotAnimation->mapPropModelID;
+}
+
+BOOL MapPropAnimationManager_UpdateTimeOfDay(MapPropAnimationManager *manager, u8 *prevTimeOfDayAnimIndex)
+{
+    u8 timeOfDayAnimIndex = sTimeOfDayAnimIndexes[GetTimeOfDay()];
+
+    *prevTimeOfDayAnimIndex = manager->timeOfDayAnimIndex;
+
+    if (timeOfDayAnimIndex == manager->timeOfDayAnimIndex) {
+        return FALSE;
+    }
+
+    manager->timeOfDayAnimIndex = timeOfDayAnimIndex;
+    return TRUE;
+}
+
+void MapPropAnimationManager_SwapTimeOfDayAnimation(const int mapPropModelID, NNSG3dRenderObj *mapPropRenderObj, const u8 prevTimeOfDayAnimIndex, MapPropAnimationManager *manager)
+{
+    if (mapPropModelID >= MapPropAnimationManager_GetAnimeListNARCFileCount(manager)) {
+        return;
+    }
+
+    MapPropAnimeListFile animeListFile;
+    NARC_ReadWholeMember(manager->animeListNARC, mapPropModelID, &animeListFile);
+
+    if (animeListFile.flags != MAP_PROP_ANIME_FLAGS_TIME_OF_DAY) {
+        return;
+    }
+
+    MapPropAnimation *prevAnimation = MapPropAnimationManager_FindAnimation(animeListFile.animeArchiveIDs[prevTimeOfDayAnimIndex], manager);
+    MapPropAnimation *animation = MapPropAnimationManager_FindAnimation(animeListFile.animeArchiveIDs[manager->timeOfDayAnimIndex], manager);
+
+    if (prevAnimation != NULL) {
+        MapPropAnimation_RemoveAnimationObjFromRenderObj(mapPropRenderObj, prevAnimation->animationObj);
+    }
+
+    if (animation != NULL) {
+        NNS_G3dRenderObjAddAnmObj(mapPropRenderObj, animation->animationObj);
+    }
 }
