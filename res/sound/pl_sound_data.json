@@ -10343,6 +10343,294 @@
 			"channelPriority":	0,
 			"playerPriority":	0,
 			"player":	"PLAYER_PV"
+		}, {
+			"name":	"SEQ_KANTO_GS_CHAMPROAD",
+			"fileName":	"SEQ_KANTO_GS_CHAMPROAD.sseq",
+			"bank":	"BANK_KANTO_GS_CHAMPROAD",
+			"volume":	82,
+			"channelPriority":	30,
+			"playerPriority":	64,
+			"player":	"PLAYER_FIELD"
+		}, {
+			"name":	"SEQ_KANTO_GS_C_HANADA",
+			"fileName":	"SEQ_KANTO_GS_C_HANADA.sseq",
+			"bank":	"BANK_KANTO_GS_C_HANADA",
+			"volume":	73,
+			"channelPriority":	30,
+			"playerPriority":	64,
+			"player":	"PLAYER_FIELD"
+		}, {
+			"name":	"SEQ_KANTO_GS_C_KUCHIBA",
+			"fileName":	"SEQ_KANTO_GS_C_KUCHIBA.sseq",
+			"bank":	"BANK_KANTO_GS_C_KUCHIBA",
+			"volume":	62,
+			"channelPriority":	30,
+			"playerPriority":	64,
+			"player":	"PLAYER_FIELD"
+		}, {
+			"name":	"SEQ_KANTO_GS_C_NIBI",
+			"fileName":	"SEQ_KANTO_GS_C_NIBI.sseq",
+			"bank":	"BANK_KANTO_GS_C_NIBI",
+			"volume":	59,
+			"channelPriority":	30,
+			"playerPriority":	64,
+			"player":	"PLAYER_FIELD"
+		}, {
+			"name":	"SEQ_KANTO_GS_C_SEKICHIKU",
+			"fileName":	"SEQ_KANTO_GS_C_SEKICHIKU.sseq",
+			"bank":	"BANK_KANTO_GS_C_SEKICHIKU",
+			"volume":	73,
+			"channelPriority":	30,
+			"playerPriority":	64,
+			"player":	"PLAYER_FIELD"
+		}, {
+			"name":	"SEQ_KANTO_GS_C_TAMAMUSHI",
+			"fileName":	"SEQ_KANTO_GS_C_TAMAMUSHI.sseq",
+			"bank":	"BANK_KANTO_GS_C_TAMAMUSHI",
+			"volume":	63,
+			"channelPriority":	30,
+			"playerPriority":	64,
+			"player":	"PLAYER_FIELD"
+		}, {
+			"name":	"SEQ_KANTO_GS_C_TOKIWA",
+			"fileName":	"SEQ_KANTO_GS_C_TOKIWA.sseq",
+			"bank":	"BANK_KANTO_GS_C_TOKIWA",
+			"volume":	59,
+			"channelPriority":	30,
+			"playerPriority":	64,
+			"player":	"PLAYER_FIELD"
+		}, {
+			"name":	"SEQ_KANTO_GS_C_YAMABUKI",
+			"fileName":	"SEQ_KANTO_GS_C_YAMABUKI.sseq",
+			"bank":	"BANK_KANTO_GS_C_YAMABUKI",
+			"volume":	58,
+			"channelPriority":	30,
+			"playerPriority":	64,
+			"player":	"PLAYER_FIELD"
+		}, {
+			"name":	"SEQ_KANTO_GS_D_CHAMPROAD",
+			"fileName":	"SEQ_KANTO_GS_D_CHAMPROAD.sseq",
+			"bank":	"BANK_KANTO_GS_D_CHAMPROAD",
+			"volume":	87,
+			"channelPriority":	30,
+			"playerPriority":	64,
+			"player":	"PLAYER_FIELD"
+		}, {
+			"name":	"SEQ_KANTO_GS_D_CHIKATSUURO",
+			"fileName":	"SEQ_KANTO_GS_D_CHIKATSUURO.sseq",
+			"bank":	"BANK_KANTO_GS_D_CHIKATSUURO",
+			"volume":	80,
+			"channelPriority":	30,
+			"playerPriority":	64,
+			"player":	"PLAYER_FIELD"
+		}, {
+			"name":	"SEQ_KANTO_GS_D_IWAYAMA",
+			"fileName":	"SEQ_KANTO_GS_D_IWAYAMA.sseq",
+			"bank":	"BANK_KANTO_GS_D_IWAYAMA",
+			"volume":	79,
+			"channelPriority":	30,
+			"playerPriority":	64,
+			"player":	"PLAYER_FIELD"
+		}, {
+			"name":	"SEQ_KANTO_GS_D_KOORINONUKE",
+			"fileName":	"SEQ_KANTO_GS_D_KOORINONUKE.sseq",
+			"bank":	"BANK_KANTO_GS_D_KOORINONUKE",
+			"volume":	72,
+			"channelPriority":	30,
+			"playerPriority":	64,
+			"player":	"PLAYER_FIELD"
+		}, {
+			"name":	"SEQ_KANTO_GS_D_TOKIWANOMORI3",
+			"fileName":	"SEQ_KANTO_GS_D_TOKIWANOMORI3.sseq",
+			"bank":	"BANK_KANTO_GS_D_TOKIWANOMORI3",
+			"volume":	87,
+			"channelPriority":	30,
+			"playerPriority":	64,
+			"player":	"PLAYER_FIELD"
+		}, {
+			"name":	"SEQ_KANTO_GS_FS",
+			"fileName":	"SEQ_KANTO_GS_FS.sseq",
+			"bank":	"BANK_KANTO_GS_FS",
+			"volume":	78,
+			"channelPriority":	30,
+			"playerPriority":	64,
+			"player":	"PLAYER_FIELD"
+		}, {
+			"name":	"SEQ_KANTO_GS_GAME",
+			"fileName":	"SEQ_KANTO_GS_GAME.sseq",
+			"bank":	"BANK_KANTO_GS_GAME",
+			"volume":	92,
+			"channelPriority":	30,
+			"playerPriority":	64,
+			"player":	"PLAYER_FIELD"
+		}, {
+			"name":	"SEQ_KANTO_GS_GYM",
+			"fileName":	"SEQ_KANTO_GS_GYM.sseq",
+			"bank":	"BANK_KANTO_GS_GYM",
+			"volume":	80,
+			"channelPriority":	30,
+			"playerPriority":	64,
+			"player":	"PLAYER_FIELD"
+		}, {
+			"name":	"SEQ_KANTO_GS_OTSUKIMI_EVENT",
+			"fileName":	"SEQ_KANTO_GS_OTSUKIMI_EVENT.sseq",
+			"bank":	"BANK_KANTO_GS_OTSUKIMI_EVENT",
+			"volume":	105,
+			"channelPriority":	30,
+			"playerPriority":	64,
+			"player":	"PLAYER_FIELD"
+		}, {
+			"name":	"SEQ_KANTO_GS_POKESEN",
+			"fileName":	"SEQ_KANTO_GS_POKESEN.sseq",
+			"bank":	"BANK_KANTO_GS_POKESEN",
+			"volume":	75,
+			"channelPriority":	30,
+			"playerPriority":	64,
+			"player":	"PLAYER_FIELD"
+		}, {
+			"name":	"SEQ_KANTO_GS_R_10_03",
+			"fileName":	"SEQ_KANTO_GS_R_10_03.sseq",
+			"bank":	"BANK_KANTO_GS_R_10_03",
+			"volume":	87,
+			"channelPriority":	30,
+			"playerPriority":	64,
+			"player":	"PLAYER_FIELD"
+		}, {
+			"name":	"SEQ_KANTO_GS_R_10_11",
+			"fileName":	"SEQ_KANTO_GS_R_10_11.sseq",
+			"bank":	"BANK_KANTO_GS_R_10_11",
+			"volume":	77,
+			"channelPriority":	30,
+			"playerPriority":	64,
+			"player":	"PLAYER_FIELD"
+		}, {
+			"name":	"SEQ_KANTO_GS_R_12_03",
+			"fileName":	"SEQ_KANTO_GS_R_12_03.sseq",
+			"bank":	"BANK_KANTO_GS_R_12_03",
+			"volume":	87,
+			"channelPriority":	30,
+			"playerPriority":	64,
+			"player":	"PLAYER_FIELD"
+		}, {
+			"name":	"SEQ_KANTO_GS_R_12_24",
+			"fileName":	"SEQ_KANTO_GS_R_12_24.sseq",
+			"bank":	"BANK_KANTO_GS_R_12_24",
+			"volume":	80,
+			"channelPriority":	30,
+			"playerPriority":	64,
+			"player":	"PLAYER_FIELD"
+		}, {
+			"name":	"SEQ_KANTO_GS_R_13_03",
+			"fileName":	"SEQ_KANTO_GS_R_13_03.sseq",
+			"bank":	"BANK_KANTO_GS_R_13_03",
+			"volume":	87,
+			"channelPriority":	30,
+			"playerPriority":	64,
+			"player":	"PLAYER_FIELD"
+		}, {
+			"name":	"SEQ_KANTO_GS_R_13_11",
+			"fileName":	"SEQ_KANTO_GS_R_13_11.sseq",
+			"bank":	"BANK_KANTO_GS_R_13_11",
+			"volume":	77,
+			"channelPriority":	30,
+			"playerPriority":	64,
+			"player":	"PLAYER_FIELD"
+		}, {
+			"name":	"SEQ_KANTO_GS_R_14_03",
+			"fileName":	"SEQ_KANTO_GS_R_14_03.sseq",
+			"bank":	"BANK_KANTO_GS_R_14_03",
+			"volume":	87,
+			"channelPriority":	30,
+			"playerPriority":	64,
+			"player":	"PLAYER_FIELD"
+		}, {
+			"name":	"SEQ_KANTO_GS_R_15_03",
+			"fileName":	"SEQ_KANTO_GS_R_15_03.sseq",
+			"bank":	"BANK_KANTO_GS_R_15_03",
+			"volume":	87,
+			"channelPriority":	30,
+			"playerPriority":	64,
+			"player":	"PLAYER_FIELD"
+		}, {
+			"name":	"SEQ_KANTO_GS_R_16_03",
+			"fileName":	"SEQ_KANTO_GS_R_16_03.sseq",
+			"bank":	"BANK_KANTO_GS_R_16_03",
+			"volume":	87,
+			"channelPriority":	30,
+			"playerPriority":	64,
+			"player":	"PLAYER_FIELD"
+		}, {
+			"name":	"SEQ_KANTO_GS_R_17_01",
+			"fileName":	"SEQ_KANTO_GS_R_17_01.sseq",
+			"bank":	"BANK_KANTO_GS_R_17_01",
+			"volume":	85,
+			"channelPriority":	30,
+			"playerPriority":	64,
+			"player":	"PLAYER_FIELD"
+		}, {
+			"name":	"SEQ_KANTO_GS_R_17_03",
+			"fileName":	"SEQ_KANTO_GS_R_17_03.sseq",
+			"bank":	"BANK_KANTO_GS_R_17_03",
+			"volume":	87,
+			"channelPriority":	30,
+			"playerPriority":	64,
+			"player":	"PLAYER_FIELD"
+		}, {
+			"name":	"SEQ_KANTO_GS_R_1_26",
+			"fileName":	"SEQ_KANTO_GS_R_1_26.sseq",
+			"bank":	"BANK_KANTO_GS_R_1_26",
+			"volume":	78,
+			"channelPriority":	30,
+			"playerPriority":	64,
+			"player":	"PLAYER_FIELD"
+		}, {
+			"name":	"SEQ_KANTO_GS_R_9_03",
+			"fileName":	"SEQ_KANTO_GS_R_9_03.sseq",
+			"bank":	"BANK_KANTO_GS_R_9_03",
+			"volume":	87,
+			"channelPriority":	30,
+			"playerPriority":	64,
+			"player":	"PLAYER_FIELD"
+		}, {
+			"name":	"SEQ_KANTO_GS_SAFARI_FIELD",
+			"fileName":	"SEQ_KANTO_GS_SAFARI_FIELD.sseq",
+			"bank":	"BANK_KANTO_GS_SAFARI_FIELD",
+			"volume":	87,
+			"channelPriority":	30,
+			"playerPriority":	64,
+			"player":	"PLAYER_FIELD"
+		}, {
+			"name":	"SEQ_KANTO_GS_T_CHION",
+			"fileName":	"SEQ_KANTO_GS_T_CHION.sseq",
+			"bank":	"BANK_KANTO_GS_T_CHION",
+			"volume":	73,
+			"channelPriority":	30,
+			"playerPriority":	64,
+			"player":	"PLAYER_FIELD"
+		}, {
+			"name":	"SEQ_KANTO_GS_T_GUREN",
+			"fileName":	"SEQ_KANTO_GS_T_GUREN.sseq",
+			"bank":	"BANK_KANTO_GS_T_GUREN",
+			"volume":	75,
+			"channelPriority":	30,
+			"playerPriority":	64,
+			"player":	"PLAYER_FIELD"
+		}, {
+			"name":	"SEQ_KANTO_GS_T_MASARA",
+			"fileName":	"SEQ_KANTO_GS_T_MASARA.sseq",
+			"bank":	"BANK_KANTO_GS_T_MASARA",
+			"volume":	80,
+			"channelPriority":	30,
+			"playerPriority":	64,
+			"player":	"PLAYER_FIELD"
+		}, {
+			"name":	"SEQ_KANTO_PL_BICYCLE",
+			"fileName":	"SEQ_KANTO_PL_BICYCLE.sseq",
+			"bank":	"BANK_KANTO_PL_BICYCLE",
+			"volume":	85,
+			"channelPriority":	30,
+			"playerPriority":	64,
+			"player":	"PLAYER_FIELD"
 		}],
 	"seqarcInfo":	[],
 	"bankInfo":	[{
@@ -12929,6 +13217,150 @@
 			"name":	"BANK_SE_HIROBA",
 			"fileName":	"BANK_SE_HIROBA.sbnk",
 			"waves":	["WAVE_ARC_BASIC", "WAVE_ARC_SE_HIROBA", "", ""]
+		}, {
+			"name":	"BANK_KANTO_GS_CHAMPROAD",
+			"fileName":	"BANK_KANTO_GS_CHAMPROAD.sbnk",
+			"waves":	["WAVE_ARC_KANTO_GS_CHAMPROAD", "", "", ""]
+		}, {
+			"name":	"BANK_KANTO_GS_C_HANADA",
+			"fileName":	"BANK_KANTO_GS_C_HANADA.sbnk",
+			"waves":	["WAVE_ARC_KANTO_GS_C_HANADA", "", "", ""]
+		}, {
+			"name":	"BANK_KANTO_GS_C_KUCHIBA",
+			"fileName":	"BANK_KANTO_GS_C_KUCHIBA.sbnk",
+			"waves":	["WAVE_ARC_KANTO_GS_C_KUCHIBA", "", "", ""]
+		}, {
+			"name":	"BANK_KANTO_GS_C_NIBI",
+			"fileName":	"BANK_KANTO_GS_C_NIBI.sbnk",
+			"waves":	["WAVE_ARC_KANTO_GS_C_NIBI", "", "", ""]
+		}, {
+			"name":	"BANK_KANTO_GS_C_SEKICHIKU",
+			"fileName":	"BANK_KANTO_GS_C_SEKICHIKU.sbnk",
+			"waves":	["WAVE_ARC_KANTO_GS_C_SEKICHIKU", "", "", ""]
+		}, {
+			"name":	"BANK_KANTO_GS_C_TAMAMUSHI",
+			"fileName":	"BANK_KANTO_GS_C_TAMAMUSHI.sbnk",
+			"waves":	["WAVE_ARC_KANTO_GS_C_TAMAMUSHI", "", "", ""]
+		}, {
+			"name":	"BANK_KANTO_GS_C_TOKIWA",
+			"fileName":	"BANK_KANTO_GS_C_TOKIWA.sbnk",
+			"waves":	["WAVE_ARC_KANTO_GS_C_TOKIWA", "", "", ""]
+		}, {
+			"name":	"BANK_KANTO_GS_C_YAMABUKI",
+			"fileName":	"BANK_KANTO_GS_C_YAMABUKI.sbnk",
+			"waves":	["WAVE_ARC_KANTO_GS_C_YAMABUKI", "", "", ""]
+		}, {
+			"name":	"BANK_KANTO_GS_D_CHAMPROAD",
+			"fileName":	"BANK_KANTO_GS_D_CHAMPROAD.sbnk",
+			"waves":	["WAVE_ARC_KANTO_GS_D_CHAMPROAD", "", "", ""]
+		}, {
+			"name":	"BANK_KANTO_GS_D_CHIKATSUURO",
+			"fileName":	"BANK_KANTO_GS_D_CHIKATSUURO.sbnk",
+			"waves":	["WAVE_ARC_KANTO_GS_D_CHIKATSUURO", "", "", ""]
+		}, {
+			"name":	"BANK_KANTO_GS_D_IWAYAMA",
+			"fileName":	"BANK_KANTO_GS_D_IWAYAMA.sbnk",
+			"waves":	["WAVE_ARC_KANTO_GS_D_IWAYAMA", "", "", ""]
+		}, {
+			"name":	"BANK_KANTO_GS_D_KOORINONUKE",
+			"fileName":	"BANK_KANTO_GS_D_KOORINONUKE.sbnk",
+			"waves":	["WAVE_ARC_KANTO_GS_D_KOORINONUKE", "", "", ""]
+		}, {
+			"name":	"BANK_KANTO_GS_D_TOKIWANOMORI3",
+			"fileName":	"BANK_KANTO_GS_D_TOKIWANOMORI3.sbnk",
+			"waves":	["WAVE_ARC_KANTO_GS_D_TOKIWANOMORI3", "", "", ""]
+		}, {
+			"name":	"BANK_KANTO_GS_FS",
+			"fileName":	"BANK_KANTO_GS_FS.sbnk",
+			"waves":	["WAVE_ARC_KANTO_GS_FS", "", "", ""]
+		}, {
+			"name":	"BANK_KANTO_GS_GAME",
+			"fileName":	"BANK_KANTO_GS_GAME.sbnk",
+			"waves":	["WAVE_ARC_KANTO_GS_GAME", "", "", ""]
+		}, {
+			"name":	"BANK_KANTO_GS_GYM",
+			"fileName":	"BANK_KANTO_GS_GYM.sbnk",
+			"waves":	["WAVE_ARC_KANTO_GS_GYM", "", "", ""]
+		}, {
+			"name":	"BANK_KANTO_GS_OTSUKIMI_EVENT",
+			"fileName":	"BANK_KANTO_GS_OTSUKIMI_EVENT.sbnk",
+			"waves":	["WAVE_ARC_KANTO_GS_OTSUKIMI_EVENT", "", "", ""]
+		}, {
+			"name":	"BANK_KANTO_GS_POKESEN",
+			"fileName":	"BANK_KANTO_GS_POKESEN.sbnk",
+			"waves":	["WAVE_ARC_KANTO_GS_POKESEN", "", "", ""]
+		}, {
+			"name":	"BANK_KANTO_GS_R_10_03",
+			"fileName":	"BANK_KANTO_GS_R_10_03.sbnk",
+			"waves":	["WAVE_ARC_KANTO_GS_R_10_03", "", "", ""]
+		}, {
+			"name":	"BANK_KANTO_GS_R_10_11",
+			"fileName":	"BANK_KANTO_GS_R_10_11.sbnk",
+			"waves":	["WAVE_ARC_KANTO_GS_R_10_11", "", "", ""]
+		}, {
+			"name":	"BANK_KANTO_GS_R_12_03",
+			"fileName":	"BANK_KANTO_GS_R_12_03.sbnk",
+			"waves":	["WAVE_ARC_KANTO_GS_R_12_03", "", "", ""]
+		}, {
+			"name":	"BANK_KANTO_GS_R_12_24",
+			"fileName":	"BANK_KANTO_GS_R_12_24.sbnk",
+			"waves":	["WAVE_ARC_KANTO_GS_R_12_24", "", "", ""]
+		}, {
+			"name":	"BANK_KANTO_GS_R_13_03",
+			"fileName":	"BANK_KANTO_GS_R_13_03.sbnk",
+			"waves":	["WAVE_ARC_KANTO_GS_R_13_03", "", "", ""]
+		}, {
+			"name":	"BANK_KANTO_GS_R_13_11",
+			"fileName":	"BANK_KANTO_GS_R_13_11.sbnk",
+			"waves":	["WAVE_ARC_KANTO_GS_R_13_11", "", "", ""]
+		}, {
+			"name":	"BANK_KANTO_GS_R_14_03",
+			"fileName":	"BANK_KANTO_GS_R_14_03.sbnk",
+			"waves":	["WAVE_ARC_KANTO_GS_R_14_03", "", "", ""]
+		}, {
+			"name":	"BANK_KANTO_GS_R_15_03",
+			"fileName":	"BANK_KANTO_GS_R_15_03.sbnk",
+			"waves":	["WAVE_ARC_KANTO_GS_R_15_03", "", "", ""]
+		}, {
+			"name":	"BANK_KANTO_GS_R_16_03",
+			"fileName":	"BANK_KANTO_GS_R_16_03.sbnk",
+			"waves":	["WAVE_ARC_KANTO_GS_R_16_03", "", "", ""]
+		}, {
+			"name":	"BANK_KANTO_GS_R_17_01",
+			"fileName":	"BANK_KANTO_GS_R_17_01.sbnk",
+			"waves":	["WAVE_ARC_KANTO_GS_R_17_01", "", "", ""]
+		}, {
+			"name":	"BANK_KANTO_GS_R_17_03",
+			"fileName":	"BANK_KANTO_GS_R_17_03.sbnk",
+			"waves":	["WAVE_ARC_KANTO_GS_R_17_03", "", "", ""]
+		}, {
+			"name":	"BANK_KANTO_GS_R_1_26",
+			"fileName":	"BANK_KANTO_GS_R_1_26.sbnk",
+			"waves":	["WAVE_ARC_KANTO_GS_R_1_26", "", "", ""]
+		}, {
+			"name":	"BANK_KANTO_GS_R_9_03",
+			"fileName":	"BANK_KANTO_GS_R_9_03.sbnk",
+			"waves":	["WAVE_ARC_KANTO_GS_R_9_03", "", "", ""]
+		}, {
+			"name":	"BANK_KANTO_GS_SAFARI_FIELD",
+			"fileName":	"BANK_KANTO_GS_SAFARI_FIELD.sbnk",
+			"waves":	["WAVE_ARC_KANTO_GS_SAFARI_FIELD", "", "", ""]
+		}, {
+			"name":	"BANK_KANTO_GS_T_CHION",
+			"fileName":	"BANK_KANTO_GS_T_CHION.sbnk",
+			"waves":	["WAVE_ARC_KANTO_GS_T_CHION", "", "", ""]
+		}, {
+			"name":	"BANK_KANTO_GS_T_GUREN",
+			"fileName":	"BANK_KANTO_GS_T_GUREN.sbnk",
+			"waves":	["WAVE_ARC_KANTO_GS_T_GUREN", "", "", ""]
+		}, {
+			"name":	"BANK_KANTO_GS_T_MASARA",
+			"fileName":	"BANK_KANTO_GS_T_MASARA.sbnk",
+			"waves":	["WAVE_ARC_KANTO_GS_T_MASARA", "", "", ""]
+		}, {
+			"name":	"BANK_KANTO_PL_BICYCLE",
+			"fileName":	"BANK_KANTO_PL_BICYCLE.sbnk",
+			"waves":	["WAVE_ARC_KANTO_PL_BICYCLE", "", "", ""]
 		}],
 	"wavarcInfo":	[{
 			"name":	""
@@ -14993,6 +15425,114 @@
 		}, {
 			"name":	"WAVE_ARC_SE_HIROBA",
 			"fileName":	"WAVE_ARC_SE_HIROBA.swar"
+		}, {
+			"name":	"WAVE_ARC_KANTO_GS_CHAMPROAD",
+			"fileName":	"WAVE_ARC_KANTO_GS_CHAMPROAD.swar"
+		}, {
+			"name":	"WAVE_ARC_KANTO_GS_C_HANADA",
+			"fileName":	"WAVE_ARC_KANTO_GS_C_HANADA.swar"
+		}, {
+			"name":	"WAVE_ARC_KANTO_GS_C_KUCHIBA",
+			"fileName":	"WAVE_ARC_KANTO_GS_C_KUCHIBA.swar"
+		}, {
+			"name":	"WAVE_ARC_KANTO_GS_C_NIBI",
+			"fileName":	"WAVE_ARC_KANTO_GS_C_NIBI.swar"
+		}, {
+			"name":	"WAVE_ARC_KANTO_GS_C_SEKICHIKU",
+			"fileName":	"WAVE_ARC_KANTO_GS_C_SEKICHIKU.swar"
+		}, {
+			"name":	"WAVE_ARC_KANTO_GS_C_TAMAMUSHI",
+			"fileName":	"WAVE_ARC_KANTO_GS_C_TAMAMUSHI.swar"
+		}, {
+			"name":	"WAVE_ARC_KANTO_GS_C_TOKIWA",
+			"fileName":	"WAVE_ARC_KANTO_GS_C_TOKIWA.swar"
+		}, {
+			"name":	"WAVE_ARC_KANTO_GS_C_YAMABUKI",
+			"fileName":	"WAVE_ARC_KANTO_GS_C_YAMABUKI.swar"
+		}, {
+			"name":	"WAVE_ARC_KANTO_GS_D_CHAMPROAD",
+			"fileName":	"WAVE_ARC_KANTO_GS_D_CHAMPROAD.swar"
+		}, {
+			"name":	"WAVE_ARC_KANTO_GS_D_CHIKATSUURO",
+			"fileName":	"WAVE_ARC_KANTO_GS_D_CHIKATSUURO.swar"
+		}, {
+			"name":	"WAVE_ARC_KANTO_GS_D_IWAYAMA",
+			"fileName":	"WAVE_ARC_KANTO_GS_D_IWAYAMA.swar"
+		}, {
+			"name":	"WAVE_ARC_KANTO_GS_D_KOORINONUKE",
+			"fileName":	"WAVE_ARC_KANTO_GS_D_KOORINONUKE.swar"
+		}, {
+			"name":	"WAVE_ARC_KANTO_GS_D_TOKIWANOMORI3",
+			"fileName":	"WAVE_ARC_KANTO_GS_D_TOKIWANOMORI3.swar"
+		}, {
+			"name":	"WAVE_ARC_KANTO_GS_FS",
+			"fileName":	"WAVE_ARC_KANTO_GS_FS.swar"
+		}, {
+			"name":	"WAVE_ARC_KANTO_GS_GAME",
+			"fileName":	"WAVE_ARC_KANTO_GS_GAME.swar"
+		}, {
+			"name":	"WAVE_ARC_KANTO_GS_GYM",
+			"fileName":	"WAVE_ARC_KANTO_GS_GYM.swar"
+		}, {
+			"name":	"WAVE_ARC_KANTO_GS_OTSUKIMI_EVENT",
+			"fileName":	"WAVE_ARC_KANTO_GS_OTSUKIMI_EVENT.swar"
+		}, {
+			"name":	"WAVE_ARC_KANTO_GS_POKESEN",
+			"fileName":	"WAVE_ARC_KANTO_GS_POKESEN.swar"
+		}, {
+			"name":	"WAVE_ARC_KANTO_GS_R_10_03",
+			"fileName":	"WAVE_ARC_KANTO_GS_R_10_03.swar"
+		}, {
+			"name":	"WAVE_ARC_KANTO_GS_R_10_11",
+			"fileName":	"WAVE_ARC_KANTO_GS_R_10_11.swar"
+		}, {
+			"name":	"WAVE_ARC_KANTO_GS_R_12_03",
+			"fileName":	"WAVE_ARC_KANTO_GS_R_12_03.swar"
+		}, {
+			"name":	"WAVE_ARC_KANTO_GS_R_12_24",
+			"fileName":	"WAVE_ARC_KANTO_GS_R_12_24.swar"
+		}, {
+			"name":	"WAVE_ARC_KANTO_GS_R_13_03",
+			"fileName":	"WAVE_ARC_KANTO_GS_R_13_03.swar"
+		}, {
+			"name":	"WAVE_ARC_KANTO_GS_R_13_11",
+			"fileName":	"WAVE_ARC_KANTO_GS_R_13_11.swar"
+		}, {
+			"name":	"WAVE_ARC_KANTO_GS_R_14_03",
+			"fileName":	"WAVE_ARC_KANTO_GS_R_14_03.swar"
+		}, {
+			"name":	"WAVE_ARC_KANTO_GS_R_15_03",
+			"fileName":	"WAVE_ARC_KANTO_GS_R_15_03.swar"
+		}, {
+			"name":	"WAVE_ARC_KANTO_GS_R_16_03",
+			"fileName":	"WAVE_ARC_KANTO_GS_R_16_03.swar"
+		}, {
+			"name":	"WAVE_ARC_KANTO_GS_R_17_01",
+			"fileName":	"WAVE_ARC_KANTO_GS_R_17_01.swar"
+		}, {
+			"name":	"WAVE_ARC_KANTO_GS_R_17_03",
+			"fileName":	"WAVE_ARC_KANTO_GS_R_17_03.swar"
+		}, {
+			"name":	"WAVE_ARC_KANTO_GS_R_1_26",
+			"fileName":	"WAVE_ARC_KANTO_GS_R_1_26.swar"
+		}, {
+			"name":	"WAVE_ARC_KANTO_GS_R_9_03",
+			"fileName":	"WAVE_ARC_KANTO_GS_R_9_03.swar"
+		}, {
+			"name":	"WAVE_ARC_KANTO_GS_SAFARI_FIELD",
+			"fileName":	"WAVE_ARC_KANTO_GS_SAFARI_FIELD.swar"
+		}, {
+			"name":	"WAVE_ARC_KANTO_GS_T_CHION",
+			"fileName":	"WAVE_ARC_KANTO_GS_T_CHION.swar"
+		}, {
+			"name":	"WAVE_ARC_KANTO_GS_T_GUREN",
+			"fileName":	"WAVE_ARC_KANTO_GS_T_GUREN.swar"
+		}, {
+			"name":	"WAVE_ARC_KANTO_GS_T_MASARA",
+			"fileName":	"WAVE_ARC_KANTO_GS_T_MASARA.swar"
+		}, {
+			"name":	"WAVE_ARC_KANTO_PL_BICYCLE",
+			"fileName":	"WAVE_ARC_KANTO_PL_BICYCLE.swar"
 		}],
 	"playerInfo":	[{
 			"name":	"PLAYER_PV",
