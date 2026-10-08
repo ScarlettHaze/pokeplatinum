@@ -13,7 +13,9 @@ Run them in this order, each with the pokeheartgold path as the argument:
    headers, warps and location names.
 3. `import_kanto_encounters.py`: wild encounters.
 4. `import_kanto_intro.py`: Professor Oak's intro.
-5. `import_kanto_town_map.py`: the Town Map.
+5. `import_kanto_town_map.py`: the Town Map. It saves the map as
+   `kanto_town_map.png`; `import_kanto_town_map.py --png <file>` rebuilds the
+   Town Map from an edited copy.
 6. `import_kanto_sprites.py`: overworld sprites for the player and NPCs.
 7. `import_kanto_music.py`: map music.
 8. `import_kanto_scripts.py`: text, signs, NPCs, items, marts and scripts.
@@ -38,6 +40,9 @@ Run them in this order, each with the pokeheartgold path as the argument:
 - **Intro:** Professor Oak, Ethan and Lyra, with Marill and HGSS's wording.
 - **Town Map:** Kanto's map comes from HGSS's Pokégear map, on both the top
   screen and the zoomed-in bottom screen. The fly points are Kanto's towns.
+  Both screens come from one picture, `kanto_town_map.png`: 256×256 at 8
+  pixels per block. The top screen shows its top 192 rows. Each 8×8 tile may
+  use 15 colors, and the whole picture 45.
 - **Sprites:**
   - The player is Ethan or Lyra in every state.
   - 120 NPC and Pokémon sprites are imported as `OBJ_EVENT_GFX_KANTO_*`.
