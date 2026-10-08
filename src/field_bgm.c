@@ -20,6 +20,8 @@
 #include "trainer_data.h"
 #include "vars_flags.h"
 
+#include "data/kanto_sound.h"
+
 // clang-format off
 // Class, Eyes meet theme
 const static u16 sTrainerEncounterBGMs[][2] = {
@@ -154,7 +156,7 @@ u16 FieldBGM_GetEffective(FieldSystem *fieldSystem, enum MapHeaderID mapHeaderID
         case MAP_HEADER_DISTORTION_WORLD_TURNBACK_CAVE_ROOM:
             break;
         default:
-            return SEQ_NAMINORI_sseq;
+            return KANTO_SURF_BGM;
         }
     }
 

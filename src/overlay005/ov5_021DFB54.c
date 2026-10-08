@@ -49,6 +49,8 @@
 #include "system.h"
 #include "unk_020655F4.h"
 
+#include "data/kanto_sound.h"
+
 typedef struct MonRideTask {
     BOOL playCutIn;
     int playerGender;
@@ -663,7 +665,7 @@ static BOOL FieldTask_UseSurf(FieldTask *task)
     case 0:
         if (PlayerAvatar_MapDistortionState(taskEnv->playerAvatar) == AVATAR_DISTORTION_STATE_NONE) {
             FieldBGM_SetOverride(taskEnv->fieldSystem, SEQ_NONE);
-            FieldBGM_TryFadeOut(taskEnv->fieldSystem, SEQ_NAMINORI_sseq, 1);
+            FieldBGM_TryFadeOut(taskEnv->fieldSystem, KANTO_SURF_BGM, 1);
         }
 
         if (taskEnv->monRideTask.playCutIn == TRUE) {

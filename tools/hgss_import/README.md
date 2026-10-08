@@ -98,6 +98,13 @@ Done:
   and drum parts need.
 - `SOUND_SYSTEM_HEAP_SIZE` grows by 160 KB, out of the main arena's spare
   room. That room was measured at 188 KB.
+- Surf and the bicycle play HGSS's songs (`KANTO_SURF_BGM` and
+  `KANTO_BICYCLE_BGM` in `include/data/kanto_sound.h`). Surf's is the largest
+  song and leaves 37 KB of the sound heap. That is enough for every sound
+  effect group a menu or other sub-screen loads; the largest is about 33 KB.
+- `nitrosfx` aligned the sound archive's files wrongly whenever its headers
+  didn't end on a 32 byte boundary, and the game hung loading sounds at boot.
+  This is fixed. Archives that were already aligned build the same.
 
 Still to do:
 
@@ -105,7 +112,6 @@ Still to do:
   mode. The untested cases are Wi-Fi, the Union Room and the Battle Frontier.
 - Battle, trainer-encounter, evolution and other music still play Platinum's
   tracks. Only the map music has been ported.
-- Surf and bicycle music still play Platinum's songs.
 
 ### 2. Trainers and the rest of the scripts (the biggest job)
 
@@ -160,6 +166,11 @@ were tested on Pallet Town's sign and NPCs, Red's house, and the Viridian
 City Pokémon Center and Poké Mart. The other maps build, but nobody has
 walked them yet.
 
+Surf and the bicycle were tested on Route 21, Pallet Town and Route 1: each
+song loads and starts, and the Bag and start menu open while Surf's plays.
+
 Emulator testing used py-desmume with a temporary, uncommitted patch. The
 patch skips the intro, names the player, gives a Pokémon, and registers the
 Town Map to Y. It can also move the starting position into a given map.
+py-desmume's save chip fails the game's check at boot, so the patch also skips
+that check.

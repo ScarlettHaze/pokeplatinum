@@ -10344,6 +10344,14 @@
 			"playerPriority":	0,
 			"player":	"PLAYER_PV"
 		}, {
+			"name":	"SEQ_KANTO_GS_BICYCLE",
+			"fileName":	"SEQ_KANTO_GS_BICYCLE.sseq",
+			"bank":	"BANK_KANTO_GS_BICYCLE",
+			"volume":	85,
+			"channelPriority":	30,
+			"playerPriority":	64,
+			"player":	"PLAYER_FIELD"
+		}, {
 			"name":	"SEQ_KANTO_GS_CHAMPROAD",
 			"fileName":	"SEQ_KANTO_GS_CHAMPROAD.sseq",
 			"bank":	"BANK_KANTO_GS_CHAMPROAD",
@@ -10468,6 +10476,14 @@
 			"fileName":	"SEQ_KANTO_GS_GYM.sseq",
 			"bank":	"BANK_KANTO_GS_GYM",
 			"volume":	80,
+			"channelPriority":	30,
+			"playerPriority":	64,
+			"player":	"PLAYER_FIELD"
+		}, {
+			"name":	"SEQ_KANTO_GS_NAMINORI",
+			"fileName":	"SEQ_KANTO_GS_NAMINORI.sseq",
+			"bank":	"BANK_KANTO_GS_NAMINORI",
+			"volume":	85,
 			"channelPriority":	30,
 			"playerPriority":	64,
 			"player":	"PLAYER_FIELD"
@@ -13218,6 +13234,10 @@
 			"fileName":	"BANK_SE_HIROBA.sbnk",
 			"waves":	["WAVE_ARC_BASIC", "WAVE_ARC_SE_HIROBA", "", ""]
 		}, {
+			"name":	"BANK_KANTO_GS_BICYCLE",
+			"fileName":	"BANK_KANTO_GS_BICYCLE.sbnk",
+			"waves":	["WAVE_ARC_KANTO_GS_BICYCLE", "", "", ""]
+		}, {
 			"name":	"BANK_KANTO_GS_CHAMPROAD",
 			"fileName":	"BANK_KANTO_GS_CHAMPROAD.sbnk",
 			"waves":	["WAVE_ARC_KANTO_GS_CHAMPROAD", "", "", ""]
@@ -13281,6 +13301,10 @@
 			"name":	"BANK_KANTO_GS_GYM",
 			"fileName":	"BANK_KANTO_GS_GYM.sbnk",
 			"waves":	["WAVE_ARC_KANTO_GS_GYM", "", "", ""]
+		}, {
+			"name":	"BANK_KANTO_GS_NAMINORI",
+			"fileName":	"BANK_KANTO_GS_NAMINORI.sbnk",
+			"waves":	["WAVE_ARC_KANTO_GS_NAMINORI", "", "", ""]
 		}, {
 			"name":	"BANK_KANTO_GS_OTSUKIMI_EVENT",
 			"fileName":	"BANK_KANTO_GS_OTSUKIMI_EVENT.sbnk",
@@ -15426,6 +15450,9 @@
 			"name":	"WAVE_ARC_SE_HIROBA",
 			"fileName":	"WAVE_ARC_SE_HIROBA.swar"
 		}, {
+			"name":	"WAVE_ARC_KANTO_GS_BICYCLE",
+			"fileName":	"WAVE_ARC_KANTO_GS_BICYCLE.swar"
+		}, {
 			"name":	"WAVE_ARC_KANTO_GS_CHAMPROAD",
 			"fileName":	"WAVE_ARC_KANTO_GS_CHAMPROAD.swar"
 		}, {
@@ -15473,6 +15500,9 @@
 		}, {
 			"name":	"WAVE_ARC_KANTO_GS_GYM",
 			"fileName":	"WAVE_ARC_KANTO_GS_GYM.swar"
+		}, {
+			"name":	"WAVE_ARC_KANTO_GS_NAMINORI",
+			"fileName":	"WAVE_ARC_KANTO_GS_NAMINORI.swar"
 		}, {
 			"name":	"WAVE_ARC_KANTO_GS_OTSUKIMI_EVENT",
 			"fileName":	"WAVE_ARC_KANTO_GS_OTSUKIMI_EVENT.swar"

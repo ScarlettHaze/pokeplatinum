@@ -65,6 +65,8 @@
 
 #include "res/text/bank/location_names.h"
 
+#include "data/kanto_sound.h"
+
 typedef struct ItemUseFuncDat {
     ItemMenuUseFunc useItemFromMenuFunc;
     ItemFieldUseFunc useItemInFieldFunc;
@@ -440,8 +442,8 @@ static BOOL MountOrUnmountBicycle(FieldTask *task)
             FieldBGM_SetOverride(fieldSystem, SEQ_NONE);
             FieldBGM_TryFadeOut(fieldSystem, FieldBGM_GetEffective(fieldSystem, fieldSystem->location->mapHeaderID), 1);
         } else {
-            FieldBGM_SetOverride(fieldSystem, SEQ_BICYCLE_sseq);
-            FieldBGM_TryFadeOut(fieldSystem, SEQ_BICYCLE_sseq, 1);
+            FieldBGM_SetOverride(fieldSystem, KANTO_BICYCLE_BGM);
+            FieldBGM_TryFadeOut(fieldSystem, KANTO_BICYCLE_BGM, 1);
             MapObject_SetPauseMovementOff(PlayerAvatar_GetMapObject(fieldSystem->playerAvatar));
 
             PlayerAvatar_SetTransitionState(fieldSystem->playerAvatar, PLAYER_TRANSITION_CYCLING);

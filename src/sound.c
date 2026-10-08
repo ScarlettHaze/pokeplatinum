@@ -358,7 +358,7 @@ static void Sound_Impl_PlayFieldBGM(u16 bgmID, int unused)
 
     if (*fieldBGMPaused == FALSE) {
         if (currentFieldBGM == bgmID) {
-            if (Sound_GetNextBGM() != SEQ_BICYCLE_sseq) {
+            if (Sound_GetNextBGM() != KANTO_BICYCLE_BGM) {
                 return;
             }
         }

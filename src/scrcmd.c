@@ -224,6 +224,8 @@
 #include "res/text/bank/mystery_gift_phrase.h"
 #include "res/text/bank/tough_words.h"
 
+#include "data/kanto_sound.h"
+
 typedef struct {
     SysTask *unk_00;
     SysTask *unk_04;
@@ -3716,8 +3718,8 @@ static BOOL ScrCmd_SetPlayerBike(ScriptContext *ctx)
     u8 rideBike = ScriptContext_ReadByte(ctx);
 
     if (rideBike == TRUE) {
-        FieldBGM_SetOverride(ctx->fieldSystem, SEQ_BICYCLE_sseq);
-        FieldBGM_TryFadeOut(ctx->fieldSystem, SEQ_BICYCLE_sseq, 1);
+        FieldBGM_SetOverride(ctx->fieldSystem, KANTO_BICYCLE_BGM);
+        FieldBGM_TryFadeOut(ctx->fieldSystem, KANTO_BICYCLE_BGM, 1);
         PlayerAvatar_SetTransitionState(ctx->fieldSystem->playerAvatar, PLAYER_TRANSITION_CYCLING);
         PlayerAvatar_RequestChangeState(ctx->fieldSystem->playerAvatar);
     } else {
