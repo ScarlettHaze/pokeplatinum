@@ -14,10 +14,20 @@ These origins are mirrored by TOWN_MAP_GRID_* and TOWN_MAP_ZOOMED_* in
 include/applications/town_map/defs.h. The map only uses palette 0 of HGSS's;
 it replaces palette 0 of the Town Map's map palettes.
 
+Both screens are drawn from one 256x256 picture, kanto_town_map.png, at 8
+pixels per block with block (0, 0) at TOP_ORIGIN. The top screen shows its
+top 192 rows; the zoomed in map shows all of it at double size. The import
+saves that picture, and --png rebuilds the Town Map from an edited copy.
+Colors are rounded to the DS's 15 bit colors. Each 8x8 tile can use up to 15
+colors, and the whole picture up to 45, split into 3 palettes of 15 so every
+tile fits one of them.
+
 Sinnoh's per-block signposts and descriptions are dropped: HGSS's map has
 none, and their positions are Sinnoh's.
 
-Usage: tools/hgss_import/import_kanto_town_map.py <path-to-pokeheartgold>
+Usage:
+tools/hgss_import/import_kanto_town_map.py <path-to-pokeheartgold>
+tools/hgss_import/import_kanto_town_map.py --png <edited kanto_town_map.png>
 """
 import argparse
 import json
@@ -42,6 +52,8 @@ ZOOMED_ORIGIN = (48, 48)
 # A sea tile of HGSS's map, drawn around the part HGSS's map covers.
 SEA = (46, 19)
 PALETTE_SLOTS = (0, 1, 5)
+PICTURE = Path(__file__).parent / "kanto_town_map.png"
+PICTURE_SIZE = 256
 
 
 def read_nscr(data):
@@ -111,7 +123,7 @@ def pack_palettes(color_sets):
         if len(palettes) <= len(PALETTE_SLOTS):
             return [sorted(p) for p in palettes]
         rng.shuffle(sets)
-    sys.exit(f"the map's colors do not fit in {len(PALETTE_SLOTS)} palettes")
+    sys.exit(f"the map's {len(set().union(*sets))} colors do not fit in {len(PALETTE_SLOTS)} palettes of 15")
 
 
 class Tileset:
@@ -128,7 +140,8 @@ class Tileset:
         if pixels not in self.index:
             self.index[pixels] = len(self.tiles)
             self.tiles.append(pixels)
-        assert len(self.tiles) <= 1024
+        if len(self.tiles) > 1024:
+            sys.exit("the map has more than 1024 different 8x8 tiles")
         return PALETTE_SLOTS[p] << 12 | self.index[pixels]
 
     def save(self, path, width=512):
@@ -162,13 +175,17 @@ def to_hardware_order(entries, width_tiles, height_tiles):
     return out
 
 
-def build_top(hgss, palettes):
+def picture_tile(picture, tx, ty):
+    """Colors of the picture's 8x8 tile (tx, ty)."""
+    return [picture[ty * 8 + y][tx * 8 + x] for y in range(8) for x in range(8)]
+
+
+def build_top(picture, palettes):
     tileset = Tileset(palettes)
     entries = []
-    ox, oy = TOP_ORIGIN[0] // 8, TOP_ORIGIN[1] // 8
     for ty in range(24):
         for tx in range(32):
-            entries.append(tileset.add(hgss.block_tile(tx - ox, ty - oy)))
+            entries.append(tileset.add(picture_tile(picture, tx, ty)))
     tileset.save(TOWN_MAP / "top_screen_map_tiles.png")
     for name, data in (("top_screen_region_map_tilemap.NSCR", entries), ("top_screen_region_bg_tilemap.NSCR", [0] * 768)):
         path = TOWN_MAP / name
@@ -176,16 +193,14 @@ def build_top(hgss, palettes):
     return len(tileset.tiles)
 
 
-def build_zoomed(hgss, palettes):
+def build_zoomed(picture, palettes):
     tileset = Tileset(palettes)
     entries = []
-    ox, oy = ZOOMED_ORIGIN[0] // 16, ZOOMED_ORIGIN[1] // 16
+    assert ZOOMED_ORIGIN == (2 * TOP_ORIGIN[0], 2 * TOP_ORIGIN[1])
     for ty in range(64):
         for tx in range(64):
-            # Each map tile becomes 2x2 zoomed tiles.
-            src = hgss.block_tile(tx // 2 - ox, ty // 2 - oy)
-            qx, qy = (tx % 2) * 4, (ty % 2) * 4
-            entries.append(tileset.add(src[(qy + y // 2) * 8 + qx + x // 2] for y in range(8) for x in range(8)))
+            # Each 4x4 pixels of the picture become one zoomed tile.
+            entries.append(tileset.add(picture[ty * 4 + y // 2][tx * 4 + x // 2] for y in range(8) for x in range(8)))
     tileset.save(TOWN_MAP / "bottom_screen_map_tiles.png")
     for name, data in (("bottom_screen_region_map_tilemap.NSCR", to_hardware_order(entries, 64, 64)),
                        ("bottom_screen_region_bg_tilemap.NSCR", [0] * 4096)):
@@ -219,14 +234,61 @@ def drop_sinnoh_blocks():
     path.write_text(json.dumps(data, indent=2, ensure_ascii=False) + "\n")
 
 
+def draw_picture(hgss):
+    """The picture both screens show, drawn from HGSS's map: rows of colors."""
+    ox, oy = TOP_ORIGIN[0] // 8, TOP_ORIGIN[1] // 8
+    picture = [[None] * PICTURE_SIZE for _ in range(PICTURE_SIZE)]
+    for by in range(PICTURE_SIZE // 8):
+        for bx in range(PICTURE_SIZE // 8):
+            for i, color in enumerate(hgss.block_tile(bx - ox, by - oy)):
+                picture[by * 8 + i // 8][bx * 8 + i % 8] = color
+    return picture
+
+
+def save_picture(picture, path):
+    """Save as a paletted PNG, so editors offer the map's own colors."""
+    colors = sorted({c for row in picture for c in row})
+    index = {c: i for i, c in enumerate(colors)}
+    image = Image.new("P", (PICTURE_SIZE, PICTURE_SIZE))
+    image.putpalette([v for c in colors for v in c])
+    image.putdata([index[c] for row in picture for c in row])
+    image.save(path, optimize=True)
+
+
+def load_picture(path):
+    image = Image.open(path).convert("RGB")
+    if image.size != (PICTURE_SIZE, PICTURE_SIZE):
+        sys.exit(f"{path} is {image.size[0]}x{image.size[1]}, not {PICTURE_SIZE}x{PICTURE_SIZE}")
+    px = image.load()
+    # The DS has 5 bits per channel.
+    return [[tuple(v // 8 * 8 for v in px[x, y]) for x in range(PICTURE_SIZE)]
+            for y in range(PICTURE_SIZE)]
+
+
+def check_tile_colors(picture):
+    for ty in range(PICTURE_SIZE // 8):
+        for tx in range(PICTURE_SIZE // 8):
+            colors = set(picture_tile(picture, tx, ty))
+            if len(colors) > 15:
+                sys.exit(f"the 8x8 tile at pixel ({tx * 8}, {ty * 8}) has {len(colors)} colors, more than 15")
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    parser.add_argument("hgss", help="path to a pokeheartgold checkout")
-    hgss = HgssMap(Path(parser.parse_args().hgss))
-    # Every block either screen shows (see build_top and build_zoomed).
-    palettes = pack_palettes(hgss.block_tile(x, y) for x in range(-3, 29) for y in range(-3, 29))
-    top, zoomed = build_top(hgss, palettes), build_zoomed(hgss, palettes)
+    source = parser.add_mutually_exclusive_group(required=True)
+    source.add_argument("hgss", nargs="?", help="path to a pokeheartgold checkout")
+    source.add_argument("--png", type=Path, help="build from an edited kanto_town_map.png")
+    args = parser.parse_args()
+    if args.png:
+        picture = load_picture(args.png)
+    else:
+        picture = draw_picture(HgssMap(Path(args.hgss)))
+    check_tile_colors(picture)
+    palettes = pack_palettes(picture_tile(picture, x, y)
+                             for x in range(PICTURE_SIZE // 8) for y in range(PICTURE_SIZE // 8))
+    top, zoomed = build_top(picture, palettes), build_zoomed(picture, palettes)
     update_palettes(palettes)
+    save_picture(picture, PICTURE)
     drop_sinnoh_blocks()
     print(f"top screen: {top} tiles, zoomed in: {zoomed} tiles")
 
