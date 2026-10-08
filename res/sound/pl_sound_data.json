@@ -15542,12 +15542,12 @@
 		}, {
 			"name":	"PLAYER_FIELD",
 			"maxSequences":	1,
-			"channels":	2047,
+			"channels":	43006,
 			"heapSize":	15500
 		}, {
 			"name":	"PLAYER_ME",
 			"maxSequences":	1,
-			"channels":	2047,
+			"channels":	43006,
 			"heapSize":	0
 		}, {
 			"name":	"PLAYER_SE_1",
@@ -15572,7 +15572,7 @@
 		}, {
 			"name":	"PLAYER_BGM",
 			"maxSequences":	1,
-			"channels":	2047,
+			"channels":	43006,
 			"heapSize":	0
 		}],
 	"groupInfo":	[{
