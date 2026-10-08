@@ -1,6 +1,104 @@
 {
-    "bg_events": [],
-    "object_events": [],
+    "bg_events": [
+        {
+            "script": 1,
+            "type": 1,
+            "x": 525,
+            "z": 114,
+            "y": 0,
+            "player_facing_dir": "BG_EVENT_DIR_ALL"
+        },
+        {
+            "script": 8003,
+            "type": 2,
+            "x": 547,
+            "z": 109,
+            "y": 0,
+            "player_facing_dir": "BG_EVENT_DIR_ALL"
+        },
+        {
+            "script": 8004,
+            "type": 2,
+            "x": 579,
+            "z": 123,
+            "y": 0,
+            "player_facing_dir": "BG_EVENT_DIR_ALL"
+        }
+    ],
+    "object_events": [
+        {
+            "id": "obj_R04_picnicgirl_2",
+            "graphics_id": "OBJ_EVENT_GFX_KANTO_PICNICGIRL_2",
+            "movement_type": "MOVEMENT_TYPE_NONE",
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "hidden_flag": "0",
+            "script": 0,
+            "initial_dir": 2,
+            "data": [
+                4,
+                0,
+                0
+            ],
+            "movement_range_x": 0,
+            "movement_range_z": 0,
+            "x": 542,
+            "z": 115,
+            "y": 0
+        },
+        {
+            "id": "obj_R04_picnicgirl_2_2",
+            "graphics_id": "OBJ_EVENT_GFX_KANTO_PICNICGIRL_2",
+            "movement_type": "MOVEMENT_TYPE_NONE",
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "hidden_flag": "0",
+            "script": 0,
+            "initial_dir": 3,
+            "data": [
+                5,
+                0,
+                0
+            ],
+            "movement_range_x": 0,
+            "movement_range_z": 0,
+            "x": 578,
+            "z": 112,
+            "y": 0
+        },
+        {
+            "id": "obj_R04_gsman2",
+            "graphics_id": "OBJ_EVENT_GFX_KANTO_GSMAN2",
+            "movement_type": "MOVEMENT_TYPE_NONE",
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "hidden_flag": "0",
+            "script": 0,
+            "initial_dir": 1,
+            "data": [
+                3,
+                0,
+                0
+            ],
+            "movement_range_x": 0,
+            "movement_range_z": 0,
+            "x": 564,
+            "z": 116,
+            "y": 0
+        },
+        {
+            "id": "obj_R04_monstarball",
+            "graphics_id": "OBJ_EVENT_GFX_POKEBALL",
+            "movement_type": "MOVEMENT_TYPE_NONE",
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "hidden_flag": "FLAG_UNK_0x0044",
+            "script": 7330,
+            "initial_dir": 0,
+            "data": [],
+            "movement_range_x": 0,
+            "movement_range_z": 0,
+            "x": 582,
+            "z": 107,
+            "y": 0
+        }
+    ],
     "warp_events": [
         {
             "x": 523,

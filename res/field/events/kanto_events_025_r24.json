@@ -1,6 +1,63 @@
 {
     "bg_events": [],
-    "object_events": [],
+    "object_events": [
+        {
+            "id": "obj_R24_gsman1",
+            "graphics_id": "OBJ_EVENT_GFX_KANTO_GSMAN1",
+            "movement_type": "MOVEMENT_TYPE_LOOK_WEST",
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "hidden_flag": "0",
+            "script": 1,
+            "initial_dir": 2,
+            "data": [],
+            "movement_range_x": 0,
+            "movement_range_z": 0,
+            "x": 653,
+            "z": 80,
+            "y": 3
+        },
+        {
+            "id": "obj_R24_gswoman2",
+            "graphics_id": "OBJ_EVENT_GFX_KANTO_GSWOMAN2",
+            "movement_type": "MOVEMENT_TYPE_LOOK_WEST",
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "hidden_flag": "0",
+            "script": 2,
+            "initial_dir": 2,
+            "data": [],
+            "movement_range_x": 0,
+            "movement_range_z": 0,
+            "x": 653,
+            "z": 81,
+            "y": 3
+        },
+        {
+            "id": "obj_R24_rocketm",
+            "graphics_id": "OBJ_EVENT_GFX_KANTO_ROCKETM",
+            "movement_type": "MOVEMENT_TYPE_LOOK_SOUTH",
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "hidden_flag": "FLAG_UNK_0x005B",
+            "script": 3,
+            "initial_dir": 1,
+            "data": [],
+            "movement_range_x": 0,
+            "movement_range_z": 0,
+            "x": 656,
+            "z": 81,
+            "y": 3
+        }
+    ],
     "warp_events": [],
-    "coord_events": []
+    "coord_events": [
+        {
+            "script": 4,
+            "x": 653,
+            "z": 76,
+            "y": 0,
+            "width": 4,
+            "length": 10,
+            "var": "VAR_ICEBERG_RUINS_STATE",
+            "value": 1
+        }
+    ]
 }

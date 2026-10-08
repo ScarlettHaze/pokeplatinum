@@ -1,6 +1,292 @@
 {
-    "bg_events": [],
-    "object_events": [],
+    "bg_events": [
+        {
+            "script": 3,
+            "type": 1,
+            "x": 733,
+            "z": 38,
+            "y": 0,
+            "player_facing_dir": "BG_EVENT_DIR_ALL"
+        },
+        {
+            "script": 8012,
+            "type": 2,
+            "x": 655,
+            "z": 41,
+            "y": 0,
+            "player_facing_dir": "BG_EVENT_DIR_ALL"
+        }
+    ],
+    "object_events": [
+        {
+            "id": "obj_R25_gsboy1",
+            "graphics_id": "OBJ_EVENT_GFX_KANTO_GSBOY1",
+            "movement_type": "MOVEMENT_TYPE_NONE",
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "hidden_flag": "0",
+            "script": 0,
+            "initial_dir": 1,
+            "data": [
+                3,
+                0,
+                0
+            ],
+            "movement_range_x": 0,
+            "movement_range_z": 0,
+            "x": 663,
+            "z": 46,
+            "y": 0
+        },
+        {
+            "id": "obj_R25_gsgirl1",
+            "graphics_id": "OBJ_EVENT_GFX_KANTO_GSGIRL1",
+            "movement_type": "MOVEMENT_TYPE_NONE",
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "hidden_flag": "0",
+            "script": 0,
+            "initial_dir": 0,
+            "data": [
+                3,
+                0,
+                0
+            ],
+            "movement_range_x": 0,
+            "movement_range_z": 0,
+            "x": 674,
+            "z": 49,
+            "y": 0
+        },
+        {
+            "id": "obj_R25_gsboy1_2",
+            "graphics_id": "OBJ_EVENT_GFX_KANTO_GSBOY1",
+            "movement_type": "MOVEMENT_TYPE_NONE",
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "hidden_flag": "0",
+            "script": 0,
+            "initial_dir": 2,
+            "data": [
+                4,
+                0,
+                0
+            ],
+            "movement_range_x": 0,
+            "movement_range_z": 0,
+            "x": 692,
+            "z": 46,
+            "y": 0
+        },
+        {
+            "id": "obj_R25_gsgirl1_2",
+            "graphics_id": "OBJ_EVENT_GFX_KANTO_GSGIRL1",
+            "movement_type": "MOVEMENT_TYPE_NONE",
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "hidden_flag": "0",
+            "script": 0,
+            "initial_dir": 3,
+            "data": [
+                4,
+                0,
+                0
+            ],
+            "movement_range_x": 0,
+            "movement_range_z": 0,
+            "x": 700,
+            "z": 46,
+            "y": 0
+        },
+        {
+            "id": "obj_R25_gsgirl1_3",
+            "graphics_id": "OBJ_EVENT_GFX_KANTO_GSGIRL1",
+            "movement_type": "MOVEMENT_TYPE_NONE",
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "hidden_flag": "0",
+            "script": 0,
+            "initial_dir": 0,
+            "data": [
+                3,
+                0,
+                0
+            ],
+            "movement_range_x": 0,
+            "movement_range_z": 0,
+            "x": 704,
+            "z": 49,
+            "y": 0
+        },
+        {
+            "id": "obj_R25_campboy_2",
+            "graphics_id": "OBJ_EVENT_GFX_KANTO_CAMPBOY_2",
+            "movement_type": "MOVEMENT_TYPE_NONE",
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "hidden_flag": "0",
+            "script": 0,
+            "initial_dir": 1,
+            "data": [
+                2,
+                0,
+                0
+            ],
+            "movement_range_x": 0,
+            "movement_range_z": 0,
+            "x": 695,
+            "z": 38,
+            "y": 0
+        },
+        {
+            "id": "obj_R25_gsassistantm",
+            "graphics_id": "OBJ_EVENT_GFX_KANTO_GSASSISTANTM",
+            "movement_type": "MOVEMENT_TYPE_NONE",
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "hidden_flag": "0",
+            "script": 0,
+            "initial_dir": 2,
+            "data": [
+                1,
+                0,
+                0
+            ],
+            "movement_range_x": 0,
+            "movement_range_z": 0,
+            "x": 712,
+            "z": 43,
+            "y": 0
+        },
+        {
+            "id": "obj_R25_gsman3",
+            "graphics_id": "OBJ_EVENT_GFX_KANTO_GSMAN3",
+            "movement_type": "MOVEMENT_TYPE_NONE",
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "hidden_flag": "0",
+            "script": 2,
+            "initial_dir": 2,
+            "data": [],
+            "movement_range_x": 0,
+            "movement_range_z": 0,
+            "x": 720,
+            "z": 45,
+            "y": 0
+        },
+        {
+            "id": "obj_R25_gsleader11",
+            "graphics_id": "OBJ_EVENT_GFX_KANTO_GSLEADER11",
+            "movement_type": "MOVEMENT_TYPE_NONE",
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "hidden_flag": "FLAG_UNK_0x005C",
+            "script": 0,
+            "initial_dir": 1,
+            "data": [],
+            "movement_range_x": 0,
+            "movement_range_z": 0,
+            "x": 749,
+            "z": 47,
+            "y": 0
+        },
+        {
+            "id": "obj_R25_gsman1",
+            "graphics_id": "OBJ_EVENT_GFX_KANTO_GSMAN1",
+            "movement_type": "MOVEMENT_TYPE_NONE",
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "hidden_flag": "FLAG_UNK_0x005D",
+            "script": 0,
+            "initial_dir": 1,
+            "data": [],
+            "movement_range_x": 0,
+            "movement_range_z": 0,
+            "x": 748,
+            "z": 47,
+            "y": 0
+        },
+        {
+            "id": "obj_R25_tree",
+            "graphics_id": "OBJ_EVENT_GFX_CUT_TREE",
+            "movement_type": "MOVEMENT_TYPE_NONE",
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "hidden_flag": "FLAG_MAP_LOCAL_0x10",
+            "script": 10000,
+            "initial_dir": 0,
+            "data": [],
+            "movement_range_x": 0,
+            "movement_range_z": 0,
+            "x": 716,
+            "z": 40,
+            "y": 0
+        },
+        {
+            "id": "obj_R25_monstarball",
+            "graphics_id": "OBJ_EVENT_GFX_POKEBALL",
+            "movement_type": "MOVEMENT_TYPE_NONE",
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "hidden_flag": "FLAG_UNK_0x005E",
+            "script": 7343,
+            "initial_dir": 0,
+            "data": [],
+            "movement_range_x": 0,
+            "movement_range_z": 0,
+            "x": 708,
+            "z": 36,
+            "y": 0
+        },
+        {
+            "id": "obj_R25_tsure_poke_static_suicune",
+            "graphics_id": "OBJ_EVENT_GFX_KANTO_FOLLOWER_MON_STATIC_SUICUNE",
+            "movement_type": "MOVEMENT_TYPE_NONE",
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "hidden_flag": "FLAG_UNK_0x005F",
+            "script": 8,
+            "initial_dir": 1,
+            "data": [],
+            "movement_range_x": 0,
+            "movement_range_z": 0,
+            "x": 749,
+            "z": 37,
+            "y": 0
+        },
+        {
+            "id": "obj_R25_minaki",
+            "graphics_id": "OBJ_EVENT_GFX_KANTO_MINAKI",
+            "movement_type": "MOVEMENT_TYPE_NONE",
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "hidden_flag": "FLAG_UNK_0x0060",
+            "script": 6,
+            "initial_dir": 3,
+            "data": [],
+            "movement_range_x": 0,
+            "movement_range_z": 0,
+            "x": 737,
+            "z": 42,
+            "y": 0
+        },
+        {
+            "id": "obj_R25_minaki_2",
+            "graphics_id": "OBJ_EVENT_GFX_KANTO_MINAKI",
+            "movement_type": "MOVEMENT_TYPE_NONE",
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "hidden_flag": "FLAG_UNK_0x0061",
+            "script": 7,
+            "initial_dir": 0,
+            "data": [],
+            "movement_range_x": 0,
+            "movement_range_z": 0,
+            "x": 750,
+            "z": 40,
+            "y": 0
+        },
+        {
+            "id": "obj_R25_gsleader11_2",
+            "graphics_id": "OBJ_EVENT_GFX_KANTO_GSLEADER11",
+            "movement_type": "MOVEMENT_TYPE_NONE",
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "hidden_flag": "FLAG_UNK_0x0062",
+            "script": 10,
+            "initial_dir": 3,
+            "data": [],
+            "movement_range_x": 0,
+            "movement_range_z": 0,
+            "x": 750,
+            "z": 46,
+            "y": 0
+        }
+    ],
     "warp_events": [
         {
             "x": 735,
@@ -9,5 +295,26 @@
             "dest_warp_id": 0
         }
     ],
-    "coord_events": []
+    "coord_events": [
+        {
+            "script": 1,
+            "x": 746,
+            "z": 40,
+            "y": 0,
+            "width": 1,
+            "length": 3,
+            "var": "VAR_ROCK_PEAK_RUINS_STATE",
+            "value": 1
+        },
+        {
+            "script": 5,
+            "x": 746,
+            "z": 40,
+            "y": 0,
+            "width": 1,
+            "length": 3,
+            "var": "VAR_UNUSED_0x406C",
+            "value": 1
+        }
+    ]
 }

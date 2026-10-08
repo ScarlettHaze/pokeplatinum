@@ -218,6 +218,8 @@ const u16 VeilstoneDeptStoreStock_B1F_DOWN_LEFT[] = {
     SHOP_ITEM_END
 };
 
+#include "data/kanto_marts.h"
+
 const u16 *PokeMartSpecialties[] = {
     [MART_SPECIALTIES_ID_JUBILIFE] = JubilifeMartSpecialties,
     [MART_SPECIALTIES_ID_OREBURGH] = OreburghMartSpecialties,
@@ -238,7 +240,8 @@ const u16 *PokeMartSpecialties[] = {
     [MART_SPECIALTIES_ID_CANALAVE] = CanalaveMartSpecialties,
     [MART_SPECIALTIES_ID_SUNYSHORE] = SunyshoreMartSpecialties,
     [MART_SPECIALTIES_ID_POKEMON_LEAGUE] = PokemonLeagueMartSpecialties,
-    [MART_SPECIALTIES_ID_VEILSTONE_B1F] = VeilstoneDeptStoreStock_B1F_DOWN_LEFT
+    [MART_SPECIALTIES_ID_VEILSTONE_B1F] = VeilstoneDeptStoreStock_B1F_DOWN_LEFT,
+    KANTO_MART_SPECIALTIES
 };
 
 const u16 VeilstoneDeptStoreStock_4F_UP[] = {

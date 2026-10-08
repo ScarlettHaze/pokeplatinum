@@ -1,6 +1,202 @@
 {
-    "bg_events": [],
-    "object_events": [],
+    "bg_events": [
+        {
+            "script": 4,
+            "type": 1,
+            "x": 680,
+            "z": 303,
+            "y": 0,
+            "player_facing_dir": "BG_EVENT_DIR_ALL"
+        },
+        {
+            "script": 8007,
+            "type": 2,
+            "x": 699,
+            "z": 292,
+            "y": 0,
+            "player_facing_dir": "BG_EVENT_DIR_ALL"
+        },
+        {
+            "script": 3,
+            "type": 1,
+            "x": 725,
+            "z": 304,
+            "y": 0,
+            "player_facing_dir": "BG_EVENT_DIR_ALL"
+        }
+    ],
+    "object_events": [
+        {
+            "id": "obj_R11_mystery_2",
+            "graphics_id": "OBJ_EVENT_GFX_KANTO_MYSTERY_2",
+            "movement_type": "MOVEMENT_TYPE_LOOK_SOUTH_AND_EAST",
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "hidden_flag": "0",
+            "script": 0,
+            "initial_dir": 3,
+            "data": [
+                3,
+                0,
+                0
+            ],
+            "movement_range_x": 0,
+            "movement_range_z": 0,
+            "x": 691,
+            "z": 300,
+            "y": 0
+        },
+        {
+            "id": "obj_R11_mystery_2_2",
+            "graphics_id": "OBJ_EVENT_GFX_KANTO_MYSTERY_2",
+            "movement_type": "MOVEMENT_TYPE_WALK_EAST_SOUTH_WEST_NORTH",
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "hidden_flag": "0",
+            "script": 0,
+            "initial_dir": 1,
+            "data": [
+                2,
+                0,
+                0
+            ],
+            "movement_range_x": 10,
+            "movement_range_z": 5,
+            "x": 708,
+            "z": 301,
+            "y": 0
+        },
+        {
+            "id": "obj_R11_gsboy2",
+            "graphics_id": "OBJ_EVENT_GFX_KANTO_GSBOY2",
+            "movement_type": "MOVEMENT_TYPE_WANDER_NORTH_AND_SOUTH",
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "hidden_flag": "0",
+            "script": 0,
+            "initial_dir": 0,
+            "data": [
+                3,
+                0,
+                0
+            ],
+            "movement_range_x": 0,
+            "movement_range_z": 0,
+            "x": 700,
+            "z": 302,
+            "y": 0
+        },
+        {
+            "id": "obj_R11_gsboy2_2",
+            "graphics_id": "OBJ_EVENT_GFX_KANTO_GSBOY2",
+            "movement_type": "MOVEMENT_TYPE_WALK_BACK_AND_FORTH",
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "hidden_flag": "0",
+            "script": 0,
+            "initial_dir": 3,
+            "data": [
+                1,
+                0,
+                0
+            ],
+            "movement_range_x": 9,
+            "movement_range_z": 0,
+            "x": 700,
+            "z": 295,
+            "y": 0
+        },
+        {
+            "id": "obj_R11_kabigon",
+            "graphics_id": "OBJ_EVENT_GFX_KANTO_KABIGON",
+            "movement_type": "MOVEMENT_TYPE_NONE",
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "hidden_flag": "FLAG_UNK_0x004F",
+            "script": 1,
+            "initial_dir": 0,
+            "data": [],
+            "movement_range_x": 0,
+            "movement_range_z": 0,
+            "x": 682,
+            "z": 304,
+            "y": 0
+        },
+        {
+            "id": "obj_R11_bonguri",
+            "graphics_id": "OBJ_EVENT_GFX_KANTO_BONGURI",
+            "movement_type": "MOVEMENT_TYPE_NONE",
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "hidden_flag": "0",
+            "script": 0,
+            "initial_dir": 0,
+            "data": [
+                3,
+                0,
+                0
+            ],
+            "movement_range_x": 0,
+            "movement_range_z": 0,
+            "x": 706,
+            "z": 305,
+            "y": 0
+        },
+        {
+            "id": "obj_R11_monstarball",
+            "graphics_id": "OBJ_EVENT_GFX_POKEBALL",
+            "movement_type": "MOVEMENT_TYPE_NONE",
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "hidden_flag": "FLAG_UNK_0x0050",
+            "script": 7338,
+            "initial_dir": 0,
+            "data": [],
+            "movement_range_x": 0,
+            "movement_range_z": 0,
+            "x": 721,
+            "z": 292,
+            "y": 0
+        },
+        {
+            "id": "obj_R11_gsbabyboy1",
+            "graphics_id": "OBJ_EVENT_GFX_KANTO_GSBABYBOY1",
+            "movement_type": "MOVEMENT_TYPE_LOOK_SOUTH",
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "hidden_flag": "FLAG_UNK_0x004F",
+            "script": 1,
+            "initial_dir": 0,
+            "data": [],
+            "movement_range_x": 0,
+            "movement_range_z": 0,
+            "x": 683,
+            "z": 303,
+            "y": 0
+        },
+        {
+            "id": "obj_R11_gsbabyboy1_2",
+            "graphics_id": "OBJ_EVENT_GFX_KANTO_GSBABYBOY1",
+            "movement_type": "MOVEMENT_TYPE_LOOK_SOUTH",
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "hidden_flag": "FLAG_UNK_0x004F",
+            "script": 1,
+            "initial_dir": 0,
+            "data": [],
+            "movement_range_x": 0,
+            "movement_range_z": 0,
+            "x": 682,
+            "z": 303,
+            "y": 0
+        },
+        {
+            "id": "obj_R11_gsbabyboy1_3",
+            "graphics_id": "OBJ_EVENT_GFX_KANTO_GSBABYBOY1",
+            "movement_type": "MOVEMENT_TYPE_LOOK_SOUTH",
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "hidden_flag": "FLAG_UNK_0x004F",
+            "script": 1,
+            "initial_dir": 0,
+            "data": [],
+            "movement_range_x": 0,
+            "movement_range_z": 0,
+            "x": 683,
+            "z": 304,
+            "y": 0
+        }
+    ],
     "warp_events": [
         {
             "x": 729,

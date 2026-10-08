@@ -50,6 +50,8 @@ field_board_pngs = files(
     'city_map_snowpoint.png',
     'city_map_pokemon_league.png',
     'city_map_fight_area.png',
+    'city_map_kanto_19.png',
+    'city_map_kanto_20.png',
 )
 
 field_board_pals = files('signpost.pal')

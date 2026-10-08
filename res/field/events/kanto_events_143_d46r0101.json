@@ -1,6 +1,264 @@
 {
-    "bg_events": [],
-    "object_events": [],
+    "bg_events": [
+        {
+            "script": 8057,
+            "type": 2,
+            "x": 11,
+            "z": 71,
+            "y": 0,
+            "player_facing_dir": "BG_EVENT_DIR_ALL"
+        },
+        {
+            "script": 8058,
+            "type": 2,
+            "x": 26,
+            "z": 41,
+            "y": 0,
+            "player_facing_dir": "BG_EVENT_DIR_ALL"
+        },
+        {
+            "script": 8059,
+            "type": 2,
+            "x": 12,
+            "z": 46,
+            "y": 0,
+            "player_facing_dir": "BG_EVENT_DIR_ALL"
+        },
+        {
+            "script": 8060,
+            "type": 2,
+            "x": 47,
+            "z": 46,
+            "y": 0,
+            "player_facing_dir": "BG_EVENT_DIR_ALL"
+        },
+        {
+            "script": 8061,
+            "type": 2,
+            "x": 49,
+            "z": 18,
+            "y": 0,
+            "player_facing_dir": "BG_EVENT_DIR_ALL"
+        },
+        {
+            "script": 8062,
+            "type": 2,
+            "x": 32,
+            "z": 57,
+            "y": 0,
+            "player_facing_dir": "BG_EVENT_DIR_ALL"
+        },
+        {
+            "script": 8063,
+            "type": 2,
+            "x": 50,
+            "z": 58,
+            "y": 0,
+            "player_facing_dir": "BG_EVENT_DIR_ALL"
+        }
+    ],
+    "object_events": [
+        {
+            "id": "obj_D46R0101_gsleader2",
+            "graphics_id": "OBJ_EVENT_GFX_KANTO_GSLEADER2",
+            "movement_type": "MOVEMENT_TYPE_NONE",
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "hidden_flag": "FLAG_UNUSED_0x0095",
+            "script": 1,
+            "initial_dir": 1,
+            "data": [],
+            "movement_range_x": 0,
+            "movement_range_z": 0,
+            "x": 25,
+            "z": 71,
+            "y": 0
+        },
+        {
+            "id": "obj_D46R0101_monstarball",
+            "graphics_id": "OBJ_EVENT_GFX_POKEBALL",
+            "movement_type": "MOVEMENT_TYPE_NONE",
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "hidden_flag": "FLAG_UNUSED_0x0096",
+            "script": 7367,
+            "initial_dir": 0,
+            "data": [],
+            "movement_range_x": 0,
+            "movement_range_z": 0,
+            "x": 23,
+            "z": 17,
+            "y": 0
+        },
+        {
+            "id": "obj_D46R0101_monstarball_2",
+            "graphics_id": "OBJ_EVENT_GFX_POKEBALL",
+            "movement_type": "MOVEMENT_TYPE_NONE",
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "hidden_flag": "FLAG_RECEIVED_VEILSTONE_CITY_NORTHEAST_HOUSE_PORYGON",
+            "script": 7368,
+            "initial_dir": 0,
+            "data": [],
+            "movement_range_x": 0,
+            "movement_range_z": 0,
+            "x": 42,
+            "z": 32,
+            "y": 0
+        },
+        {
+            "id": "obj_D46R0101_monstarball_3",
+            "graphics_id": "OBJ_EVENT_GFX_POKEBALL",
+            "movement_type": "MOVEMENT_TYPE_NONE",
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "hidden_flag": "FLAG_CAUGHT_ROAMING_LEGENDARY_BIRDS",
+            "script": 7369,
+            "initial_dir": 0,
+            "data": [],
+            "movement_range_x": 0,
+            "movement_range_z": 0,
+            "x": 20,
+            "z": 49,
+            "y": 0
+        },
+        {
+            "id": "obj_D46R0101_monstarball_4",
+            "graphics_id": "OBJ_EVENT_GFX_POKEBALL",
+            "movement_type": "MOVEMENT_TYPE_NONE",
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "hidden_flag": "FLAG_ACTIVATED_ROAMING_LEGENDARY_BIRDS",
+            "script": 7370,
+            "initial_dir": 0,
+            "data": [],
+            "movement_range_x": 0,
+            "movement_range_z": 0,
+            "x": 50,
+            "z": 60,
+            "y": 0
+        },
+        {
+            "id": "obj_D46R0101_tree",
+            "graphics_id": "OBJ_EVENT_GFX_CUT_TREE",
+            "movement_type": "MOVEMENT_TYPE_NONE",
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "hidden_flag": "FLAG_MAP_LOCAL_0x10",
+            "script": 10000,
+            "initial_dir": 0,
+            "data": [],
+            "movement_range_x": 0,
+            "movement_range_z": 0,
+            "x": 23,
+            "z": 70,
+            "y": 0
+        },
+        {
+            "id": "obj_D46R0101_tree_2",
+            "graphics_id": "OBJ_EVENT_GFX_CUT_TREE",
+            "movement_type": "MOVEMENT_TYPE_NONE",
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "hidden_flag": "FLAG_MAP_LOCAL_0x11",
+            "script": 10000,
+            "initial_dir": 0,
+            "data": [],
+            "movement_range_x": 0,
+            "movement_range_z": 0,
+            "x": 42,
+            "z": 70,
+            "y": 0
+        },
+        {
+            "id": "obj_D46R0101_gsboy3",
+            "graphics_id": "OBJ_EVENT_GFX_KANTO_GSBOY3",
+            "movement_type": "MOVEMENT_TYPE_LOOK_WEST",
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "hidden_flag": "0",
+            "script": 0,
+            "initial_dir": 2,
+            "data": [
+                3,
+                0,
+                0
+            ],
+            "movement_range_x": 0,
+            "movement_range_z": 0,
+            "x": 48,
+            "z": 73,
+            "y": 0
+        },
+        {
+            "id": "obj_D46R0101_gsboy3_2",
+            "graphics_id": "OBJ_EVENT_GFX_KANTO_GSBOY3",
+            "movement_type": "MOVEMENT_TYPE_LOOK_SOUTH",
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "hidden_flag": "0",
+            "script": 0,
+            "initial_dir": 1,
+            "data": [
+                3,
+                0,
+                0
+            ],
+            "movement_range_x": 0,
+            "movement_range_z": 0,
+            "x": 47,
+            "z": 54,
+            "y": 0
+        },
+        {
+            "id": "obj_D46R0101_gsboy3_3",
+            "graphics_id": "OBJ_EVENT_GFX_KANTO_GSBOY3",
+            "movement_type": "MOVEMENT_TYPE_LOOK_EAST",
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "hidden_flag": "0",
+            "script": 0,
+            "initial_dir": 3,
+            "data": [
+                3,
+                0,
+                0
+            ],
+            "movement_range_x": 0,
+            "movement_range_z": 0,
+            "x": 47,
+            "z": 39,
+            "y": 0
+        },
+        {
+            "id": "obj_D46R0101_gsboy3_4",
+            "graphics_id": "OBJ_EVENT_GFX_KANTO_GSBOY3",
+            "movement_type": "MOVEMENT_TYPE_WALK_NORTH_EAST_SOUTH_WEST",
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "hidden_flag": "0",
+            "script": 0,
+            "initial_dir": 0,
+            "data": [
+                1,
+                0,
+                0
+            ],
+            "movement_range_x": 5,
+            "movement_range_z": 1,
+            "x": 37,
+            "z": 17,
+            "y": 0
+        },
+        {
+            "id": "obj_D46R0101_gsboy3_5",
+            "graphics_id": "OBJ_EVENT_GFX_KANTO_GSBOY3",
+            "movement_type": "MOVEMENT_TYPE_LOOK_EAST",
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "hidden_flag": "0",
+            "script": 0,
+            "initial_dir": 3,
+            "data": [
+                5,
+                0,
+                0
+            ],
+            "movement_range_x": 0,
+            "movement_range_z": 0,
+            "x": 14,
+            "z": 28,
+            "y": 0
+        }
+    ],
     "warp_events": [
         {
             "x": 32,

@@ -1,0 +1,29 @@
+#include "macros/scrcmd.inc"
+#include "res/text/bank/kanto_msg_0741_w19r0101.h"
+#include "res/field/events/kanto_events_379_w19r0101.h"
+
+
+    ScriptEntry scr_seq_W19R0101_000
+    ScriptEntryEnd
+
+scr_seq_W19R0101_000:
+    PlaySE SE_CONFIRM_sseq_3
+    LockAll
+    FacePlayer
+    CheckBadgeAcquired 6, VAR_RESULT
+    CompareVar VAR_RESULT, 1
+    GoToIf 1, _002C
+    Message msg_0741_W19R0101_00000
+    WaitButton
+    CloseMessage
+    ReleaseAll
+    End
+
+_002C:
+    Message msg_0741_W19R0101_00001
+    WaitButton
+    CloseMessage
+    ReleaseAll
+    End
+
+    .balign 4, 0
