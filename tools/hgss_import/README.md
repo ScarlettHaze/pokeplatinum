@@ -89,8 +89,11 @@ Done:
 - `import_kanto_music.py` extracts the 36 Kanto songs from HGSS's sound
   archive into `res/sound/kanto/`.
 - Each song gets its own bank and a compact wave archive. These hold only the
-  samples the song plays. HGSS's basic samples differ from Platinum's, and
-  both can't sit in the sound heap at once.
+  samples the song plays. HGSS keeps its basic samples resident in the sound
+  heap, as Platinum keeps its own, and both can't sit there at once. A sample
+  that Platinum's basic wave archive also holds plays from that resident
+  archive instead, as HGSS's songs play from theirs; that saves 40 to 80 KB
+  a song. The importer reads Platinum's basic wave archive from the build.
 - The field player loads a Kanto song's own bank and samples whenever the
   song changes, including when walking from one map to the next. Sinnoh's
   songs shared one bank, so Platinum didn't reload it there.
@@ -99,9 +102,17 @@ Done:
 - `SOUND_SYSTEM_HEAP_SIZE` grows by 160 KB, out of the main arena's spare
   room. That room was measured at 188 KB.
 - Surf and the bicycle play HGSS's songs (`KANTO_SURF_BGM` and
-  `KANTO_BICYCLE_BGM` in `include/data/kanto_sound.h`). Surf's is the largest
-  song and leaves 37 KB of the sound heap. That is enough for every sound
-  effect group a menu or other sub-screen loads; the largest is about 33 KB.
+  `KANTO_BICYCLE_BGM` in `include/data/kanto_sound.h`). Surf's is the
+  largest field song and leaves 78 KB of the sound heap. That is enough for
+  every sound effect group a menu or other sub-screen loads; the largest is
+  about 33 KB.
+- Battles play HGSS's Kanto music, as HGSS picks it: Kanto's wild, trainer
+  and gym leader themes, HGSS's gym leader theme for the Elite Four, and its
+  Champion and rival themes. The victory songs are HGSS's too: one for wild
+  Pokémon, one for trainers and one for gym leaders, the Elite Four and the
+  Champion. Sinnoh's legendaries, Team Galactic and the Battle Frontier keep
+  Platinum's music. A battle song has 217 KB of the sound heap; the largest,
+  Kanto's gym leader theme, leaves 17 KB.
 - `nitrosfx` aligned the sound archive's files wrongly whenever its headers
   didn't end on a 32 byte boundary, and the game hung loading sounds at boot.
   This is fixed. Archives that were already aligned build the same.
@@ -110,8 +121,10 @@ Still to do:
 
 - Confirm that the larger sound heap leaves enough main arena for every
   mode. The untested cases are Wi-Fi, the Union Room and the Battle Frontier.
-- Battle, trainer-encounter, evolution and other music still play Platinum's
-  tracks. Only the map music has been ported.
+- Trainer-encounter, evolution and other music still play Platinum's
+  tracks. Only the map, Surf, bicycle, battle and victory music has been
+  ported.
+- HGSS's low HP music in battle isn't ported: Platinum has none.
 
 ### 2. Trainers and the rest of the scripts (the biggest job)
 
@@ -168,6 +181,14 @@ walked them yet.
 
 Surf and the bicycle were tested on Route 21, Pallet Town and Route 1: each
 song loads and starts, and the Bag and start menu open while Surf's plays.
+Every battle song, then its victory song, then the map's song were played
+through the calls a battle makes, and all of them load.
+
+A wild battle on Route 1 started from the test patch fails after the
+encounter starts, before its music matters: the battle's parties read as
+empty and the screen stays black. It fails the same way without the battle
+music, so it may come from the test patch's shortcuts (skipping the intro,
+adding a Pokémon when the map loads) rather than the game. Not yet known.
 
 Emulator testing used py-desmume with a temporary, uncommitted patch. The
 patch skips the intro, names the player, gives a Pokémon, and registers the

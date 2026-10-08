@@ -43,6 +43,8 @@
 #include "sound_playback.h"
 #include "trainer_info.h"
 
+#include "data/kanto_sound.h"
+
 #include "res/battle/scripts/sub_seq.naix"
 
 enum BattleControllerState {
@@ -4277,7 +4279,7 @@ static BOOL BattleControllerPlayer_CheckBattleOver(BattleSystem *battleSys, Batt
         case TRAINER_CLASS_LEADER_CANDICE:
         case TRAINER_CLASS_LEADER_BYRON:
         case TRAINER_CLASS_LEADER_VOLKNER:
-            Sound_PlayBGM(VICTORY_GYM_LEADER_sseq);
+            Sound_PlayBGM(KANTO_LEADER_VICTORY_BGM);
             break;
 
         case TRAINER_CLASS_TOWER_TYCOON:
@@ -4289,7 +4291,7 @@ static BOOL BattleControllerPlayer_CheckBattleOver(BattleSystem *battleSys, Batt
             break;
 
         case TRAINER_CLASS_CHAMPION_CYNTHIA:
-            Sound_PlayBGM(VICTORY_CHAMPION_sseq);
+            Sound_PlayBGM(KANTO_LEADER_VICTORY_BGM);
             break;
 
         case TRAINER_CLASS_COMMANDER_MARS:
@@ -4308,11 +4310,11 @@ static BOOL BattleControllerPlayer_CheckBattleOver(BattleSystem *battleSys, Batt
         case TRAINER_CLASS_ELITE_FOUR_BERTHA:
         case TRAINER_CLASS_ELITE_FOUR_FLINT:
         case TRAINER_CLASS_ELITE_FOUR_LUCIAN:
-            Sound_PlayBGM(VICTORY_ELITE_FOUR_sseq);
+            Sound_PlayBGM(KANTO_LEADER_VICTORY_BGM);
             break;
 
         default:
-            Sound_PlayBGM(VICTORY_TRAINER_sseq);
+            Sound_PlayBGM(KANTO_TRAINER_VICTORY_BGM);
             break;
         }
 

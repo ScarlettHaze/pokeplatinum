@@ -73,6 +73,8 @@
 #include "unk_0201567C.h"
 #include "unk_0208C098.h"
 
+#include "data/kanto_sound.h"
+
 #include "res/battle/scripts/sub_seq.naix"
 #include "res/text/bank/battle_strings.h"
 
@@ -9729,7 +9731,7 @@ static void BattleScript_GetExpTask(SysTask *task, void *inData)
             && data->battleCtx->battleMons[BATTLER_ENEMY_1].curHP + data->battleCtx->battleMons[BATTLER_ENEMY_2].curHP == 0
             && Pokemon_GetValue(mon, MON_DATA_HP, NULL)
             && data->battleCtx->expJinglePlayed == FALSE) {
-            Sound_PlayBGM(VICTORY_WILD_POKEMON_sseq);
+            Sound_PlayBGM(KANTO_WILD_VICTORY_BGM);
             data->battleCtx->expJinglePlayed = TRUE;
             BattleSystem_SetRedHPSoundFlag(data->battleSys, 2); // turn off
         }
@@ -10494,7 +10496,7 @@ static void BattleScript_CatchMonTask(SysTask *task, void *inData)
             data->tmpData[CATCH_MON_DELAY] = 30;
             data->seqNum = SEQ_CATCH_MON_WAIT_PRINT_POKEMON_WAS_CAUGHT;
 
-            Sound_PlayBGM(VICTORY_WILD_POKEMON_sseq);
+            Sound_PlayBGM(KANTO_WILD_VICTORY_BGM);
             BattleSystem_SetRedHPSoundFlag(data->battleSys, 2);
         }
         break;

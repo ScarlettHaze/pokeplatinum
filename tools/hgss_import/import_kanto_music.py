@@ -1,17 +1,21 @@
 #!/usr/bin/env python3
 """Import the music of HGSS's Kanto maps into Platinum's sound archive.
 
-Each HGSS song plays instruments from HGSS's basic wave archive, which differs
-from Platinum's (both games keep their own resident in the sound heap, and
-there is no room for both). So each song gets its own copy of its bank whose
-instruments play from a compact wave archive holding only the samples the
-song selects: SEQ_KANTO_<song>, BANK_KANTO_<song> and WAVE_ARC_KANTO_<song>.
-Instruments the song never selects play the archive's first sample.
+Each HGSS song plays instruments from HGSS's basic wave archive, which HGSS
+keeps resident in the sound heap, as Platinum keeps its own. There is no room
+for both. So each song gets its own copy of its bank: samples that Platinum's
+basic wave archive also holds play from that (resident) archive, and the rest
+from a compact wave archive holding only the samples the song selects:
+SEQ_KANTO_<song>, BANK_KANTO_<song> and WAVE_ARC_KANTO_<song>. Instruments
+the song never selects play the compact archive's first sample.
+
+Platinum's basic wave archive is read from the build, so build the ROM once
+first.
 
 The songs are written to res/sound/kanto/ and listed in pl_sound_data.json;
-the Kanto map headers then use them. HGSS's Surf and bicycle songs are
-imported too, and include/data/kanto_sound.h names them for the code that
-plays them. SOUND_SYSTEM_HEAP_SIZE leaves room for
+the Kanto map headers then use them. HGSS's Surf, bicycle, battle and
+victory songs are imported too, and include/data/kanto_sound.h names them for
+the code that plays them. SOUND_SYSTEM_HEAP_SIZE leaves room for
 the largest one.
 
 Run after import_kanto_world.py. Usage:
@@ -31,17 +35,35 @@ PL = Path(__file__).resolve().parents[2]
 SOUND = PL / "res/sound"
 OUT = SOUND / "kanto"
 PREFIX = "KANTO_"
+PL_BASIC_SWAR = PL / "build/res/sound/WAVARC/WAVE_ARC_BASIC/WAVE_ARC_BASIC.swar"
+BASIC_SLOT = 1
 # Songs HGSS's code plays rather than its map headers, and the names
 # kanto_sound.h gives them.
-CODE_SONGS = {"SEQ_GS_NAMINORI": "KANTO_SURF_BGM", "SEQ_GS_BICYCLE": "KANTO_BICYCLE_BGM"}
+CODE_SONGS = {
+    "SEQ_GS_NAMINORI": "KANTO_SURF_BGM",
+    "SEQ_GS_BICYCLE": "KANTO_BICYCLE_BGM",
+    # HGSS plays these in Kanto (BattleSetup_GetWildBattleMusic and its table).
+    "SEQ_GS_VS_NORAPOKE_KANTO": "KANTO_WILD_BATTLE_BGM",
+    "SEQ_GS_VS_TRAINER_KANTO": "KANTO_TRAINER_BATTLE_BGM",
+    "SEQ_GS_VS_GYMREADER_KANTO": "KANTO_GYM_LEADER_BATTLE_BGM",
+    "SEQ_GS_VS_GYMREADER": "KANTO_ELITE_FOUR_BATTLE_BGM",
+    "SEQ_GS_VS_CHAMP": "KANTO_CHAMPION_BATTLE_BGM",
+    "SEQ_GS_VS_RIVAL": "KANTO_RIVAL_BATTLE_BGM",
+    "SEQ_GS_WIN2": "KANTO_WILD_VICTORY_BGM",
+    "SEQ_GS_WIN1": "KANTO_TRAINER_VICTORY_BGM",
+    "SEQ_GS_WIN3": "KANTO_LEADER_VICTORY_BGM",
+}
 
 
 def kanto_name(hgss_seq):
     return "SEQ_" + PREFIX + hgss_seq.removeprefix("SEQ_")
 
 
-def compact_bank(seq, bank, wavarcs):
-    """Copy of bank whose instruments play from one wave archive of the samples seq uses."""
+def compact_bank(seq, bank, wavarcs, shared):
+    """Copy of bank whose instruments play from Platinum's basic wave archive
+    (slot 1) when it holds the same sample, and otherwise from one wave
+    archive of the samples seq uses (slot 0). shared maps a sample's bytes to
+    its index in Platinum's basic wave archive."""
     data = bytearray(bank["file"])
     used = {}
     samples = []
@@ -49,12 +71,17 @@ def compact_bank(seq, bank, wavarcs):
         for ref in sdat.sbnk_instrument_note_defs(data, program):
             swav, slot = struct.unpack_from("<HH", data, ref)
             key = (slot, swav)
-            if key not in used:
-                used[key] = len(samples)
-                samples.append(sdat.swar_samples(wavarcs[bank["waves"][slot]]["file"])[swav])
+            if key in used:
+                continue
+            sample = sdat.swar_samples(wavarcs[bank["waves"][slot]]["file"])[swav]
+            if sample in shared:
+                used[key] = (shared[sample], BASIC_SLOT)
+            else:
+                used[key] = (len(samples), 0)
+                samples.append(sample)
     for ref in sdat.sbnk_note_defs(data):
         swav, slot = struct.unpack_from("<HH", data, ref)
-        struct.pack_into("<HH", data, ref, used.get((slot, swav), 0), 0)
+        struct.pack_into("<HH", data, ref, *used.get((slot, swav), (0, 0)))
     # The bank's wave archive references are filled in by the sound archive builder.
     return bytes(data), sdat.build_swar(samples or [sdat.swar_samples(wavarcs[bank["waves"][0]]["file"])[0]])
 
@@ -99,6 +126,11 @@ def main():
     archive = sdat.read((hg / "files/data/sound/gs_sound_data.sdat").read_bytes())
     by_name = {s["name"]: s for s in archive["seqs"] if s}
 
+    if not PL_BASIC_SWAR.exists():
+        sys.exit(f"{PL_BASIC_SWAR} is missing: build the ROM first")
+    shared = {}
+    for i, sample in enumerate(sdat.swar_samples(PL_BASIC_SWAR.read_bytes())):
+        shared.setdefault(sample, i)
     kanto = [h for h in load_headers(hg) if h["regionNo"] == "MAP_REGION_KANTO"]
     songs = sorted({h["dayMusicId"] for h in kanto} | {h["nightMusicId"] for h in kanto} | set(CODE_SONGS))
 
@@ -111,7 +143,7 @@ def main():
     for song in songs:
         seq = by_name[song]
         name = kanto_name(song).removeprefix("SEQ_")
-        bank, swar = compact_bank(seq, archive["banks"][seq["bank"]], archive["wavarcs"])
+        bank, swar = compact_bank(seq, archive["banks"][seq["bank"]], archive["wavarcs"], shared)
         largest = max(largest, len(swar) + len(bank) + len(seq["file"]))
         for filename, data in ((f"SEQ_{name}.sseq", seq["file"]), (f"BANK_{name}.sbnk", bank), (f"WAVE_ARC_{name}.swar", swar)):
             (OUT / filename).write_bytes(data)
@@ -123,7 +155,7 @@ def main():
                      "volume": seq["volume"], "channelPriority": seq["channelPriority"],
                      "playerPriority": seq["playerPriority"], "player": f'"{player}"'})
         banks.append({"name": f'"BANK_{name}"', "fileName": f'"BANK_{name}.sbnk"',
-                      "waves": f'["WAVE_ARC_{name}", "", "", ""]'})
+                      "waves": f'["WAVE_ARC_{name}", "WAVE_ARC_BASIC", "", ""]'})
         wavarcs.append({"name": f'"WAVE_ARC_{name}"', "fileName": f'"WAVE_ARC_{name}.swar"'})
     update_sound_json(seqs, banks, wavarcs)
     update_player_channels()
