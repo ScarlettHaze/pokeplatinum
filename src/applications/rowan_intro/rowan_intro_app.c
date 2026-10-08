@@ -1556,7 +1556,7 @@ static void RowanIntro_LoadBunearySprite(RowanIntro *manager)
 
     BuildPokemonSpriteTemplate(
         &spriteTemplate,
-        SPECIES_BUNEARY,
+        SPECIES_MARILL,
         GENDER_MALE,
         FACE_FRONT,
         FALSE,
@@ -2005,7 +2005,7 @@ static BOOL RowanIntro_AnimateBuneary(RowanIntro *manager, enum BunearyAnimState
         }
     } break;
     case BA_STATE_END:
-        Sound_PlayPokemonCry(SPECIES_BUNEARY, 0);
+        Sound_PlayPokemonCry(SPECIES_MARILL, 0);
         isFinished = TRUE;
         break;
     }
