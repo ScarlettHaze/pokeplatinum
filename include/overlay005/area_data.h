@@ -6,7 +6,7 @@
 #include "overlay005/map_prop_animation.h"
 #include "overlay005/map_prop_material_shape.h"
 
-#define MAX_MAP_PROP_MODEL_FILES 768
+#define MAX_MAP_PROP_MODEL_FILES 1024
 
 typedef struct AreaDataManagerLoadData {
     int areaDataArchiveID;
