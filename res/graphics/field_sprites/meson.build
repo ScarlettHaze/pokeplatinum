@@ -322,6 +322,10 @@ field_sprites_textures_single_frame = [
     { 'file': 'objects/ice_rock.png', 'basename': 'freezes'},
     { 'file': 'objects/bollard.png', 'basename': 'pole'},
     { 'file': 'pokemon/regigigas.png', 'basename': 'sppoke12'},
+    { 'file': 'objects/kanto_bonguri.png', 'basename': 'kanto_bonguri'},
+    { 'file': 'objects/kanto_kabigon.png', 'basename': 'kanto_kabigon'},
+    { 'file': 'objects/kanto_leag_door2.png', 'basename': 'kanto_leag_door2'},
+    { 'file': 'objects/kanto_stop.png', 'basename': 'kanto_stop'},
 ]
 
 field_sprites_textures_single_frame_pl_suffix = [

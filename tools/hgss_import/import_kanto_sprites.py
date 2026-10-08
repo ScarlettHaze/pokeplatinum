@@ -7,7 +7,8 @@ Every other HGSS sprite placed on a Kanto map becomes OBJ_EVENT_GFX_KANTO_*
 NPCs. HGSS's 8 frame Pokémon have two frames per direction where NPCs have
 four, so each direction's pair is repeated. Sprites Platinum already has an
 equivalent of (OBJECT_EQUIVALENTS) and the script-set SPRITE_VAR_* are not
-imported.
+imported. The few that are not walking sprites become still objects
+(SPECIAL_SPRITES).
 
 Both games build these sprites the same way (and from the same lineage):
 one NSBTX per sprite set, 32x32 frames in a 16 color texture, named
@@ -43,6 +44,25 @@ OBJECT_EQUIVALENTS = {
     "SPRITE_ROCK": "OBJ_EVENT_GFX_STRENGTH_BOULDER",
     "SPRITE_TREE": "OBJ_EVENT_GFX_CUT_TREE",
     "SPRITE_PCWOMAN1": "OBJ_EVENT_GFX_POKECENTER_NURSE",
+}
+
+# HGSS sprites that are not 32x32 walking sprites: one frame of each becomes
+# a still billboard, set up like the Platinum object named. HGSS shows an
+# apricorn tree's apricorns, and shakes it, from its save data and scripts;
+# here it is the bare tree's first frame.
+SPECIAL_SPRITES = {
+    # sprite: (frame, Platinum model, set up like)
+    "SPRITE_KABIGON": (0, "BILLBOARD_MODEL_GENERIC_64x64", "snorlax"),
+    "SPRITE_LEAG_DOOR2": (0, "BILLBOARD_MODEL_GENERIC_64x64", "fixture"),
+    "SPRITE_STOP": (0, "BILLBOARD_MODEL_GENERIC_64x64", "fixture"),
+    "SPRITE_BONGURI": (0, "BILLBOARD_MODEL_GENERIC_32x32", "tree"),
+}
+# Render details: Snorlax's shadow is in its texture, and fixtures leave no
+# footprints, like Platinum's Galactic HQ door.
+SPECIAL_RENDER_DETAILS = {
+    "snorlax": ".hasShadow = FALSE, TRACK_TYPE_FOOTSTEPS, .hasReflection = TRUE",
+    "fixture": ".hasShadow = FALSE, TRACK_TYPE_NONE, .hasReflection = FALSE",
+    "tree": ".hasShadow = TRUE, TRACK_TYPE_FOOTSTEPS, .hasReflection = TRUE",
 }
 
 # Platinum player sprite PNG -> HGSS MMODEL (include/constants/mmodel.h).
@@ -86,15 +106,12 @@ def frames_of(data):
     return sorted(textures, key=frame_number), palettes
 
 
-def to_png(data, path, expand_two_frame_directions=False):
-    frames, palettes = frames_of(data)
-    if expand_two_frame_directions:
-        # up, down, left, right: [a, b] -> [a, b, a, b]
-        frames = [frames[2 * d + i % 2] for d in range(4) for i in range(4)]
+def write_png(frames, palette, path):
+    """Stack 16 color frames of one size top to bottom in a PNG."""
     width, height = frames[0][2], frames[0][3]
     assert all(f[1] == 3 and f[2:4] == (width, height) for f in frames), "expected 16 color frames of one size"
     img = Image.new("P", (width, height * len(frames)))
-    colors = struct.unpack("<16H", palettes[0][1])
+    colors = struct.unpack("<16H", palette)
     img.putpalette([v for c in colors for v in ((c & 31) << 3, (c >> 5 & 31) << 3, (c >> 10 & 31) << 3)])
     px = img.load()
     for k, (_, _, _, _, texels) in enumerate(frames):
@@ -103,6 +120,21 @@ def to_png(data, path, expand_two_frame_directions=False):
             px[x, k * height + y] = b & 15
             px[x + 1, k * height + y] = b >> 4
     img.save(path)
+
+
+def to_png(data, path, expand_two_frame_directions=False):
+    frames, palettes = frames_of(data)
+    if expand_two_frame_directions:
+        # up, down, left, right: [a, b] -> [a, b, a, b]
+        frames = [frames[2 * d + i % 2] for d in range(4) for i in range(4)]
+    write_png(frames, palettes[0][1], path)
+
+
+def frame_to_png(data, frame, path):
+    """One frame, with its own palette (<texture>_pl) when it has one."""
+    frames, palettes = frames_of(data)
+    by_name = dict(palettes)
+    write_png([frames[frame]], by_name.get(frames[frame][0] + "_pl", palettes[0][1]), path)
 
 
 def sprite_table(hg):
@@ -123,9 +155,15 @@ def kanto_sprites(hg):
     return sorted(used)
 
 
-def replace_lines(path, start_marker, end_marker, new_lines):
-    """Replace previously generated kanto lines inside a block, before its end marker."""
+def strip_kanto_lines(path):
+    """Drop previously generated kanto lines."""
     lines = [l for l in path.read_text().splitlines() if "kanto_" not in l.lower() or "KANTO_" in l and "MAP_HEADER" in l]
+    path.write_text("\n".join(lines) + "\n")
+
+
+def insert_lines(path, start_marker, end_marker, new_lines):
+    """Insert lines at the end of a block."""
+    lines = path.read_text().splitlines()
     start = next(i for i, l in enumerate(lines) if start_marker in l)
     end = next(i for i in range(start, len(lines)) if end_marker in lines[i])
     lines[end:end] = new_lines
@@ -136,6 +174,7 @@ def import_npcs(hg, ids):
     table = sprite_table(hg)
     imported = []
     skipped = []
+    special = []
     for sprite in kanto_sprites(hg):
         if sprite in OBJECT_EQUIVALENTS or sprite.startswith("SPRITE_VAR_"):
             continue
@@ -143,6 +182,11 @@ def import_npcs(hg, ids):
             skipped.append((sprite, "not in HGSS's sprite table"))
             continue
         data = (hg / f"files/data/mmodel/mmodel/mmodel_{ids[table[sprite]]:08d}.NSBTX").read_bytes()
+        if sprite in SPECIAL_SPRITES:
+            name = sprite.removeprefix("SPRITE_").lower()
+            frame_to_png(data, SPECIAL_SPRITES[sprite][0], FIELD_SPRITES / "objects" / f"kanto_{name}.png")
+            special.append((name, sprite))
+            continue
         frames, _ = frames_of(data)
         if any(f[1] != 3 or f[2:4] != (32, 32) for f in frames) or len(frames) not in (8, 16):
             skipped.append((sprite, f"{len(frames)} frames of {frames[0][2]}x{frames[0][3]}"))
@@ -152,32 +196,45 @@ def import_npcs(hg, ids):
         imported.append(name)
 
     # Field sprite archive and its build.
-    replace_lines(FIELD_SPRITES / "meson.build", "field_sprites_textures_32_px_single_palette = [", "]",
-                  [f"    {{ 'file': 'npc/kanto_{n}.png', 'basename': 'kanto_{n[:10]}'}}," for n in imported])
+    meson = FIELD_SPRITES / "meson.build"
+    strip_kanto_lines(meson)
+    insert_lines(meson, "field_sprites_textures_32_px_single_palette = [", "]",
+                 [f"    {{ 'file': 'npc/kanto_{n}.png', 'basename': 'kanto_{n[:10]}'}}," for n in imported])
+    insert_lines(meson, "field_sprites_textures_single_frame = [", "]",
+                 [f"    {{ 'file': 'objects/kanto_{n}.png', 'basename': 'kanto_{n[:10]}'}}," for n, _ in special])
+    all_names = imported + [n for n, _ in special]
     order = FIELD_SPRITES / "field_sprites.order"
     lines = [l for l in order.read_text().splitlines() if not l.startswith("kanto_")]
-    order.write_text("\n".join(lines + [f"kanto_{n}.nsbtx" for n in imported]) + "\n")
+    order.write_text("\n".join(lines + [f"kanto_{n}.nsbtx" for n in all_names]) + "\n")
 
     gfx = PL / "generated/object_events_gfx.txt"
     lines = [l for l in gfx.read_text().splitlines() if not l.startswith(GFX_PREFIX)]
     at = next(i for i, l in enumerate(lines) if l.startswith("OBJ_EVENT_GFX_BERRY_SPROUT"))
-    lines[at:at] = [GFX_PREFIX + n.upper() for n in imported]
+    lines[at:at] = [GFX_PREFIX + n.upper() for n in all_names]
     gfx.write_text("\n".join(lines) + "\n")
 
-    def entries(fmt):
-        return "".join(f"    {fmt.format(gfx=GFX_PREFIX + n.upper(), name=n)} \\\n" for n in imported)
+    def entries(fmt, names=all_names):
+        return "".join(f"    {fmt.format(gfx=GFX_PREFIX + n.upper(), name=n)} \\\n" for n in names)
+    def special_entries(fmt):
+        return "".join(f"    {fmt.format(gfx=GFX_PREFIX + n.upper(), model=SPECIAL_SPRITES[s][1], details=SPECIAL_RENDER_DETAILS[SPECIAL_SPRITES[s][2]])} \\\n"
+                       for n, s in special)
     (PL / "include/data/kanto_object_event_gfx.h").write_text(
         "// Generated by tools/hgss_import/import_kanto_sprites.py, do not edit.\n"
-        "// Kanto's NPC sprites from HGSS, set up like Platinum's walking NPCs.\n\n"
-        "#define KANTO_OBJECT_EVENT_GFX_RENDERERS \\\n" + entries("{{ {gfx}, &Unk_ov5_021FAFD8 }},") + "\n"
+        "// Kanto's NPC sprites from HGSS, set up like Platinum's walking NPCs, and\n"
+        "// its still objects (Snorlax, the League door, a stop sign and apricorn\n"
+        "// trees), set up like Platinum's.\n\n"
+        "#define KANTO_OBJECT_EVENT_GFX_RENDERERS \\\n" + entries("{{ {gfx}, &Unk_ov5_021FAFD8 }},", imported)
+        + entries("{{ {gfx}, &Unk_ov5_021FB0A0 }},", [n for n, _ in special]) + "\n"
         "#define KANTO_OBJECT_EVENT_GFX_TEXTURES \\\n" + entries("{{ {gfx}, kanto_{name}_nsbtx }},") + "\n"
-        "#define KANTO_OBJECT_EVENT_GFX_MODEL_ANIMS \\\n" + entries("{{ {gfx}, BILLBOARD_MODEL_GENERIC_32x32, BILLBOARD_FRAME_SEQ_GENERIC_WALK, sWalkBillboardAnims }},") + "\n"
-        "#define KANTO_OBJECT_EVENT_GFX_RENDER_DETAILS \\\n" + entries("{{ {gfx}, MODEL_TYPE_BILLBOARD, .hasShadow = TRUE, TRACK_TYPE_FOOTSTEPS, .hasReflection = TRUE }},") + "\n")
+        "#define KANTO_OBJECT_EVENT_GFX_MODEL_ANIMS \\\n" + entries("{{ {gfx}, BILLBOARD_MODEL_GENERIC_32x32, BILLBOARD_FRAME_SEQ_GENERIC_WALK, sWalkBillboardAnims }},", imported)
+        + special_entries("{{ {gfx}, {model}, BILLBOARD_FRAME_SEQ_GENERIC_WALK, sWalkBillboardAnims }},") + "\n"
+        "#define KANTO_OBJECT_EVENT_GFX_RENDER_DETAILS \\\n" + entries("{{ {gfx}, MODEL_TYPE_BILLBOARD, .hasShadow = TRUE, TRACK_TYPE_FOOTSTEPS, .hasReflection = TRUE }},", imported)
+        + special_entries("{{ {gfx}, MODEL_TYPE_BILLBOARD, {details} }},") + "\n")
 
     mapping = {s: OBJECT_EQUIVALENTS.get(s) for s in OBJECT_EQUIVALENTS}
-    mapping.update({f"SPRITE_{n.upper()}": GFX_PREFIX + n.upper() for n in imported})
+    mapping.update({f"SPRITE_{n.upper()}": GFX_PREFIX + n.upper() for n in all_names})
     (Path(__file__).parent / "kanto_sprites.json").write_text(json.dumps(mapping, indent=2) + "\n")
-    print(f"{len(imported)} NPC sprites")
+    print(f"{len(imported)} NPC sprites, {len(special)} still objects")
     for sprite, why in skipped:
         print(f"  skipped {sprite}: {why}")
 

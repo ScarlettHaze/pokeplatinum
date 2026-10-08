@@ -39,6 +39,11 @@ Run them in this order, each with the pokeheartgold path as the argument:
   - The player is Ethan or Lyra in every state.
   - 120 NPC and Pokémon sprites are imported as `OBJ_EVENT_GFX_KANTO_*`.
     `kanto_sprites.json` records the mapping from HGSS's sprite IDs.
+  - Snorlax, the Pokémon League door and the stop sign are 64×64 still
+    objects, set up like Platinum's Regigigas. Apricorn trees are still
+    objects too, showing the bare tree: HGSS's apricorns and the tree's shake
+    come from its apricorn save data and scripts, which are part of the
+    scripts job below.
 
 ## Left to do
 
@@ -69,19 +74,7 @@ Still to do:
   tracks. Only the map music has been ported.
 - Surf and bicycle music still play Platinum's songs.
 
-### 2. Special overworld sprites
-
-Four HGSS sprites are not standard 32×32 walking sprites, so
-`import_kanto_sprites.py` skips them:
-
-- Snorlax (64×64). It blocks Routes 11, 12 and 16.
-- Apricorn trees (7 frames).
-- The Pokémon League door.
-- A stop sign.
-
-These need new Platinum billboard models or animations.
-
-### 3. Signs, NPCs, items and story events (the biggest job)
+### 2. Signs, NPCs, items and story events (the biggest job)
 
 Kanto maps have warps but no other events. HGSS's scripts use HGSS's script
 commands, so they have to be ported to Platinum's script system. This covers:
@@ -96,8 +89,10 @@ commands, so they have to be ported to Platinum's script system. This covers:
 - Trainers and their parties, gym leaders, the Elite Four and Champion,
   marts, and Pokémon Center healing.
 - The rival. Platinum's intro still names Barry and shows his picture.
+- Apricorn trees: HGSS's apricorn save data, picking apricorns, and the
+  trees' apricorn and shake sprites.
 
-### 4. Smaller gaps
+### 3. Smaller gaps
 
 - **Disabled warps:** 3 warps lead to Johto maps that weren't imported. They
   are the Pokémon League Wi-Fi room, the S.S. Aqua and the Magnet Train to
