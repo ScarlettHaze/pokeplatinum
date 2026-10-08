@@ -134,8 +134,8 @@ BOOL TownMap_LoadGraphics(TownMapAppData *appData)
         graphicsMan->cursorX = appData->initialCursorX;
         graphicsMan->cursorZ = appData->initialCursorZ;
         graphicsMan->hoveredLocationMapHeader = -1;
-        graphicsMan->zoomedInMapCoords.x = (graphicsMan->cursorX * 16 + 8) - 112;
-        graphicsMan->zoomedInMapCoords.y = (graphicsMan->cursorZ * 16) - 96;
+        graphicsMan->zoomedInMapCoords.x = (graphicsMan->cursorX * TOWN_MAP_ZOOMED_SPACING + TOWN_MAP_ZOOMED_X_OFFSET + 8) - 112;
+        graphicsMan->zoomedInMapCoords.y = (graphicsMan->cursorZ * TOWN_MAP_ZOOMED_SPACING + TOWN_MAP_ZOOMED_Y_OFFSET) - 96;
 
         MoveZoomedInMap(appData, graphicsMan->zoomedInMapCoords.x, graphicsMan->zoomedInMapCoords.y);
         MakeAppWindows(appData);
@@ -397,28 +397,28 @@ static void HandleInput(TownMapAppData *appData, int heldKeys)
     }
 
     if (heldKeys & PAD_KEY_UP) {
-        if (graphicsMan->cursorZ >= 7) {
+        if (graphicsMan->cursorZ >= 1) {
             graphicsMan->cursorZ -= 1;
             graphicsMan->queuedMovement |= TOWN_MAP_UP;
         }
     }
 
     if (heldKeys & PAD_KEY_DOWN) {
-        if (graphicsMan->cursorZ <= 27) {
+        if (graphicsMan->cursorZ < TOWN_MAP_HEIGHT - 1) {
             graphicsMan->cursorZ += 1;
             graphicsMan->queuedMovement |= TOWN_MAP_DOWN;
         }
     }
 
     if (heldKeys & PAD_KEY_RIGHT) {
-        if (graphicsMan->cursorX <= 27) {
+        if (graphicsMan->cursorX < TOWN_MAP_WIDTH - 1) {
             graphicsMan->cursorX += 1;
             graphicsMan->queuedMovement |= TOWN_MAP_RIGHT;
         }
     }
 
     if (heldKeys & PAD_KEY_LEFT) {
-        if (graphicsMan->cursorX >= 2) {
+        if (graphicsMan->cursorX >= 1) {
             graphicsMan->cursorX -= 1;
             graphicsMan->queuedMovement |= TOWN_MAP_LEFT;
         }
@@ -866,29 +866,29 @@ static void CreateSprites(TownMapAppData *appData)
     Sprite_SetPositionXY(graphicsMan->playerSprite, TOWN_MAP_GRID_X(graphicsMan->cursorX), TOWN_MAP_GRID_Y(graphicsMan->cursorZ));
 }
 
+#define ZOOMED_IN_MAP_MIN_X (TOWN_MAP_ZOOMED_X_OFFSET - 8)
+#define ZOOMED_IN_MAP_MAX_X (TOWN_MAP_ZOOMED_X_OFFSET + TOWN_MAP_WIDTH * TOWN_MAP_ZOOMED_SPACING - 256 + 8)
+#define ZOOMED_IN_MAP_MIN_Y (TOWN_MAP_ZOOMED_Y_OFFSET - 8)
+#define ZOOMED_IN_MAP_MAX_Y (TOWN_MAP_ZOOMED_Y_OFFSET + TOWN_MAP_HEIGHT * TOWN_MAP_ZOOMED_SPACING - 192 + 8)
+
 static void MoveZoomedInMap(TownMapAppData *appData, int x, int y)
 {
-    if (x < 8) {
-        Bg_ScheduleScroll(appData->bgConfig, BG_LAYER_SUB_2, BG_OFFSET_UPDATE_SET_X, 8);
-        Bg_ScheduleScroll(appData->bgConfig, BG_LAYER_SUB_3, BG_OFFSET_UPDATE_SET_X, 8);
-    } else if (x > 256 - 8) {
-        Bg_ScheduleScroll(appData->bgConfig, BG_LAYER_SUB_2, BG_OFFSET_UPDATE_SET_X, 256 - 8);
-        Bg_ScheduleScroll(appData->bgConfig, BG_LAYER_SUB_3, BG_OFFSET_UPDATE_SET_X, 256 - 8);
-    } else {
-        Bg_ScheduleScroll(appData->bgConfig, BG_LAYER_SUB_2, BG_OFFSET_UPDATE_SET_X, x);
-        Bg_ScheduleScroll(appData->bgConfig, BG_LAYER_SUB_3, BG_OFFSET_UPDATE_SET_X, x);
+    if (x < ZOOMED_IN_MAP_MIN_X) {
+        x = ZOOMED_IN_MAP_MIN_X;
+    } else if (x > ZOOMED_IN_MAP_MAX_X) {
+        x = ZOOMED_IN_MAP_MAX_X;
     }
 
-    if (y < (72 + 8)) {
-        Bg_ScheduleScroll(appData->bgConfig, BG_LAYER_SUB_2, BG_OFFSET_UPDATE_SET_Y, (72 + 8));
-        Bg_ScheduleScroll(appData->bgConfig, BG_LAYER_SUB_3, BG_OFFSET_UPDATE_SET_Y, (72 + 8));
-    } else if (y > 240 + 72 - 8) {
-        Bg_ScheduleScroll(appData->bgConfig, BG_LAYER_SUB_2, BG_OFFSET_UPDATE_SET_Y, 240 + 72 - 8);
-        Bg_ScheduleScroll(appData->bgConfig, BG_LAYER_SUB_3, BG_OFFSET_UPDATE_SET_Y, 240 + 72 - 8);
-    } else {
-        Bg_ScheduleScroll(appData->bgConfig, BG_LAYER_SUB_2, BG_OFFSET_UPDATE_SET_Y, y);
-        Bg_ScheduleScroll(appData->bgConfig, BG_LAYER_SUB_3, BG_OFFSET_UPDATE_SET_Y, y);
+    if (y < ZOOMED_IN_MAP_MIN_Y) {
+        y = ZOOMED_IN_MAP_MIN_Y;
+    } else if (y > ZOOMED_IN_MAP_MAX_Y) {
+        y = ZOOMED_IN_MAP_MAX_Y;
     }
+
+    Bg_ScheduleScroll(appData->bgConfig, BG_LAYER_SUB_2, BG_OFFSET_UPDATE_SET_X, x);
+    Bg_ScheduleScroll(appData->bgConfig, BG_LAYER_SUB_3, BG_OFFSET_UPDATE_SET_X, x);
+    Bg_ScheduleScroll(appData->bgConfig, BG_LAYER_SUB_2, BG_OFFSET_UPDATE_SET_Y, y);
+    Bg_ScheduleScroll(appData->bgConfig, BG_LAYER_SUB_3, BG_OFFSET_UPDATE_SET_Y, y);
 }
 
 static int GetHistoryEntryForPos(TownMapLocationHistory *appData, int x, int y)

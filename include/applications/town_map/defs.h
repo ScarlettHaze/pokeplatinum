@@ -11,11 +11,21 @@
 #include "string_gf.h"
 #include "sys_task_manager.h"
 
-#define TOWN_MAP_GRID_SPACING  7
-#define TOWN_MAP_GRID_X_OFFSET (+25)
-#define TOWN_MAP_GRID_Y_OFFSET (-34)
+// The map is Kanto's, drawn from HGSS's Pokégear map at 8 pixels per map
+// matrix block (see tools/hgss_import/import_kanto_town_map.py, whose
+// origins these mirror).
+#define TOWN_MAP_WIDTH         25
+#define TOWN_MAP_HEIGHT        17
+#define TOWN_MAP_GRID_SPACING  8
+#define TOWN_MAP_GRID_X_OFFSET (24 + TOWN_MAP_GRID_SPACING / 2)
+#define TOWN_MAP_GRID_Y_OFFSET (24 + TOWN_MAP_GRID_SPACING / 2)
 #define TOWN_MAP_GRID_X(x)     (TOWN_MAP_GRID_SPACING * (x) + TOWN_MAP_GRID_X_OFFSET)
 #define TOWN_MAP_GRID_Y(y)     (TOWN_MAP_GRID_SPACING * (y) + TOWN_MAP_GRID_Y_OFFSET)
+
+// The zoomed in map on the bottom screen, at 16 pixels per block.
+#define TOWN_MAP_ZOOMED_SPACING  16
+#define TOWN_MAP_ZOOMED_X_OFFSET 48
+#define TOWN_MAP_ZOOMED_Y_OFFSET 48
 
 enum TownMapWindow {
     TOWN_MAP_WINDOW_LOCATION_NAME,

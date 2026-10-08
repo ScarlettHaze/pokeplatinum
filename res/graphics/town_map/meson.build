@@ -133,6 +133,8 @@ bottom_screen_bg_individual_nclr = nclr_gen.process(
     files(
         'bottom_screen_map.pal',
         'zoom_button_screen.pal',
+        # Kanto's map needs a third palette, after the zoom button's (slot 5).
+        'bottom_screen_map_kanto.pal',
     ),
     extra_args: [
         '-bitdepth', '4',
