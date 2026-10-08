@@ -15,7 +15,7 @@ Run them in this order, each with the pokeheartgold path as the argument:
 4. `import_kanto_intro.py`: Professor Oak's intro.
 5. `import_kanto_town_map.py`: the Town Map.
 6. `import_kanto_sprites.py`: overworld sprites for the player and NPCs.
-7. `import_kanto_music.py`: music. This step is not finished; see below.
+7. `import_kanto_music.py`: map music.
 
 ## Done
 
@@ -44,26 +44,30 @@ Run them in this order, each with the pokeheartgold path as the argument:
 
 Smallest first.
 
-### 1. Music (in progress, not committed)
+### 1. Music
 
-Done so far:
+Done:
 
 - `import_kanto_music.py` extracts the 36 Kanto songs from HGSS's sound
   archive into `res/sound/kanto/`.
 - Each song gets its own bank and a compact wave archive. These hold only the
   samples the song plays. HGSS's basic samples differ from Platinum's, and
   both can't sit in the sound heap at once.
+- The field player loads a Kanto song's own bank and samples whenever the
+  song changes, including when walking from one map to the next. Sinnoh's
+  songs shared one bank, so Platinum didn't reload it there.
+- The music players get HGSS's channels (1 to 10, 13 and 15), which the PSG
+  and drum parts need.
 - `SOUND_SYSTEM_HEAP_SIZE` grows by 160 KB, out of the main arena's spare
   room. That room was measured at 188 KB.
 
 Still to do:
 
-- Build the ROM and confirm the songs load. Measure the free sound heap on
-  the field and in battle, and check that no asserts fire.
 - Confirm that the larger sound heap leaves enough main arena for every
   mode. The untested cases are Wi-Fi, the Union Room and the Battle Frontier.
 - Battle, trainer-encounter, evolution and other music still play Platinum's
   tracks. Only the map music has been ported.
+- Surf and bicycle music still play Platinum's songs.
 
 ### 2. Special overworld sprites
 

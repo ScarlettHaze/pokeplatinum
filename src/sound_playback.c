@@ -16,6 +16,7 @@
 #include "sys_task.h"
 #include "sys_task_manager.h"
 
+#include "data/kanto_sound.h"
 #include "res/sound/pl_sound_data.naix"
 
 #define WAVE_OUT_SPEED_HYPERVOICE_1 (WAVE_OUT_SPEED(1.046875))
@@ -97,10 +98,22 @@ static BOOL Sound_Impl_PlayBGM(u16 seqID, u8 playerID, enum SoundHandleType hand
     return NNS_SndArcPlayerStartSeq(SoundSystem_GetSoundHandle(handleType), seqID);
 }
 
+static BOOL Sound_IsKantoBGMBank(u16 bankID)
+{
+    return bankID >= KANTO_BGM_BANK_FIRST && bankID <= KANTO_BGM_BANK_LAST;
+}
+
 static BOOL Sound_Impl_PlayFieldBGM(u16 seqID, u8 playerID, enum SoundHandleType handleType)
 {
     UNUSED(SoundSystem_GetParam(SOUND_SYSTEM_PARAM_FIELD_BGM_BANK_STATE));
     u16 *newFieldBGM = SoundSystem_GetParam(SOUND_SYSTEM_PARAM_FIELD_BGM);
+
+    // Field songs play with the field BGM's bank, which Sinnoh's outdoor songs
+    // all share, so a zone change keeps the field BGM. Each of Kanto's songs
+    // has its own bank and samples, so it has to become the field BGM.
+    if (Sound_IsKantoBGMBank(Sound_GetBankIDFromSequenceID(seqID)) || Sound_IsKantoBGMBank(Sound_GetBankIDFromSequenceID(*newFieldBGM))) {
+        *newFieldBGM = seqID;
+    }
 
     int currentSeqID = Sound_GetSequenceIDFromSoundHandle(SoundSystem_GetSoundHandle(SOUND_HANDLE_TYPE_FIELD_BGM));
     Sound_LoadSoundDataForFieldBGM(seqID, Sound_GetBankIDFromSequenceID(currentSeqID));
