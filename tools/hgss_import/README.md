@@ -69,7 +69,9 @@ Run them in this order, each with the pokeheartgold path as the argument:
     Platinum's (`include/data/kanto_marts.h`).
   - Signs use HGSS's signpost graphics (`kanto_signs.py`), so map and arrow
     signs show HGSS's pictures.
-  - Pokémon Center nurses and Poké Marts use Platinum's common scripts.
+  - Pokémon Center nurses and Poké Marts use Platinum's common scripts. The
+    healing animation uses HGSS's healing machine, Poké Balls and screen
+    (`healing_machine_animation/pokecenter.c`).
 
 ## Left to do
 
@@ -117,9 +119,6 @@ Still to do:
 - **Pokémon Center link rooms:** HGSS's union room, wireless and Wi-Fi NPCs,
   Teala and the delivery men stand in place without scripts, and their
   init scripts are dropped.
-- **Healing animation:** `healing_machine_animation/pokecenter.c` falls back
-  to HGSS's healing machine, Poké Ball and screen models in Kanto. This
-  change is not yet compiled or tested.
 - **Music in scripts:** scenes that change music in HGSS keep the map's
   music; HGSS-only sound effects are dropped.
 - **The rival.** Platinum's intro still names Barry and shows his picture.
