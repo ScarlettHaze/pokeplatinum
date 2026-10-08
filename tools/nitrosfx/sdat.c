@@ -648,7 +648,11 @@ void ConvertPathToSdat(int argc, char **argv)
     WriteU32_LE(sdatHeader + offset+12, fatBlockSize);
     uint32_t fileOffset = 0x40 + symbBlockSize + infoBlockSize + fatBlockSize;
     WriteU32_LE(sdatHeader + offset+16, fileOffset);
-    filePackage->size += PADDINGSIZE(fileOffset, 0x20);
+    // The FILE block holds its header, then padding up to a multiple of 0x20
+    // in the SDAT, then the files.
+    uint32_t fileDataStart = fileOffset + 0x0C;
+    uint32_t fileDataPad = PADDINGSIZE(fileDataStart, 0x20);
+    filePackage->size += 0x0C + fileDataPad;
     WriteU32_LE(sdatHeader + offset+20, filePackage->size);
     uint32_t sdatSize = fileOffset + filePackage->size;
     WriteU32_LE(sdatHeader + 0x08, sdatSize);
@@ -786,7 +790,7 @@ void ConvertPathToSdat(int argc, char **argv)
     fwrite(fatHeader, 1, 0x0C, outFile);
 
     fileOffset += 0x0C;
-    offset = fileOffset;
+    offset = fileOffset + fileDataPad;
     uint8_t *fileEntry = calloc(1, 0x10);
     if (fileEntry == NULL) FATAL_ERROR("Failed to allocate memory for fileEntry\n");
     for (struct FileStream *fileStream = filePackage->head; fileStream != NULL; fileStream = fileStream->next)
@@ -811,10 +815,9 @@ void ConvertPathToSdat(int argc, char **argv)
 
     uint8_t *padding = calloc(1, 0x20);
     if (padding == NULL) FATAL_ERROR("Failed to allocate memory for padding\n");
-    uint16_t paddingSize = PADDINGSIZE(fileOffset, 0x20);
-    if (paddingSize > 0)
+    if (fileDataPad > 0)
     {
-        fwrite(padding, 1, paddingSize, outFile);
+        fwrite(padding, 1, fileDataPad, outFile);
     }
 
     for (struct FileStream *fileStream = filePackage->head; fileStream != NULL; fileStream = fileStream->next)
@@ -822,7 +825,7 @@ void ConvertPathToSdat(int argc, char **argv)
         fwrite(fileStream->data, 1, fileStream->size, outFile);
         free(fileStream->data);
 
-        paddingSize = PADDINGSIZE(fileStream->size, 0x20);
+        uint16_t paddingSize = PADDINGSIZE(fileStream->size, 0x20);
         if (paddingSize > 0)
         {
             fwrite(padding, 1, paddingSize, outFile);
