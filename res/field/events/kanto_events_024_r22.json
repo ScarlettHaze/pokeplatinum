@@ -1,0 +1,19 @@
+{
+    "bg_events": [],
+    "object_events": [],
+    "warp_events": [
+        {
+            "x": 264,
+            "z": 266,
+            "dest_header_id": "MAP_HEADER_KANTO_ROUTE_22_POKEMON_LEAGUE_RECEPTION_GATE",
+            "dest_warp_id": 2
+        },
+        {
+            "x": 264,
+            "z": 267,
+            "dest_header_id": "MAP_HEADER_KANTO_ROUTE_22_POKEMON_LEAGUE_RECEPTION_GATE",
+            "dest_warp_id": 2
+        }
+    ],
+    "coord_events": []
+}

@@ -1,0 +1,25 @@
+{
+    "bg_events": [],
+    "object_events": [],
+    "warp_events": [
+        {
+            "x": 361,
+            "z": 363,
+            "dest_header_id": "MAP_HEADER_KANTO_PALLET_TOWN_REDS_HOUSE_1F",
+            "dest_warp_id": 0
+        },
+        {
+            "x": 372,
+            "z": 363,
+            "dest_header_id": "MAP_HEADER_KANTO_PALLET_TOWN_BLUES_HOUSE_1F",
+            "dest_warp_id": 0
+        },
+        {
+            "x": 373,
+            "z": 373,
+            "dest_header_id": "MAP_HEADER_KANTO_PALLET_TOWN_OAKS_LAB",
+            "dest_warp_id": 0
+        }
+    ],
+    "coord_events": []
+}

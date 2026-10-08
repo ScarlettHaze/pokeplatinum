@@ -1,0 +1,61 @@
+{
+    "bg_events": [],
+    "object_events": [],
+    "warp_events": [
+        {
+            "x": 7,
+            "z": 31,
+            "dest_header_id": "MAP_HEADER_KANTO_VICTORY_ROAD_1F",
+            "dest_warp_id": 1
+        },
+        {
+            "x": 27,
+            "z": 45,
+            "dest_header_id": "MAP_HEADER_KANTO_VICTORY_ROAD_3F",
+            "dest_warp_id": 1
+        },
+        {
+            "x": 27,
+            "z": 44,
+            "dest_header_id": "MAP_HEADER_KANTO_VICTORY_ROAD_3F",
+            "dest_warp_id": 1
+        },
+        {
+            "x": 51,
+            "z": 39,
+            "dest_header_id": "MAP_HEADER_KANTO_VICTORY_ROAD_3F",
+            "dest_warp_id": 2
+        },
+        {
+            "x": 51,
+            "z": 38,
+            "dest_header_id": "MAP_HEADER_KANTO_VICTORY_ROAD_3F",
+            "dest_warp_id": 2
+        },
+        {
+            "x": 56,
+            "z": 22,
+            "dest_header_id": "MAP_HEADER_KANTO_VICTORY_ROAD_3F",
+            "dest_warp_id": 3
+        },
+        {
+            "x": 56,
+            "z": 21,
+            "dest_header_id": "MAP_HEADER_KANTO_VICTORY_ROAD_3F",
+            "dest_warp_id": 3
+        },
+        {
+            "x": 7,
+            "z": 18,
+            "dest_header_id": "MAP_HEADER_KANTO_VICTORY_ROAD_3F",
+            "dest_warp_id": 4
+        },
+        {
+            "x": 7,
+            "z": 17,
+            "dest_header_id": "MAP_HEADER_KANTO_VICTORY_ROAD_3F",
+            "dest_warp_id": 4
+        }
+    ],
+    "coord_events": []
+}

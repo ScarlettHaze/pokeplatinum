@@ -1,0 +1,19 @@
+{
+    "bg_events": [],
+    "object_events": [],
+    "warp_events": [
+        {
+            "x": 6,
+            "z": 28,
+            "dest_header_id": "MAP_HEADER_KANTO_POKEMON_LEAGUE_KAREN_ROOM",
+            "dest_warp_id": 1
+        },
+        {
+            "x": 6,
+            "z": 2,
+            "dest_header_id": "MAP_HEADER_KANTO_POKEMON_LEAGUE_HALL_OF_FAME",
+            "dest_warp_id": 0
+        }
+    ],
+    "coord_events": []
+}

@@ -1,0 +1,55 @@
+{
+    "bg_events": [],
+    "object_events": [],
+    "warp_events": [
+        {
+            "x": 620,
+            "z": 294,
+            "dest_header_id": "MAP_HEADER_KANTO_VERMILION_FISHING_DUDE_HOUSE",
+            "dest_warp_id": 0
+        },
+        {
+            "x": 625,
+            "z": 294,
+            "dest_header_id": "MAP_HEADER_KANTO_VERMILION_POKECENTER_1F",
+            "dest_warp_id": 0
+        },
+        {
+            "x": 621,
+            "z": 309,
+            "dest_header_id": "MAP_HEADER_KANTO_VERMILION_POKEMON_FAN_CLUB",
+            "dest_warp_id": 0
+        },
+        {
+            "x": 629,
+            "z": 309,
+            "dest_header_id": "MAP_HEADER_KANTO_VERMILION_CENTRAL_HOUSE",
+            "dest_warp_id": 0
+        },
+        {
+            "x": 638,
+            "z": 309,
+            "dest_header_id": "MAP_HEADER_KANTO_VERMILION_POKEMART",
+            "dest_warp_id": 0
+        },
+        {
+            "x": 638,
+            "z": 318,
+            "dest_header_id": "MAP_HEADER_KANTO_VERMILION_SOUTH_HOUSE",
+            "dest_warp_id": 0
+        },
+        {
+            "x": 623,
+            "z": 319,
+            "dest_header_id": "MAP_HEADER_KANTO_VERMILION_GYM",
+            "dest_warp_id": 0
+        },
+        {
+            "x": 637,
+            "z": 340,
+            "dest_header_id": "MAP_HEADER_KANTO_SS_AQUA_VERMILION_PORT_INTERIOR",
+            "dest_warp_id": 0
+        }
+    ],
+    "coord_events": []
+}

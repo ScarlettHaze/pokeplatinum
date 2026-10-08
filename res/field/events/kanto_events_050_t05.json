@@ -1,0 +1,49 @@
+{
+    "bg_events": [],
+    "object_events": [],
+    "warp_events": [
+        {
+            "x": 746,
+            "z": 234,
+            "dest_header_id": "MAP_HEADER_KANTO_LAVENDER_POKECENTER_1F",
+            "dest_warp_id": 0
+        },
+        {
+            "x": 747,
+            "z": 242,
+            "dest_header_id": "MAP_HEADER_KANTO_LAVENDER_VOLUNTEER_POKEMON_HOUSE",
+            "dest_warp_id": 0
+        },
+        {
+            "x": 742,
+            "z": 249,
+            "dest_header_id": "MAP_HEADER_KANTO_LAVENDER_SOUTHWEST_HOUSE",
+            "dest_warp_id": 0
+        },
+        {
+            "x": 747,
+            "z": 249,
+            "dest_header_id": "MAP_HEADER_KANTO_LAVENDER_NAME_RATER",
+            "dest_warp_id": 0
+        },
+        {
+            "x": 740,
+            "z": 234,
+            "dest_header_id": "MAP_HEADER_KANTO_LAVENDER_POKEMART",
+            "dest_warp_id": 0
+        },
+        {
+            "x": 759,
+            "z": 246,
+            "dest_header_id": "MAP_HEADER_KANTO_LAVENDER_HOUSE_OF_MEMORIES",
+            "dest_warp_id": 0
+        },
+        {
+            "x": 757,
+            "z": 234,
+            "dest_header_id": "MAP_HEADER_KANTO_LAVENDER_RADIO_STATION",
+            "dest_warp_id": 0
+        }
+    ],
+    "coord_events": []
+}

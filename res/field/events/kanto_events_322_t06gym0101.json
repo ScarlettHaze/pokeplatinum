@@ -1,0 +1,13 @@
+{
+    "bg_events": [],
+    "object_events": [],
+    "warp_events": [
+        {
+            "x": 6,
+            "z": 22,
+            "dest_header_id": "MAP_HEADER_KANTO_VERMILION",
+            "dest_warp_id": 6
+        }
+    ],
+    "coord_events": []
+}

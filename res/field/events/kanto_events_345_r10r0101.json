@@ -1,0 +1,13 @@
+{
+    "bg_events": [],
+    "object_events": [],
+    "warp_events": [
+        {
+            "x": 741,
+            "z": 200,
+            "dest_header_id": "MAP_HEADER_KANTO_ROCK_TUNNEL_1F",
+            "dest_warp_id": 0
+        }
+    ],
+    "coord_events": []
+}

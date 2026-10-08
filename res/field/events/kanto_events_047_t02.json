@@ -1,0 +1,49 @@
+{
+    "bg_events": [],
+    "object_events": [],
+    "warp_events": [
+        {
+            "x": 373,
+            "z": 239,
+            "dest_header_id": "MAP_HEADER_KANTO_VIRIDIAN_GYM",
+            "dest_warp_id": 0
+        },
+        {
+            "x": 362,
+            "z": 244,
+            "dest_header_id": "MAP_HEADER_KANTO_VIRIDIAN_NORTHEAST_HOUSE",
+            "dest_warp_id": 0
+        },
+        {
+            "x": 364,
+            "z": 253,
+            "dest_header_id": "MAP_HEADER_KANTO_VIRIDIAN_TRAINER_HOUSE_1F",
+            "dest_warp_id": 0
+        },
+        {
+            "x": 370,
+            "z": 253,
+            "dest_header_id": "MAP_HEADER_KANTO_VIRIDIAN_POKEMART",
+            "dest_warp_id": 0
+        },
+        {
+            "x": 360,
+            "z": 262,
+            "dest_header_id": "MAP_HEADER_KANTO_VIRIDIAN_POKECENTER_1F",
+            "dest_warp_id": 0
+        },
+        {
+            "x": 364,
+            "z": 280,
+            "dest_header_id": "MAP_HEADER_KANTO_VIRIDIAN_ROUTE_1_GATEHOUSE",
+            "dest_warp_id": 1
+        },
+        {
+            "x": 365,
+            "z": 280,
+            "dest_header_id": "MAP_HEADER_KANTO_VIRIDIAN_ROUTE_1_GATEHOUSE",
+            "dest_warp_id": 1
+        }
+    ],
+    "coord_events": []
+}

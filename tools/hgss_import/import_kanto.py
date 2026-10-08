@@ -41,9 +41,14 @@ HG_BM_INFO_OUT = "files/a/1/0/7"
 HG_BM_INFO_IN = "files/a/1/0/8"
 HG_BM_ANM = "files/a/1/0/6"
 
-# The Kanto block of HGSS's world matrix (map_matrix_0000_EVERYWHERE).
-KANTO_WORLD_X = range(22, 45)
-KANTO_WORLD_Y = range(1, 16)
+# The Kanto block of HGSS's world matrix (map_matrix_0000_EVERYWHERE), with a
+# one block border so the filler terrain around Kanto's edge is drawn too.
+KANTO_WORLD_X = range(21, 46)
+KANTO_WORLD_Y = range(0, 17)
+
+# Area that filler blocks (MAP_EVERYWHERE cells) are grouped with: they are
+# drawn with whichever outdoor area the player is in.
+FILLER_AREA = 18
 
 OUTDOOR, INDOOR = "field", "room"
 
@@ -101,6 +106,8 @@ class Importer:
                 header = self.by_id.get(world["headers"][y][x])
                 if header is not None and header["regionNo"] == "MAP_REGION_KANTO":
                     use(world["maps"][y][x], header["areaDataBank"])
+                else:
+                    use(world["maps"][y][x], FILLER_AREA)
 
         for h in self.kanto:
             key = matrix_key(h["matrixId"])
@@ -262,7 +269,8 @@ class Importer:
                 "mapTextureSet": tex_names[ar["texSet"]],
                 # Platinum's unused area field sits where HGSS keeps the ground animation.
                 "dummy": ar["groundAnime"],
-                "lightingSet": "lighting_set_000" if ar["light"] == 1 else "lighting_set_001",
+                # HGSS and Platinum ship the same four area light files in the same order.
+                "lightingSet": f"lighting_set_{ar['light']:03}",
             }
             (PL / "res/field/area_data" / f"{name}.json").write_text(json.dumps(data, indent=4) + "\n")
         update_meson_files(PL / "res/field/area_data/meson.build", "json", [f"{n}.json" for n in area_names.values()])

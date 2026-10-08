@@ -1,0 +1,109 @@
+{
+    "bg_events": [],
+    "object_events": [],
+    "warp_events": [
+        {
+            "x": 628,
+            "z": 253,
+            "dest_header_id": "MAP_HEADER_KANTO_ROUTE_6_SAFFRON_GATEHOUSE",
+            "dest_warp_id": 1
+        },
+        {
+            "x": 629,
+            "z": 253,
+            "dest_header_id": "MAP_HEADER_KANTO_ROUTE_6_SAFFRON_GATEHOUSE",
+            "dest_warp_id": 1
+        },
+        {
+            "x": 665,
+            "z": 240,
+            "dest_header_id": "MAP_HEADER_KANTO_ROUTE_8_SAFFRON_GATEHOUSE",
+            "dest_warp_id": 0
+        },
+        {
+            "x": 665,
+            "z": 241,
+            "dest_header_id": "MAP_HEADER_KANTO_ROUTE_8_SAFFRON_GATEHOUSE",
+            "dest_warp_id": 0
+        },
+        {
+            "x": 628,
+            "z": 197,
+            "dest_header_id": "MAP_HEADER_KANTO_ROUTE_5_SAFFRON_GATEHOUSE",
+            "dest_warp_id": 0
+        },
+        {
+            "x": 629,
+            "z": 197,
+            "dest_header_id": "MAP_HEADER_KANTO_ROUTE_5_SAFFRON_GATEHOUSE",
+            "dest_warp_id": 0
+        },
+        {
+            "x": 618,
+            "z": 208,
+            "dest_header_id": "MAP_HEADER_KANTO_SAFFRON_MAGNET_TRAIN_STATION_1F",
+            "dest_warp_id": 0
+        },
+        {
+            "x": 625,
+            "z": 218,
+            "dest_header_id": "MAP_HEADER_KANTO_SAFFRON_COPYCAT_HOUSE_1F",
+            "dest_warp_id": 0
+        },
+        {
+            "x": 636,
+            "z": 229,
+            "dest_header_id": "MAP_HEADER_KANTO_SAFFRON_SILPH_CO_HQ",
+            "dest_warp_id": 0
+        },
+        {
+            "x": 637,
+            "z": 229,
+            "dest_header_id": "MAP_HEADER_KANTO_SAFFRON_SILPH_CO_HQ",
+            "dest_warp_id": 0
+        },
+        {
+            "x": 649,
+            "z": 204,
+            "dest_header_id": "MAP_HEADER_KANTO_SAFFRON_FIGHTING_DOJO",
+            "dest_warp_id": 0
+        },
+        {
+            "x": 656,
+            "z": 204,
+            "dest_header_id": "MAP_HEADER_KANTO_SAFFRON_GYM",
+            "dest_warp_id": 0
+        },
+        {
+            "x": 646,
+            "z": 218,
+            "dest_header_id": "MAP_HEADER_KANTO_SAFFRON_POKEMART",
+            "dest_warp_id": 0
+        },
+        {
+            "x": 622,
+            "z": 242,
+            "dest_header_id": "MAP_HEADER_KANTO_SAFFRON_POKECENTER_1F",
+            "dest_warp_id": 0
+        },
+        {
+            "x": 651,
+            "z": 242,
+            "dest_header_id": "MAP_HEADER_KANTO_SAFFRON_MR_PSYCHIC_HOUSE",
+            "dest_warp_id": 0
+        },
+        {
+            "x": 608,
+            "z": 240,
+            "dest_header_id": "MAP_HEADER_KANTO_ROUTE_7_SAFFRON_GATEHOUSE",
+            "dest_warp_id": 0
+        },
+        {
+            "x": 608,
+            "z": 241,
+            "dest_header_id": "MAP_HEADER_KANTO_ROUTE_7_SAFFRON_GATEHOUSE",
+            "dest_warp_id": 0
+        }
+    ],
+    "coord_events": []
+}

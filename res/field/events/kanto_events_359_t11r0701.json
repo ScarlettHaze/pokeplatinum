@@ -1,0 +1,19 @@
+{
+    "bg_events": [],
+    "object_events": [],
+    "warp_events": [
+        {
+            "x": 11,
+            "z": 14,
+            "dest_header_id": "MAP_HEADER_KANTO_SAFFRON",
+            "dest_warp_id": 8
+        },
+        {
+            "x": 3,
+            "z": 2,
+            "dest_header_id": "MAP_HEADER_KANTO_SAFFRON_SILPH_CO_ELEVATOR",
+            "dest_warp_id": 0
+        }
+    ],
+    "coord_events": []
+}

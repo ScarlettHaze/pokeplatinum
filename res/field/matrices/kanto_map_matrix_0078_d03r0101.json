@@ -1,0 +1,15 @@
+{
+    "name": "m_dun0301_",
+    "headers": [],
+    "altitudes": [],
+    "maps": [
+        [
+            "MAP_KANTO_395",
+            "MAP_KANTO_396"
+        ],
+        [
+            "MAP_KANTO_397",
+            "MAP_KANTO_398"
+        ]
+    ]
+}

@@ -1,0 +1,31 @@
+{
+    "bg_events": [],
+    "object_events": [],
+    "warp_events": [
+        {
+            "x": 6,
+            "z": 22,
+            "dest_header_id": "MAP_HEADER_KANTO_POKEMON_LEAGUE_ENTRANCE",
+            "dest_warp_id": 1
+        },
+        {
+            "x": 6,
+            "z": 2,
+            "dest_header_id": "MAP_HEADER_KANTO_POKEMON_LEAGUE_BRUNO_ROOM",
+            "dest_warp_id": 0
+        },
+        {
+            "x": 5,
+            "z": 2,
+            "dest_header_id": "MAP_HEADER_KANTO_POKEMON_LEAGUE_BRUNO_ROOM",
+            "dest_warp_id": 0
+        },
+        {
+            "x": 7,
+            "z": 2,
+            "dest_header_id": "MAP_HEADER_KANTO_POKEMON_LEAGUE_BRUNO_ROOM",
+            "dest_warp_id": 0
+        }
+    ],
+    "coord_events": []
+}

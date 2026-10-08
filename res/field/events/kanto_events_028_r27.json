@@ -1,0 +1,25 @@
+{
+    "bg_events": [],
+    "object_events": [],
+    "warp_events": [
+        {
+            "x": 68,
+            "z": 396,
+            "dest_header_id": "MAP_HEADER_KANTO_TOHJO_FALLS",
+            "dest_warp_id": 0
+        },
+        {
+            "x": 83,
+            "z": 394,
+            "dest_header_id": "MAP_HEADER_KANTO_TOHJO_FALLS",
+            "dest_warp_id": 1
+        },
+        {
+            "x": 79,
+            "z": 400,
+            "dest_header_id": "MAP_HEADER_KANTO_ROUTE_27_HOUSE",
+            "dest_warp_id": 0
+        }
+    ],
+    "coord_events": []
+}

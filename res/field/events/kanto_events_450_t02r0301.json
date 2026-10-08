@@ -1,0 +1,19 @@
+{
+    "bg_events": [],
+    "object_events": [],
+    "warp_events": [
+        {
+            "x": 5,
+            "z": 15,
+            "dest_header_id": "MAP_HEADER_KANTO_VIRIDIAN",
+            "dest_warp_id": 2
+        },
+        {
+            "x": 13,
+            "z": 3,
+            "dest_header_id": "MAP_HEADER_KANTO_VIRIDIAN_TRAINER_HOUSE_B1F",
+            "dest_warp_id": 0
+        }
+    ],
+    "coord_events": []
+}

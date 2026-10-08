@@ -627,6 +627,7 @@ map_prop_model_files = copy_gen.process(files(
     'kanto_bm_field_119.nsbmd',
     'kanto_bm_field_123.nsbmd',
     'kanto_bm_field_124.nsbmd',
+    'kanto_bm_field_132.nsbmd',
     'kanto_bm_field_133.nsbmd',
     'kanto_bm_field_142.nsbmd',
     'kanto_bm_field_144.nsbmd',

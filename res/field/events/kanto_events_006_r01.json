@@ -1,0 +1,19 @@
+{
+    "bg_events": [],
+    "object_events": [],
+    "warp_events": [
+        {
+            "x": 364,
+            "z": 288,
+            "dest_header_id": "MAP_HEADER_KANTO_VIRIDIAN_ROUTE_1_GATEHOUSE",
+            "dest_warp_id": 0
+        },
+        {
+            "x": 365,
+            "z": 288,
+            "dest_header_id": "MAP_HEADER_KANTO_VIRIDIAN_ROUTE_1_GATEHOUSE",
+            "dest_warp_id": 0
+        }
+    ],
+    "coord_events": []
+}

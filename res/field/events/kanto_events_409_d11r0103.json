@@ -1,0 +1,79 @@
+{
+    "bg_events": [],
+    "object_events": [],
+    "warp_events": [
+        {
+            "x": 34,
+            "z": 25,
+            "dest_header_id": "MAP_HEADER_KANTO_SEAFOAM_ISLANDS_B1F",
+            "dest_warp_id": 2
+        },
+        {
+            "x": 15,
+            "z": 21,
+            "dest_header_id": "MAP_HEADER_KANTO_SEAFOAM_ISLANDS_B1F",
+            "dest_warp_id": 3
+        },
+        {
+            "x": 18,
+            "z": 12,
+            "dest_header_id": "MAP_HEADER_KANTO_SEAFOAM_ISLANDS_B1F",
+            "dest_warp_id": 4
+        },
+        {
+            "x": 9,
+            "z": 23,
+            "dest_header_id": "MAP_HEADER_KANTO_SEAFOAM_ISLANDS_B1F",
+            "dest_warp_id": 5
+        },
+        {
+            "x": 43,
+            "z": 12,
+            "dest_header_id": "MAP_HEADER_KANTO_SEAFOAM_ISLANDS_B3F",
+            "dest_warp_id": 0
+        },
+        {
+            "x": 42,
+            "z": 23,
+            "dest_header_id": "MAP_HEADER_KANTO_SEAFOAM_ISLANDS_B3F",
+            "dest_warp_id": 1
+        },
+        {
+            "x": 23,
+            "z": 14,
+            "dest_header_id": "MAP_HEADER_KANTO_SEAFOAM_ISLANDS_B3F",
+            "dest_warp_id": 2
+        },
+        {
+            "x": 5,
+            "z": 24,
+            "dest_header_id": "MAP_HEADER_KANTO_SEAFOAM_ISLANDS_B3F",
+            "dest_warp_id": 3
+        },
+        {
+            "x": 34,
+            "z": 24,
+            "dest_header_id": "MAP_HEADER_KANTO_SEAFOAM_ISLANDS_B1F",
+            "dest_warp_id": 2
+        },
+        {
+            "x": 18,
+            "z": 11,
+            "dest_header_id": "MAP_HEADER_KANTO_SEAFOAM_ISLANDS_B1F",
+            "dest_warp_id": 4
+        },
+        {
+            "x": 15,
+            "z": 20,
+            "dest_header_id": "MAP_HEADER_KANTO_SEAFOAM_ISLANDS_B1F",
+            "dest_warp_id": 3
+        },
+        {
+            "x": 9,
+            "z": 22,
+            "dest_header_id": "MAP_HEADER_KANTO_SEAFOAM_ISLANDS_B1F",
+            "dest_warp_id": 5
+        }
+    ],
+    "coord_events": []
+}

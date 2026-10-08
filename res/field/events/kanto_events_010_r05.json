@@ -1,0 +1,31 @@
+{
+    "bg_events": [],
+    "object_events": [],
+    "warp_events": [
+        {
+            "x": 628,
+            "z": 189,
+            "dest_header_id": "MAP_HEADER_KANTO_ROUTE_5_SAFFRON_GATEHOUSE",
+            "dest_warp_id": 1
+        },
+        {
+            "x": 629,
+            "z": 189,
+            "dest_header_id": "MAP_HEADER_KANTO_ROUTE_5_SAFFRON_GATEHOUSE",
+            "dest_warp_id": 1
+        },
+        {
+            "x": 634,
+            "z": 185,
+            "dest_header_id": "MAP_HEADER_KANTO_ROUTE_5_UNDERGROUND_PATH_GATE",
+            "dest_warp_id": 0
+        },
+        {
+            "x": 625,
+            "z": 171,
+            "dest_header_id": "MAP_HEADER_KANTO_ROUTE_5_HOUSE",
+            "dest_warp_id": 0
+        }
+    ],
+    "coord_events": []
+}

@@ -1,0 +1,25 @@
+{
+    "bg_events": [],
+    "object_events": [],
+    "warp_events": [
+        {
+            "x": 11,
+            "z": 25,
+            "dest_header_id": "MAP_HEADER_KANTO_INDIGO_PLATEAU",
+            "dest_warp_id": 1
+        },
+        {
+            "x": 11,
+            "z": 7,
+            "dest_header_id": "MAP_HEADER_KANTO_POKEMON_LEAGUE_WILL_ROOM",
+            "dest_warp_id": 0
+        },
+        {
+            "x": 65535,
+            "z": 65535,
+            "dest_header_id": "MAP_HEADER_DYNAMIC",
+            "dest_warp_id": 0
+        }
+    ],
+    "coord_events": []
+}

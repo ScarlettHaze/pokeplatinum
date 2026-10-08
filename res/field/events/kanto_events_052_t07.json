@@ -1,0 +1,49 @@
+{
+    "bg_events": [],
+    "object_events": [],
+    "warp_events": [
+        {
+            "x": 529,
+            "z": 237,
+            "dest_header_id": "MAP_HEADER_KANTO_CELADON_DEPARTMENT_STORE_1F",
+            "dest_warp_id": 0
+        },
+        {
+            "x": 546,
+            "z": 237,
+            "dest_header_id": "MAP_HEADER_KANTO_CELADON_CONDOMINIUMS_1F",
+            "dest_warp_id": 0
+        },
+        {
+            "x": 559,
+            "z": 237,
+            "dest_header_id": "MAP_HEADER_KANTO_CELADON_POKECENTER_1F",
+            "dest_warp_id": 0
+        },
+        {
+            "x": 546,
+            "z": 249,
+            "dest_header_id": "MAP_HEADER_KANTO_CELADON_GAME_CORNER",
+            "dest_warp_id": 0
+        },
+        {
+            "x": 551,
+            "z": 249,
+            "dest_header_id": "MAP_HEADER_KANTO_CELADON_PRIZE_CORNER",
+            "dest_warp_id": 0
+        },
+        {
+            "x": 529,
+            "z": 266,
+            "dest_header_id": "MAP_HEADER_KANTO_CELADON_GYM",
+            "dest_warp_id": 0
+        },
+        {
+            "x": 553,
+            "z": 261,
+            "dest_header_id": "MAP_HEADER_KANTO_CELADON_RESTAURANT",
+            "dest_warp_id": 0
+        }
+    ],
+    "coord_events": []
+}

@@ -1,0 +1,25 @@
+{
+    "bg_events": [],
+    "object_events": [],
+    "warp_events": [
+        {
+            "x": 215,
+            "z": 266,
+            "dest_header_id": "MAP_HEADER_KANTO_ROUTE_22_POKEMON_LEAGUE_RECEPTION_GATE",
+            "dest_warp_id": 3
+        },
+        {
+            "x": 215,
+            "z": 267,
+            "dest_header_id": "MAP_HEADER_KANTO_ROUTE_22_POKEMON_LEAGUE_RECEPTION_GATE",
+            "dest_warp_id": 3
+        },
+        {
+            "x": 179,
+            "z": 263,
+            "dest_header_id": "MAP_HEADER_KANTO_ROUTE_28_HOUSE",
+            "dest_warp_id": 0
+        }
+    ],
+    "coord_events": []
+}

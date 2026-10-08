@@ -1,0 +1,25 @@
+{
+    "bg_events": [],
+    "object_events": [],
+    "warp_events": [
+        {
+            "x": 12,
+            "z": 7,
+            "dest_header_id": "MAP_HEADER_KANTO_CELADON_CONDOMINIUMS_ROOF_ROOM",
+            "dest_warp_id": 0
+        },
+        {
+            "x": 2,
+            "z": 4,
+            "dest_header_id": "MAP_HEADER_KANTO_CELADON_CONDOMINIUMS_LEFT_ELEVATOR",
+            "dest_warp_id": 0
+        },
+        {
+            "x": 6,
+            "z": 4,
+            "dest_header_id": "MAP_HEADER_KANTO_CELADON_CONDOMINIUMS_RIGHT_ELEVATOR",
+            "dest_warp_id": 0
+        }
+    ],
+    "coord_events": []
+}

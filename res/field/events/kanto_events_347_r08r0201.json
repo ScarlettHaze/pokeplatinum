@@ -1,0 +1,19 @@
+{
+    "bg_events": [],
+    "object_events": [],
+    "warp_events": [
+        {
+            "x": 1,
+            "z": 7,
+            "dest_header_id": "MAP_HEADER_KANTO_SAFFRON",
+            "dest_warp_id": 2
+        },
+        {
+            "x": 10,
+            "z": 7,
+            "dest_header_id": "MAP_HEADER_KANTO_ROUTE_8",
+            "dest_warp_id": 0
+        }
+    ],
+    "coord_events": []
+}

@@ -1,0 +1,43 @@
+{
+    "bg_events": [],
+    "object_events": [],
+    "warp_events": [
+        {
+            "x": 23,
+            "z": 36,
+            "dest_header_id": "MAP_HEADER_KANTO_ROUTE_10_SOUTH",
+            "dest_warp_id": 0
+        },
+        {
+            "x": 46,
+            "z": 10,
+            "dest_header_id": "MAP_HEADER_KANTO_ROUTE_10",
+            "dest_warp_id": 0
+        },
+        {
+            "x": 8,
+            "z": 34,
+            "dest_header_id": "MAP_HEADER_KANTO_ROCK_TUNNEL_B1F",
+            "dest_warp_id": 0
+        },
+        {
+            "x": 10,
+            "z": 18,
+            "dest_header_id": "MAP_HEADER_KANTO_ROCK_TUNNEL_B1F",
+            "dest_warp_id": 1
+        },
+        {
+            "x": 8,
+            "z": 7,
+            "dest_header_id": "MAP_HEADER_KANTO_ROCK_TUNNEL_B1F",
+            "dest_warp_id": 2
+        },
+        {
+            "x": 37,
+            "z": 17,
+            "dest_header_id": "MAP_HEADER_KANTO_ROCK_TUNNEL_B1F",
+            "dest_warp_id": 3
+        }
+    ],
+    "coord_events": []
+}

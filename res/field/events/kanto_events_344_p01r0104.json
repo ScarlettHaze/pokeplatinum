@@ -1,0 +1,19 @@
+{
+    "bg_events": [],
+    "object_events": [],
+    "warp_events": [
+        {
+            "x": 12,
+            "z": 12,
+            "dest_header_id": "MAP_HEADER_KANTO_SS_AQUA_VERMILION_PORT_INTERIOR",
+            "dest_warp_id": 1
+        },
+        {
+            "x": 65535,
+            "z": 65535,
+            "dest_header_id": "MAP_HEADER_DYNAMIC",
+            "dest_warp_id": 12
+        }
+    ],
+    "coord_events": []
+}

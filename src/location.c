@@ -6,18 +6,18 @@
 #include "savedata.h"
 
 static const Location sPlayerStartLocation = {
-    .mapHeaderID = MAP_HEADER_TWINLEAF_TOWN_PLAYER_HOUSE_2F,
+    .mapHeaderID = MAP_HEADER_KANTO_PALLET_TOWN_REDS_HOUSE_2F,
     .warpId = WARP_ID_NONE,
-    .x = 4,
-    .z = 6,
-    .faceDirection = FACE_UP,
+    .x = 6,
+    .z = 7,
+    .faceDirection = FACE_DOWN,
 };
 
 static const Location sPlayerFirstRespawnLocation = {
-    .mapHeaderID = MAP_HEADER_TWINLEAF_TOWN,
+    .mapHeaderID = MAP_HEADER_KANTO_PALLET,
     .warpId = WARP_ID_NONE,
-    .x = 116,
-    .z = 886,
+    .x = 361,
+    .z = 364,
     .faceDirection = FACE_DOWN,
 };
 

@@ -1,0 +1,55 @@
+{
+    "bg_events": [],
+    "object_events": [],
+    "warp_events": [
+        {
+            "x": 633,
+            "z": 116,
+            "dest_header_id": "MAP_HEADER_KANTO_CERULEAN_NORTH_HOUSE",
+            "dest_warp_id": 0
+        },
+        {
+            "x": 647,
+            "z": 123,
+            "dest_header_id": "MAP_HEADER_KANTO_CERULEAN_EAST_HOUSE",
+            "dest_warp_id": 0
+        },
+        {
+            "x": 632,
+            "z": 131,
+            "dest_header_id": "MAP_HEADER_KANTO_CERULEAN_WEST_HOUSE",
+            "dest_warp_id": 0
+        },
+        {
+            "x": 637,
+            "z": 131,
+            "dest_header_id": "MAP_HEADER_KANTO_CERULEAN_POKECENTER_1F",
+            "dest_warp_id": 0
+        },
+        {
+            "x": 646,
+            "z": 134,
+            "dest_header_id": "MAP_HEADER_KANTO_CERULEAN_GYM",
+            "dest_warp_id": 0
+        },
+        {
+            "x": 636,
+            "z": 144,
+            "dest_header_id": "MAP_HEADER_KANTO_CERULEAN_POKEMART",
+            "dest_warp_id": 0
+        },
+        {
+            "x": 626,
+            "z": 144,
+            "dest_header_id": "MAP_HEADER_KANTO_CERULEAN_BIKE_MANIAC_HOUSE",
+            "dest_warp_id": 0
+        },
+        {
+            "x": 618,
+            "z": 107,
+            "dest_header_id": "MAP_HEADER_KANTO_CERULEAN_CAVE_1F",
+            "dest_warp_id": 0
+        }
+    ],
+    "coord_events": []
+}

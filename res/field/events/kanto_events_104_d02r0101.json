@@ -1,0 +1,43 @@
+{
+    "bg_events": [],
+    "object_events": [],
+    "warp_events": [
+        {
+            "x": 4,
+            "z": 4,
+            "dest_header_id": "MAP_HEADER_KANTO_ROUTE_3",
+            "dest_warp_id": 0
+        },
+        {
+            "x": 22,
+            "z": 23,
+            "dest_header_id": "MAP_HEADER_KANTO_ROUTE_4",
+            "dest_warp_id": 0
+        },
+        {
+            "x": 17,
+            "z": 4,
+            "dest_header_id": "MAP_HEADER_KANTO_MOUNT_MOON_SQUARE_ENTRANCE",
+            "dest_warp_id": 0
+        },
+        {
+            "x": 22,
+            "z": 16,
+            "dest_header_id": "MAP_HEADER_KANTO_MOUNT_MOON_SQUARE_ENTRANCE",
+            "dest_warp_id": 3
+        },
+        {
+            "x": 22,
+            "z": 15,
+            "dest_header_id": "MAP_HEADER_KANTO_MOUNT_MOON_SQUARE_ENTRANCE",
+            "dest_warp_id": 3
+        },
+        {
+            "x": 17,
+            "z": 3,
+            "dest_header_id": "MAP_HEADER_KANTO_MOUNT_MOON_SQUARE_ENTRANCE",
+            "dest_warp_id": 0
+        }
+    ],
+    "coord_events": []
+}

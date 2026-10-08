@@ -13087,4 +13087,5 @@ static const MapHeader sMapHeaders[] = {
         .isEscapeRopeAllowed = TRUE,
         .isFlyAllowed = FALSE,
     },
+#include "data/kanto_map_headers.h"
 };

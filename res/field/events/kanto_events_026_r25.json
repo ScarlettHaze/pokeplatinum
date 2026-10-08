@@ -1,0 +1,13 @@
+{
+    "bg_events": [],
+    "object_events": [],
+    "warp_events": [
+        {
+            "x": 735,
+            "z": 38,
+            "dest_header_id": "MAP_HEADER_KANTO_ROUTE_25_SEA_COTTAGE",
+            "dest_warp_id": 0
+        }
+    ],
+    "coord_events": []
+}

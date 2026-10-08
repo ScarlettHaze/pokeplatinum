@@ -1,0 +1,43 @@
+{
+    "bg_events": [],
+    "object_events": [],
+    "warp_events": [
+        {
+            "x": 376,
+            "z": 78,
+            "dest_header_id": "MAP_HEADER_KANTO_PEWTER_MUSEUM_OF_SCIENCE",
+            "dest_warp_id": 0
+        },
+        {
+            "x": 396,
+            "z": 87,
+            "dest_header_id": "MAP_HEADER_KANTO_PEWTER_NORTHEAST_HOUSE",
+            "dest_warp_id": 0
+        },
+        {
+            "x": 375,
+            "z": 92,
+            "dest_header_id": "MAP_HEADER_KANTO_PEWTER_GYM",
+            "dest_warp_id": 0
+        },
+        {
+            "x": 388,
+            "z": 97,
+            "dest_header_id": "MAP_HEADER_KANTO_PEWTER_POKEMART",
+            "dest_warp_id": 0
+        },
+        {
+            "x": 376,
+            "z": 106,
+            "dest_header_id": "MAP_HEADER_KANTO_PEWTER_POKECENTER_1F",
+            "dest_warp_id": 0
+        },
+        {
+            "x": 365,
+            "z": 111,
+            "dest_header_id": "MAP_HEADER_KANTO_PEWTER_SOUTHWEST_HOUSE",
+            "dest_warp_id": 0
+        }
+    ],
+    "coord_events": []
+}

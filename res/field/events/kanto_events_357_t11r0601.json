@@ -1,0 +1,25 @@
+{
+    "bg_events": [],
+    "object_events": [],
+    "warp_events": [
+        {
+            "x": 14,
+            "z": 20,
+            "dest_header_id": "MAP_HEADER_KANTO_SAFFRON",
+            "dest_warp_id": 6
+        },
+        {
+            "x": 3,
+            "z": 4,
+            "dest_header_id": "MAP_HEADER_KANTO_SAFFRON_MAGNET_TRAIN_STATION_2F_EMPTY",
+            "dest_warp_id": 0
+        },
+        {
+            "x": 3,
+            "z": 3,
+            "dest_header_id": "MAP_HEADER_KANTO_SAFFRON_MAGNET_TRAIN_STATION_2F_EMPTY",
+            "dest_warp_id": 0
+        }
+    ],
+    "coord_events": []
+}

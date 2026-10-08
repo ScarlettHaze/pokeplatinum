@@ -1,0 +1,25 @@
+{
+    "bg_events": [],
+    "object_events": [],
+    "warp_events": [
+        {
+            "x": 747,
+            "z": 163,
+            "dest_header_id": "MAP_HEADER_KANTO_ROCK_TUNNEL_1F",
+            "dest_warp_id": 1
+        },
+        {
+            "x": 751,
+            "z": 184,
+            "dest_header_id": "MAP_HEADER_KANTO_ROUTE_10_POWER_PLANT_REPAIRED",
+            "dest_warp_id": 0
+        },
+        {
+            "x": 754,
+            "z": 163,
+            "dest_header_id": "MAP_HEADER_KANTO_ROUTE_10_POKECENTER_1F",
+            "dest_warp_id": 0
+        }
+    ],
+    "coord_events": []
+}

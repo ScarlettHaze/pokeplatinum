@@ -1,0 +1,19 @@
+{
+    "bg_events": [],
+    "object_events": [],
+    "warp_events": [
+        {
+            "x": 5,
+            "z": 10,
+            "dest_header_id": "MAP_HEADER_KANTO_PALLET",
+            "dest_warp_id": 0
+        },
+        {
+            "x": 9,
+            "z": 3,
+            "dest_header_id": "MAP_HEADER_KANTO_PALLET_TOWN_REDS_HOUSE_2F",
+            "dest_warp_id": 0
+        }
+    ],
+    "coord_events": []
+}

@@ -1,0 +1,31 @@
+{
+    "bg_events": [],
+    "object_events": [],
+    "warp_events": [
+        {
+            "x": 483,
+            "z": 426,
+            "dest_header_id": "MAP_HEADER_KANTO_ROUTE_18_GATEHOUSE",
+            "dest_warp_id": 0
+        },
+        {
+            "x": 483,
+            "z": 427,
+            "dest_header_id": "MAP_HEADER_KANTO_ROUTE_18_GATEHOUSE",
+            "dest_warp_id": 0
+        },
+        {
+            "x": 490,
+            "z": 426,
+            "dest_header_id": "MAP_HEADER_KANTO_ROUTE_18_GATEHOUSE",
+            "dest_warp_id": 1
+        },
+        {
+            "x": 490,
+            "z": 427,
+            "dest_header_id": "MAP_HEADER_KANTO_ROUTE_18_GATEHOUSE",
+            "dest_warp_id": 1
+        }
+    ],
+    "coord_events": []
+}

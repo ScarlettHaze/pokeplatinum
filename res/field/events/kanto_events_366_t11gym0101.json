@@ -1,0 +1,193 @@
+{
+    "bg_events": [],
+    "object_events": [],
+    "warp_events": [
+        {
+            "x": 15,
+            "z": 28,
+            "dest_header_id": "MAP_HEADER_KANTO_SAFFRON",
+            "dest_warp_id": 11
+        },
+        {
+            "x": 18,
+            "z": 22,
+            "dest_header_id": "MAP_HEADER_KANTO_SAFFRON_GYM",
+            "dest_warp_id": 2
+        },
+        {
+            "x": 28,
+            "z": 25,
+            "dest_header_id": "MAP_HEADER_KANTO_SAFFRON_GYM",
+            "dest_warp_id": 1
+        },
+        {
+            "x": 28,
+            "z": 22,
+            "dest_header_id": "MAP_HEADER_KANTO_SAFFRON_GYM",
+            "dest_warp_id": 4
+        },
+        {
+            "x": 28,
+            "z": 13,
+            "dest_header_id": "MAP_HEADER_KANTO_SAFFRON_GYM",
+            "dest_warp_id": 3
+        },
+        {
+            "x": 28,
+            "z": 16,
+            "dest_header_id": "MAP_HEADER_KANTO_SAFFRON_GYM",
+            "dest_warp_id": 6
+        },
+        {
+            "x": 2,
+            "z": 13,
+            "dest_header_id": "MAP_HEADER_KANTO_SAFFRON_GYM",
+            "dest_warp_id": 5
+        },
+        {
+            "x": 2,
+            "z": 16,
+            "dest_header_id": "MAP_HEADER_KANTO_SAFFRON_GYM",
+            "dest_warp_id": 8
+        },
+        {
+            "x": 8,
+            "z": 7,
+            "dest_header_id": "MAP_HEADER_KANTO_SAFFRON_GYM",
+            "dest_warp_id": 7
+        },
+        {
+            "x": 8,
+            "z": 4,
+            "dest_header_id": "MAP_HEADER_KANTO_SAFFRON_GYM",
+            "dest_warp_id": 10
+        },
+        {
+            "x": 17,
+            "z": 4,
+            "dest_header_id": "MAP_HEADER_KANTO_SAFFRON_GYM",
+            "dest_warp_id": 9
+        },
+        {
+            "x": 17,
+            "z": 7,
+            "dest_header_id": "MAP_HEADER_KANTO_SAFFRON_GYM",
+            "dest_warp_id": 12
+        },
+        {
+            "x": 2,
+            "z": 25,
+            "dest_header_id": "MAP_HEADER_KANTO_SAFFRON_GYM",
+            "dest_warp_id": 11
+        },
+        {
+            "x": 2,
+            "z": 22,
+            "dest_header_id": "MAP_HEADER_KANTO_SAFFRON_GYM",
+            "dest_warp_id": 14
+        },
+        {
+            "x": 28,
+            "z": 7,
+            "dest_header_id": "MAP_HEADER_KANTO_SAFFRON_GYM",
+            "dest_warp_id": 13
+        },
+        {
+            "x": 28,
+            "z": 4,
+            "dest_header_id": "MAP_HEADER_KANTO_SAFFRON_GYM",
+            "dest_warp_id": 16
+        },
+        {
+            "x": 22,
+            "z": 22,
+            "dest_header_id": "MAP_HEADER_KANTO_SAFFRON_GYM",
+            "dest_warp_id": 15
+        },
+        {
+            "x": 22,
+            "z": 25,
+            "dest_header_id": "MAP_HEADER_KANTO_SAFFRON_GYM",
+            "dest_warp_id": 18
+        },
+        {
+            "x": 8,
+            "z": 22,
+            "dest_header_id": "MAP_HEADER_KANTO_SAFFRON_GYM",
+            "dest_warp_id": 17
+        },
+        {
+            "x": 8,
+            "z": 25,
+            "dest_header_id": "MAP_HEADER_KANTO_SAFFRON_GYM",
+            "dest_warp_id": 20
+        },
+        {
+            "x": 8,
+            "z": 16,
+            "dest_header_id": "MAP_HEADER_KANTO_SAFFRON_GYM",
+            "dest_warp_id": 19
+        },
+        {
+            "x": 8,
+            "z": 13,
+            "dest_header_id": "MAP_HEADER_KANTO_SAFFRON_GYM",
+            "dest_warp_id": 22
+        },
+        {
+            "x": 13,
+            "z": 7,
+            "dest_header_id": "MAP_HEADER_KANTO_SAFFRON_GYM",
+            "dest_warp_id": 21
+        },
+        {
+            "x": 13,
+            "z": 4,
+            "dest_header_id": "MAP_HEADER_KANTO_SAFFRON_GYM",
+            "dest_warp_id": 24
+        },
+        {
+            "x": 22,
+            "z": 16,
+            "dest_header_id": "MAP_HEADER_KANTO_SAFFRON_GYM",
+            "dest_warp_id": 23
+        },
+        {
+            "x": 22,
+            "z": 13,
+            "dest_header_id": "MAP_HEADER_KANTO_SAFFRON_GYM",
+            "dest_warp_id": 26
+        },
+        {
+            "x": 22,
+            "z": 4,
+            "dest_header_id": "MAP_HEADER_KANTO_SAFFRON_GYM",
+            "dest_warp_id": 25
+        },
+        {
+            "x": 22,
+            "z": 7,
+            "dest_header_id": "MAP_HEADER_KANTO_SAFFRON_GYM",
+            "dest_warp_id": 28
+        },
+        {
+            "x": 2,
+            "z": 4,
+            "dest_header_id": "MAP_HEADER_KANTO_SAFFRON_GYM",
+            "dest_warp_id": 27
+        },
+        {
+            "x": 2,
+            "z": 7,
+            "dest_header_id": "MAP_HEADER_KANTO_SAFFRON_GYM",
+            "dest_warp_id": 30
+        },
+        {
+            "x": 18,
+            "z": 17,
+            "dest_header_id": "MAP_HEADER_KANTO_SAFFRON_GYM",
+            "dest_warp_id": 29
+        }
+    ],
+    "coord_events": []
+}

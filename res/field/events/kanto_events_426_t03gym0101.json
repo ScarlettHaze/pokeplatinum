@@ -1,0 +1,13 @@
+{
+    "bg_events": [],
+    "object_events": [],
+    "warp_events": [
+        {
+            "x": 7,
+            "z": 27,
+            "dest_header_id": "MAP_HEADER_KANTO_PEWTER",
+            "dest_warp_id": 2
+        }
+    ],
+    "coord_events": []
+}

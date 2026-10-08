@@ -1,0 +1,19 @@
+{
+    "bg_events": [],
+    "object_events": [],
+    "warp_events": [
+        {
+            "x": 240,
+            "z": 218,
+            "dest_header_id": "MAP_HEADER_KANTO_VICTORY_ROAD_3F",
+            "dest_warp_id": 0
+        },
+        {
+            "x": 240,
+            "z": 200,
+            "dest_header_id": "MAP_HEADER_KANTO_POKEMON_LEAGUE_ENTRANCE",
+            "dest_warp_id": 0
+        }
+    ],
+    "coord_events": []
+}

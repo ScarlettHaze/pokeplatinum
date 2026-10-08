@@ -1,0 +1,73 @@
+{
+    "bg_events": [],
+    "object_events": [],
+    "warp_events": [
+        {
+            "x": 569,
+            "z": 422,
+            "dest_header_id": "MAP_HEADER_KANTO_ROUTE_15_FUCHSIA_GATEHOUSE",
+            "dest_warp_id": 0
+        },
+        {
+            "x": 569,
+            "z": 423,
+            "dest_header_id": "MAP_HEADER_KANTO_ROUTE_15_FUCHSIA_GATEHOUSE",
+            "dest_warp_id": 0
+        },
+        {
+            "x": 531,
+            "z": 445,
+            "dest_header_id": "MAP_HEADER_KANTO_ROUTE_19_FUCHSIA_GATEHOUSE",
+            "dest_warp_id": 0
+        },
+        {
+            "x": 532,
+            "z": 445,
+            "dest_header_id": "MAP_HEADER_KANTO_ROUTE_19_FUCHSIA_GATEHOUSE",
+            "dest_warp_id": 0
+        },
+        {
+            "x": 525,
+            "z": 416,
+            "dest_header_id": "MAP_HEADER_KANTO_FUCHSIA_POKEMART",
+            "dest_warp_id": 0
+        },
+        {
+            "x": 542,
+            "z": 403,
+            "dest_header_id": "MAP_HEADER_KANTO_FUCHSIA_PAL_PARK_ENTRANCE",
+            "dest_warp_id": 0
+        },
+        {
+            "x": 543,
+            "z": 403,
+            "dest_header_id": "MAP_HEADER_KANTO_FUCHSIA_PAL_PARK_ENTRANCE",
+            "dest_warp_id": 0
+        },
+        {
+            "x": 523,
+            "z": 439,
+            "dest_header_id": "MAP_HEADER_KANTO_FUCHSIA_GYM",
+            "dest_warp_id": 0
+        },
+        {
+            "x": 528,
+            "z": 439,
+            "dest_header_id": "MAP_HEADER_KANTO_FUCHSIA_SOUTHWEST_HOUSE",
+            "dest_warp_id": 0
+        },
+        {
+            "x": 537,
+            "z": 439,
+            "dest_header_id": "MAP_HEADER_KANTO_FUCHSIA_POKECENTER_1F",
+            "dest_warp_id": 0
+        },
+        {
+            "x": 550,
+            "z": 435,
+            "dest_header_id": "MAP_HEADER_KANTO_FUCHSIA_SAFARI_ZONE_WARDEN_HOUSE",
+            "dest_warp_id": 0
+        }
+    ],
+    "coord_events": []
+}

@@ -18,6 +18,7 @@ typedef struct {
     u16 verticalFov;
     fx32 nearPlaneDist;
     fx32 farPlaneDist;
+    VecFx32 offset;
 } CameraSettings;
 
 static const CameraSettings sCameraTypes[] = {
@@ -157,6 +158,152 @@ static const CameraSettings sCameraTypes[] = {
         .nearPlaneDist = CAMERA_DEFAULT_NEAR_CLIP,
         .farPlaneDist = CAMERA_DEFAULT_FAR_CLIP,
     },
+    // Camera types from HGSS, used by the maps imported from Kanto.
+    [CAMERA_TYPE_HGSS_00] = {
+        .distance = 0x29aec1,
+        .cameraAngle = { 0xdd62, 0x0, 0x0 },
+        .projection = CAMERA_PROJECTION_PERSPECTIVE,
+        .verticalFov = 0x5c1,
+        .nearPlaneDist = 0x96000,
+        .farPlaneDist = 0x4b0000,
+    },
+    [CAMERA_TYPE_HGSS_01] = {
+        .distance = 0x19465c,
+        .cameraAngle = { 0xe383, 0x0, 0x0 },
+        .projection = CAMERA_PROJECTION_PERSPECTIVE,
+        .verticalFov = 0x981,
+        .nearPlaneDist = 0x86000,
+        .farPlaneDist = 0x4b0000,
+        .offset = { 0x0, 0x25000, -0xf000 },
+    },
+    [CAMERA_TYPE_HGSS_02] = {
+        .distance = 0x29aec1,
+        .cameraAngle = { 0xe3c2, 0x0, 0x0 },
+        .projection = CAMERA_PROJECTION_PERSPECTIVE,
+        .verticalFov = 0x5c1,
+        .nearPlaneDist = 0x96000,
+        .farPlaneDist = 0x4b0000,
+    },
+    [CAMERA_TYPE_HGSS_03] = {
+        .distance = 0x29aec1,
+        .cameraAngle = { 0xf242, 0x0, 0x0 },
+        .projection = CAMERA_PROJECTION_PERSPECTIVE,
+        .verticalFov = 0x5c1,
+        .nearPlaneDist = 0x96000,
+        .farPlaneDist = 0x4b0000,
+        .offset = { 0x0, 0x1e9c5, -0xc0c9 },
+    },
+    [CAMERA_TYPE_HGSS_04] = {
+        .distance = 0x61b89b,
+        .cameraAngle = { 0xdc82, 0x0, 0x0 },
+        .projection = CAMERA_PROJECTION_ORTHOGRAPHIC,
+        .verticalFov = 0x281,
+        .nearPlaneDist = 0x96000,
+        .farPlaneDist = 0x6c7000,
+    },
+    [CAMERA_TYPE_HGSS_05] = {
+        .distance = 0x1d19f6,
+        .cameraAngle = { 0xdda2, 0x0, 0x0 },
+        .projection = CAMERA_PROJECTION_PERSPECTIVE,
+        .verticalFov = 0x881,
+        .nearPlaneDist = 0x96000,
+        .farPlaneDist = 0x488000,
+        .offset = { 0x0, 0x0, -0x18000 },
+    },
+    [CAMERA_TYPE_HGSS_06] = {
+        .distance = 0x29aec1,
+        .cameraAngle = { 0xdfe2, 0x0, 0x0 },
+        .projection = CAMERA_PROJECTION_PERSPECTIVE,
+        .verticalFov = 0x5c1,
+        .nearPlaneDist = 0x96000,
+        .farPlaneDist = 0x5dc000,
+    },
+    [CAMERA_TYPE_HGSS_07] = {
+        .distance = 0x29aec1,
+        .cameraAngle = { 0xe1e2, 0x0, 0x0 },
+        .projection = CAMERA_PROJECTION_PERSPECTIVE,
+        .verticalFov = 0x5c1,
+        .nearPlaneDist = 0x96000,
+        .farPlaneDist = 0x4b0000,
+        .offset = { 0x0, 0x17c5b, -0x16a1e },
+    },
+    [CAMERA_TYPE_HGSS_08] = {
+        .distance = 0x20374c,
+        .cameraAngle = { 0xd922, 0x0, 0x0 },
+        .projection = CAMERA_PROJECTION_PERSPECTIVE,
+        .verticalFov = 0x770,
+        .nearPlaneDist = 0x96000,
+        .farPlaneDist = 0x384000,
+    },
+    [CAMERA_TYPE_HGSS_09] = {
+        .distance = 0x29bec1,
+        .cameraAngle = { 0xd582, 0x0, 0x0 },
+        .projection = CAMERA_PROJECTION_PERSPECTIVE,
+        .verticalFov = 0x5c1,
+        .nearPlaneDist = 0x96000,
+        .farPlaneDist = 0x4b0000,
+    },
+    [CAMERA_TYPE_HGSS_10] = {
+        .distance = 0x13c805,
+        .cameraAngle = { 0xdf42, 0x0, 0x0 },
+        .projection = CAMERA_PROJECTION_PERSPECTIVE,
+        .verticalFov = 0xc81,
+        .nearPlaneDist = 0x96000,
+        .farPlaneDist = 0x6a4000,
+        .offset = { 0x0, 0xc5f1, -0x25c74 },
+    },
+    [CAMERA_TYPE_HGSS_11] = {
+        .distance = 0x215c29,
+        .cameraAngle = { 0xe3c2, 0x0, 0x0 },
+        .projection = CAMERA_PROJECTION_PERSPECTIVE,
+        .verticalFov = 0x741,
+        .nearPlaneDist = 0x96000,
+        .farPlaneDist = 0x4b0000,
+        .offset = { 0x0, -0x8000, 0x0 },
+    },
+    [CAMERA_TYPE_HGSS_12] = {
+        .distance = 0x29aec1,
+        .cameraAngle = { 0xdfe2, 0x0, 0x0 },
+        .projection = CAMERA_PROJECTION_PERSPECTIVE,
+        .verticalFov = 0x5c1,
+        .nearPlaneDist = 0x96000,
+        .farPlaneDist = 0x6a4000,
+        .offset = { 0x0, 0x0, -0x20000 },
+    },
+    [CAMERA_TYPE_HGSS_13] = {
+        .distance = 0x29aec1,
+        .cameraAngle = { 0xf242, 0x0, 0x0 },
+        .projection = CAMERA_PROJECTION_PERSPECTIVE,
+        .verticalFov = 0x5c1,
+        .nearPlaneDist = 0x96000,
+        .farPlaneDist = 0x6a4000,
+        .offset = { 0x0, 0x1e9c5, -0x1e0c9 },
+    },
+    [CAMERA_TYPE_HGSS_14] = {
+        .distance = 0x29aec1,
+        .cameraAngle = { 0xd4c2, 0x0, 0x0 },
+        .projection = CAMERA_PROJECTION_PERSPECTIVE,
+        .verticalFov = 0x5c1,
+        .nearPlaneDist = 0x96000,
+        .farPlaneDist = 0x4b0000,
+    },
+    [CAMERA_TYPE_HGSS_15] = {
+        .distance = 0x61b89b,
+        .cameraAngle = { 0xdc82, 0x0, 0x0 },
+        .projection = CAMERA_PROJECTION_ORTHOGRAPHIC,
+        .verticalFov = 0x281,
+        .nearPlaneDist = 0x96000,
+        .farPlaneDist = 0x6c7000,
+        .offset = { 0x0, 0x0, -0x2e000 },
+    },
+    [CAMERA_TYPE_HGSS_16] = {
+        .distance = 0x29aec1,
+        .cameraAngle = { 0xd602, 0x0, 0x0 },
+        .projection = CAMERA_PROJECTION_PERSPECTIVE,
+        .verticalFov = 0x5c1,
+        .nearPlaneDist = 0x96000,
+        .farPlaneDist = 0x384000,
+    },
 };
 
 void FieldCamera_Create(const VecFx32 *_target, FieldSystem *fieldSystem, const enum CameraType configID, const BOOL withHistory)
@@ -171,6 +318,7 @@ void FieldCamera_Create(const VecFx32 *_target, FieldSystem *fieldSystem, const 
     Camera_InitWithTarget(target, config->distance, &config->cameraAngle, config->verticalFov, config->projection, TRUE, fieldSystem->camera);
     Camera_SetAsActive(fieldSystem->camera);
     Camera_SetClipping(config->nearPlaneDist, config->farPlaneDist, fieldSystem->camera);
+    Camera_Move(&config->offset, fieldSystem->camera);
 
     if (withHistory) {
         Camera_InitHistory(FIELD_CAMERA_HISTORY_SIZE, FIELD_CAMERA_DELAY, CAMERA_DELAY_Y, HEAP_ID_FIELD1, fieldSystem->camera);

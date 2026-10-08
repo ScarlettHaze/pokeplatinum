@@ -1,0 +1,43 @@
+{
+    "bg_events": [],
+    "object_events": [],
+    "warp_events": [
+        {
+            "x": 4,
+            "z": 3,
+            "dest_header_id": "MAP_HEADER_KANTO_ROUTE_5_UNDERGROUND_PATH_GATE",
+            "dest_warp_id": 2
+        },
+        {
+            "x": 4,
+            "z": 4,
+            "dest_header_id": "MAP_HEADER_KANTO_ROUTE_5_UNDERGROUND_PATH_GATE",
+            "dest_warp_id": 2
+        },
+        {
+            "x": 4,
+            "z": 5,
+            "dest_header_id": "MAP_HEADER_KANTO_ROUTE_5_UNDERGROUND_PATH_GATE",
+            "dest_warp_id": 2
+        },
+        {
+            "x": 4,
+            "z": 57,
+            "dest_header_id": "MAP_HEADER_KANTO_ROUTE_6_UNDERGROUND_PATH_GATE",
+            "dest_warp_id": 2
+        },
+        {
+            "x": 4,
+            "z": 58,
+            "dest_header_id": "MAP_HEADER_KANTO_ROUTE_6_UNDERGROUND_PATH_GATE",
+            "dest_warp_id": 2
+        },
+        {
+            "x": 4,
+            "z": 56,
+            "dest_header_id": "MAP_HEADER_KANTO_ROUTE_6_UNDERGROUND_PATH_GATE",
+            "dest_warp_id": 2
+        }
+    ],
+    "coord_events": []
+}

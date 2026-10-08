@@ -504,6 +504,442 @@
     {
       "id": "LocationNames_Text_RockPeakRuins",
       "en_US": "Rock Peak Ruins"
+    },
+    {
+      "id": "LocationNames_Text_Kanto126_NewBarkTown",
+      "en_US": "New Bark Town"
+    },
+    {
+      "id": "LocationNames_Text_Kanto127_CherrygroveCity",
+      "en_US": "Cherrygrove City"
+    },
+    {
+      "id": "LocationNames_Text_Kanto128_VioletCity",
+      "en_US": "Violet City"
+    },
+    {
+      "id": "LocationNames_Text_Kanto129_AzaleaTown",
+      "en_US": "Azalea Town"
+    },
+    {
+      "id": "LocationNames_Text_Kanto130_CianwoodCity",
+      "en_US": "Cianwood City"
+    },
+    {
+      "id": "LocationNames_Text_Kanto131_GoldenrodCity",
+      "en_US": "Goldenrod City"
+    },
+    {
+      "id": "LocationNames_Text_Kanto132_OlivineCity",
+      "en_US": "Olivine City"
+    },
+    {
+      "id": "LocationNames_Text_Kanto133_EcruteakCity",
+      "en_US": "Ecruteak City"
+    },
+    {
+      "id": "LocationNames_Text_Kanto134_MahoganyTown",
+      "en_US": "Mahogany Town"
+    },
+    {
+      "id": "LocationNames_Text_Kanto135_LakeOfRage",
+      "en_US": "Lake of Rage"
+    },
+    {
+      "id": "LocationNames_Text_Kanto136_BlackthornCity",
+      "en_US": "Blackthorn City"
+    },
+    {
+      "id": "LocationNames_Text_Kanto137_MtSilver",
+      "en_US": "Mt. Silver"
+    },
+    {
+      "id": "LocationNames_Text_Kanto138_PalletTown",
+      "en_US": "Pallet Town"
+    },
+    {
+      "id": "LocationNames_Text_Kanto139_ViridianCity",
+      "en_US": "Viridian City"
+    },
+    {
+      "id": "LocationNames_Text_Kanto140_PewterCity",
+      "en_US": "Pewter City"
+    },
+    {
+      "id": "LocationNames_Text_Kanto141_CeruleanCity",
+      "en_US": "Cerulean City"
+    },
+    {
+      "id": "LocationNames_Text_Kanto142_LavenderTown",
+      "en_US": "Lavender Town"
+    },
+    {
+      "id": "LocationNames_Text_Kanto143_VermilionCity",
+      "en_US": "Vermilion City"
+    },
+    {
+      "id": "LocationNames_Text_Kanto144_CeladonCity",
+      "en_US": "Celadon City"
+    },
+    {
+      "id": "LocationNames_Text_Kanto145_FuchsiaCity",
+      "en_US": "Fuchsia City"
+    },
+    {
+      "id": "LocationNames_Text_Kanto146_CinnabarIsland",
+      "en_US": "Cinnabar Island"
+    },
+    {
+      "id": "LocationNames_Text_Kanto147_IndigoPlateau",
+      "en_US": "Indigo Plateau"
+    },
+    {
+      "id": "LocationNames_Text_Kanto148_SaffronCity",
+      "en_US": "Saffron City"
+    },
+    {
+      "id": "LocationNames_Text_Kanto149_Route1",
+      "en_US": "Route 1"
+    },
+    {
+      "id": "LocationNames_Text_Kanto150_Route2",
+      "en_US": "Route 2"
+    },
+    {
+      "id": "LocationNames_Text_Kanto151_Route3",
+      "en_US": "Route 3"
+    },
+    {
+      "id": "LocationNames_Text_Kanto152_Route4",
+      "en_US": "Route 4"
+    },
+    {
+      "id": "LocationNames_Text_Kanto153_Route5",
+      "en_US": "Route 5"
+    },
+    {
+      "id": "LocationNames_Text_Kanto154_Route6",
+      "en_US": "Route 6"
+    },
+    {
+      "id": "LocationNames_Text_Kanto155_Route7",
+      "en_US": "Route 7"
+    },
+    {
+      "id": "LocationNames_Text_Kanto156_Route8",
+      "en_US": "Route 8"
+    },
+    {
+      "id": "LocationNames_Text_Kanto157_Route9",
+      "en_US": "Route 9"
+    },
+    {
+      "id": "LocationNames_Text_Kanto158_Route10",
+      "en_US": "Route 10"
+    },
+    {
+      "id": "LocationNames_Text_Kanto159_Route11",
+      "en_US": "Route 11"
+    },
+    {
+      "id": "LocationNames_Text_Kanto160_Route12",
+      "en_US": "Route 12"
+    },
+    {
+      "id": "LocationNames_Text_Kanto161_Route13",
+      "en_US": "Route 13"
+    },
+    {
+      "id": "LocationNames_Text_Kanto162_Route14",
+      "en_US": "Route 14"
+    },
+    {
+      "id": "LocationNames_Text_Kanto163_Route15",
+      "en_US": "Route 15"
+    },
+    {
+      "id": "LocationNames_Text_Kanto164_Route16",
+      "en_US": "Route 16"
+    },
+    {
+      "id": "LocationNames_Text_Kanto165_Route17",
+      "en_US": "Route 17"
+    },
+    {
+      "id": "LocationNames_Text_Kanto166_Route18",
+      "en_US": "Route 18"
+    },
+    {
+      "id": "LocationNames_Text_Kanto167_Route19",
+      "en_US": "Route 19"
+    },
+    {
+      "id": "LocationNames_Text_Kanto168_Route20",
+      "en_US": "Route 20"
+    },
+    {
+      "id": "LocationNames_Text_Kanto169_Route21",
+      "en_US": "Route 21"
+    },
+    {
+      "id": "LocationNames_Text_Kanto170_Route22",
+      "en_US": "Route 22"
+    },
+    {
+      "id": "LocationNames_Text_Kanto171_Route23",
+      "en_US": "Route 23"
+    },
+    {
+      "id": "LocationNames_Text_Kanto172_Route24",
+      "en_US": "Route 24"
+    },
+    {
+      "id": "LocationNames_Text_Kanto173_Route25",
+      "en_US": "Route 25"
+    },
+    {
+      "id": "LocationNames_Text_Kanto174_Route26",
+      "en_US": "Route 26"
+    },
+    {
+      "id": "LocationNames_Text_Kanto175_Route27",
+      "en_US": "Route 27"
+    },
+    {
+      "id": "LocationNames_Text_Kanto176_Route28",
+      "en_US": "Route 28"
+    },
+    {
+      "id": "LocationNames_Text_Kanto177_Route29",
+      "en_US": "Route 29"
+    },
+    {
+      "id": "LocationNames_Text_Kanto178_Route30",
+      "en_US": "Route 30"
+    },
+    {
+      "id": "LocationNames_Text_Kanto179_Route31",
+      "en_US": "Route 31"
+    },
+    {
+      "id": "LocationNames_Text_Kanto180_Route32",
+      "en_US": "Route 32"
+    },
+    {
+      "id": "LocationNames_Text_Kanto181_Route33",
+      "en_US": "Route 33"
+    },
+    {
+      "id": "LocationNames_Text_Kanto182_Route34",
+      "en_US": "Route 34"
+    },
+    {
+      "id": "LocationNames_Text_Kanto183_Route35",
+      "en_US": "Route 35"
+    },
+    {
+      "id": "LocationNames_Text_Kanto184_Route36",
+      "en_US": "Route 36"
+    },
+    {
+      "id": "LocationNames_Text_Kanto185_Route37",
+      "en_US": "Route 37"
+    },
+    {
+      "id": "LocationNames_Text_Kanto186_Route38",
+      "en_US": "Route 38"
+    },
+    {
+      "id": "LocationNames_Text_Kanto187_Route39",
+      "en_US": "Route 39"
+    },
+    {
+      "id": "LocationNames_Text_Kanto188_Route40",
+      "en_US": "Route 40"
+    },
+    {
+      "id": "LocationNames_Text_Kanto189_Route41",
+      "en_US": "Route 41"
+    },
+    {
+      "id": "LocationNames_Text_Kanto190_Route42",
+      "en_US": "Route 42"
+    },
+    {
+      "id": "LocationNames_Text_Kanto191_Route43",
+      "en_US": "Route 43"
+    },
+    {
+      "id": "LocationNames_Text_Kanto192_Route44",
+      "en_US": "Route 44"
+    },
+    {
+      "id": "LocationNames_Text_Kanto193_Route45",
+      "en_US": "Route 45"
+    },
+    {
+      "id": "LocationNames_Text_Kanto194_Route46",
+      "en_US": "Route 46"
+    },
+    {
+      "id": "LocationNames_Text_Kanto195_Route47",
+      "en_US": "Route 47"
+    },
+    {
+      "id": "LocationNames_Text_Kanto196_Route48",
+      "en_US": "Route 48"
+    },
+    {
+      "id": "LocationNames_Text_Kanto197_DiglettsCave",
+      "en_US": "DIGLETT’s Cave"
+    },
+    {
+      "id": "LocationNames_Text_Kanto198_MtMoon",
+      "en_US": "Mt. Moon"
+    },
+    {
+      "id": "LocationNames_Text_Kanto199_CeruleanCave",
+      "en_US": "Cerulean Cave"
+    },
+    {
+      "id": "LocationNames_Text_Kanto200_RockTunnel",
+      "en_US": "Rock Tunnel"
+    },
+    {
+      "id": "LocationNames_Text_Kanto201_PowerPlant",
+      "en_US": "Power Plant"
+    },
+    {
+      "id": "LocationNames_Text_Kanto202_SafariZone",
+      "en_US": "Safari Zone"
+    },
+    {
+      "id": "LocationNames_Text_Kanto203_SeafoamIslands",
+      "en_US": "Seafoam Islands"
+    },
+    {
+      "id": "LocationNames_Text_Kanto204_SproutTower",
+      "en_US": "Sprout Tower"
+    },
+    {
+      "id": "LocationNames_Text_Kanto205_BellTower",
+      "en_US": "Bell Tower"
+    },
+    {
+      "id": "LocationNames_Text_Kanto206_BurnedTower",
+      "en_US": "Burned Tower"
+    },
+    {
+      "id": "LocationNames_Text_Kanto207_NationalPark",
+      "en_US": "National Park"
+    },
+    {
+      "id": "LocationNames_Text_Kanto208_RadioTower",
+      "en_US": "Radio Tower"
+    },
+    {
+      "id": "LocationNames_Text_Kanto209_RuinsOfAlph",
+      "en_US": "Ruins of Alph"
+    },
+    {
+      "id": "LocationNames_Text_Kanto210_UnionCave",
+      "en_US": "Union Cave"
+    },
+    {
+      "id": "LocationNames_Text_Kanto211_SlowpokeWell",
+      "en_US": "SLOWPOKE Well"
+    },
+    {
+      "id": "LocationNames_Text_Kanto212_Lighthouse",
+      "en_US": "Lighthouse"
+    },
+    {
+      "id": "LocationNames_Text_Kanto213_TeamRocketHq",
+      "en_US": "Team Rocket HQ"
+    },
+    {
+      "id": "LocationNames_Text_Kanto214_IlexForest",
+      "en_US": "Ilex Forest"
+    },
+    {
+      "id": "LocationNames_Text_Kanto215_GoldenrodTunnel",
+      "en_US": "Goldenrod Tunnel"
+    },
+    {
+      "id": "LocationNames_Text_Kanto216_MtMortar",
+      "en_US": "Mt. Mortar"
+    },
+    {
+      "id": "LocationNames_Text_Kanto217_IcePath",
+      "en_US": "Ice Path"
+    },
+    {
+      "id": "LocationNames_Text_Kanto218_WhirlIslands",
+      "en_US": "Whirl Islands"
+    },
+    {
+      "id": "LocationNames_Text_Kanto219_MtSilverCave",
+      "en_US": "Mt. Silver Cave"
+    },
+    {
+      "id": "LocationNames_Text_Kanto220_DarkCave",
+      "en_US": "Dark Cave"
+    },
+    {
+      "id": "LocationNames_Text_Kanto221_VictoryRoad",
+      "en_US": "Victory Road"
+    },
+    {
+      "id": "LocationNames_Text_Kanto222_DragonsDen",
+      "en_US": "Dragon’s Den"
+    },
+    {
+      "id": "LocationNames_Text_Kanto223_TohjoFalls",
+      "en_US": "Tohjo Falls"
+    },
+    {
+      "id": "LocationNames_Text_Kanto224_ViridianForest",
+      "en_US": "Viridian Forest"
+    },
+    {
+      "id": "LocationNames_Text_Kanto225_PokathlonDome",
+      "en_US": "Pokéathlon Dome"
+    },
+    {
+      "id": "LocationNames_Text_Kanto226_SsAqua",
+      "en_US": "S.S. Aqua"
+    },
+    {
+      "id": "LocationNames_Text_Kanto227_SafariZoneGate",
+      "en_US": "Safari Zone Gate"
+    },
+    {
+      "id": "LocationNames_Text_Kanto228_CliffCave",
+      "en_US": "Cliff Cave"
+    },
+    {
+      "id": "LocationNames_Text_Kanto229_FrontierAccess",
+      "en_US": "Frontier Access"
+    },
+    {
+      "id": "LocationNames_Text_Kanto230_BellchimeTrail",
+      "en_US": "Bellchime Trail"
+    },
+    {
+      "id": "LocationNames_Text_Kanto231_SinjohRuins",
+      "en_US": "Sinjoh Ruins"
+    },
+    {
+      "id": "LocationNames_Text_Kanto232_EmbeddedTower",
+      "en_US": "Embedded Tower"
+    },
+    {
+      "id": "LocationNames_Text_Kanto233_Pokwalker",
+      "en_US": "Pokéwalker"
+    },
+    {
+      "id": "LocationNames_Text_Kanto234_CliffEdgeGate",
+      "en_US": "Cliff Edge Gate"
     }
   ]
 }

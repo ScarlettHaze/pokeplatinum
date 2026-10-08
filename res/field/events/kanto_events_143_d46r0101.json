@@ -1,0 +1,43 @@
+{
+    "bg_events": [],
+    "object_events": [],
+    "warp_events": [
+        {
+            "x": 32,
+            "z": 77,
+            "dest_header_id": "MAP_HEADER_KANTO_ROUTE_2_VIRIDIAN_FOREST_SOUTH_GATEHOUSE",
+            "dest_warp_id": 1
+        },
+        {
+            "x": 12,
+            "z": 15,
+            "dest_header_id": "MAP_HEADER_KANTO_ROUTE_2_VIRIDIAN_FOREST_NORTH_GATEHOUSE",
+            "dest_warp_id": 0
+        },
+        {
+            "x": 33,
+            "z": 77,
+            "dest_header_id": "MAP_HEADER_KANTO_ROUTE_2_VIRIDIAN_FOREST_SOUTH_GATEHOUSE",
+            "dest_warp_id": 1
+        },
+        {
+            "x": 13,
+            "z": 15,
+            "dest_header_id": "MAP_HEADER_KANTO_ROUTE_2_VIRIDIAN_FOREST_NORTH_GATEHOUSE",
+            "dest_warp_id": 0
+        },
+        {
+            "x": 12,
+            "z": 16,
+            "dest_header_id": "MAP_HEADER_KANTO_ROUTE_2_VIRIDIAN_FOREST_NORTH_GATEHOUSE",
+            "dest_warp_id": 0
+        },
+        {
+            "x": 13,
+            "z": 16,
+            "dest_header_id": "MAP_HEADER_KANTO_ROUTE_2_VIRIDIAN_FOREST_NORTH_GATEHOUSE",
+            "dest_warp_id": 0
+        }
+    ],
+    "coord_events": []
+}
