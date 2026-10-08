@@ -3,6 +3,7 @@
 #include <nitro.h>
 #include <string.h>
 
+#include "constants/quadrant.h"
 #include "generated/movement_actions.h"
 
 #include "struct_decls/map_object.h"
@@ -10,12 +11,14 @@
 #include "field/field_system.h"
 #include "overlay005/area_data.h"
 #include "overlay005/fieldmap.h"
+#include "overlay005/land_data.h"
 #include "overlay005/map_prop.h"
 #include "overlay005/map_prop_animation.h"
 
 #include "camera.h"
 #include "field_task.h"
 #include "heap.h"
+#include "map_matrix.h"
 #include "map_object.h"
 #include "player_avatar.h"
 #include "screen_fade.h"
@@ -48,6 +51,7 @@ typedef struct UnkStruct_ov5_021D4E00_t {
 static void ov5_021D4798(Camera *camera, u8 *param1);
 static void ov5_021D47DC(Camera *camera, u8 *param1);
 static u8 DoorAnimation_GetSoundEffectType(const int doorModelID);
+static BOOL FieldSystem_FindCollidingDoor(FieldSystem *fieldSystem, const int *doorModelIDs, const u8 doorModelIDsCount, const TerrainCollisionHitbox *hitbox, MapProp **door, int *doorModelID);
 
 UnkStruct_ov5_021D432C *ov5_021D431C(void)
 {
@@ -108,7 +112,7 @@ BOOL ov5_021D433C(FieldSystem *fieldSystem, UnkStruct_ov5_021D432C *param1)
 
         param1->unk_1C = 1;
 
-        v1 = FieldSystem_FindCollidingLoadedMapPropByModelIDs(fieldSystem, v5, NELEMS(v5), &v3, &v2, &v4);
+        v1 = FieldSystem_FindCollidingDoor(fieldSystem, v5, NELEMS(v5), &v3, &v2, &v4);
 
         if (v1) {
             u8 v6;
@@ -265,7 +269,7 @@ BOOL ov5_021D453C(FieldSystem *fieldSystem, UnkStruct_ov5_021D432C *param1)
         TerrainCollisionHitbox_Init(param1->unk_14, param1->unk_18, -1, 0, 3, 1, &v3);
         param1->unk_1C = 1;
 
-        v1 = FieldSystem_FindCollidingLoadedMapPropByModelIDs(fieldSystem, v5, NELEMS(v5), &v3, &v2, &v4);
+        v1 = FieldSystem_FindCollidingDoor(fieldSystem, v5, NELEMS(v5), &v3, &v2, &v4);
 
         if (v1) {
             u8 v6;
@@ -461,6 +465,39 @@ static void ov5_021D47DC(Camera *camera, u8 *param1)
 
         (*param1)++;
     }
+}
+
+// Sinnoh's doors are listed by model; Kanto's (from HGSS) are flagged in their animation list.
+static BOOL FieldSystem_FindCollidingDoor(FieldSystem *fieldSystem, const int *doorModelIDs, const u8 doorModelIDsCount, const TerrainCollisionHitbox *hitbox, MapProp **door, int *doorModelID)
+{
+    if (FieldSystem_FindCollidingLoadedMapPropByModelIDs(fieldSystem, doorModelIDs, doorModelIDsCount, hitbox, door, doorModelID)) {
+        return TRUE;
+    }
+
+    for (u8 i = 0; i < QUADRANT_COUNT; i++) {
+        MapPropManager *mapPropMan;
+        LandDataManager_GetLoadedMapPropManager(i, fieldSystem->landDataMan, &mapPropMan);
+
+        if (mapPropMan == NULL) {
+            continue;
+        }
+
+        VecFx32 mapAbsoluteOrigin;
+        TerrainCollisionManager_GetMapAbsoluteOrigin(LandDataManager_GetLoadedMapMatrixIndex(fieldSystem->landDataMan, i), MapMatrix_GetWidth(fieldSystem->mapMatrix), &mapAbsoluteOrigin);
+
+        for (u8 j = 0; j < MAX_LOADED_MAP_PROPS; j++) {
+            MapProp *mapProp = MapPropManager_GetLoadedProp(mapPropMan, j);
+
+            if (TerrainCollisionHitbox_CollidesWithMapProp(mapProp, hitbox, &mapAbsoluteOrigin)
+                && MapPropAnimationManager_IsDoor(fieldSystem->mapPropAnimMan, MapProp_GetModelID(mapProp))) {
+                *door = mapProp;
+                *doorModelID = MapProp_GetModelID(mapProp);
+                return TRUE;
+            }
+        }
+    }
+
+    return FALSE;
 }
 
 static u8 DoorAnimation_GetSoundEffectType(const int doorModelID)
@@ -741,7 +778,7 @@ void DoorAnimation_FindDoorAndLoad(FieldSystem *fieldSystem, const int x, const 
     };
 
     TerrainCollisionHitbox_Init(x, z, -1, 0, 3, 1, &hitbox);
-    doorFound = FieldSystem_FindCollidingLoadedMapPropByModelIDs(fieldSystem, doorModelIDs, NELEMS(doorModelIDs), &hitbox, &door, &doorModelID);
+    doorFound = FieldSystem_FindCollidingDoor(fieldSystem, doorModelIDs, NELEMS(doorModelIDs), &hitbox, &door, &doorModelID);
 
     if (doorFound) {
         u8 unused;

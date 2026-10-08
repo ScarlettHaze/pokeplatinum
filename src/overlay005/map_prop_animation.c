@@ -834,6 +834,18 @@ const int MapPropOneShotAnimationManager_GetAnimationMapPropModelID(MapPropOneSh
     return oneShotAnimation->mapPropModelID;
 }
 
+BOOL MapPropAnimationManager_IsDoor(MapPropAnimationManager *manager, const int mapPropModelID)
+{
+    if (mapPropModelID >= MapPropAnimationManager_GetAnimeListNARCFileCount(manager)) {
+        return FALSE;
+    }
+
+    MapPropAnimeListFile animeListFile;
+    NARC_ReadWholeMember(manager->animeListNARC, mapPropModelID, &animeListFile);
+
+    return animeListFile.hasAnimations == TRUE && animeListFile.isDoor;
+}
+
 BOOL MapPropAnimationManager_UpdateTimeOfDay(MapPropAnimationManager *manager, u8 *prevTimeOfDayAnimIndex)
 {
     u8 timeOfDayAnimIndex = sTimeOfDayAnimIndexes[GetTimeOfDay()];

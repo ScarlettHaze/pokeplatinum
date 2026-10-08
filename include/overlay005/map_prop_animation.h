@@ -43,7 +43,8 @@ typedef struct MapPropAnimeListFile {
     u8 hasAnimations;
     u8 flags;
     u8 isBicycleSlope;
-    u8 dummy03;
+    // Only set on Kanto's props (from HGSS), which mark their doors here.
+    u8 isDoor;
     int animeArchiveIDs[MAP_PROP_ANIME_LIST_FILE_ARCHIVE_IDS_COUNT];
 } MapPropAnimeListFile;
 
@@ -87,6 +88,7 @@ MapPropAnimation *MapPropAnimationManager_GetAnimation(const int mapPropModelID,
 void MapPropAnimationManager_AdvanceAnimations(MapPropAnimationManager *manager);
 u16 MapPropAnimationManager_GetAnimeListNARCFileCount(MapPropAnimationManager *manager);
 const u8 MapPropAnimationManager_GetPropAnimationCount(MapPropAnimationManager *manager, const int mapPropModelID);
+BOOL MapPropAnimationManager_IsDoor(MapPropAnimationManager *manager, const int mapPropModelID);
 BOOL MapPropAnimationManager_UpdateTimeOfDay(MapPropAnimationManager *manager, u8 *prevTimeOfDayAnimIndex);
 void MapPropAnimationManager_SwapTimeOfDayAnimation(const int mapPropModelID, NNSG3dRenderObj *mapPropRenderObj, const u8 prevTimeOfDayAnimIndex, MapPropAnimationManager *manager);
 
