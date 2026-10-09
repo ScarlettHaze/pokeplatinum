@@ -1,22 +1,5 @@
 {
-    "bg_events": [
-        {
-            "script": 1,
-            "type": 1,
-            "x": 242,
-            "z": 202,
-            "y": 0,
-            "player_facing_dir": "BG_EVENT_DIR_ALL"
-        },
-        {
-            "script": 8034,
-            "type": 2,
-            "x": 238,
-            "z": 209,
-            "y": 0,
-            "player_facing_dir": "BG_EVENT_DIR_ALL"
-        }
-    ],
+    "bg_events": [],
     "object_events": [],
     "warp_events": [
         {

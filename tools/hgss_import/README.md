@@ -20,7 +20,9 @@ Run them in this order, each with the pokeheartgold path as the argument:
 7. `import_kanto_music.py`: map music.
 8. `import_kanto_scripts.py`: text, signs, NPCs, items, marts and scripts.
    It reads sound IDs from `build/res/sound/pl_sound_data.naix`, so build
-   the ROM once first.
+   the ROM once first. **Don't run it for now:** the game is becoming an
+   FRLG remake, and HGSS's scripts and events were taken out (see below).
+   Running it would put them back.
 
 ## Done
 
@@ -52,31 +54,22 @@ Run them in this order, each with the pokeheartgold path as the argument:
     objects too, showing the bare tree: HGSS's apricorns and the tree's shake
     come from its apricorn save data and scripts, which are part of the
     scripts job below.
-- **Text, events and scripts** (`import_kanto_scripts.py`):
-  - Every Kanto message bank becomes a Platinum text bank
-    (`res/text/kanto_*.json`). The message IDs stay HGSS's.
-  - Every Kanto map has HGSS's NPCs, signs, hidden items, item balls,
-    Cut trees, Rock Smash rocks, Strength boulders and step triggers.
-  - HGSS's map and init scripts are translated to Platinum's script commands
-    (`kanto_scripts.py`, output in `res/field/scripts/kanto_scripts_*.s`).
-    551 script entries run as in HGSS. The other 241 need something Platinum
-    lacks: an NPC or sign with one of those says the first line of its
-    script, anything else does nothing. `kanto_scripts_report.txt` lists
-    each one and why.
-  - HGSS's flags and vars use Platinum's that only Sinnoh's map scripts used.
-    `kanto_vars_flags.json` records which. Map-temporary flags and vars,
-    daily flags, fly flags and the game clear flag map to Platinum's
-    equivalents. Kanto's flags that HGSS sets in a new game are set in
-    Platinum's new game script too.
-  - Item balls join `scripts_visible_items.s`. Kanto's 91 hidden items
-    replace Sinnoh's in the hidden items table
-    (`include/data/field/kanto_hidden_items.h`). Kanto's specialty marts join
-    Platinum's (`include/data/kanto_marts.h`).
+- **Text and signs** (from `import_kanto_scripts.py`):
+  - Every Kanto message bank is a Platinum text bank
+    (`res/text/kanto_*.json`), and the Kanto map headers use them. The
+    message IDs stay HGSS's.
   - Signs use HGSS's signpost graphics (`kanto_signs.py`), so map and arrow
     signs show HGSS's pictures.
-  - Pokémon Center nurses and Poké Marts use Platinum's common scripts. The
-    healing animation uses HGSS's healing machine, Poké Balls and screen
+  - Kanto's specialty marts are in Platinum's mart table
+    (`include/data/kanto_marts.h`).
+  - The healing animation uses HGSS's healing machine, Poké Balls and screen
     (`healing_machine_animation/pokecenter.c`).
+- **Scripts and events: taken out.** HGSS's translated scripts, NPCs, sign
+  events, item balls, hidden items and step triggers were imported, then
+  removed so the maps can get FRLG's instead. The maps keep only their
+  warps, and the hidden items table is Sinnoh's again.
+  `import_kanto_scripts.py`, `kanto_scripts.py` and the report stay for
+  reference.
 
 ## Left to do
 
@@ -126,29 +119,24 @@ Still to do:
   ported.
 - HGSS's low HP music in battle isn't ported: Platinum has none.
 
-### 2. Trainers and the rest of the scripts (the biggest job)
+### 2. FRLG's events, scripts and trainers (the biggest job)
 
-- **Trainers:** HGSS's trainers and parties aren't imported. The 176 trainer
-  NPCs stand where HGSS has them but don't battle, and gym leaders, the
-  Elite Four and the Champion don't battle either. This needs HGSS's
-  trainer data, classes and pictures in Platinum's trainer table, and
-  `TrainerBattle` and trainer flags in `kanto_scripts.py`.
-- **Missing items:** Platinum lacks some Kanto story items (Machine Part,
-  Pass, Lost Item, Rage Candy Bar, the GB Sounds and others), so their
-  quests stop. 4 item balls and 1 hidden item with such items are left out.
-- **HGSS-only features** behind most of the 241 stand-ins: Cameron's photos,
-  the phone and Pokégear, the Game Corner, the Vermilion Gym puzzle, NPC
-  trades, Pal Park, Rotom's forms, static encounter outcomes, elevators and
-  department store floors. Each needs a Platinum version of the command.
-- **Pokémon Center link rooms:** HGSS's union room, wireless and Wi-Fi NPCs,
-  Teala and the delivery men stand in place without scripts, and their
-  init scripts are dropped.
-- **Music in scripts:** scenes that change music in HGSS keep the map's
-  music; HGSS-only sound effects are dropped.
-- **The rival.** Platinum's intro still names Barry and shows his picture.
-- **Apricorn trees:** HGSS's apricorn save data, picking apricorns, and the
-  trees' apricorn and shake sprites.
-- **A starter:** Kanto has no starter event, so a new game has no Pokémon.
+The plan is a FRLG remake on HGSS's Kanto. FRLG's story, trainers, items and
+text come from [pokefirered](https://github.com/pret/pokefirered). Places
+HGSS's Kanto lacks or changed (Cinnabar, the Pokémon Tower, the Rocket
+Hideout, the S.S. Anne, Silph Co.'s floors, the Safari Zone) will reuse
+Johto maps from HGSS where they fit. The Sevii Islands are left out for now.
+
+- **The opening:** Oak stopping the player on Route 1, choosing a starter in
+  his lab, and the first rival battle. A new game has no Pokémon until then.
+- **NPCs, signs, items and hidden items** on every map, with FRLG's text.
+- **Trainers:** FRLG's trainers and parties, the gym leaders, the Elite Four
+  and the rival. Platinum's trainers are JSON files in `res/trainers/data`.
+- **The rival:** Platinum's intro still names Barry and shows his picture.
+- **Missing items:** Platinum lacks some FRLG story items, such as the Oak's
+  Parcel, the S.S. Ticket, the Silph Scope and the Poké Flute.
+- **Apricorn trees:** HGSS's apricorn trees still stand as bare trees, and
+  FRLG has none.
 
 ### 3. Smaller gaps
 
@@ -174,21 +162,17 @@ Still to do:
 ## Testing
 
 Only Pallet Town and Route 1 have been played. The test covered warps,
-lighting, animations, a wild battle, the Town Map and the sprites. Scripts
-were tested on Pallet Town's sign and NPCs, Red's house, and the Viridian
-City Pokémon Center and Poké Mart. The other maps build, but nobody has
-walked them yet.
+lighting, animations, a wild battle, the Town Map and the sprites. With the
+scripts and events taken out, a new game still starts in Red's room and
+Pallet Town loads. The other maps build, but nobody has walked them yet.
 
 Surf and the bicycle were tested on Route 21, Pallet Town and Route 1: each
 song loads and starts, and the Bag and start menu open while Surf's plays.
 Every battle song, then its victory song, then the map's song were played
 through the calls a battle makes, and all of them load.
 
-A wild battle on Route 1 started from the test patch fails after the
-encounter starts, before its music matters: the battle's parties read as
-empty and the screen stays black. It fails the same way without the battle
-music, so it may come from the test patch's shortcuts (skipping the intro,
-adding a Pokémon when the map loads) rather than the game. Not yet known.
+A wild battle with no Pokémon in the party goes to a black screen; a new
+game needs its starter first.
 
 Emulator testing used py-desmume with a temporary, uncommitted patch. The
 patch skips the intro, names the player, gives a Pokémon, and registers the

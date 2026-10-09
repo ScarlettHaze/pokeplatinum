@@ -1,22 +1,6 @@
 {
     "bg_events": [],
-    "object_events": [
-        {
-            "id": "obj_T01R0201_nanami",
-            "graphics_id": "OBJ_EVENT_GFX_KANTO_NANAMI",
-            "movement_type": "MOVEMENT_TYPE_LOOK_EAST",
-            "trainer_type": "TRAINER_TYPE_NONE",
-            "hidden_flag": "0",
-            "script": 1,
-            "initial_dir": 3,
-            "data": [],
-            "movement_range_x": 0,
-            "movement_range_z": 0,
-            "x": 6,
-            "z": 6,
-            "y": 0
-        }
-    ],
+    "object_events": [],
     "warp_events": [
         {
             "x": 5,

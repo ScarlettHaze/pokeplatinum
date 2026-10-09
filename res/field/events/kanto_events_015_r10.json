@@ -1,62 +1,6 @@
 {
-    "bg_events": [
-        {
-            "script": 8006,
-            "type": 2,
-            "x": 746,
-            "z": 183,
-            "y": 0,
-            "player_facing_dir": "BG_EVENT_DIR_ALL"
-        },
-        {
-            "script": 6,
-            "type": 1,
-            "x": 749,
-            "z": 185,
-            "y": 0,
-            "player_facing_dir": "BG_EVENT_DIR_ALL"
-        },
-        {
-            "script": 7,
-            "type": 1,
-            "x": 750,
-            "z": 164,
-            "y": 0,
-            "player_facing_dir": "BG_EVENT_DIR_ALL"
-        }
-    ],
-    "object_events": [
-        {
-            "id": "obj_R10_gsleader9",
-            "graphics_id": "OBJ_EVENT_GFX_KANTO_GSLEADER9",
-            "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
-            "trainer_type": "TRAINER_TYPE_NONE",
-            "hidden_flag": "FLAG_UNK_0x004D",
-            "script": 3,
-            "initial_dir": 1,
-            "data": [],
-            "movement_range_x": 0,
-            "movement_range_z": 0,
-            "x": 758,
-            "z": 183,
-            "y": 0
-        },
-        {
-            "id": "obj_R10_tsure_poke_static_zapdos",
-            "graphics_id": "OBJ_EVENT_GFX_KANTO_FOLLOWER_MON_STATIC_ZAPDOS",
-            "movement_type": "MOVEMENT_TYPE_LOOK_SOUTH",
-            "trainer_type": "TRAINER_TYPE_NONE",
-            "hidden_flag": "FLAG_UNK_0x004E",
-            "script": 4,
-            "initial_dir": 1,
-            "data": [],
-            "movement_range_x": 0,
-            "movement_range_z": 0,
-            "x": 747,
-            "z": 184,
-            "y": 0
-        }
-    ],
+    "bg_events": [],
+    "object_events": [],
     "warp_events": [
         {
             "x": 747,
@@ -77,16 +21,5 @@
             "dest_warp_id": 0
         }
     ],
-    "coord_events": [
-        {
-            "script": 1,
-            "x": 751,
-            "z": 184,
-            "y": 0,
-            "width": 1,
-            "length": 1,
-            "var": "VAR_UNUSED_0x4031",
-            "value": 0
-        }
-    ]
+    "coord_events": []
 }
