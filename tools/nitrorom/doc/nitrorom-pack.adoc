@@ -190,7 +190,7 @@ the ROM-file and the hardware.
     which will not be summarized here; in practice, this value controls various
     clock-timings for card-access by the hardware and the functional size-limit
     for an output ROM-file: “MROM” ROM-files are limited to 64MB of capacity,
-    whereas “PROM” ROM-files are limited to 2GB of total ROM space.
+    whereas “PROM” ROM-files are limited to 512MB of total ROM space.
     Generally, the storage-type used by a retail ROM-file can be identified
     by interpreting offset `0x006E..0x006F` of the file as a 16-bit integer in
     little-endian order: a value of `0x051E` represents “MROM”, while a value of

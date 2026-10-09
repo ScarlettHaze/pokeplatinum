@@ -79,7 +79,7 @@ int nitrorom_pack(int argc, const char **argv)
     if (rompacker_seal(packer) != 0) {
         int maxshift = packer->prom ? MAX_CAPSHIFT_PROM : MAX_CAPSHIFT_MROM;
         die("computed ROM size exceeds allowable maximum of 0x%08X!\n",
-            TRY_CAPSHIFT_BASE << maxshift);
+            TRY_CAPSHIFT_BASE << (maxshift - 1));
     }
 
     if (args.dryrun) {

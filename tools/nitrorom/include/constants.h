@@ -11,7 +11,9 @@
 
 #define TRY_CAPSHIFT_BASE 0x00020000
 #define MAX_CAPSHIFT_MROM 10
-#define MAX_CAPSHIFT_PROM 15
+// Capacities 128KB << shift, for shift below these. PROM stops at 512MB
+// (shift 12), the most real DS hardware and flash carts read.
+#define MAX_CAPSHIFT_PROM 13
 
 #define OFS_HEADER_TITLE            0x000
 #define OFS_HEADER_SERIAL           0x00C
