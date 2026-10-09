@@ -17,7 +17,7 @@ Run them in this order, each with the pokeheartgold path as the argument:
    `kanto_town_map.png`; `import_kanto_town_map.py --png <file>` rebuilds the
    Town Map from an edited copy.
 6. `import_kanto_sprites.py`: overworld sprites for the player and NPCs.
-7. `import_kanto_music.py`: map music.
+7. `import_kanto_music.py`: the map headers' music, by HGSS's song names.
 8. `import_kanto_scripts.py`: text, signs, NPCs, items, marts and scripts.
    It reads sound IDs from `build/res/sound/pl_sound_data.naix`, so build
    the ROM once first. **Don't run it for now:** the game is becoming an
@@ -79,45 +79,45 @@ Smallest first.
 
 Done:
 
-- `import_kanto_music.py` extracts the 36 Kanto songs from HGSS's sound
-  archive into `res/sound/kanto/`.
-- Each song gets its own bank and a compact wave archive. These hold only the
-  samples the song plays. HGSS keeps its basic samples resident in the sound
-  heap, as Platinum keeps its own, and both can't sit there at once. A sample
-  that Platinum's basic wave archive also holds plays from that resident
-  archive instead, as HGSS's songs play from theirs; that saves 40 to 80 KB
-  a song. The importer reads Platinum's basic wave archive from the build.
-- The field player loads a Kanto song's own bank and samples whenever the
-  song changes, including when walking from one map to the next. Sinnoh's
-  songs shared one bank, so Platinum didn't reload it there.
-- The music players get HGSS's channels (1 to 10, 13 and 15), which the PSG
-  and drum parts need.
-- `SOUND_SYSTEM_HEAP_SIZE` grows by 160 KB, out of the main arena's spare
-  room. That room was measured at 188 KB.
-- Surf and the bicycle play HGSS's songs (`KANTO_SURF_BGM` and
-  `KANTO_BICYCLE_BGM` in `include/data/kanto_sound.h`). Surf's is the
-  largest field song and leaves 78 KB of the sound heap. That is enough for
-  every sound effect group a menu or other sub-screen loads; the largest is
-  about 33 KB.
-- Battles play HGSS's Kanto music, as HGSS picks it: Kanto's wild, trainer
-  and gym leader themes, HGSS's gym leader theme for the Elite Four, and its
-  Champion and rival themes. The victory songs are HGSS's too: one for wild
-  Pokémon, one for trainers and one for gym leaders, the Elite Four and the
-  Champion. Sinnoh's legendaries, Team Galactic and the Battle Frontier keep
-  Platinum's music. A battle song has 217 KB of the sound heap; the largest,
-  Kanto's gym leader theme, leaves 17 KB.
+- **The sound archive is HGSS's,** unchanged: its music, sound effects,
+  cries and instruments (`res/sound/gs_sound_data.sdat`, from pokeheartgold).
+  Platinum's sound sources are gone.
+- `hgss_sound.py` builds `pl_sound_data.naix` from it, so Platinum's code
+  keeps naming sounds by Platinum's names. Each Platinum name points at an
+  HGSS sound: the one chosen in its `HAND` table, else the one with the
+  Platinum sound's original DP name (`pl_sound_names.json` records those),
+  else the one with the same name. 562 of the 592 sound effects the code uses
+  have the same name in HGSS. HGSS's own names are defined too.
+- Sounds HGSS lacks map to the closest HGSS sound: Platinum's fanfares to
+  HGSS's (level up, item, key item, evolution, badge, TM), the eyes-meet
+  music to HGSS's Kanto themes, contests to the Pokéathlon, the Battle
+  Frontier and Wi-Fi to HGSS's, and Sinnoh's places to similar HGSS songs.
+  The few Sinnoh-only sound effects with nothing close are silent.
+- Cries keep their numbers: HGSS's cry wave archives are indexed by species,
+  like Platinum's, with Sky Forme Shaymin at 494.
+- HGSS's field songs each have their own bank, unlike Sinnoh's, so a field
+  song always loads its bank and samples, including on a walk from one map
+  to the next.
+- `SOUND_SYSTEM_HEAP_SIZE` is HGSS's, 0xBEAE0 (781 KB): 12 KB more than
+  Platinum's.
+- The Kanto map headers use HGSS's songs by name. Surf, the bicycle and
+  battles use HGSS's Kanto music, named in `include/data/kanto_sound.h`:
+  Kanto's wild, trainer and gym leader themes, HGSS's gym leader theme for
+  the Elite Four, its Champion and rival themes, and its three victory songs.
+- A battle song has 87 KB of the sound heap; the largest, Kanto's trainer
+  theme, leaves 33 KB. Surf's song leaves 75 KB on the field, enough for
+  every sound effect group a menu loads.
 - `nitrosfx` aligned the sound archive's files wrongly whenever its headers
   didn't end on a 32 byte boundary, and the game hung loading sounds at boot.
   This is fixed. Archives that were already aligned build the same.
 
 Still to do:
 
-- Confirm that the larger sound heap leaves enough main arena for every
-  mode. The untested cases are Wi-Fi, the Union Room and the Battle Frontier.
-- Trainer-encounter, evolution and other music still play Platinum's
-  tracks. Only the map, Surf, bicycle, battle and victory music has been
-  ported.
 - HGSS's low HP music in battle isn't ported: Platinum has none.
+- Untested with HGSS's sound archive: Wi-Fi, the Union Room, the Battle
+  Frontier, contests and the Underground.
+- FRLG's events will need their own picks from HGSS's songs, such as the
+  rival's theme and Team Rocket's.
 
 ### 2. FRLG's events, scripts and trainers (the biggest job)
 
@@ -166,10 +166,12 @@ lighting, animations, a wild battle, the Town Map and the sprites. With the
 scripts and events taken out, a new game still starts in Red's room and
 Pallet Town loads. The other maps build, but nobody has walked them yet.
 
-Surf and the bicycle were tested on Route 21, Pallet Town and Route 1: each
-song loads and starts, and the Bag and start menu open while Surf's plays.
-Every battle song, then its victory song, then the map's song were played
-through the calls a battle makes, and all of them load.
+With HGSS's sound archive: Pallet Town and Route 1 walking and on the
+bicycle, Surf on Route 21 with the Bag and start menu open, every battle
+song followed by its victory song and the map's song (through the calls a
+battle makes), the opening, title screen and Oak's intro, eight common sound
+effects, seven fanfares and five cries (Chatot's among them). Every sound
+loads and starts.
 
 A wild battle with no Pokémon in the party goes to a black screen; a new
 game needs its starter first.

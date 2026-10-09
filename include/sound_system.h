@@ -8,9 +8,8 @@
 #include "game_options.h"
 #include "sys_task.h"
 
-// Grown by 160kB for Kanto's music from HGSS, which brings its own samples
-// (tools/hgss_import/import_kanto_music.py), out of the main arena's spare room.
-#define SOUND_SYSTEM_HEAP_SIZE           0xE3C00 // ~910kB
+// HGSS's size: the sound archive is HGSS's (tools/hgss_import/hgss_sound.py).
+#define SOUND_SYSTEM_HEAP_SIZE           0xBEAE0 // ~781kB
 #define SOUND_SYSTEM_CAPTURE_BUFFER_SIZE 0x1000
 #define SOUND_HEAP_STATE_INVALID         -1
 #define SOUND_FILTER_MAX_SIZE            8

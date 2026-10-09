@@ -388,25 +388,11 @@ static void Sound_Impl_PlayFieldBGM(u16 bgmID, int unused)
     Sound_PlayBGM(bgmID);
 }
 
-// Sinnoh's field songs share BANK_BGM_FIELD or BANK_BGM_DUNGEON; each of
-// Kanto's (from HGSS) has its own bank, with its own samples.
-static BOOL Sound_IsFieldBGMBank(u16 bankID)
-{
-    return bankID == BANK_BGM_FIELD_sbnk || bankID == BANK_BGM_DUNGEON_sbnk
-        || (bankID >= KANTO_BGM_BANK_FIRST && bankID <= KANTO_BGM_BANK_LAST);
-}
-
 static void Sound_Impl_ResumeAndSwitchFieldBGM(u16 bgmID, u16 unused)
 {
     u16 *currentBGM = SoundSystem_GetParam(SOUND_SYSTEM_PARAM_FIELD_BGM);
-    u16 currentBankID = Sound_GetBankIDFromSequenceID(*currentBGM);
 
-    if (!Sound_IsFieldBGMBank(currentBankID)) {
-        SoundSystem_LoadSequenceEx(bgmID, NNS_SND_ARC_LOAD_WAVE);
-        GF_ASSERT(FALSE);
-    } else {
-        SoundSystem_LoadSequenceEx(*currentBGM, NNS_SND_ARC_LOAD_WAVE | NNS_SND_ARC_LOAD_BANK);
-    }
+    SoundSystem_LoadSequenceEx(*currentBGM, NNS_SND_ARC_LOAD_WAVE | NNS_SND_ARC_LOAD_BANK);
 
     SoundSystem_SaveHeapState(SoundSystem_GetParam(SOUND_SYSTEM_PARAM_HEAP_STATE_BGM));
     Sound_SetBGMPlayerPaused(PLAYER_FIELD, FALSE);
@@ -419,7 +405,8 @@ void Sound_LoadSoundDataForFieldBGM(u16 seqID, u16 currentBankID)
     u8 *bankState = SoundSystem_GetParam(SOUND_SYSTEM_PARAM_FIELD_BGM_BANK_STATE);
     u16 *newFieldBGM = SoundSystem_GetParam(SOUND_SYSTEM_PARAM_FIELD_BGM);
 
-    // A song with another bank needs that bank and its samples loaded.
+    // HGSS's field songs don't share one bank: a song with another bank
+    // needs that bank and its samples loaded.
     if (*bankState == FIELD_BGM_BANK_STATE_SWITCH || currentBankID == 0 || currentBankID != Sound_GetBankIDFromSequenceID(*newFieldBGM)) {
         SoundSystem_LoadHeapState(Sound_GetHeapState(SOUND_HEAP_STATE_PERSISTENT));
         Sound_SetSubScene(0);
@@ -428,13 +415,7 @@ void Sound_LoadSoundDataForFieldBGM(u16 seqID, u16 currentBankID)
         Sound_LoadSoundEffectsForScene(SOUND_SCENE_FIELD);
         SoundSystem_SaveHeapState(SoundSystem_GetParam(SOUND_SYSTEM_PARAM_HEAP_STATE_SFX));
 
-        u16 newBankID = Sound_GetBankIDFromSequenceID(*newFieldBGM);
-        if (!Sound_IsFieldBGMBank(newBankID)) {
-            SoundSystem_LoadSequenceEx(seqID, NNS_SND_ARC_LOAD_WAVE);
-            GF_ASSERT(FALSE);
-        } else {
-            SoundSystem_LoadSequenceEx(*newFieldBGM, NNS_SND_ARC_LOAD_WAVE);
-        }
+        SoundSystem_LoadSequenceEx(*newFieldBGM, NNS_SND_ARC_LOAD_WAVE);
 
         SoundSystem_SaveHeapState(SoundSystem_GetParam(SOUND_SYSTEM_PARAM_HEAP_STATE_BGM));
     }

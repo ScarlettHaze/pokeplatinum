@@ -66,6 +66,7 @@ symbols.csv
 
 # SDAT Files
 res/sound/*.sdat
+!res/sound/gs_sound_data.sdat
 res/sound/*/Files/BANK/*.sbnk
 res/sound/*/Files/SEQ/*.sseq
 res/sound/*/Files/WAVARC/*.swar

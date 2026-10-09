@@ -1,0 +1,8251 @@
+{
+ "files": {
+  "BANK_BASIC_sbnk": [
+   700,
+   "BANK_BASIC"
+  ],
+  "BANK_BGM_BATTLE_sbnk": [
+   702,
+   "BANK_BGM_BATTLE"
+  ],
+  "BANK_BGM_DEMO01_sbnk": [
+   705,
+   "BANK_BGM_DEMO01"
+  ],
+  "BANK_BGM_DUNGEON_sbnk": [
+   703,
+   "BANK_BGM_DUNGEON"
+  ],
+  "BANK_BGM_FIELD_sbnk": [
+   701,
+   "BANK_BGM_FIELD"
+  ],
+  "BANK_BGM_OPEND_sbnk": [
+   704,
+   "BANK_BGM_OPEND"
+  ],
+  "BANK_SE_BAG_sbnk": [
+   752,
+   "BANK_SE_BAG"
+  ],
+  "BANK_SE_BATTLE_sbnk": [
+   751,
+   "BANK_SE_BATTLE"
+  ],
+  "BANK_SE_CLIMAX_sbnk": [
+   753,
+   "BANK_SE_CLIMAX"
+  ],
+  "BANK_SE_CONTEST_sbnk": [
+   758,
+   "BANK_SE_CONTEST"
+  ],
+  "BANK_SE_CUSTOM_sbnk": [
+   763,
+   "BANK_SE_CUSTOM"
+  ],
+  "BANK_SE_DIG_sbnk": [
+   762,
+   "BANK_SE_DIG"
+  ],
+  "BANK_SE_FIELD_sbnk": [
+   750,
+   "BANK_SE_FIELD"
+  ],
+  "BANK_SE_HIROBA_sbnk": [
+   770,
+   "BANK_SE_HIROBA"
+  ],
+  "BANK_SE_IMAGE_sbnk": [
+   756,
+   "BANK_SE_IMAGE"
+  ],
+  "BANK_SE_NAMEIN_sbnk": [
+   755,
+   "BANK_SE_NAMEIN"
+  ],
+  "BANK_SE_NUTMIXER_sbnk": [
+   765,
+   "BANK_SE_NUTMIXER"
+  ],
+  "BANK_SE_POKELIST_sbnk": [
+   761,
+   "BANK_SE_POKELIST"
+  ],
+  "BANK_SE_SCRATCH_sbnk": [
+   769,
+   "BANK_SE_SCRATCH"
+  ],
+  "BANK_SE_SHINKA_sbnk": [
+   754,
+   "BANK_SE_SHINKA"
+  ],
+  "BANK_SE_SHIP_sbnk": [
+   767,
+   "BANK_SE_SHIP"
+  ],
+  "BANK_SE_SLOT_sbnk": [
+   768,
+   "BANK_SE_SLOT"
+  ],
+  "BANK_SE_TOWNMAP_sbnk": [
+   759,
+   "BANK_SE_TOWNMAP"
+  ],
+  "BANK_SE_TRADE_sbnk": [
+   764,
+   "BANK_SE_TRADE"
+  ],
+  "BANK_SE_TRAIN_sbnk": [
+   766,
+   "BANK_SE_TRAIN"
+  ],
+  "BANK_SE_TRCARD_sbnk": [
+   760,
+   "BANK_SE_TRCARD"
+  ],
+  "BANK_SE_ZUKAN_sbnk": [
+   757,
+   "BANK_SE_ZUKAN"
+  ],
+  "BATTLE_ARCEUS_sseq": [
+   1125,
+   "SEQ_BA_SECRET1"
+  ],
+  "BATTLE_CHAMPION_sseq": [
+   1122,
+   "SEQ_BA_CHANP"
+  ],
+  "BATTLE_CYRUS_sseq": [
+   1120,
+   "SEQ_BA_AKAGI"
+  ],
+  "BATTLE_DIALGA_PALKIA_sseq": [
+   1121,
+   "SEQ_BA_DPOKE2"
+  ],
+  "BATTLE_ELITE_FOUR_sseq": [
+   1136,
+   "SEQ_BA_TENNO"
+  ],
+  "BATTLE_FRONTIER_BRAIN_sseq": [
+   1202,
+   "SEQ_PL_BA_BRAIN"
+  ],
+  "BATTLE_GALACTIC_CMDR_sseq": [
+   1134,
+   "SEQ_BA_GINGA3"
+  ],
+  "BATTLE_GALACTIC_GRUNT_sseq": [
+   1123,
+   "SEQ_BA_GINGA"
+  ],
+  "BATTLE_GIRATINA_sseq": [
+   1201,
+   "SEQ_PL_BA_GIRA"
+  ],
+  "BATTLE_GYM_LEADER_sseq": [
+   1117,
+   "SEQ_BA_GYM"
+  ],
+  "BATTLE_LAKE_GUARDIAN_sseq": [
+   1118,
+   "SEQ_BA_DPOKE1"
+  ],
+  "BATTLE_LEGENDARY_sseq": [
+   1126,
+   "SEQ_BA_SECRET2"
+  ],
+  "BATTLE_REGI_TRIO_sseq": [
+   1204,
+   "SEQ_PL_BA_REGI"
+  ],
+  "BATTLE_RIVAL_sseq": [
+   1124,
+   "SEQ_BA_RIVAL"
+  ],
+  "BATTLE_TRAINER_sseq": [
+   1119,
+   "SEQ_BA_TRAIN"
+  ],
+  "BATTLE_WILD_POKEMON_sseq": [
+   1116,
+   "SEQ_BA_POKE"
+  ],
+  "CONTEST_DRESSING_ROOM_sseq": [
+   1135,
+   "SEQ_CON_TEST"
+  ],
+  "SEQ_ACCE_sseq": [
+   1164,
+   "SEQ_ACCE"
+  ],
+  "SEQ_AIF_FIELD_sseq": [
+   1223,
+   "SEQ_AIF_FIELD"
+  ],
+  "SEQ_AIF_FIELD_sseq_1": [
+   1224,
+   "SEQ_AIF_DUNGEON"
+  ],
+  "SEQ_AIF_FIELD_sseq_2": [
+   1225,
+   "SEQ_AIF_BATTLE"
+  ],
+  "SEQ_ASA_sseq": [
+   1166,
+   "SEQ_ASA"
+  ],
+  "SEQ_AUS_sseq": [
+   1096,
+   "SEQ_AUS"
+  ],
+  "SEQ_BADGE_sseq": [
+   1161,
+   "SEQ_BADGE"
+  ],
+  "SEQ_BA_TOWER_sseq": [
+   1137,
+   "SEQ_BA_TOWER"
+  ],
+  "SEQ_BF_FACT_sseq": [
+   1099,
+   "SEQ_BF_FACT"
+  ],
+  "SEQ_BF_TOWWER_sseq": [
+   1092,
+   "SEQ_BF_TOWWER"
+  ],
+  "SEQ_BICYCLE_sseq": [
+   1152,
+   "SEQ_BICYCLE"
+  ],
+  "SEQ_BICYCLE_sseq_1": [
+   1189,
+   "SEQ_PL_BICYCLE"
+  ],
+  "SEQ_BLD_BLD_GTC_sseq": [
+   1097,
+   "SEQ_BLD_BLD_GTC"
+  ],
+  "SEQ_BLD_CON_sseq": [
+   1089,
+   "SEQ_BLD_CON"
+  ],
+  "SEQ_BLD_DENDO_sseq": [
+   1077,
+   "SEQ_BLD_DENDO"
+  ],
+  "SEQ_BLD_ENDING_sseq": [
+   1186,
+   "SEQ_BLD_ENDING"
+  ],
+  "SEQ_BLD_EV_DENDO2_sseq": [
+   1171,
+   "SEQ_BLD_EV_DENDO2"
+  ],
+  "SEQ_BLD_GAME_sseq": [
+   1091,
+   "SEQ_BLD_GAME"
+  ],
+  "SEQ_BLD_LEGEND_sseq": [
+   1084,
+   "SEQ_BLD_LEGEND"
+  ],
+  "SEQ_BLD_TV_sseq": [
+   1093,
+   "SEQ_BLD_TV"
+  ],
+  "SEQ_CITY01_D_sseq": [
+   1010,
+   "SEQ_CITY01_D"
+  ],
+  "SEQ_CITY01_N_sseq": [
+   1039,
+   "SEQ_CITY01_N"
+  ],
+  "SEQ_CITY02_D_sseq": [
+   1011,
+   "SEQ_CITY02_D"
+  ],
+  "SEQ_CITY02_N_sseq": [
+   1040,
+   "SEQ_CITY02_N"
+  ],
+  "SEQ_CITY03_D_sseq": [
+   1012,
+   "SEQ_CITY03_D"
+  ],
+  "SEQ_CITY03_N_sseq": [
+   1041,
+   "SEQ_CITY03_N"
+  ],
+  "SEQ_CITY04_D_sseq": [
+   1013,
+   "SEQ_CITY04_D"
+  ],
+  "SEQ_CITY04_N_sseq": [
+   1042,
+   "SEQ_CITY04_N"
+  ],
+  "SEQ_CITY05_D_sseq": [
+   1014,
+   "SEQ_CITY05_D"
+  ],
+  "SEQ_CITY05_N_sseq": [
+   1043,
+   "SEQ_CITY05_N"
+  ],
+  "SEQ_CITY06_D_sseq": [
+   1015,
+   "SEQ_CITY06_D"
+  ],
+  "SEQ_CITY06_N_sseq": [
+   1044,
+   "SEQ_CITY06_N"
+  ],
+  "SEQ_CITY07_D_sseq": [
+   1016,
+   "SEQ_CITY07_D"
+  ],
+  "SEQ_CITY07_N_sseq": [
+   1045,
+   "SEQ_CITY07_N"
+  ],
+  "SEQ_CITY08_D_sseq": [
+   1017,
+   "SEQ_CITY08_D"
+  ],
+  "SEQ_CITY08_N_sseq": [
+   1046,
+   "SEQ_CITY08_N"
+  ],
+  "SEQ_CITY09_D_sseq": [
+   1018,
+   "SEQ_CITY09_D"
+  ],
+  "SEQ_CITY09_N_sseq": [
+   1047,
+   "SEQ_CITY09_N"
+  ],
+  "SEQ_CITY10_D_sseq": [
+   1019,
+   "SEQ_CITY10_D"
+  ],
+  "SEQ_CITY10_N_sseq": [
+   1048,
+   "SEQ_CITY10_N"
+  ],
+  "SEQ_CITY11_D_sseq": [
+   1020,
+   "SEQ_CITY11_D"
+  ],
+  "SEQ_CITY11_N_sseq": [
+   1049,
+   "SEQ_CITY11_N"
+  ],
+  "SEQ_CO_DRESS_sseq": [
+   1169,
+   "SEQ_CO_DRESS"
+  ],
+  "SEQ_CO_FANFA_sseq": [
+   1182,
+   "SEQ_CO_FANFA"
+  ],
+  "SEQ_CO_KAKKO_sseq": [
+   1180,
+   "SEQ_CO_KAKKO"
+  ],
+  "SEQ_CO_KASHI_sseq": [
+   1177,
+   "SEQ_CO_KASHI"
+  ],
+  "SEQ_CO_KAWAI_sseq": [
+   1176,
+   "SEQ_CO_KAWAI"
+  ],
+  "SEQ_CO_KEKKA_sseq": [
+   1181,
+   "SEQ_CO_KEKKA"
+  ],
+  "SEQ_CO_TAKUMA_sseq": [
+   1179,
+   "SEQ_CO_TAKUMA"
+  ],
+  "SEQ_CO_UTSUK_sseq": [
+   1178,
+   "SEQ_CO_UTSUK"
+  ],
+  "SEQ_DUMMY_sseq": [
+   1000,
+   "SEQ_DUMMY"
+  ],
+  "SEQ_D_01_sseq": [
+   1062,
+   "SEQ_D_01"
+  ],
+  "SEQ_D_02_sseq": [
+   1063,
+   "SEQ_D_02"
+  ],
+  "SEQ_D_03_sseq": [
+   1064,
+   "SEQ_D_03"
+  ],
+  "SEQ_D_04_sseq": [
+   1075,
+   "SEQ_D_04"
+  ],
+  "SEQ_D_05_sseq": [
+   1074,
+   "SEQ_D_05"
+  ],
+  "SEQ_D_06_sseq": [
+   1073,
+   "SEQ_D_06"
+  ],
+  "SEQ_D_AGITO_sseq": [
+   1067,
+   "SEQ_D_AGITO"
+  ],
+  "SEQ_D_CROAD_sseq": [
+   1078,
+   "SEQ_D_CROAD"
+  ],
+  "SEQ_D_GINLOBBY_sseq": [
+   1068,
+   "SEQ_D_GINLOBBY"
+  ],
+  "SEQ_D_HARDMT_sseq": [
+   1083,
+   "SEQ_D_HARDMT"
+  ],
+  "SEQ_D_ICE_sseq": [
+   1079,
+   "SEQ_D_ICE"
+  ],
+  "SEQ_D_KOUEN_sseq": [
+   1066,
+   "SEQ_D_KOUEN"
+  ],
+  "SEQ_D_LAKE_sseq": [
+   1070,
+   "SEQ_D_LAKE"
+  ],
+  "SEQ_D_LEAGUE_sseq": [
+   1076,
+   "SEQ_D_LEAGUE"
+  ],
+  "SEQ_D_MOUNT1_sseq": [
+   1071,
+   "SEQ_D_MOUNT1"
+  ],
+  "SEQ_D_MOUNT2_sseq": [
+   1072,
+   "SEQ_D_MOUNT2"
+  ],
+  "SEQ_D_RYAYHY_sseq": [
+   1065,
+   "SEQ_D_RYAYHY"
+  ],
+  "SEQ_D_SAFARI_sseq": [
+   1069,
+   "SEQ_D_SAFARI"
+  ],
+  "SEQ_D_SECRET_sseq": [
+   1080,
+   "SEQ_D_SECRET"
+  ],
+  "SEQ_D_UNKNOWN_sseq": [
+   1081,
+   "SEQ_D_UNKNOWN"
+  ],
+  "SEQ_EV_DENDO1_sseq": [
+   1148,
+   "SEQ_EV_DENDO1"
+  ],
+  "SEQ_EV_LEGEND_sseq": [
+   1149,
+   "SEQ_EV_LEGEND"
+  ],
+  "SEQ_EYE_BOY_sseq": [
+   1100,
+   "SEQ_EYE_BOY"
+  ],
+  "SEQ_EYE_CHAMP_sseq": [
+   1114,
+   "SEQ_EYE_CHAMP"
+  ],
+  "SEQ_EYE_ELITE_sseq": [
+   1109,
+   "SEQ_EYE_ELITE"
+  ],
+  "SEQ_EYE_ENKA_sseq": [
+   1107,
+   "SEQ_EYE_ENKA"
+  ],
+  "SEQ_EYE_FIGHT_sseq": [
+   1102,
+   "SEQ_EYE_FIGHT"
+  ],
+  "SEQ_EYE_FUN_sseq": [
+   1112,
+   "SEQ_EYE_FUN"
+  ],
+  "SEQ_EYE_GINGA_sseq": [
+   1103,
+   "SEQ_EYE_GINGA"
+  ],
+  "SEQ_EYE_GIRL_sseq": [
+   1110,
+   "SEQ_EYE_GIRL"
+  ],
+  "SEQ_EYE_KID_sseq": [
+   1101,
+   "SEQ_EYE_KID"
+  ],
+  "SEQ_EYE_LADY_sseq": [
+   1104,
+   "SEQ_EYE_LADY"
+  ],
+  "SEQ_EYE_MOUNT_sseq": [
+   1105,
+   "SEQ_EYE_MOUNT"
+  ],
+  "SEQ_EYE_MYS_sseq": [
+   1108,
+   "SEQ_EYE_MYS"
+  ],
+  "SEQ_EYE_RICH_sseq": [
+   1106,
+   "SEQ_EYE_RICH"
+  ],
+  "SEQ_EYE_SPORT_sseq": [
+   1111,
+   "SEQ_EYE_SPORT"
+  ],
+  "SEQ_EYE_TENNO_sseq": [
+   1113,
+   "SEQ_EYE_TENNO"
+  ],
+  "SEQ_FANFA1_sseq": [
+   1155,
+   "SEQ_FANFA1"
+  ],
+  "SEQ_FANFA2_sseq": [
+   1160,
+   "SEQ_FANFA2"
+  ],
+  "SEQ_FANFA3_sseq": [
+   1157,
+   "SEQ_FANFA3"
+  ],
+  "SEQ_FANFA4_sseq": [
+   1158,
+   "SEQ_FANFA4"
+  ],
+  "SEQ_FANFA5_sseq": [
+   1156,
+   "SEQ_FANFA5"
+  ],
+  "SEQ_FANFA6_sseq": [
+   1159,
+   "SEQ_FANFA6"
+  ],
+  "SEQ_FIGHT0101_sseq": [
+   1115,
+   "SEQ_FIGHT0101"
+  ],
+  "SEQ_FS_sseq": [
+   1090,
+   "SEQ_FS"
+  ],
+  "SEQ_FUE_sseq": [
+   1095,
+   "SEQ_FUE"
+  ],
+  "SEQ_GONIN_sseq": [
+   1153,
+   "SEQ_GONIN"
+  ],
+  "SEQ_GYM_sseq": [
+   1087,
+   "SEQ_GYM"
+  ],
+  "SEQ_HATANIGE_sseq": [
+   1061,
+   "SEQ_HATANIGE"
+  ],
+  "SEQ_KENKYUJO_sseq": [
+   1088,
+   "SEQ_KENKYUJO"
+  ],
+  "SEQ_KINOMI1_sseq": [
+   1183,
+   "SEQ_KINOMI1"
+  ],
+  "SEQ_KINOMI2_sseq": [
+   1187,
+   "SEQ_KINOMI2"
+  ],
+  "SEQ_KINOMI_sseq": [
+   1167,
+   "SEQ_KINOMI"
+  ],
+  "SEQ_KOUKAN_sseq": [
+   1170,
+   "SEQ_KOUKAN"
+  ],
+  "SEQ_KUSAGASA_sseq": [
+   1150,
+   "SEQ_KUSAGASA"
+  ],
+  "SEQ_NAMINORI_sseq": [
+   1151,
+   "SEQ_NAMINORI"
+  ],
+  "SEQ_OPENING_sseq": [
+   1029,
+   "SEQ_OPENING"
+  ],
+  "SEQ_OPENING_sseq_1": [
+   1098,
+   "SEQ_OPENING2"
+  ],
+  "SEQ_PC_01_sseq": [
+   1085,
+   "SEQ_PC_01"
+  ],
+  "SEQ_PC_02_sseq": [
+   1086,
+   "SEQ_PC_02"
+  ],
+  "SEQ_PL_AUDIO_sseq": [
+   1198,
+   "SEQ_PL_AUDIO"
+  ],
+  "SEQ_PL_BF_CASTLE02_sseq": [
+   1194,
+   "SEQ_PL_BF_CASTLE02"
+  ],
+  "SEQ_PL_BF_CASTLE_sseq": [
+   1193,
+   "SEQ_PL_BF_CASTLE"
+  ],
+  "SEQ_PL_BF_FACTORY_sseq": [
+   1195,
+   "SEQ_PL_BF_FACTORY"
+  ],
+  "SEQ_PL_BF_ROULETTE_sseq": [
+   1191,
+   "SEQ_PL_BF_ROULETTE"
+  ],
+  "SEQ_PL_BF_STAGE_sseq": [
+   1192,
+   "SEQ_PL_BF_STAGE"
+  ],
+  "SEQ_PL_DON2_sseq": [
+   1219,
+   "SEQ_PL_DON2"
+  ],
+  "SEQ_PL_D_GIRATINA_sseq": [
+   1190,
+   "SEQ_PL_D_GIRATINA"
+  ],
+  "SEQ_PL_EV_GIRA2_sseq": [
+   1215,
+   "SEQ_PL_EV_GIRA2"
+  ],
+  "SEQ_PL_EV_GIRA_sseq": [
+   1214,
+   "SEQ_PL_EV_GIRA"
+  ],
+  "SEQ_PL_EYEBRAIN_sseq": [
+   1199,
+   "SEQ_PL_EYEBRAIN"
+  ],
+  "SEQ_PL_FRO_sseq": [
+   1220,
+   "SEQ_PL_FRO"
+  ],
+  "SEQ_PL_GURUGURU_sseq": [
+   1210,
+   "SEQ_PL_GURUGURU"
+  ],
+  "SEQ_PL_HANDSOME_sseq": [
+   1200,
+   "SEQ_PL_HANDSOME"
+  ],
+  "SEQ_PL_MTKAKKO_sseq": [
+   1205,
+   "SEQ_PL_MTKAKKO"
+  ],
+  "SEQ_PL_MTKASHI_sseq": [
+   1206,
+   "SEQ_PL_MTKASHI"
+  ],
+  "SEQ_PL_MTKAWA_sseq": [
+   1207,
+   "SEQ_PL_MTKAWA"
+  ],
+  "SEQ_PL_MTTAKMA_sseq": [
+   1208,
+   "SEQ_PL_MTTAKMA"
+  ],
+  "SEQ_PL_MTUTSUK_sseq": [
+   1209,
+   "SEQ_PL_MTUTSUK"
+  ],
+  "SEQ_PL_PIANO_sseq": [
+   1197,
+   "SEQ_PL_PIANO"
+  ],
+  "SEQ_PL_POINTGET3_sseq": [
+   1221,
+   "SEQ_PL_POINTGET3"
+  ],
+  "SEQ_PL_PTHAIFU_sseq": [
+   1216,
+   "SEQ_PL_PTHAIFU"
+  ],
+  "SEQ_PL_TOWN02_sseq": [
+   1218,
+   "SEQ_PL_TOWN02"
+  ],
+  "SEQ_PL_WIFIGAME_sseq": [
+   1211,
+   "SEQ_PL_WIFIGAME"
+  ],
+  "SEQ_PL_WIFIPARADE_sseq": [
+   1213,
+   "SEQ_PL_WIFIPARADE"
+  ],
+  "SEQ_PL_WIFITOWER_sseq": [
+   1196,
+   "SEQ_PL_WIFITOWER"
+  ],
+  "SEQ_PL_WIFIUNION_sseq": [
+   1212,
+   "SEQ_PL_WIFIUNION"
+  ],
+  "SEQ_PL_WINMINI2_sseq": [
+   1222,
+   "SEQ_PL_WINMINI2"
+  ],
+  "SEQ_POCKETCH_sseq": [
+   1162,
+   "SEQ_POCKETCH"
+  ],
+  "SEQ_POKEPARK_sseq": [
+   1082,
+   "SEQ_POKEPARK"
+  ],
+  "SEQ_PRESENT_sseq": [
+   1174,
+   "SEQ_PRESENT"
+  ],
+  "SEQ_PV001_sseq": [
+   1,
+   "SEQ_PV001"
+  ],
+  "SEQ_PV001_sseq_1": [
+   2,
+   "SEQ_PV"
+  ],
+  "SEQ_PV001_sseq_2": [
+   3,
+   "SEQ_PV_END"
+  ],
+  "SEQ_PV001_sseq_3": [
+   1226,
+   "SEQ_BGM_END"
+  ],
+  "SEQ_PV001_sseq_4": [
+   2132,
+   "SEQ_SE_END"
+  ],
+  "SEQ_REPORT_sseq": [
+   1168,
+   "SEQ_REPORT"
+  ],
+  "SEQ_ROAD_A_D_sseq": [
+   1021,
+   "SEQ_ROAD_A_D"
+  ],
+  "SEQ_ROAD_A_N_sseq": [
+   1050,
+   "SEQ_ROAD_A_N"
+  ],
+  "SEQ_ROAD_BZA_D_sseq": [
+   1028,
+   "SEQ_ROAD_BZA_D"
+  ],
+  "SEQ_ROAD_BZA_N_sseq": [
+   1057,
+   "SEQ_ROAD_BZA_N"
+  ],
+  "SEQ_ROAD_BZB_D_sseq": [
+   1032,
+   "SEQ_ROAD_BZB_D"
+  ],
+  "SEQ_ROAD_BZB_N_sseq": [
+   1059,
+   "SEQ_ROAD_BZB_N"
+  ],
+  "SEQ_ROAD_B_D_sseq": [
+   1022,
+   "SEQ_ROAD_B_D"
+  ],
+  "SEQ_ROAD_B_N_sseq": [
+   1051,
+   "SEQ_ROAD_B_N"
+  ],
+  "SEQ_ROAD_C_D_sseq": [
+   1023,
+   "SEQ_ROAD_C_D"
+  ],
+  "SEQ_ROAD_C_N_sseq": [
+   1052,
+   "SEQ_ROAD_C_N"
+  ],
+  "SEQ_ROAD_D_D_sseq": [
+   1024,
+   "SEQ_ROAD_D_D"
+  ],
+  "SEQ_ROAD_D_N_sseq": [
+   1053,
+   "SEQ_ROAD_D_N"
+  ],
+  "SEQ_ROAD_E_D_sseq": [
+   1025,
+   "SEQ_ROAD_E_D"
+  ],
+  "SEQ_ROAD_E_N_sseq": [
+   1054,
+   "SEQ_ROAD_E_N"
+  ],
+  "SEQ_ROAD_F_D_sseq": [
+   1026,
+   "SEQ_ROAD_F_D"
+  ],
+  "SEQ_ROAD_F_N_sseq": [
+   1055,
+   "SEQ_ROAD_F_N"
+  ],
+  "SEQ_ROAD_SNOW_D_sseq": [
+   1027,
+   "SEQ_ROAD_SNOW_D"
+  ],
+  "SEQ_ROAD_SNOW_N_sseq": [
+   1056,
+   "SEQ_ROAD_SNOW_N"
+  ],
+  "SEQ_SE_DP_000_sseq": [
+   1820,
+   "SEQ_SE_DP_000"
+  ],
+  "SEQ_SE_DP_001_sseq": [
+   1821,
+   "SEQ_SE_DP_001"
+  ],
+  "SEQ_SE_DP_003_sseq": [
+   1822,
+   "SEQ_SE_DP_003"
+  ],
+  "SEQ_SE_DP_007_sseq": [
+   1823,
+   "SEQ_SE_DP_007"
+  ],
+  "SEQ_SE_DP_020_sseq": [
+   1824,
+   "SEQ_SE_DP_020"
+  ],
+  "SEQ_SE_DP_021_sseq": [
+   1825,
+   "SEQ_SE_DP_021"
+  ],
+  "SEQ_SE_DP_023_sseq": [
+   1826,
+   "SEQ_SE_DP_023"
+  ],
+  "SEQ_SE_DP_025_sseq": [
+   1520,
+   "SEQ_SE_DP_025"
+  ],
+  "SEQ_SE_DP_030C_sseq": [
+   1828,
+   "SEQ_SE_DP_030C"
+  ],
+  "SEQ_SE_DP_030_sseq": [
+   1827,
+   "SEQ_SE_DP_030"
+  ],
+  "SEQ_SE_DP_031_sseq": [
+   1829,
+   "SEQ_SE_DP_031"
+  ],
+  "SEQ_SE_DP_032_sseq": [
+   1830,
+   "SEQ_SE_DP_032"
+  ],
+  "SEQ_SE_DP_040_sseq": [
+   1831,
+   "SEQ_SE_DP_040"
+  ],
+  "SEQ_SE_DP_041_sseq": [
+   1832,
+   "SEQ_SE_DP_041"
+  ],
+  "SEQ_SE_DP_050_sseq": [
+   1833,
+   "SEQ_SE_DP_050"
+  ],
+  "SEQ_SE_DP_051_sseq": [
+   1834,
+   "SEQ_SE_DP_051"
+  ],
+  "SEQ_SE_DP_052_sseq": [
+   1835,
+   "SEQ_SE_DP_052"
+  ],
+  "SEQ_SE_DP_053_sseq": [
+   1836,
+   "SEQ_SE_DP_053"
+  ],
+  "SEQ_SE_DP_060_sseq": [
+   1837,
+   "SEQ_SE_DP_060"
+  ],
+  "SEQ_SE_DP_061_sseq": [
+   1838,
+   "SEQ_SE_DP_061"
+  ],
+  "SEQ_SE_DP_080_sseq": [
+   1839,
+   "SEQ_SE_DP_080"
+  ],
+  "SEQ_SE_DP_081_sseq": [
+   1840,
+   "SEQ_SE_DP_081"
+  ],
+  "SEQ_SE_DP_100_sseq": [
+   1841,
+   "SEQ_SE_DP_100"
+  ],
+  "SEQ_SE_DP_110_sseq": [
+   1842,
+   "SEQ_SE_DP_110"
+  ],
+  "SEQ_SE_DP_111_sseq": [
+   1843,
+   "SEQ_SE_DP_111"
+  ],
+  "SEQ_SE_DP_112_sseq": [
+   1844,
+   "SEQ_SE_DP_112"
+  ],
+  "SEQ_SE_DP_130_sseq": [
+   1845,
+   "SEQ_SE_DP_130"
+  ],
+  "SEQ_SE_DP_131_sseq": [
+   1846,
+   "SEQ_SE_DP_131"
+  ],
+  "SEQ_SE_DP_140_sseq": [
+   1847,
+   "SEQ_SE_DP_140"
+  ],
+  "SEQ_SE_DP_141_sseq": [
+   1848,
+   "SEQ_SE_DP_141"
+  ],
+  "SEQ_SE_DP_143_sseq": [
+   1849,
+   "SEQ_SE_DP_143"
+  ],
+  "SEQ_SE_DP_145_sseq": [
+   1850,
+   "SEQ_SE_DP_145"
+  ],
+  "SEQ_SE_DP_146_sseq": [
+   1851,
+   "SEQ_SE_DP_146"
+  ],
+  "SEQ_SE_DP_150_sseq": [
+   1852,
+   "SEQ_SE_DP_150"
+  ],
+  "SEQ_SE_DP_151_sseq": [
+   1853,
+   "SEQ_SE_DP_151"
+  ],
+  "SEQ_SE_DP_152_sseq": [
+   1854,
+   "SEQ_SE_DP_152"
+  ],
+  "SEQ_SE_DP_153_sseq": [
+   1855,
+   "SEQ_SE_DP_153"
+  ],
+  "SEQ_SE_DP_154_sseq": [
+   1856,
+   "SEQ_SE_DP_154"
+  ],
+  "SEQ_SE_DP_155_sseq": [
+   1857,
+   "SEQ_SE_DP_155"
+  ],
+  "SEQ_SE_DP_160_sseq": [
+   1858,
+   "SEQ_SE_DP_160"
+  ],
+  "SEQ_SE_DP_161_sseq": [
+   1859,
+   "SEQ_SE_DP_161"
+  ],
+  "SEQ_SE_DP_162_sseq": [
+   1860,
+   "SEQ_SE_DP_162"
+  ],
+  "SEQ_SE_DP_163_sseq": [
+   1861,
+   "SEQ_SE_DP_163"
+  ],
+  "SEQ_SE_DP_164_sseq": [
+   1862,
+   "SEQ_SE_DP_164"
+  ],
+  "SEQ_SE_DP_165_sseq": [
+   1863,
+   "SEQ_SE_DP_165"
+  ],
+  "SEQ_SE_DP_166_sseq": [
+   1864,
+   "SEQ_SE_DP_166"
+  ],
+  "SEQ_SE_DP_170_sseq": [
+   1865,
+   "SEQ_SE_DP_170"
+  ],
+  "SEQ_SE_DP_171_sseq": [
+   1866,
+   "SEQ_SE_DP_171"
+  ],
+  "SEQ_SE_DP_172_sseq": [
+   1867,
+   "SEQ_SE_DP_172"
+  ],
+  "SEQ_SE_DP_180_sseq": [
+   1868,
+   "SEQ_SE_DP_180"
+  ],
+  "SEQ_SE_DP_181_sseq": [
+   1869,
+   "SEQ_SE_DP_181"
+  ],
+  "SEQ_SE_DP_182_sseq": [
+   1870,
+   "SEQ_SE_DP_182"
+  ],
+  "SEQ_SE_DP_183_sseq": [
+   1871,
+   "SEQ_SE_DP_183"
+  ],
+  "SEQ_SE_DP_184_sseq": [
+   1872,
+   "SEQ_SE_DP_184"
+  ],
+  "SEQ_SE_DP_185_sseq": [
+   1873,
+   "SEQ_SE_DP_185"
+  ],
+  "SEQ_SE_DP_186_sseq": [
+   1874,
+   "SEQ_SE_DP_186"
+  ],
+  "SEQ_SE_DP_187_sseq": [
+   1875,
+   "SEQ_SE_DP_187"
+  ],
+  "SEQ_SE_DP_200_sseq": [
+   1876,
+   "SEQ_SE_DP_200"
+  ],
+  "SEQ_SE_DP_201_sseq": [
+   1877,
+   "SEQ_SE_DP_201"
+  ],
+  "SEQ_SE_DP_202_sseq": [
+   1878,
+   "SEQ_SE_DP_202"
+  ],
+  "SEQ_SE_DP_203_sseq": [
+   1879,
+   "SEQ_SE_DP_203"
+  ],
+  "SEQ_SE_DP_204_sseq": [
+   1880,
+   "SEQ_SE_DP_204"
+  ],
+  "SEQ_SE_DP_206_sseq": [
+   1882,
+   "SEQ_SE_DP_206"
+  ],
+  "SEQ_SE_DP_207_sseq": [
+   1883,
+   "SEQ_SE_DP_207"
+  ],
+  "SEQ_SE_DP_208_sseq": [
+   1884,
+   "SEQ_SE_DP_208"
+  ],
+  "SEQ_SE_DP_209_sseq": [
+   1885,
+   "SEQ_SE_DP_209"
+  ],
+  "SEQ_SE_DP_210_sseq": [
+   1886,
+   "SEQ_SE_DP_210"
+  ],
+  "SEQ_SE_DP_211_sseq": [
+   1887,
+   "SEQ_SE_DP_211"
+  ],
+  "SEQ_SE_DP_212_sseq": [
+   1888,
+   "SEQ_SE_DP_212"
+  ],
+  "SEQ_SE_DP_213_sseq": [
+   1889,
+   "SEQ_SE_DP_213"
+  ],
+  "SEQ_SE_DP_214_sseq": [
+   1890,
+   "SEQ_SE_DP_214"
+  ],
+  "SEQ_SE_DP_280_sseq": [
+   1891,
+   "SEQ_SE_DP_280"
+  ],
+  "SEQ_SE_DP_281_sseq": [
+   1892,
+   "SEQ_SE_DP_281"
+  ],
+  "SEQ_SE_DP_282_sseq": [
+   1893,
+   "SEQ_SE_DP_282"
+  ],
+  "SEQ_SE_DP_290_sseq": [
+   1894,
+   "SEQ_SE_DP_290"
+  ],
+  "SEQ_SE_DP_291_sseq": [
+   1895,
+   "SEQ_SE_DP_291"
+  ],
+  "SEQ_SE_DP_293_sseq": [
+   1896,
+   "SEQ_SE_DP_293"
+  ],
+  "SEQ_SE_DP_300_sseq": [
+   1897,
+   "SEQ_SE_DP_300"
+  ],
+  "SEQ_SE_DP_350_sseq": [
+   1898,
+   "SEQ_SE_DP_350"
+  ],
+  "SEQ_SE_DP_351_sseq": [
+   1899,
+   "SEQ_SE_DP_351"
+  ],
+  "SEQ_SE_DP_400_sseq": [
+   1900,
+   "SEQ_SE_DP_400"
+  ],
+  "SEQ_SE_DP_401_sseq": [
+   1901,
+   "SEQ_SE_DP_401"
+  ],
+  "SEQ_SE_DP_402_sseq": [
+   1902,
+   "SEQ_SE_DP_402"
+  ],
+  "SEQ_SE_DP_480_sseq": [
+   1903,
+   "SEQ_SE_DP_480"
+  ],
+  "SEQ_SE_DP_AWA_sseq": [
+   2117,
+   "SEQ_SE_DP_AWA"
+  ],
+  "SEQ_SE_DP_BADGE_C_sseq": [
+   1684,
+   "SEQ_SE_DP_BADGE_C"
+  ],
+  "SEQ_SE_DP_BAG_004_sseq": [
+   1592,
+   "SEQ_SE_DP_BAG_004"
+  ],
+  "SEQ_SE_DP_BAG_006_sseq": [
+   1735,
+   "SEQ_SE_DP_BAG_006"
+  ],
+  "SEQ_SE_DP_BAG_011_sseq": [
+   1736,
+   "SEQ_SE_DP_BAG_011"
+  ],
+  "SEQ_SE_DP_BAG_020_sseq": [
+   1737,
+   "SEQ_SE_DP_BAG_020"
+  ],
+  "SEQ_SE_DP_BAG_030_sseq": [
+   1738,
+   "SEQ_SE_DP_BAG_030"
+  ],
+  "SEQ_SE_DP_BAG_031_sseq": [
+   1739,
+   "SEQ_SE_DP_BAG_031"
+  ],
+  "SEQ_SE_DP_BAN_sseq": [
+   2111,
+   "SEQ_SE_DP_BAN"
+  ],
+  "SEQ_SE_DP_BASABASA_sseq": [
+   2112,
+   "SEQ_SE_DP_BASABASA"
+  ],
+  "SEQ_SE_DP_BASI_sseq": [
+   2116,
+   "SEQ_SE_DP_BASI"
+  ],
+  "SEQ_SE_DP_BEEP_sseq": [
+   1646,
+   "SEQ_SE_DP_BEEP"
+  ],
+  "SEQ_SE_DP_BFBRADE_sseq": [
+   2125,
+   "SEQ_SE_DP_BFBRADE"
+  ],
+  "SEQ_SE_DP_BOWA3_sseq": [
+   1799,
+   "SEQ_SE_DP_BOWA3"
+  ],
+  "SEQ_SE_DP_BOWA4_sseq": [
+   1800,
+   "SEQ_SE_DP_BOWA4"
+  ],
+  "SEQ_SE_DP_BOWA_sseq": [
+   1534,
+   "SEQ_SE_DP_BOWA"
+  ],
+  "SEQ_SE_DP_BOX01_sseq": [
+   1514,
+   "SEQ_SE_DP_BOX01"
+  ],
+  "SEQ_SE_DP_BOX02_sseq": [
+   1515,
+   "SEQ_SE_DP_BOX02"
+  ],
+  "SEQ_SE_DP_BOX02_sseq_1": [
+   1695,
+   "SEQ_SE_DP_DECIDE2"
+  ],
+  "SEQ_SE_DP_BOX03_sseq": [
+   1523,
+   "SEQ_SE_DP_BOX03"
+  ],
+  "SEQ_SE_DP_BRADE_sseq": [
+   2124,
+   "SEQ_SE_DP_BRADE"
+  ],
+  "SEQ_SE_DP_BT_001_sseq": [
+   1807,
+   "SEQ_SE_DP_BT_001"
+  ],
+  "SEQ_SE_DP_BUTTON01_sseq": [
+   1669,
+   "SEQ_SE_DP_BUTTON01"
+  ],
+  "SEQ_SE_DP_BUTTON3_sseq": [
+   1509,
+   "SEQ_SE_DP_BUTTON3"
+  ],
+  "SEQ_SE_DP_BUTTON9_sseq": [
+   1508,
+   "SEQ_SE_DP_BUTTON9"
+  ],
+  "SEQ_SE_DP_CARD10_sseq": [
+   1526,
+   "SEQ_SE_DP_CARD10"
+  ],
+  "SEQ_SE_DP_CARD11_sseq": [
+   1689,
+   "SEQ_SE_DP_CARD11"
+  ],
+  "SEQ_SE_DP_CARD2_sseq": [
+   1536,
+   "SEQ_SE_DP_CARD2"
+  ],
+  "SEQ_SE_DP_CARD3_sseq": [
+   1685,
+   "SEQ_SE_DP_CARD3"
+  ],
+  "SEQ_SE_DP_CARD5_sseq": [
+   1686,
+   "SEQ_SE_DP_CARD5"
+  ],
+  "SEQ_SE_DP_CARD7_sseq": [
+   1743,
+   "SEQ_SE_DP_CARD7"
+  ],
+  "SEQ_SE_DP_CLIMAX01_sseq": [
+   1746,
+   "SEQ_SE_DP_CLIMAX01"
+  ],
+  "SEQ_SE_DP_CLIMAX03_sseq": [
+   1747,
+   "SEQ_SE_DP_CLIMAX03"
+  ],
+  "SEQ_SE_DP_CLIMAX03_sseq_1": [
+   2101,
+   "SEQ_SE_DP_W460"
+  ],
+  "SEQ_SE_DP_CLIMAX06_sseq": [
+   1748,
+   "SEQ_SE_DP_CLIMAX06"
+  ],
+  "SEQ_SE_DP_CLIMAX09_sseq": [
+   1749,
+   "SEQ_SE_DP_CLIMAX09"
+  ],
+  "SEQ_SE_DP_CLIMAX09_sseq_1": [
+   2080,
+   "SEQ_SE_DP_W379"
+  ],
+  "SEQ_SE_DP_CLIMAX10_sseq": [
+   1750,
+   "SEQ_SE_DP_CLIMAX10"
+  ],
+  "SEQ_SE_DP_CLIMAX12_sseq": [
+   1751,
+   "SEQ_SE_DP_CLIMAX12"
+  ],
+  "SEQ_SE_DP_CLIMAX12_sseq_1": [
+   1881,
+   "SEQ_SE_DP_205"
+  ],
+  "SEQ_SE_DP_CLIMAX15_sseq": [
+   1752,
+   "SEQ_SE_DP_CLIMAX15"
+  ],
+  "SEQ_SE_DP_CLOSE2_sseq": [
+   1519,
+   "SEQ_SE_DP_CLOSE2"
+  ],
+  "SEQ_SE_DP_CLOSE7_sseq": [
+   1588,
+   "SEQ_SE_DP_CLOSE7"
+  ],
+  "SEQ_SE_DP_CON_001_sseq": [
+   1759,
+   "SEQ_SE_DP_CON_001"
+  ],
+  "SEQ_SE_DP_CON_002_sseq": [
+   1760,
+   "SEQ_SE_DP_CON_002"
+  ],
+  "SEQ_SE_DP_CON_003_sseq": [
+   1761,
+   "SEQ_SE_DP_CON_003"
+  ],
+  "SEQ_SE_DP_CON_004_sseq": [
+   1762,
+   "SEQ_SE_DP_CON_004"
+  ],
+  "SEQ_SE_DP_CON_005_sseq": [
+   1763,
+   "SEQ_SE_DP_CON_005"
+  ],
+  "SEQ_SE_DP_CON_006_sseq": [
+   1764,
+   "SEQ_SE_DP_CON_006"
+  ],
+  "SEQ_SE_DP_CON_007_sseq": [
+   1765,
+   "SEQ_SE_DP_CON_007"
+  ],
+  "SEQ_SE_DP_CON_009_sseq": [
+   1766,
+   "SEQ_SE_DP_CON_009"
+  ],
+  "SEQ_SE_DP_CON_010_sseq": [
+   1767,
+   "SEQ_SE_DP_CON_010"
+  ],
+  "SEQ_SE_DP_CON_011_sseq": [
+   1768,
+   "SEQ_SE_DP_CON_011"
+  ],
+  "SEQ_SE_DP_CON_012_sseq": [
+   1769,
+   "SEQ_SE_DP_CON_012"
+  ],
+  "SEQ_SE_DP_CON_013_sseq": [
+   1770,
+   "SEQ_SE_DP_CON_013"
+  ],
+  "SEQ_SE_DP_CON_015_sseq": [
+   1606,
+   "SEQ_SE_DP_CON_015"
+  ],
+  "SEQ_SE_DP_CON_016_sseq": [
+   1603,
+   "SEQ_SE_DP_CON_016"
+  ],
+  "SEQ_SE_DP_CON_017_sseq": [
+   1668,
+   "SEQ_SE_DP_CON_017"
+  ],
+  "SEQ_SE_DP_CON_018_sseq": [
+   1771,
+   "SEQ_SE_DP_CON_018"
+  ],
+  "SEQ_SE_DP_CON_019_sseq": [
+   1772,
+   "SEQ_SE_DP_CON_019"
+  ],
+  "SEQ_SE_DP_CON_020_sseq": [
+   1773,
+   "SEQ_SE_DP_CON_020"
+  ],
+  "SEQ_SE_DP_CON_021_sseq": [
+   1774,
+   "SEQ_SE_DP_CON_021"
+  ],
+  "SEQ_SE_DP_CON_022_sseq": [
+   1775,
+   "SEQ_SE_DP_CON_022"
+  ],
+  "SEQ_SE_DP_CON_023_sseq": [
+   1776,
+   "SEQ_SE_DP_CON_023"
+  ],
+  "SEQ_SE_DP_CON_024_sseq": [
+   1777,
+   "SEQ_SE_DP_CON_024"
+  ],
+  "SEQ_SE_DP_CON_026_sseq": [
+   1778,
+   "SEQ_SE_DP_CON_026"
+  ],
+  "SEQ_SE_DP_CON_027_2_sseq": [
+   1779,
+   "SEQ_SE_DP_CON_027_2"
+  ],
+  "SEQ_SE_DP_CON_027_3_sseq": [
+   1780,
+   "SEQ_SE_DP_CON_027_3"
+  ],
+  "SEQ_SE_DP_CON_028_sseq": [
+   1781,
+   "SEQ_SE_DP_CON_028"
+  ],
+  "SEQ_SE_DP_CON_029_sseq": [
+   1782,
+   "SEQ_SE_DP_CON_029"
+  ],
+  "SEQ_SE_DP_CON_030_sseq": [
+   1783,
+   "SEQ_SE_DP_CON_030"
+  ],
+  "SEQ_SE_DP_CON_031_sseq": [
+   1784,
+   "SEQ_SE_DP_CON_031"
+  ],
+  "SEQ_SE_DP_CON_032_sseq": [
+   1785,
+   "SEQ_SE_DP_CON_032"
+  ],
+  "SEQ_SE_DP_CON_033_sseq": [
+   1786,
+   "SEQ_SE_DP_CON_033"
+  ],
+  "SEQ_SE_DP_CON_F007_sseq": [
+   1605,
+   "SEQ_SE_DP_CON_F007"
+  ],
+  "SEQ_SE_DP_CUSTOM01_sseq": [
+   1732,
+   "SEQ_SE_DP_CUSTOM01"
+  ],
+  "SEQ_SE_DP_CUSTOM02_sseq": [
+   1733,
+   "SEQ_SE_DP_CUSTOM02"
+  ],
+  "SEQ_SE_DP_CUSTOM05_sseq": [
+   1734,
+   "SEQ_SE_DP_CUSTOM05"
+  ],
+  "SEQ_SE_DP_CUSTOM06_sseq": [
+   1522,
+   "SEQ_SE_DP_CUSTOM06"
+  ],
+  "SEQ_SE_DP_DANSA4_sseq": [
+   1622,
+   "SEQ_SE_DP_DANSA4"
+  ],
+  "SEQ_SE_DP_DANSA_sseq": [
+   1547,
+   "SEQ_SE_DP_DANSA"
+  ],
+  "SEQ_SE_DP_DECIDE_sseq": [
+   1501,
+   "SEQ_SE_DP_DECIDE"
+  ],
+  "SEQ_SE_DP_DENDOU_sseq": [
+   1551,
+   "SEQ_SE_DP_DENDOU"
+  ],
+  "SEQ_SE_DP_DENSI01_sseq": [
+   1647,
+   "SEQ_SE_DP_DENSI01"
+  ],
+  "SEQ_SE_DP_DENSI02_sseq": [
+   1648,
+   "SEQ_SE_DP_DENSI02"
+  ],
+  "SEQ_SE_DP_DENSI04_sseq": [
+   1649,
+   "SEQ_SE_DP_DENSI04"
+  ],
+  "SEQ_SE_DP_DENSI05_sseq": [
+   1650,
+   "SEQ_SE_DP_DENSI05"
+  ],
+  "SEQ_SE_DP_DENSI06_sseq": [
+   1675,
+   "SEQ_SE_DP_DENSI06"
+  ],
+  "SEQ_SE_DP_DENSI07_sseq": [
+   1651,
+   "SEQ_SE_DP_DENSI07"
+  ],
+  "SEQ_SE_DP_DENSI08_sseq": [
+   1652,
+   "SEQ_SE_DP_DENSI08"
+  ],
+  "SEQ_SE_DP_DENSI09_sseq": [
+   1653,
+   "SEQ_SE_DP_DENSI09"
+  ],
+  "SEQ_SE_DP_DENSI10_sseq": [
+   1654,
+   "SEQ_SE_DP_DENSI10"
+  ],
+  "SEQ_SE_DP_DENSI11_sseq": [
+   1655,
+   "SEQ_SE_DP_DENSI11"
+  ],
+  "SEQ_SE_DP_DENSI12_sseq": [
+   1656,
+   "SEQ_SE_DP_DENSI12"
+  ],
+  "SEQ_SE_DP_DENSI15_sseq": [
+   1580,
+   "SEQ_SE_DP_DENSI15"
+  ],
+  "SEQ_SE_DP_DENSI16_sseq": [
+   1581,
+   "SEQ_SE_DP_DENSI16"
+  ],
+  "SEQ_SE_DP_DODON_sseq": [
+   2131,
+   "SEQ_SE_DP_DODON"
+  ],
+  "SEQ_SE_DP_DOKU2_sseq": [
+   1552,
+   "SEQ_SE_DP_DOKU2"
+  ],
+  "SEQ_SE_DP_DOOR10_sseq": [
+   1544,
+   "SEQ_SE_DP_DOOR10"
+  ],
+  "SEQ_SE_DP_DOOR_CLOSE2_sseq": [
+   1543,
+   "SEQ_SE_DP_DOOR_CLOSE2"
+  ],
+  "SEQ_SE_DP_DOOR_CLOSE_sseq": [
+   1542,
+   "SEQ_SE_DP_DOOR_CLOSE"
+  ],
+  "SEQ_SE_DP_DOOR_OPEN_sseq": [
+   1541,
+   "SEQ_SE_DP_DOOR_OPEN"
+  ],
+  "SEQ_SE_DP_DOOR_sseq": [
+   1540,
+   "SEQ_SE_DP_DOOR"
+  ],
+  "SEQ_SE_DP_DORIRU_sseq": [
+   1566,
+   "SEQ_SE_DP_DORIRU"
+  ],
+  "SEQ_SE_DP_EGG01_sseq": [
+   1812,
+   "SEQ_SE_DP_EGG01"
+  ],
+  "SEQ_SE_DP_ELEBETA2_sseq": [
+   1554,
+   "SEQ_SE_DP_ELEBETA2"
+  ],
+  "SEQ_SE_DP_ELEBETA4_sseq": [
+   1556,
+   "SEQ_SE_DP_ELEBETA4"
+  ],
+  "SEQ_SE_DP_ELEBETA_sseq": [
+   1553,
+   "SEQ_SE_DP_ELEBETA"
+  ],
+  "SEQ_SE_DP_ESUKA_sseq": [
+   1557,
+   "SEQ_SE_DP_ESUKA"
+  ],
+  "SEQ_SE_DP_EXPMAX2_sseq": [
+   1805,
+   "SEQ_SE_DP_EXPMAX2"
+  ],
+  "SEQ_SE_DP_EXPMAX_sseq": [
+   1804,
+   "SEQ_SE_DP_EXPMAX"
+  ],
+  "SEQ_SE_DP_EXP_sseq": [
+   1803,
+   "SEQ_SE_DP_EXP"
+  ],
+  "SEQ_SE_DP_F007_sseq": [
+   1631,
+   "SEQ_SE_DP_F007"
+  ],
+  "SEQ_SE_DP_F017_sseq": [
+   1600,
+   "SEQ_SE_DP_F017"
+  ],
+  "SEQ_SE_DP_F209_sseq": [
+   1624,
+   "SEQ_SE_DP_F209"
+  ],
+  "SEQ_SE_DP_FAWA_sseq": [
+   1632,
+   "SEQ_SE_DP_FAWA"
+  ],
+  "SEQ_SE_DP_FBRADE_sseq": [
+   1612,
+   "SEQ_SE_DP_FBRADE"
+  ],
+  "SEQ_SE_DP_FOOT3_0_sseq": [
+   1601,
+   "SEQ_SE_DP_FOOT3_0"
+  ],
+  "SEQ_SE_DP_FOOT3_1_sseq": [
+   1602,
+   "SEQ_SE_DP_FOOT3_1"
+  ],
+  "SEQ_SE_DP_FPASA2_sseq": [
+   1633,
+   "SEQ_SE_DP_FPASA2"
+  ],
+  "SEQ_SE_DP_FW015_sseq": [
+   1611,
+   "SEQ_SE_DP_FW015"
+  ],
+  "SEQ_SE_DP_FW019_sseq": [
+   1609,
+   "SEQ_SE_DP_FW019"
+  ],
+  "SEQ_SE_DP_FW056_sseq": [
+   1626,
+   "SEQ_SE_DP_FW056"
+  ],
+  "SEQ_SE_DP_FW088_sseq": [
+   1610,
+   "SEQ_SE_DP_FW088"
+  ],
+  "SEQ_SE_DP_FW089_sseq": [
+   1628,
+   "SEQ_SE_DP_FW089"
+  ],
+  "SEQ_SE_DP_FW104_sseq": [
+   1616,
+   "SEQ_SE_DP_FW104"
+  ],
+  "SEQ_SE_DP_FW230_sseq": [
+   1608,
+   "SEQ_SE_DP_FW230"
+  ],
+  "SEQ_SE_DP_FW291_sseq": [
+   1627,
+   "SEQ_SE_DP_FW291"
+  ],
+  "SEQ_SE_DP_FW367_sseq": [
+   1634,
+   "SEQ_SE_DP_FW367"
+  ],
+  "SEQ_SE_DP_FW452_sseq": [
+   1629,
+   "SEQ_SE_DP_FW452"
+  ],
+  "SEQ_SE_DP_FW463_sseq": [
+   1613,
+   "SEQ_SE_DP_FW463"
+  ],
+  "SEQ_SE_DP_FW466_sseq": [
+   1630,
+   "SEQ_SE_DP_FW466"
+  ],
+  "SEQ_SE_DP_GAGAGA_sseq": [
+   1599,
+   "SEQ_SE_DP_GAGAGA"
+  ],
+  "SEQ_SE_DP_GASA01_sseq": [
+   1740,
+   "SEQ_SE_DP_GASA01"
+  ],
+  "SEQ_SE_DP_GASA02_sseq": [
+   1741,
+   "SEQ_SE_DP_GASA02"
+  ],
+  "SEQ_SE_DP_GASA03_sseq": [
+   1742,
+   "SEQ_SE_DP_GASA03"
+  ],
+  "SEQ_SE_DP_GASHIN_sseq": [
+   2130,
+   "SEQ_SE_DP_GASHIN"
+  ],
+  "SEQ_SE_DP_GEAR2_sseq": [
+   1564,
+   "SEQ_SE_DP_GEAR2"
+  ],
+  "SEQ_SE_DP_GEAR_sseq": [
+   1561,
+   "SEQ_SE_DP_GEAR"
+  ],
+  "SEQ_SE_DP_GETTING_sseq": [
+   1801,
+   "SEQ_SE_DP_GETTING"
+  ],
+  "SEQ_SE_DP_GYURU_sseq": [
+   1586,
+   "SEQ_SE_DP_GYURU"
+  ],
+  "SEQ_SE_DP_HAMARU_sseq": [
+   1598,
+   "SEQ_SE_DP_HAMARU"
+  ],
+  "SEQ_SE_DP_HINSI_sseq": [
+   1796,
+   "SEQ_SE_DP_HINSI"
+  ],
+  "SEQ_SE_DP_HURU2_sseq": [
+   2120,
+   "SEQ_SE_DP_HURU2"
+  ],
+  "SEQ_SE_DP_HURU_sseq": [
+   2119,
+   "SEQ_SE_DP_HURU"
+  ],
+  "SEQ_SE_DP_HYUN2_sseq": [
+   1667,
+   "SEQ_SE_DP_HYUN2"
+  ],
+  "SEQ_SE_DP_HYUN_sseq": [
+   1666,
+   "SEQ_SE_DP_HYUN"
+  ],
+  "SEQ_SE_DP_JIHANKI_sseq": [
+   1559,
+   "SEQ_SE_DP_JIHANKI"
+  ],
+  "SEQ_SE_DP_JITENSYA_sseq": [
+   1560,
+   "SEQ_SE_DP_JITENSYA"
+  ],
+  "SEQ_SE_DP_KAIDAN2_sseq": [
+   1539,
+   "SEQ_SE_DP_KAIDAN2"
+  ],
+  "SEQ_SE_DP_KAIFUKU_sseq": [
+   1516,
+   "SEQ_SE_DP_KAIFUKU"
+  ],
+  "SEQ_SE_DP_KAMI2_sseq": [
+   2115,
+   "SEQ_SE_DP_KAMI2"
+  ],
+  "SEQ_SE_DP_KAMI_sseq": [
+   2114,
+   "SEQ_SE_DP_KAMI"
+  ],
+  "SEQ_SE_DP_KASYA_sseq": [
+   1657,
+   "SEQ_SE_DP_KASYA"
+  ],
+  "SEQ_SE_DP_KATI_sseq": [
+   1527,
+   "SEQ_SE_DP_KATI"
+  ],
+  "SEQ_SE_DP_KATI_sseq_1": [
+   1528,
+   "SEQ_SE_DP_CON_014"
+  ],
+  "SEQ_SE_DP_KAZE2_sseq": [
+   2122,
+   "SEQ_SE_DP_KAZE2"
+  ],
+  "SEQ_SE_DP_KAZE_sseq": [
+   2121,
+   "SEQ_SE_DP_KAZE"
+  ],
+  "SEQ_SE_DP_KIRAKIRA2_sseq": [
+   2110,
+   "SEQ_SE_DP_KIRAKIRA2"
+  ],
+  "SEQ_SE_DP_KIRAKIRA3_sseq": [
+   1701,
+   "SEQ_SE_DP_KIRAKIRA3"
+  ],
+  "SEQ_SE_DP_KIRAKIRA4_sseq": [
+   1703,
+   "SEQ_SE_DP_KIRAKIRA4"
+  ],
+  "SEQ_SE_DP_KIRAKIRA_sseq": [
+   1702,
+   "SEQ_SE_DP_KIRAKIRA"
+  ],
+  "SEQ_SE_DP_KIRAN_sseq": [
+   2129,
+   "SEQ_SE_DP_KIRAN"
+  ],
+  "SEQ_SE_DP_KI_GASYAN_sseq": [
+   1562,
+   "SEQ_SE_DP_KI_GASYAN"
+  ],
+  "SEQ_SE_DP_KON2_sseq": [
+   1511,
+   "SEQ_SE_DP_KON2"
+  ],
+  "SEQ_SE_DP_KON3_sseq": [
+   1512,
+   "SEQ_SE_DP_KON3"
+  ],
+  "SEQ_SE_DP_KON4_sseq": [
+   1513,
+   "SEQ_SE_DP_KON4"
+  ],
+  "SEQ_SE_DP_KON_sseq": [
+   1510,
+   "SEQ_SE_DP_KON"
+  ],
+  "SEQ_SE_DP_KOUKAN01_sseq": [
+   1704,
+   "SEQ_SE_DP_KOUKAN01"
+  ],
+  "SEQ_SE_DP_KOUKAN03_sseq": [
+   1705,
+   "SEQ_SE_DP_KOUKAN03"
+  ],
+  "SEQ_SE_DP_KOUKAN04_sseq": [
+   1706,
+   "SEQ_SE_DP_KOUKAN04"
+  ],
+  "SEQ_SE_DP_KOUKAN05_sseq": [
+   1707,
+   "SEQ_SE_DP_KOUKAN05"
+  ],
+  "SEQ_SE_DP_KOUKAN06_sseq": [
+   1708,
+   "SEQ_SE_DP_KOUKAN06"
+  ],
+  "SEQ_SE_DP_KOUKAN07_sseq": [
+   1709,
+   "SEQ_SE_DP_KOUKAN07"
+  ],
+  "SEQ_SE_DP_KOUKAN08_sseq": [
+   1710,
+   "SEQ_SE_DP_KOUKAN08"
+  ],
+  "SEQ_SE_DP_KOUKAN09_sseq": [
+   1711,
+   "SEQ_SE_DP_KOUKAN09"
+  ],
+  "SEQ_SE_DP_KOUKAN10_sseq": [
+   1712,
+   "SEQ_SE_DP_KOUKAN10"
+  ],
+  "SEQ_SE_DP_KOUKA_H_sseq": [
+   1788,
+   "SEQ_SE_DP_KOUKA_H"
+  ],
+  "SEQ_SE_DP_KOUKA_L_sseq": [
+   1789,
+   "SEQ_SE_DP_KOUKA_L"
+  ],
+  "SEQ_SE_DP_KOUKA_M_sseq": [
+   1790,
+   "SEQ_SE_DP_KOUKA_M"
+  ],
+  "SEQ_SE_DP_KUSA_sseq": [
+   1619,
+   "SEQ_SE_DP_KUSA"
+  ],
+  "SEQ_SE_DP_KYU01_sseq": [
+   1690,
+   "SEQ_SE_DP_KYU01"
+  ],
+  "SEQ_SE_DP_MARSH_WALK_sseq": [
+   1621,
+   "SEQ_SE_DP_MARSH_WALK"
+  ],
+  "SEQ_SE_DP_MAZYO2_sseq": [
+   1590,
+   "SEQ_SE_DP_MAZYO2"
+  ],
+  "SEQ_SE_DP_MAZYO3_sseq": [
+   1665,
+   "SEQ_SE_DP_MAZYO3"
+  ],
+  "SEQ_SE_DP_MAZYO4_sseq": [
+   1591,
+   "SEQ_SE_DP_MAZYO4"
+  ],
+  "SEQ_SE_DP_MAZYO_sseq": [
+   1664,
+   "SEQ_SE_DP_MAZYO"
+  ],
+  "SEQ_SE_DP_MEKURU2_sseq": [
+   1680,
+   "SEQ_SE_DP_MEKURU2"
+  ],
+  "SEQ_SE_DP_MEKURU3_sseq": [
+   1681,
+   "SEQ_SE_DP_MEKURU3"
+  ],
+  "SEQ_SE_DP_MEKURU_sseq": [
+   1679,
+   "SEQ_SE_DP_MEKURU"
+  ],
+  "SEQ_SE_DP_MIGAKU01_sseq": [
+   1682,
+   "SEQ_SE_DP_MIGAKU01"
+  ],
+  "SEQ_SE_DP_MIGAKU02_sseq": [
+   1683,
+   "SEQ_SE_DP_MIGAKU02"
+  ],
+  "SEQ_SE_DP_NAGERU_sseq": [
+   1802,
+   "SEQ_SE_DP_NAGERU"
+  ],
+  "SEQ_SE_DP_NAMEIN_01_sseq": [
+   1691,
+   "SEQ_SE_DP_NAMEIN_01"
+  ],
+  "SEQ_SE_DP_NAMI_sseq": [
+   2118,
+   "SEQ_SE_DP_NAMI"
+  ],
+  "SEQ_SE_DP_NIGERU2_sseq": [
+   1791,
+   "SEQ_SE_DP_NIGERU2"
+  ],
+  "SEQ_SE_DP_NIGERU_sseq": [
+   1792,
+   "SEQ_SE_DP_NIGERU"
+  ],
+  "SEQ_SE_DP_NM01_sseq": [
+   1713,
+   "SEQ_SE_DP_NM01"
+  ],
+  "SEQ_SE_DP_NM02_sseq": [
+   1714,
+   "SEQ_SE_DP_NM02"
+  ],
+  "SEQ_SE_DP_NM03_2_sseq": [
+   1716,
+   "SEQ_SE_DP_NM03_2"
+  ],
+  "SEQ_SE_DP_NM03_sseq": [
+   1715,
+   "SEQ_SE_DP_NM03"
+  ],
+  "SEQ_SE_DP_NM04_2_sseq": [
+   1718,
+   "SEQ_SE_DP_NM04_2"
+  ],
+  "SEQ_SE_DP_NM04_3_sseq": [
+   1719,
+   "SEQ_SE_DP_NM04_3"
+  ],
+  "SEQ_SE_DP_NM04_sseq": [
+   1717,
+   "SEQ_SE_DP_NM04"
+  ],
+  "SEQ_SE_DP_NM05_sseq": [
+   1720,
+   "SEQ_SE_DP_NM05"
+  ],
+  "SEQ_SE_DP_NM07_2_sseq": [
+   1722,
+   "SEQ_SE_DP_NM07_2"
+  ],
+  "SEQ_SE_DP_NM07_sseq": [
+   1721,
+   "SEQ_SE_DP_NM07"
+  ],
+  "SEQ_SE_DP_NM08_sseq": [
+   1723,
+   "SEQ_SE_DP_NM08"
+  ],
+  "SEQ_SE_DP_NM09_sseq": [
+   1724,
+   "SEQ_SE_DP_NM09"
+  ],
+  "SEQ_SE_DP_NM10_2_sseq": [
+   1726,
+   "SEQ_SE_DP_NM10_2"
+  ],
+  "SEQ_SE_DP_NM10_sseq": [
+   1725,
+   "SEQ_SE_DP_NM10"
+  ],
+  "SEQ_SE_DP_NM11_sseq": [
+   1727,
+   "SEQ_SE_DP_NM11"
+  ],
+  "SEQ_SE_DP_NM12_2_sseq": [
+   1729,
+   "SEQ_SE_DP_NM12_2"
+  ],
+  "SEQ_SE_DP_NM12_sseq": [
+   1728,
+   "SEQ_SE_DP_NM12"
+  ],
+  "SEQ_SE_DP_NM13_sseq": [
+   1730,
+   "SEQ_SE_DP_NM13"
+  ],
+  "SEQ_SE_DP_NM14_sseq": [
+   1731,
+   "SEQ_SE_DP_NM14"
+  ],
+  "SEQ_SE_DP_OPEN2_sseq": [
+   1518,
+   "SEQ_SE_DP_OPEN2"
+  ],
+  "SEQ_SE_DP_OPEN7_sseq": [
+   1587,
+   "SEQ_SE_DP_OPEN7"
+  ],
+  "SEQ_SE_DP_PASA2_sseq": [
+   2127,
+   "SEQ_SE_DP_PASA2"
+  ],
+  "SEQ_SE_DP_PASA3_sseq": [
+   2128,
+   "SEQ_SE_DP_PASA3"
+  ],
+  "SEQ_SE_DP_PASA_sseq": [
+   2126,
+   "SEQ_SE_DP_PASA"
+  ],
+  "SEQ_SE_DP_PASO2_sseq": [
+   1658,
+   "SEQ_SE_DP_PASO2"
+  ],
+  "SEQ_SE_DP_PASO_sseq": [
+   1661,
+   "SEQ_SE_DP_PASO"
+  ],
+  "SEQ_SE_DP_PC_LOGIN_sseq": [
+   1549,
+   "SEQ_SE_DP_PC_LOGIN"
+  ],
+  "SEQ_SE_DP_PC_LOGOFF_sseq": [
+   1550,
+   "SEQ_SE_DP_PC_LOGOFF"
+  ],
+  "SEQ_SE_DP_PC_ON_sseq": [
+   1548,
+   "SEQ_SE_DP_PC_ON"
+  ],
+  "SEQ_SE_DP_PIKO2_sseq": [
+   1673,
+   "SEQ_SE_DP_PIKO2"
+  ],
+  "SEQ_SE_DP_PINPON_sseq": [
+   1521,
+   "SEQ_SE_DP_PINPON"
+  ],
+  "SEQ_SE_DP_PIRORIRO2_sseq": [
+   1507,
+   "SEQ_SE_DP_PIRORIRO2"
+  ],
+  "SEQ_SE_DP_PIRORIRO_sseq": [
+   1506,
+   "SEQ_SE_DP_PIRORIRO"
+  ],
+  "SEQ_SE_DP_POKELIST_001_sseq": [
+   1696,
+   "SEQ_SE_DP_POKELIST_001"
+  ],
+  "SEQ_SE_DP_POKETCH_003_sseq": [
+   1635,
+   "SEQ_SE_DP_POKETCH_003"
+  ],
+  "SEQ_SE_DP_POKETCH_006_sseq": [
+   1638,
+   "SEQ_SE_DP_POKETCH_006"
+  ],
+  "SEQ_SE_DP_POKETCH_007_sseq": [
+   1639,
+   "SEQ_SE_DP_POKETCH_007"
+  ],
+  "SEQ_SE_DP_POKETCH_009_sseq": [
+   1640,
+   "SEQ_SE_DP_POKETCH_009"
+  ],
+  "SEQ_SE_DP_POKETCH_010_sseq": [
+   1641,
+   "SEQ_SE_DP_POKETCH_010"
+  ],
+  "SEQ_SE_DP_POKETCH_011_sseq": [
+   1642,
+   "SEQ_SE_DP_POKETCH_011"
+  ],
+  "SEQ_SE_DP_POKETCH_012_sseq": [
+   1643,
+   "SEQ_SE_DP_POKETCH_012"
+  ],
+  "SEQ_SE_DP_POKETCH_013_sseq": [
+   1644,
+   "SEQ_SE_DP_POKETCH_013"
+  ],
+  "SEQ_SE_DP_POKETCH_014_sseq": [
+   1645,
+   "SEQ_SE_DP_POKETCH_014"
+  ],
+  "SEQ_SE_DP_POKE_DEAD3_sseq": [
+   1795,
+   "SEQ_SE_DP_POKE_DEAD3"
+  ],
+  "SEQ_SE_DP_PYUU2_sseq": [
+   1584,
+   "SEQ_SE_DP_PYUU2"
+  ],
+  "SEQ_SE_DP_PYUU_sseq": [
+   1583,
+   "SEQ_SE_DP_PYUU"
+  ],
+  "SEQ_SE_DP_REAPOKE_sseq": [
+   1808,
+   "SEQ_SE_DP_REAPOKE"
+  ],
+  "SEQ_SE_DP_REGI_sseq": [
+   1604,
+   "SEQ_SE_DP_REGI"
+  ],
+  "SEQ_SE_DP_SAVE_sseq": [
+   1563,
+   "SEQ_SE_DP_SAVE"
+  ],
+  "SEQ_SE_DP_SELECT5_sseq": [
+   1505,
+   "SEQ_SE_DP_SELECT5"
+  ],
+  "SEQ_SE_DP_SELECT78_sseq": [
+   1504,
+   "SEQ_SE_DP_SELECT78"
+  ],
+  "SEQ_SE_DP_SELECT8_sseq": [
+   1565,
+   "SEQ_SE_DP_SELECT8"
+  ],
+  "SEQ_SE_DP_SHIP01_sseq": [
+   1756,
+   "SEQ_SE_DP_SHIP01"
+  ],
+  "SEQ_SE_DP_SHIP02_sseq": [
+   1757,
+   "SEQ_SE_DP_SHIP02"
+  ],
+  "SEQ_SE_DP_SHIP03_sseq": [
+   1758,
+   "SEQ_SE_DP_SHIP03"
+  ],
+  "SEQ_SE_DP_SHUSHU_sseq": [
+   2113,
+   "SEQ_SE_DP_SHUSHU"
+  ],
+  "SEQ_SE_DP_SLIDEIN_sseq": [
+   1806,
+   "SEQ_SE_DP_SLIDEIN"
+  ],
+  "SEQ_SE_DP_SLOT01_sseq": [
+   1744,
+   "SEQ_SE_DP_SLOT01"
+  ],
+  "SEQ_SE_DP_SLOT01_sseq_1": [
+   1798,
+   "SEQ_SE_DP_BOWA2"
+  ],
+  "SEQ_SE_DP_SLOT02_sseq": [
+   1745,
+   "SEQ_SE_DP_SLOT02"
+  ],
+  "SEQ_SE_DP_SLOT02_sseq_1": [
+   1797,
+   "SEQ_SE_DP_SUIKOMU"
+  ],
+  "SEQ_SE_DP_START_sseq": [
+   1524,
+   "SEQ_SE_DP_START"
+  ],
+  "SEQ_SE_DP_SUBERU_sseq": [
+   1625,
+   "SEQ_SE_DP_SUBERU"
+  ],
+  "SEQ_SE_DP_SUIRYU_sseq": [
+   2109,
+   "SEQ_SE_DP_SUIRYU"
+  ],
+  "SEQ_SE_DP_SUNA_sseq": [
+   1620,
+   "SEQ_SE_DP_SUNA"
+  ],
+  "SEQ_SE_DP_SYARAAN_sseq": [
+   1662,
+   "SEQ_SE_DP_SYARAAN"
+  ],
+  "SEQ_SE_DP_SYU01_sseq": [
+   1692,
+   "SEQ_SE_DP_SYU01"
+  ],
+  "SEQ_SE_DP_SYU02_sseq": [
+   1693,
+   "SEQ_SE_DP_SYU02"
+  ],
+  "SEQ_SE_DP_SYU03_sseq": [
+   1694,
+   "SEQ_SE_DP_SYU03"
+  ],
+  "SEQ_SE_DP_TARARARAN_sseq": [
+   1663,
+   "SEQ_SE_DP_TARARARAN"
+  ],
+  "SEQ_SE_DP_TATA_sseq": [
+   1659,
+   "SEQ_SE_DP_TATA"
+  ],
+  "SEQ_SE_DP_TELE2_sseq": [
+   1615,
+   "SEQ_SE_DP_TELE2"
+  ],
+  "SEQ_SE_DP_TELE_sseq": [
+   1614,
+   "SEQ_SE_DP_TELE"
+  ],
+  "SEQ_SE_DP_TRAIN02_sseq": [
+   1753,
+   "SEQ_SE_DP_TRAIN02"
+  ],
+  "SEQ_SE_DP_TRAIN03_sseq": [
+   1754,
+   "SEQ_SE_DP_TRAIN03"
+  ],
+  "SEQ_SE_DP_TRAIN04_sseq": [
+   1755,
+   "SEQ_SE_DP_TRAIN04"
+  ],
+  "SEQ_SE_DP_TV_NOISE_sseq": [
+   1558,
+   "SEQ_SE_DP_TV_NOISE"
+  ],
+  "SEQ_SE_DP_T_AME_sseq": [
+   1593,
+   "SEQ_SE_DP_T_AME"
+  ],
+  "SEQ_SE_DP_T_KAMI2_sseq": [
+   1597,
+   "SEQ_SE_DP_T_KAMI2"
+  ],
+  "SEQ_SE_DP_T_KAMI_sseq": [
+   1596,
+   "SEQ_SE_DP_T_KAMI"
+  ],
+  "SEQ_SE_DP_T_KOAME_sseq": [
+   1594,
+   "SEQ_SE_DP_T_KOAME"
+  ],
+  "SEQ_SE_DP_T_OOAME_sseq": [
+   1595,
+   "SEQ_SE_DP_T_OOAME"
+  ],
+  "SEQ_SE_DP_UG_001_sseq": [
+   1697,
+   "SEQ_SE_DP_UG_001"
+  ],
+  "SEQ_SE_DP_UG_002_sseq": [
+   1698,
+   "SEQ_SE_DP_UG_002"
+  ],
+  "SEQ_SE_DP_UG_003_sseq": [
+   1699,
+   "SEQ_SE_DP_UG_003"
+  ],
+  "SEQ_SE_DP_UG_004_sseq": [
+   1700,
+   "SEQ_SE_DP_UG_004"
+  ],
+  "SEQ_SE_DP_UG_006_sseq": [
+   1569,
+   "SEQ_SE_DP_UG_006"
+  ],
+  "SEQ_SE_DP_UG_007_sseq": [
+   1570,
+   "SEQ_SE_DP_UG_007"
+  ],
+  "SEQ_SE_DP_UG_008_sseq": [
+   1571,
+   "SEQ_SE_DP_UG_008"
+  ],
+  "SEQ_SE_DP_UG_020_sseq": [
+   1572,
+   "SEQ_SE_DP_UG_020"
+  ],
+  "SEQ_SE_DP_UG_021_sseq": [
+   1573,
+   "SEQ_SE_DP_UG_021"
+  ],
+  "SEQ_SE_DP_UG_022_sseq": [
+   1574,
+   "SEQ_SE_DP_UG_022"
+  ],
+  "SEQ_SE_DP_UG_023_sseq": [
+   1575,
+   "SEQ_SE_DP_UG_023"
+  ],
+  "SEQ_SE_DP_UG_024_sseq": [
+   1576,
+   "SEQ_SE_DP_UG_024"
+  ],
+  "SEQ_SE_DP_UG_025_sseq": [
+   1577,
+   "SEQ_SE_DP_UG_025"
+  ],
+  "SEQ_SE_DP_UG_026_sseq": [
+   1578,
+   "SEQ_SE_DP_UG_026"
+  ],
+  "SEQ_SE_DP_UG_027_sseq": [
+   1579,
+   "SEQ_SE_DP_UG_027"
+  ],
+  "SEQ_SE_DP_UP_sseq": [
+   1660,
+   "SEQ_SE_DP_UP"
+  ],
+  "SEQ_SE_DP_VSDEMO01_sseq": [
+   1813,
+   "SEQ_SE_DP_VSDEMO01"
+  ],
+  "SEQ_SE_DP_VSDEMO02_sseq": [
+   1814,
+   "SEQ_SE_DP_VSDEMO02"
+  ],
+  "SEQ_SE_DP_VSDEMO03_sseq": [
+   1815,
+   "SEQ_SE_DP_VSDEMO03"
+  ],
+  "SEQ_SE_DP_VSDEMO04_sseq": [
+   1816,
+   "SEQ_SE_DP_VSDEMO04"
+  ],
+  "SEQ_SE_DP_VSDEMO05_sseq": [
+   1817,
+   "SEQ_SE_DP_VSDEMO05"
+  ],
+  "SEQ_SE_DP_VSDEMO06_sseq": [
+   1818,
+   "SEQ_SE_DP_VSDEMO06"
+  ],
+  "SEQ_SE_DP_VSDEMO07_sseq": [
+   1819,
+   "SEQ_SE_DP_VSDEMO07"
+  ],
+  "SEQ_SE_DP_W003_sseq": [
+   1904,
+   "SEQ_SE_DP_W003"
+  ],
+  "SEQ_SE_DP_W004_sseq": [
+   1905,
+   "SEQ_SE_DP_W004"
+  ],
+  "SEQ_SE_DP_W006_sseq": [
+   1906,
+   "SEQ_SE_DP_W006"
+  ],
+  "SEQ_SE_DP_W007_sseq": [
+   1907,
+   "SEQ_SE_DP_W007"
+  ],
+  "SEQ_SE_DP_W010_sseq": [
+   1908,
+   "SEQ_SE_DP_W010"
+  ],
+  "SEQ_SE_DP_W011_sseq": [
+   1909,
+   "SEQ_SE_DP_W011"
+  ],
+  "SEQ_SE_DP_W013B_sseq": [
+   1911,
+   "SEQ_SE_DP_W013B"
+  ],
+  "SEQ_SE_DP_W013_sseq": [
+   1910,
+   "SEQ_SE_DP_W013"
+  ],
+  "SEQ_SE_DP_W014_sseq": [
+   1912,
+   "SEQ_SE_DP_W014"
+  ],
+  "SEQ_SE_DP_W015_sseq": [
+   1913,
+   "SEQ_SE_DP_W015"
+  ],
+  "SEQ_SE_DP_W016B_sseq": [
+   1915,
+   "SEQ_SE_DP_W016B"
+  ],
+  "SEQ_SE_DP_W016_sseq": [
+   1914,
+   "SEQ_SE_DP_W016"
+  ],
+  "SEQ_SE_DP_W017_sseq": [
+   1916,
+   "SEQ_SE_DP_W017"
+  ],
+  "SEQ_SE_DP_W019_sseq": [
+   1917,
+   "SEQ_SE_DP_W019"
+  ],
+  "SEQ_SE_DP_W020B_sseq": [
+   1919,
+   "SEQ_SE_DP_W020B"
+  ],
+  "SEQ_SE_DP_W020_sseq": [
+   1918,
+   "SEQ_SE_DP_W020"
+  ],
+  "SEQ_SE_DP_W025B_sseq": [
+   1920,
+   "SEQ_SE_DP_W025B"
+  ],
+  "SEQ_SE_DP_W025C_sseq": [
+   1921,
+   "SEQ_SE_DP_W025C"
+  ],
+  "SEQ_SE_DP_W025_sseq": [
+   1529,
+   "SEQ_SE_DP_W025"
+  ],
+  "SEQ_SE_DP_W026_sseq": [
+   1922,
+   "SEQ_SE_DP_W026"
+  ],
+  "SEQ_SE_DP_W028B_sseq": [
+   1924,
+   "SEQ_SE_DP_W028B"
+  ],
+  "SEQ_SE_DP_W028_sseq": [
+   1923,
+   "SEQ_SE_DP_W028"
+  ],
+  "SEQ_SE_DP_W029_sseq": [
+   1925,
+   "SEQ_SE_DP_W029"
+  ],
+  "SEQ_SE_DP_W030_sseq": [
+   1926,
+   "SEQ_SE_DP_W030"
+  ],
+  "SEQ_SE_DP_W036_sseq": [
+   1927,
+   "SEQ_SE_DP_W036"
+  ],
+  "SEQ_SE_DP_W039_sseq": [
+   1928,
+   "SEQ_SE_DP_W039"
+  ],
+  "SEQ_SE_DP_W040_sseq": [
+   1929,
+   "SEQ_SE_DP_W040"
+  ],
+  "SEQ_SE_DP_W043B_sseq": [
+   1931,
+   "SEQ_SE_DP_W043B"
+  ],
+  "SEQ_SE_DP_W043C_sseq": [
+   1932,
+   "SEQ_SE_DP_W043C"
+  ],
+  "SEQ_SE_DP_W043D_sseq": [
+   1933,
+   "SEQ_SE_DP_W043D"
+  ],
+  "SEQ_SE_DP_W043_sseq": [
+   1930,
+   "SEQ_SE_DP_W043"
+  ],
+  "SEQ_SE_DP_W044_sseq": [
+   1934,
+   "SEQ_SE_DP_W044"
+  ],
+  "SEQ_SE_DP_W047_sseq": [
+   1935,
+   "SEQ_SE_DP_W047"
+  ],
+  "SEQ_SE_DP_W048_sseq": [
+   1936,
+   "SEQ_SE_DP_W048"
+  ],
+  "SEQ_SE_DP_W052_sseq": [
+   1937,
+   "SEQ_SE_DP_W052"
+  ],
+  "SEQ_SE_DP_W053B_sseq": [
+   1939,
+   "SEQ_SE_DP_W053B"
+  ],
+  "SEQ_SE_DP_W053_sseq": [
+   1938,
+   "SEQ_SE_DP_W053"
+  ],
+  "SEQ_SE_DP_W054_sseq": [
+   1940,
+   "SEQ_SE_DP_W054"
+  ],
+  "SEQ_SE_DP_W055_sseq": [
+   1941,
+   "SEQ_SE_DP_W055"
+  ],
+  "SEQ_SE_DP_W056B_sseq": [
+   1943,
+   "SEQ_SE_DP_W056B"
+  ],
+  "SEQ_SE_DP_W056_sseq": [
+   1942,
+   "SEQ_SE_DP_W056"
+  ],
+  "SEQ_SE_DP_W057B_sseq": [
+   1945,
+   "SEQ_SE_DP_W057B"
+  ],
+  "SEQ_SE_DP_W057_sseq": [
+   1944,
+   "SEQ_SE_DP_W057"
+  ],
+  "SEQ_SE_DP_W059B_sseq": [
+   1947,
+   "SEQ_SE_DP_W059B"
+  ],
+  "SEQ_SE_DP_W059_sseq": [
+   1946,
+   "SEQ_SE_DP_W059"
+  ],
+  "SEQ_SE_DP_W060B_sseq": [
+   1950,
+   "SEQ_SE_DP_W060B"
+  ],
+  "SEQ_SE_DP_W060C_sseq": [
+   1530,
+   "SEQ_SE_DP_W060C"
+  ],
+  "SEQ_SE_DP_W060_sseq": [
+   1948,
+   "SEQ_SE_DP_W060"
+  ],
+  "SEQ_SE_DP_W062D_sseq": [
+   1949,
+   "SEQ_SE_DP_W062D"
+  ],
+  "SEQ_SE_DP_W062_sseq": [
+   1531,
+   "SEQ_SE_DP_W062"
+  ],
+  "SEQ_SE_DP_W063B_sseq": [
+   1952,
+   "SEQ_SE_DP_W063B"
+  ],
+  "SEQ_SE_DP_W063C_sseq": [
+   1953,
+   "SEQ_SE_DP_W063C"
+  ],
+  "SEQ_SE_DP_W063_sseq": [
+   1951,
+   "SEQ_SE_DP_W063"
+  ],
+  "SEQ_SE_DP_W070_sseq": [
+   1954,
+   "SEQ_SE_DP_W070"
+  ],
+  "SEQ_SE_DP_W071B_sseq": [
+   1956,
+   "SEQ_SE_DP_W071B"
+  ],
+  "SEQ_SE_DP_W071_sseq": [
+   1955,
+   "SEQ_SE_DP_W071"
+  ],
+  "SEQ_SE_DP_W076B_sseq": [
+   1958,
+   "SEQ_SE_DP_W076B"
+  ],
+  "SEQ_SE_DP_W076_sseq": [
+   1957,
+   "SEQ_SE_DP_W076"
+  ],
+  "SEQ_SE_DP_W077B_sseq": [
+   1960,
+   "SEQ_SE_DP_W077B"
+  ],
+  "SEQ_SE_DP_W077_sseq": [
+   1959,
+   "SEQ_SE_DP_W077"
+  ],
+  "SEQ_SE_DP_W080B_sseq": [
+   1961,
+   "SEQ_SE_DP_W080B"
+  ],
+  "SEQ_SE_DP_W080C_sseq": [
+   1962,
+   "SEQ_SE_DP_W080C"
+  ],
+  "SEQ_SE_DP_W080_sseq": [
+   1532,
+   "SEQ_SE_DP_W080"
+  ],
+  "SEQ_SE_DP_W081B_sseq": [
+   1964,
+   "SEQ_SE_DP_W081B"
+  ],
+  "SEQ_SE_DP_W081_sseq": [
+   1963,
+   "SEQ_SE_DP_W081"
+  ],
+  "SEQ_SE_DP_W082B_sseq": [
+   1966,
+   "SEQ_SE_DP_W082B"
+  ],
+  "SEQ_SE_DP_W082C_sseq": [
+   1967,
+   "SEQ_SE_DP_W082C"
+  ],
+  "SEQ_SE_DP_W082_sseq": [
+   1965,
+   "SEQ_SE_DP_W082"
+  ],
+  "SEQ_SE_DP_W085B_sseq": [
+   1969,
+   "SEQ_SE_DP_W085B"
+  ],
+  "SEQ_SE_DP_W085C_sseq": [
+   1970,
+   "SEQ_SE_DP_W085C"
+  ],
+  "SEQ_SE_DP_W085_sseq": [
+   1968,
+   "SEQ_SE_DP_W085"
+  ],
+  "SEQ_SE_DP_W086_sseq": [
+   1971,
+   "SEQ_SE_DP_W086"
+  ],
+  "SEQ_SE_DP_W088_sseq": [
+   1972,
+   "SEQ_SE_DP_W088"
+  ],
+  "SEQ_SE_DP_W089B_sseq": [
+   1974,
+   "SEQ_SE_DP_W089B"
+  ],
+  "SEQ_SE_DP_W089_sseq": [
+   1973,
+   "SEQ_SE_DP_W089"
+  ],
+  "SEQ_SE_DP_W090_sseq": [
+   1975,
+   "SEQ_SE_DP_W090"
+  ],
+  "SEQ_SE_DP_W091_sseq": [
+   1976,
+   "SEQ_SE_DP_W091"
+  ],
+  "SEQ_SE_DP_W092B_sseq": [
+   1978,
+   "SEQ_SE_DP_W092B"
+  ],
+  "SEQ_SE_DP_W092D_sseq": [
+   1979,
+   "SEQ_SE_DP_W092D"
+  ],
+  "SEQ_SE_DP_W092_sseq": [
+   1977,
+   "SEQ_SE_DP_W092"
+  ],
+  "SEQ_SE_DP_W100B_sseq": [
+   1981,
+   "SEQ_SE_DP_W100B"
+  ],
+  "SEQ_SE_DP_W103_sseq": [
+   1982,
+   "SEQ_SE_DP_W103"
+  ],
+  "SEQ_SE_DP_W104_sseq": [
+   1983,
+   "SEQ_SE_DP_W104"
+  ],
+  "SEQ_SE_DP_W107_sseq": [
+   1984,
+   "SEQ_SE_DP_W107"
+  ],
+  "SEQ_SE_DP_W109B_sseq": [
+   1986,
+   "SEQ_SE_DP_W109B"
+  ],
+  "SEQ_SE_DP_W109_sseq": [
+   1985,
+   "SEQ_SE_DP_W109"
+  ],
+  "SEQ_SE_DP_W112B_sseq": [
+   1988,
+   "SEQ_SE_DP_W112B"
+  ],
+  "SEQ_SE_DP_W112_sseq": [
+   1987,
+   "SEQ_SE_DP_W112"
+  ],
+  "SEQ_SE_DP_W114_sseq": [
+   1989,
+   "SEQ_SE_DP_W114"
+  ],
+  "SEQ_SE_DP_W115_sseq": [
+   1990,
+   "SEQ_SE_DP_W115"
+  ],
+  "SEQ_SE_DP_W118B_sseq": [
+   1992,
+   "SEQ_SE_DP_W118B"
+  ],
+  "SEQ_SE_DP_W118_sseq": [
+   1991,
+   "SEQ_SE_DP_W118"
+  ],
+  "SEQ_SE_DP_W120_sseq": [
+   1993,
+   "SEQ_SE_DP_W120"
+  ],
+  "SEQ_SE_DP_W122_sseq": [
+   1994,
+   "SEQ_SE_DP_W122"
+  ],
+  "SEQ_SE_DP_W127_sseq": [
+   1995,
+   "SEQ_SE_DP_W127"
+  ],
+  "SEQ_SE_DP_W129_sseq": [
+   1996,
+   "SEQ_SE_DP_W129"
+  ],
+  "SEQ_SE_DP_W145B_sseq": [
+   1998,
+   "SEQ_SE_DP_W145B"
+  ],
+  "SEQ_SE_DP_W145C_sseq": [
+   1999,
+   "SEQ_SE_DP_W145C"
+  ],
+  "SEQ_SE_DP_W145D_sseq": [
+   2000,
+   "SEQ_SE_DP_W145D"
+  ],
+  "SEQ_SE_DP_W145_sseq": [
+   1997,
+   "SEQ_SE_DP_W145"
+  ],
+  "SEQ_SE_DP_W146_sseq": [
+   2001,
+   "SEQ_SE_DP_W146"
+  ],
+  "SEQ_SE_DP_W151_sseq": [
+   2002,
+   "SEQ_SE_DP_W151"
+  ],
+  "SEQ_SE_DP_W152_sseq": [
+   2003,
+   "SEQ_SE_DP_W152"
+  ],
+  "SEQ_SE_DP_W153_sseq": [
+   2004,
+   "SEQ_SE_DP_W153"
+  ],
+  "SEQ_SE_DP_W155_sseq": [
+   2005,
+   "SEQ_SE_DP_W155"
+  ],
+  "SEQ_SE_DP_W161B_sseq": [
+   2007,
+   "SEQ_SE_DP_W161B"
+  ],
+  "SEQ_SE_DP_W161_sseq": [
+   2006,
+   "SEQ_SE_DP_W161"
+  ],
+  "SEQ_SE_DP_W166_sseq": [
+   2008,
+   "SEQ_SE_DP_W166"
+  ],
+  "SEQ_SE_DP_W171_sseq": [
+   2009,
+   "SEQ_SE_DP_W171"
+  ],
+  "SEQ_SE_DP_W172B_sseq": [
+   2011,
+   "SEQ_SE_DP_W172B"
+  ],
+  "SEQ_SE_DP_W172_sseq": [
+   2010,
+   "SEQ_SE_DP_W172"
+  ],
+  "SEQ_SE_DP_W173B_sseq": [
+   2013,
+   "SEQ_SE_DP_W173B"
+  ],
+  "SEQ_SE_DP_W173C_sseq": [
+   2014,
+   "SEQ_SE_DP_W173C"
+  ],
+  "SEQ_SE_DP_W173_sseq": [
+   2012,
+   "SEQ_SE_DP_W173"
+  ],
+  "SEQ_SE_DP_W179_sseq": [
+   2015,
+   "SEQ_SE_DP_W179"
+  ],
+  "SEQ_SE_DP_W185_sseq": [
+   2016,
+   "SEQ_SE_DP_W185"
+  ],
+  "SEQ_SE_DP_W187_sseq": [
+   2017,
+   "SEQ_SE_DP_W187"
+  ],
+  "SEQ_SE_DP_W195_sseq": [
+   2018,
+   "SEQ_SE_DP_W195"
+  ],
+  "SEQ_SE_DP_W196_sseq": [
+   2019,
+   "SEQ_SE_DP_W196"
+  ],
+  "SEQ_SE_DP_W197_sseq": [
+   2020,
+   "SEQ_SE_DP_W197"
+  ],
+  "SEQ_SE_DP_W199_sseq": [
+   2021,
+   "SEQ_SE_DP_W199"
+  ],
+  "SEQ_SE_DP_W201_sseq": [
+   2022,
+   "SEQ_SE_DP_W201"
+  ],
+  "SEQ_SE_DP_W202B_sseq": [
+   2024,
+   "SEQ_SE_DP_W202B"
+  ],
+  "SEQ_SE_DP_W202_sseq": [
+   2023,
+   "SEQ_SE_DP_W202"
+  ],
+  "SEQ_SE_DP_W204_sseq": [
+   2025,
+   "SEQ_SE_DP_W204"
+  ],
+  "SEQ_SE_DP_W207B_sseq": [
+   2027,
+   "SEQ_SE_DP_W207B"
+  ],
+  "SEQ_SE_DP_W207C_sseq": [
+   2028,
+   "SEQ_SE_DP_W207C"
+  ],
+  "SEQ_SE_DP_W207D_sseq": [
+   2029,
+   "SEQ_SE_DP_W207D"
+  ],
+  "SEQ_SE_DP_W207_sseq": [
+   2026,
+   "SEQ_SE_DP_W207"
+  ],
+  "SEQ_SE_DP_W208_sseq": [
+   2030,
+   "SEQ_SE_DP_W208"
+  ],
+  "SEQ_SE_DP_W209_sseq": [
+   2031,
+   "SEQ_SE_DP_W209"
+  ],
+  "SEQ_SE_DP_W213_sseq": [
+   2032,
+   "SEQ_SE_DP_W213"
+  ],
+  "SEQ_SE_DP_W215_sseq": [
+   2033,
+   "SEQ_SE_DP_W215"
+  ],
+  "SEQ_SE_DP_W221B_sseq": [
+   2034,
+   "SEQ_SE_DP_W221B"
+  ],
+  "SEQ_SE_DP_W227B_sseq": [
+   2036,
+   "SEQ_SE_DP_W227B"
+  ],
+  "SEQ_SE_DP_W227_sseq": [
+   2035,
+   "SEQ_SE_DP_W227"
+  ],
+  "SEQ_SE_DP_W230_sseq": [
+   2037,
+   "SEQ_SE_DP_W230"
+  ],
+  "SEQ_SE_DP_W231_sseq": [
+   2038,
+   "SEQ_SE_DP_W231"
+  ],
+  "SEQ_SE_DP_W233B_sseq": [
+   2040,
+   "SEQ_SE_DP_W233B"
+  ],
+  "SEQ_SE_DP_W233_sseq": [
+   2039,
+   "SEQ_SE_DP_W233"
+  ],
+  "SEQ_SE_DP_W234_sseq": [
+   2041,
+   "SEQ_SE_DP_W234"
+  ],
+  "SEQ_SE_DP_W236_sseq": [
+   2042,
+   "SEQ_SE_DP_W236"
+  ],
+  "SEQ_SE_DP_W239_sseq": [
+   2043,
+   "SEQ_SE_DP_W239"
+  ],
+  "SEQ_SE_DP_W240_sseq": [
+   2044,
+   "SEQ_SE_DP_W240"
+  ],
+  "SEQ_SE_DP_W250_sseq": [
+   2045,
+   "SEQ_SE_DP_W250"
+  ],
+  "SEQ_SE_DP_W253_sseq": [
+   2046,
+   "SEQ_SE_DP_W253"
+  ],
+  "SEQ_SE_DP_W255B_sseq": [
+   2048,
+   "SEQ_SE_DP_W255B"
+  ],
+  "SEQ_SE_DP_W255E_sseq": [
+   2049,
+   "SEQ_SE_DP_W255E"
+  ],
+  "SEQ_SE_DP_W255F_sseq": [
+   2050,
+   "SEQ_SE_DP_W255F"
+  ],
+  "SEQ_SE_DP_W255_sseq": [
+   2047,
+   "SEQ_SE_DP_W255"
+  ],
+  "SEQ_SE_DP_W257_sseq": [
+   2051,
+   "SEQ_SE_DP_W257"
+  ],
+  "SEQ_SE_DP_W258_sseq": [
+   2052,
+   "SEQ_SE_DP_W258"
+  ],
+  "SEQ_SE_DP_W260_sseq": [
+   2053,
+   "SEQ_SE_DP_W260"
+  ],
+  "SEQ_SE_DP_W278_sseq": [
+   2054,
+   "SEQ_SE_DP_W278"
+  ],
+  "SEQ_SE_DP_W280B_sseq": [
+   2056,
+   "SEQ_SE_DP_W280B"
+  ],
+  "SEQ_SE_DP_W280_sseq": [
+   2055,
+   "SEQ_SE_DP_W280"
+  ],
+  "SEQ_SE_DP_W281_sseq": [
+   2057,
+   "SEQ_SE_DP_W281"
+  ],
+  "SEQ_SE_DP_W287B_sseq": [
+   2058,
+   "SEQ_SE_DP_W287B"
+  ],
+  "SEQ_SE_DP_W287_sseq": [
+   2059,
+   "SEQ_SE_DP_W287"
+  ],
+  "SEQ_SE_DP_W291_sseq": [
+   2060,
+   "SEQ_SE_DP_W291"
+  ],
+  "SEQ_SE_DP_W298_sseq": [
+   2061,
+   "SEQ_SE_DP_W298"
+  ],
+  "SEQ_SE_DP_W320_sseq": [
+   2062,
+   "SEQ_SE_DP_W320"
+  ],
+  "SEQ_SE_DP_W322_sseq": [
+   2063,
+   "SEQ_SE_DP_W322"
+  ],
+  "SEQ_SE_DP_W327_sseq": [
+   2064,
+   "SEQ_SE_DP_W327"
+  ],
+  "SEQ_SE_DP_W356_sseq": [
+   2065,
+   "SEQ_SE_DP_W356"
+  ],
+  "SEQ_SE_DP_W360B_sseq": [
+   2067,
+   "SEQ_SE_DP_W360B"
+  ],
+  "SEQ_SE_DP_W360C_sseq": [
+   2068,
+   "SEQ_SE_DP_W360C"
+  ],
+  "SEQ_SE_DP_W360_sseq": [
+   2066,
+   "SEQ_SE_DP_W360"
+  ],
+  "SEQ_SE_DP_W361_sseq": [
+   2069,
+   "SEQ_SE_DP_W361"
+  ],
+  "SEQ_SE_DP_W362_sseq": [
+   2070,
+   "SEQ_SE_DP_W362"
+  ],
+  "SEQ_SE_DP_W367_sseq": [
+   2072,
+   "SEQ_SE_DP_W367"
+  ],
+  "SEQ_SE_DP_W368_sseq": [
+   2073,
+   "SEQ_SE_DP_W368"
+  ],
+  "SEQ_SE_DP_W373_sseq": [
+   2074,
+   "SEQ_SE_DP_W373"
+  ],
+  "SEQ_SE_DP_W374_sseq": [
+   2075,
+   "SEQ_SE_DP_W374"
+  ],
+  "SEQ_SE_DP_W375_sseq": [
+   2076,
+   "SEQ_SE_DP_W375"
+  ],
+  "SEQ_SE_DP_W376B_sseq": [
+   2078,
+   "SEQ_SE_DP_W376B"
+  ],
+  "SEQ_SE_DP_W376_sseq": [
+   2077,
+   "SEQ_SE_DP_W376"
+  ],
+  "SEQ_SE_DP_W377_sseq": [
+   2079,
+   "SEQ_SE_DP_W377"
+  ],
+  "SEQ_SE_DP_W380_sseq": [
+   2081,
+   "SEQ_SE_DP_W380"
+  ],
+  "SEQ_SE_DP_W381_sseq": [
+   2082,
+   "SEQ_SE_DP_W381"
+  ],
+  "SEQ_SE_DP_W383_sseq": [
+   2083,
+   "SEQ_SE_DP_W383"
+  ],
+  "SEQ_SE_DP_W387_sseq": [
+   2084,
+   "SEQ_SE_DP_W387"
+  ],
+  "SEQ_SE_DP_W392_sseq": [
+   2085,
+   "SEQ_SE_DP_W392"
+  ],
+  "SEQ_SE_DP_W399_sseq": [
+   2086,
+   "SEQ_SE_DP_W399"
+  ],
+  "SEQ_SE_DP_W405_sseq": [
+   2087,
+   "SEQ_SE_DP_W405"
+  ],
+  "SEQ_SE_DP_W408_sseq": [
+   2088,
+   "SEQ_SE_DP_W408"
+  ],
+  "SEQ_SE_DP_W411_sseq": [
+   2089,
+   "SEQ_SE_DP_W411"
+  ],
+  "SEQ_SE_DP_W412_sseq": [
+   2090,
+   "SEQ_SE_DP_W412"
+  ],
+  "SEQ_SE_DP_W413_sseq": [
+   2091,
+   "SEQ_SE_DP_W413"
+  ],
+  "SEQ_SE_DP_W419_sseq": [
+   2092,
+   "SEQ_SE_DP_W419"
+  ],
+  "SEQ_SE_DP_W426_sseq": [
+   2093,
+   "SEQ_SE_DP_W426"
+  ],
+  "SEQ_SE_DP_W428_sseq": [
+   2094,
+   "SEQ_SE_DP_W428"
+  ],
+  "SEQ_SE_DP_W434_sseq": [
+   2095,
+   "SEQ_SE_DP_W434"
+  ],
+  "SEQ_SE_DP_W436_sseq": [
+   2096,
+   "SEQ_SE_DP_W436"
+  ],
+  "SEQ_SE_DP_W443B_sseq": [
+   2097,
+   "SEQ_SE_DP_W443B"
+  ],
+  "SEQ_SE_DP_W452_sseq": [
+   2098,
+   "SEQ_SE_DP_W452"
+  ],
+  "SEQ_SE_DP_W456_sseq": [
+   2099,
+   "SEQ_SE_DP_W456"
+  ],
+  "SEQ_SE_DP_W459_sseq": [
+   2100,
+   "SEQ_SE_DP_W459"
+  ],
+  "SEQ_SE_DP_W461_sseq": [
+   2102,
+   "SEQ_SE_DP_W461"
+  ],
+  "SEQ_SE_DP_W462_sseq": [
+   2103,
+   "SEQ_SE_DP_W462"
+  ],
+  "SEQ_SE_DP_W463_sseq": [
+   2104,
+   "SEQ_SE_DP_W463"
+  ],
+  "SEQ_SE_DP_W464_sseq": [
+   2105,
+   "SEQ_SE_DP_W464"
+  ],
+  "SEQ_SE_DP_W465_sseq": [
+   2106,
+   "SEQ_SE_DP_W465"
+  ],
+  "SEQ_SE_DP_W466_sseq": [
+   2107,
+   "SEQ_SE_DP_W466"
+  ],
+  "SEQ_SE_DP_W467_sseq": [
+   2108,
+   "SEQ_SE_DP_W467"
+  ],
+  "SEQ_SE_DP_WALL_HIT2_sseq": [
+   1538,
+   "SEQ_SE_DP_WALL_HIT2"
+  ],
+  "SEQ_SE_DP_WALL_HIT_sseq": [
+   1537,
+   "SEQ_SE_DP_WALL_HIT"
+  ],
+  "SEQ_SE_DP_WIN_OPEN2_sseq": [
+   1545,
+   "SEQ_SE_DP_WIN_OPEN2"
+  ],
+  "SEQ_SE_DP_WIN_OPEN_sseq": [
+   1533,
+   "SEQ_SE_DP_WIN_OPEN"
+  ],
+  "SEQ_SE_DP_YUKIASHI_sseq": [
+   1567,
+   "SEQ_SE_DP_YUKIASHI"
+  ],
+  "SEQ_SE_DP_ZIZIZI_sseq": [
+   1589,
+   "SEQ_SE_DP_ZIZIZI"
+  ],
+  "SEQ_SE_DP_ZUKAN01_sseq": [
+   1674,
+   "SEQ_SE_DP_ZUKAN01"
+  ],
+  "SEQ_SE_DP_ZUKAN02_sseq": [
+   1517,
+   "SEQ_SE_DP_ZUKAN02"
+  ],
+  "SEQ_SE_DP_ZUPO2_sseq": [
+   1618,
+   "SEQ_SE_DP_ZUPO2"
+  ],
+  "SEQ_SE_DP_ZUPO_sseq": [
+   1617,
+   "SEQ_SE_DP_ZUPO"
+  ],
+  "SEQ_SE_DP_Z_SEARCH_sseq": [
+   1535,
+   "SEQ_SE_DP_Z_SEARCH"
+  ],
+  "SEQ_SE_PL_140_2_2_sseq": [
+   1395,
+   "SEQ_SE_PL_140_2_2"
+  ],
+  "SEQ_SE_PL_140_2_sseq": [
+   1437,
+   "SEQ_SE_PL_140_2"
+  ],
+  "SEQ_SE_PL_140_3_sseq": [
+   1438,
+   "SEQ_SE_PL_140_3"
+  ],
+  "SEQ_SE_PL_140_sseq": [
+   1436,
+   "SEQ_SE_PL_140"
+  ],
+  "SEQ_SE_PL_ALERT3_sseq": [
+   1405,
+   "SEQ_SE_PL_ALERT3"
+  ],
+  "SEQ_SE_PL_ALERT4_sseq": [
+   1406,
+   "SEQ_SE_PL_ALERT4"
+  ],
+  "SEQ_SE_PL_ALERT_sseq": [
+   1498,
+   "SEQ_SE_PL_ALERT"
+  ],
+  "SEQ_SE_PL_BAG3_sseq": [
+   1365,
+   "SEQ_SE_PL_BAG3"
+  ],
+  "SEQ_SE_PL_BALLOON01_sseq": [
+   1398,
+   "SEQ_SE_PL_BALLOON01"
+  ],
+  "SEQ_SE_PL_BALLOON02_sseq": [
+   1399,
+   "SEQ_SE_PL_BALLOON02"
+  ],
+  "SEQ_SE_PL_BALLOON03_2_sseq": [
+   1401,
+   "SEQ_SE_PL_BALLOON03_2"
+  ],
+  "SEQ_SE_PL_BALLOON03_sseq": [
+   1400,
+   "SEQ_SE_PL_BALLOON03"
+  ],
+  "SEQ_SE_PL_BALLOON04_sseq": [
+   1402,
+   "SEQ_SE_PL_BALLOON04"
+  ],
+  "SEQ_SE_PL_BALLOON05_2_sseq": [
+   1391,
+   "SEQ_SE_PL_BALLOON05_2"
+  ],
+  "SEQ_SE_PL_BALLOON05_sseq": [
+   1403,
+   "SEQ_SE_PL_BALLOON05"
+  ],
+  "SEQ_SE_PL_BALLOON07_sseq": [
+   1404,
+   "SEQ_SE_PL_BALLOON07"
+  ],
+  "SEQ_SE_PL_BOWABOWA_sseq": [
+   1496,
+   "SEQ_SE_PL_BOWABOWA"
+  ],
+  "SEQ_SE_PL_BREC03_sseq": [
+   1371,
+   "SEQ_SE_PL_BREC03"
+  ],
+  "SEQ_SE_PL_BREC10_sseq": [
+   1372,
+   "SEQ_SE_PL_BREC10"
+  ],
+  "SEQ_SE_PL_BREC11_2_sseq": [
+   1374,
+   "SEQ_SE_PL_BREC11_2"
+  ],
+  "SEQ_SE_PL_BREC11_sseq": [
+   1373,
+   "SEQ_SE_PL_BREC11"
+  ],
+  "SEQ_SE_PL_BREC12_sseq": [
+   1375,
+   "SEQ_SE_PL_BREC12"
+  ],
+  "SEQ_SE_PL_BREC13_sseq": [
+   1376,
+   "SEQ_SE_PL_BREC13"
+  ],
+  "SEQ_SE_PL_BREC20_sseq": [
+   1377,
+   "SEQ_SE_PL_BREC20"
+  ],
+  "SEQ_SE_PL_BREC21_sseq": [
+   1378,
+   "SEQ_SE_PL_BREC21"
+  ],
+  "SEQ_SE_PL_BREC57_sseq": [
+   1379,
+   "SEQ_SE_PL_BREC57"
+  ],
+  "SEQ_SE_PL_BREC58_sseq": [
+   1380,
+   "SEQ_SE_PL_BREC58"
+  ],
+  "SEQ_SE_PL_BREC80_sseq": [
+   1381,
+   "SEQ_SE_PL_BREC80"
+  ],
+  "SEQ_SE_PL_BUTTON_sseq": [
+   1370,
+   "SEQ_SE_PL_BUTTON"
+  ],
+  "SEQ_SE_PL_CALL_sseq": [
+   1360,
+   "SEQ_SE_PL_CALL"
+  ],
+  "SEQ_SE_PL_COIN_sseq": [
+   1493,
+   "SEQ_SE_PL_COIN"
+  ],
+  "SEQ_SE_PL_CON_034_sseq": [
+   1366,
+   "SEQ_SE_PL_CON_034"
+  ],
+  "SEQ_SE_PL_CON_034_sseq_1": [
+   1787,
+   "SEQ_SE_DP_CON_034"
+  ],
+  "SEQ_SE_PL_CPGET_sseq": [
+   1368,
+   "SEQ_SE_PL_CPGET"
+  ],
+  "SEQ_SE_PL_DANSA5_sseq": [
+   1450,
+   "SEQ_SE_PL_DANSA5"
+  ],
+  "SEQ_SE_PL_DANSA5_sseq_1": [
+   1623,
+   "SEQ_SE_DP_DANSA5"
+  ],
+  "SEQ_SE_PL_DOOR_OPEN5_sseq": [
+   1492,
+   "SEQ_SE_PL_DOOR_OPEN5"
+  ],
+  "SEQ_SE_PL_EFF02_sseq": [
+   1445,
+   "SEQ_SE_PL_EFF02"
+  ],
+  "SEQ_SE_PL_EFF03_3_sseq": [
+   1447,
+   "SEQ_SE_PL_EFF03_3"
+  ],
+  "SEQ_SE_PL_EFF03_4_sseq": [
+   1448,
+   "SEQ_SE_PL_EFF03_4"
+  ],
+  "SEQ_SE_PL_EFF03_sseq": [
+   1446,
+   "SEQ_SE_PL_EFF03"
+  ],
+  "SEQ_SE_PL_EFF04_sseq": [
+   1449,
+   "SEQ_SE_PL_EFF04"
+  ],
+  "SEQ_SE_PL_EFF05_sseq": [
+   1494,
+   "SEQ_SE_PL_EFF05"
+  ],
+  "SEQ_SE_PL_ELECTRO_sseq": [
+   1465,
+   "SEQ_SE_PL_ELECTRO"
+  ],
+  "SEQ_SE_PL_FAC01_sseq": [
+   1412,
+   "SEQ_SE_PL_FAC01"
+  ],
+  "SEQ_SE_PL_FCALL_sseq": [
+   1385,
+   "SEQ_SE_PL_FCALL"
+  ],
+  "SEQ_SE_PL_FIRE_sseq": [
+   1463,
+   "SEQ_SE_PL_FIRE"
+  ],
+  "SEQ_SE_PL_FLOAT01_sseq": [
+   1452,
+   "SEQ_SE_PL_FLOAT01"
+  ],
+  "SEQ_SE_PL_FLOAT02_sseq": [
+   1453,
+   "SEQ_SE_PL_FLOAT02"
+  ],
+  "SEQ_SE_PL_FLOAT03_sseq": [
+   1454,
+   "SEQ_SE_PL_FLOAT03"
+  ],
+  "SEQ_SE_PL_FLOAT04_sseq": [
+   1456,
+   "SEQ_SE_PL_FLOAT04"
+  ],
+  "SEQ_SE_PL_FLOAT05_sseq": [
+   1457,
+   "SEQ_SE_PL_FLOAT05"
+  ],
+  "SEQ_SE_PL_FLOAT06_sseq": [
+   1458,
+   "SEQ_SE_PL_FLOAT06"
+  ],
+  "SEQ_SE_PL_FLOAT07_sseq": [
+   1459,
+   "SEQ_SE_PL_FLOAT07"
+  ],
+  "SEQ_SE_PL_FLOAT10_sseq": [
+   1460,
+   "SEQ_SE_PL_FLOAT10"
+  ],
+  "SEQ_SE_PL_FLOAT11_sseq": [
+   1461,
+   "SEQ_SE_PL_FLOAT11"
+  ],
+  "SEQ_SE_PL_FLOAT12_sseq": [
+   1462,
+   "SEQ_SE_PL_FLOAT12"
+  ],
+  "SEQ_SE_PL_FLOAT13_sseq": [
+   1455,
+   "SEQ_SE_PL_FLOAT13"
+  ],
+  "SEQ_SE_PL_FR02_sseq": [
+   1408,
+   "SEQ_SE_PL_FR02"
+  ],
+  "SEQ_SE_PL_FR03_sseq": [
+   1409,
+   "SEQ_SE_PL_FR03"
+  ],
+  "SEQ_SE_PL_FR04_sseq": [
+   1410,
+   "SEQ_SE_PL_FR04"
+  ],
+  "SEQ_SE_PL_FR05_sseq": [
+   1411,
+   "SEQ_SE_PL_FR05"
+  ],
+  "SEQ_SE_PL_FW089B_sseq": [
+   1482,
+   "SEQ_SE_PL_FW089B"
+  ],
+  "SEQ_SE_PL_FW089_2_sseq": [
+   1483,
+   "SEQ_SE_PL_FW089_2"
+  ],
+  "SEQ_SE_PL_FW089_sseq": [
+   1481,
+   "SEQ_SE_PL_FW089"
+  ],
+  "SEQ_SE_PL_FW120_sseq": [
+   1392,
+   "SEQ_SE_PL_FW120"
+  ],
+  "SEQ_SE_PL_FW463_sseq": [
+   1488,
+   "SEQ_SE_PL_FW463"
+  ],
+  "SEQ_SE_PL_GIRA_sseq": [
+   1489,
+   "SEQ_SE_PL_GIRA"
+  ],
+  "SEQ_SE_PL_GYM01_sseq": [
+   1356,
+   "SEQ_SE_PL_GYM01"
+  ],
+  "SEQ_SE_PL_GYM02_sseq": [
+   1357,
+   "SEQ_SE_PL_GYM02"
+  ],
+  "SEQ_SE_PL_HAND_sseq": [
+   1393,
+   "SEQ_SE_PL_HAND"
+  ],
+  "SEQ_SE_PL_HIROBA01_4_sseq": [
+   1413,
+   "SEQ_SE_PL_HIROBA01_4"
+  ],
+  "SEQ_SE_PL_HIROBA01_5_sseq": [
+   1414,
+   "SEQ_SE_PL_HIROBA01_5"
+  ],
+  "SEQ_SE_PL_HIROBA01_6_sseq": [
+   1415,
+   "SEQ_SE_PL_HIROBA01_6"
+  ],
+  "SEQ_SE_PL_HIROBA02_4_sseq": [
+   1416,
+   "SEQ_SE_PL_HIROBA02_4"
+  ],
+  "SEQ_SE_PL_HIROBA02_5_sseq": [
+   1417,
+   "SEQ_SE_PL_HIROBA02_5"
+  ],
+  "SEQ_SE_PL_HIROBA02_6_sseq": [
+   1418,
+   "SEQ_SE_PL_HIROBA02_6"
+  ],
+  "SEQ_SE_PL_HIROBA03_2_sseq": [
+   1420,
+   "SEQ_SE_PL_HIROBA03_2"
+  ],
+  "SEQ_SE_PL_HIROBA03_3_sseq": [
+   1421,
+   "SEQ_SE_PL_HIROBA03_3"
+  ],
+  "SEQ_SE_PL_HIROBA03_sseq": [
+   1419,
+   "SEQ_SE_PL_HIROBA03"
+  ],
+  "SEQ_SE_PL_HIROBA05_2_sseq": [
+   1423,
+   "SEQ_SE_PL_HIROBA05_2"
+  ],
+  "SEQ_SE_PL_HIROBA05_3_sseq": [
+   1424,
+   "SEQ_SE_PL_HIROBA05_3"
+  ],
+  "SEQ_SE_PL_HIROBA05_sseq": [
+   1422,
+   "SEQ_SE_PL_HIROBA05"
+  ],
+  "SEQ_SE_PL_HIROBA100_2_sseq": [
+   1434,
+   "SEQ_SE_PL_HIROBA100_2"
+  ],
+  "SEQ_SE_PL_HIROBA100_3_sseq": [
+   1435,
+   "SEQ_SE_PL_HIROBA100_3"
+  ],
+  "SEQ_SE_PL_HIROBA100_sseq": [
+   1433,
+   "SEQ_SE_PL_HIROBA100"
+  ],
+  "SEQ_SE_PL_HIROBA20_sseq": [
+   1425,
+   "SEQ_SE_PL_HIROBA20"
+  ],
+  "SEQ_SE_PL_HIROBA30_sseq": [
+   1426,
+   "SEQ_SE_PL_HIROBA30"
+  ],
+  "SEQ_SE_PL_HIROBA70_2_sseq": [
+   1428,
+   "SEQ_SE_PL_HIROBA70_2"
+  ],
+  "SEQ_SE_PL_HIROBA70_3_sseq": [
+   1429,
+   "SEQ_SE_PL_HIROBA70_3"
+  ],
+  "SEQ_SE_PL_HIROBA70_sseq": [
+   1427,
+   "SEQ_SE_PL_HIROBA70"
+  ],
+  "SEQ_SE_PL_HIROBA80_sseq": [
+   1430,
+   "SEQ_SE_PL_HIROBA80"
+  ],
+  "SEQ_SE_PL_HIROBA85_sseq": [
+   1431,
+   "SEQ_SE_PL_HIROBA85"
+  ],
+  "SEQ_SE_PL_HIROBA90_sseq": [
+   1432,
+   "SEQ_SE_PL_HIROBA90"
+  ],
+  "SEQ_SE_PL_JUMP2_sseq": [
+   1487,
+   "SEQ_SE_PL_JUMP2"
+  ],
+  "SEQ_SE_PL_KEZURI_sseq": [
+   1358,
+   "SEQ_SE_PL_KEZURI"
+  ],
+  "SEQ_SE_PL_KIN_sseq": [
+   1397,
+   "SEQ_SE_PL_KIN"
+  ],
+  "SEQ_SE_PL_KIRAKIRA4_sseq": [
+   1467,
+   "SEQ_SE_PL_KIRAKIRA4"
+  ],
+  "SEQ_SE_PL_KIRAKIRA_sseq": [
+   1394,
+   "SEQ_SE_PL_KIRAKIRA"
+  ],
+  "SEQ_SE_PL_KUSARI_sseq": [
+   1480,
+   "SEQ_SE_PL_KUSARI"
+  ],
+  "SEQ_SE_PL_LO_ON_sseq": [
+   1497,
+   "SEQ_SE_PL_LO_ON"
+  ],
+  "SEQ_SE_PL_LV_UP_sseq": [
+   1396,
+   "SEQ_SE_PL_LV_UP"
+  ],
+  "SEQ_SE_PL_MEKI2_sseq": [
+   1486,
+   "SEQ_SE_PL_MEKI2"
+  ],
+  "SEQ_SE_PL_MEKI_sseq": [
+   1485,
+   "SEQ_SE_PL_MEKI"
+  ],
+  "SEQ_SE_PL_MNGM_IN_sseq": [
+   1382,
+   "SEQ_SE_PL_MNGM_IN"
+  ],
+  "SEQ_SE_PL_MNGM_OUT_sseq": [
+   1383,
+   "SEQ_SE_PL_MNGM_OUT"
+  ],
+  "SEQ_SE_PL_NOMI02_sseq": [
+   1386,
+   "SEQ_SE_PL_NOMI02"
+  ],
+  "SEQ_SE_PL_PINPON2_sseq": [
+   1472,
+   "SEQ_SE_PL_PINPON2"
+  ],
+  "SEQ_SE_PL_PINPON_sseq": [
+   1390,
+   "SEQ_SE_PL_PINPON"
+  ],
+  "SEQ_SE_PL_POINT1_sseq": [
+   1387,
+   "SEQ_SE_PL_POINT1"
+  ],
+  "SEQ_SE_PL_POINT2_sseq": [
+   1388,
+   "SEQ_SE_PL_POINT2"
+  ],
+  "SEQ_SE_PL_POINT3_sseq": [
+   1389,
+   "SEQ_SE_PL_POINT3"
+  ],
+  "SEQ_SE_PL_STAMP_sseq": [
+   1475,
+   "SEQ_SE_PL_STAMP"
+  ],
+  "SEQ_SE_PL_SUTYA2_sseq": [
+   1367,
+   "SEQ_SE_PL_SUTYA2"
+  ],
+  "SEQ_SE_PL_SUTYA2_sseq_1": [
+   1451,
+   "SEQ_SE_PL_SUTYA"
+  ],
+  "SEQ_SE_PL_SUTYA2_sseq_2": [
+   1585,
+   "SEQ_SE_DP_SUTYA"
+  ],
+  "SEQ_SE_PL_SUTYA2_sseq_3": [
+   1607,
+   "SEQ_SE_DP_SUTYA2"
+  ],
+  "SEQ_SE_PL_SYU03_sseq": [
+   1359,
+   "SEQ_SE_PL_SYU03"
+  ],
+  "SEQ_SE_PL_SYUWA2_sseq": [
+   1491,
+   "SEQ_SE_PL_SYUWA2"
+  ],
+  "SEQ_SE_PL_SYUWA3_sseq": [
+   1484,
+   "SEQ_SE_PL_SYUWA3"
+  ],
+  "SEQ_SE_PL_SYUWA_sseq": [
+   1490,
+   "SEQ_SE_PL_SYUWA"
+  ],
+  "SEQ_SE_PL_TIMER01_sseq": [
+   1468,
+   "SEQ_SE_PL_TIMER01"
+  ],
+  "SEQ_SE_PL_TIMER02_sseq": [
+   1469,
+   "SEQ_SE_PL_TIMER02"
+  ],
+  "SEQ_SE_PL_TIMER03_sseq": [
+   1470,
+   "SEQ_SE_PL_TIMER03"
+  ],
+  "SEQ_SE_PL_TIMER03_sseq_1": [
+   1474,
+   "SEQ_SE_PL_FTIMER03"
+  ],
+  "SEQ_SE_PL_TIMER04_sseq": [
+   1471,
+   "SEQ_SE_PL_TIMER04"
+  ],
+  "SEQ_SE_PL_TOKEI21_sseq": [
+   1355,
+   "SEQ_SE_PL_TOKEI21"
+  ],
+  "SEQ_SE_PL_TOKEI3_sseq": [
+   1473,
+   "SEQ_SE_PL_TOKEI3"
+  ],
+  "SEQ_SE_PL_UG_006_sseq": [
+   1354,
+   "SEQ_SE_PL_UG_006"
+  ],
+  "SEQ_SE_PL_UG_020_sseq": [
+   1361,
+   "SEQ_SE_PL_UG_020"
+  ],
+  "SEQ_SE_PL_W012_sseq": [
+   1350,
+   "SEQ_SE_PL_W012"
+  ],
+  "SEQ_SE_PL_W019_2_sseq": [
+   1443,
+   "SEQ_SE_PL_W019_2"
+  ],
+  "SEQ_SE_PL_W019_3_sseq": [
+   1444,
+   "SEQ_SE_PL_W019_3"
+  ],
+  "SEQ_SE_PL_W019_sseq": [
+   1442,
+   "SEQ_SE_PL_W019"
+  ],
+  "SEQ_SE_PL_W030_2_sseq": [
+   1440,
+   "SEQ_SE_PL_W030_2"
+  ],
+  "SEQ_SE_PL_W030_3_sseq": [
+   1441,
+   "SEQ_SE_PL_W030_3"
+  ],
+  "SEQ_SE_PL_W030_sseq": [
+   1439,
+   "SEQ_SE_PL_W030"
+  ],
+  "SEQ_SE_PL_W060_sseq": [
+   1477,
+   "SEQ_SE_PL_W060"
+  ],
+  "SEQ_SE_PL_W082C_sseq": [
+   1478,
+   "SEQ_SE_PL_W082C"
+  ],
+  "SEQ_SE_PL_W097_sseq": [
+   1351,
+   "SEQ_SE_PL_W097"
+  ],
+  "SEQ_SE_PL_W100_sseq": [
+   1362,
+   "SEQ_SE_PL_W100"
+  ],
+  "SEQ_SE_PL_W100_sseq_1": [
+   1980,
+   "SEQ_SE_DP_W100"
+  ],
+  "SEQ_SE_PL_W363_sseq": [
+   1364,
+   "SEQ_SE_PL_W363"
+  ],
+  "SEQ_SE_PL_W363_sseq_1": [
+   2071,
+   "SEQ_SE_DP_W363"
+  ],
+  "SEQ_SE_PL_W392_sseq": [
+   1479,
+   "SEQ_SE_PL_W392"
+  ],
+  "SEQ_SE_PL_W436_sseq": [
+   1495,
+   "SEQ_SE_PL_W436"
+  ],
+  "SEQ_SE_PL_W460B_sseq": [
+   1352,
+   "SEQ_SE_PL_W460B"
+  ],
+  "SEQ_SE_PL_W467109_sseq": [
+   1363,
+   "SEQ_SE_PL_W467109"
+  ],
+  "SEQ_SE_PL_W467_sseq": [
+   1476,
+   "SEQ_SE_PL_W467"
+  ],
+  "SEQ_SE_PL_WARP_sseq": [
+   1499,
+   "SEQ_SE_PL_WARP"
+  ],
+  "SEQ_SE_PL_WATER_sseq": [
+   1464,
+   "SEQ_SE_PL_WATER"
+  ],
+  "SEQ_SE_PL_WHIP_sseq": [
+   1466,
+   "SEQ_SE_PL_WHIP"
+  ],
+  "SEQ_SE_PL_WHIP_sseq_1": [
+   2123,
+   "SEQ_SE_DP_MUCHI"
+  ],
+  "SEQ_SE_PL_YUKI_sseq": [
+   1353,
+   "SEQ_SE_PL_YUKI"
+  ],
+  "SEQ_SE_PL_fire01_sseq": [
+   1369,
+   "SEQ_SE_PL_fire01"
+  ],
+  "SEQ_SHINKA_sseq": [
+   1141,
+   "SEQ_SHINKA"
+  ],
+  "SEQ_SILENCE_FIELD_sseq": [
+   1001,
+   "SEQ_SILENCE_FIELD"
+  ],
+  "SEQ_SILENCE_FIELD_sseq_1": [
+   1002,
+   "SEQ_SILENCE_DUNGEON"
+  ],
+  "SEQ_SLOT_ATARI_sseq": [
+   1184,
+   "SEQ_SLOT_ATARI"
+  ],
+  "SEQ_SLOT_OOATARI_sseq": [
+   1185,
+   "SEQ_SLOT_OOATARI"
+  ],
+  "SEQ_SLOT_sseq": [
+   1188,
+   "SEQ_SLOT"
+  ],
+  "SEQ_TANKOU_sseq": [
+   1060,
+   "SEQ_TANKOU"
+  ],
+  "SEQ_TEST_TITLE_sseq": [
+   1003,
+   "SEQ_TEST_TITLE"
+  ],
+  "SEQ_THE_AKAGI_sseq": [
+   1147,
+   "SEQ_THE_AKAGI"
+  ],
+  "SEQ_THE_BOY_sseq": [
+   1142,
+   "SEQ_THE_BOY"
+  ],
+  "SEQ_THE_EVENT01_sseq": [
+   1140,
+   "SEQ_THE_EVENT01"
+  ],
+  "SEQ_THE_EVENT02_sseq": [
+   1144,
+   "SEQ_THE_EVENT02"
+  ],
+  "SEQ_THE_EVENT03_sseq": [
+   1145,
+   "SEQ_THE_EVENT03"
+  ],
+  "SEQ_THE_EVENT04_sseq": [
+   1094,
+   "SEQ_THE_EVENT04"
+  ],
+  "SEQ_THE_EVENT05_sseq": [
+   1146,
+   "SEQ_THE_EVENT05"
+  ],
+  "SEQ_THE_GIRL_sseq": [
+   1143,
+   "SEQ_THE_GIRL"
+  ],
+  "SEQ_THE_RIV_sseq": [
+   1139,
+   "SEQ_THE_RIV"
+  ],
+  "SEQ_TITLE00_sseq": [
+   1172,
+   "SEQ_TITLE00"
+  ],
+  "SEQ_TITLE01_sseq": [
+   1173,
+   "SEQ_TITLE01"
+  ],
+  "SEQ_TOWN01_D_sseq": [
+   1004,
+   "SEQ_TOWN01_D"
+  ],
+  "SEQ_TOWN01_N_sseq": [
+   1033,
+   "SEQ_TOWN01_N"
+  ],
+  "SEQ_TOWN02_D_sseq": [
+   1005,
+   "SEQ_TOWN02_D"
+  ],
+  "SEQ_TOWN02_N_sseq": [
+   1034,
+   "SEQ_TOWN02_N"
+  ],
+  "SEQ_TOWN03_D_sseq": [
+   1006,
+   "SEQ_TOWN03_D"
+  ],
+  "SEQ_TOWN03_N_sseq": [
+   1035,
+   "SEQ_TOWN03_N"
+  ],
+  "SEQ_TOWN04_D_sseq": [
+   1007,
+   "SEQ_TOWN04_D"
+  ],
+  "SEQ_TOWN04_N_sseq": [
+   1036,
+   "SEQ_TOWN04_N"
+  ],
+  "SEQ_TOWN05_D_sseq": [
+   1031,
+   "SEQ_TOWN05_D"
+  ],
+  "SEQ_TOWN05_N_sseq": [
+   1058,
+   "SEQ_TOWN05_N"
+  ],
+  "SEQ_TOWN06_D_sseq": [
+   1008,
+   "SEQ_TOWN06_D"
+  ],
+  "SEQ_TOWN06_N_sseq": [
+   1037,
+   "SEQ_TOWN06_N"
+  ],
+  "SEQ_TOWN07_D_sseq": [
+   1009,
+   "SEQ_TOWN07_D"
+  ],
+  "SEQ_TOWN07_N_sseq": [
+   1038,
+   "SEQ_TOWN07_N"
+  ],
+  "SEQ_TSURETEKE_sseq": [
+   1138,
+   "SEQ_TSURETEKE"
+  ],
+  "SEQ_TV_END_sseq": [
+   1154,
+   "SEQ_TV_END"
+  ],
+  "SEQ_TV_HOUSOU_sseq": [
+   1030,
+   "SEQ_TV_HOUSOU"
+  ],
+  "SEQ_WASURE_sseq": [
+   1165,
+   "SEQ_WASURE"
+  ],
+  "SEQ_WAZA_sseq": [
+   1163,
+   "SEQ_WAZA"
+  ],
+  "SEQ_WIFILOBBY_sseq": [
+   1175,
+   "SEQ_WIFILOBBY"
+  ],
+  "SE_CONFIRM_sseq": [
+   1217,
+   "SEQ_PL_DMY10"
+  ],
+  "SE_CONFIRM_sseq_1": [
+   1384,
+   "SEQ_DUMMY01"
+  ],
+  "SE_CONFIRM_sseq_10": [
+   1636,
+   "SEQ_SE_DP_DUMMY6"
+  ],
+  "SE_CONFIRM_sseq_11": [
+   1637,
+   "SEQ_SE_DP_DUMMY7"
+  ],
+  "SE_CONFIRM_sseq_12": [
+   1670,
+   "SEQ_SE_DP_DUMMY8"
+  ],
+  "SE_CONFIRM_sseq_13": [
+   1671,
+   "SEQ_SE_DP_DUMMY9"
+  ],
+  "SE_CONFIRM_sseq_14": [
+   1672,
+   "SEQ_SE_DP_DUMMY10"
+  ],
+  "SE_CONFIRM_sseq_15": [
+   1676,
+   "SEQ_SE_DP_DUMMY11"
+  ],
+  "SE_CONFIRM_sseq_16": [
+   1677,
+   "SEQ_SE_DP_DUMMY12"
+  ],
+  "SE_CONFIRM_sseq_17": [
+   1678,
+   "SEQ_SE_DP_DUMMY13"
+  ],
+  "SE_CONFIRM_sseq_18": [
+   1687,
+   "SEQ_SE_DP_DUMMY14"
+  ],
+  "SE_CONFIRM_sseq_19": [
+   1688,
+   "SEQ_SE_DP_DUMMY15"
+  ],
+  "SE_CONFIRM_sseq_2": [
+   1407,
+   "SEQ_DUMMY02"
+  ],
+  "SE_CONFIRM_sseq_20": [
+   1793,
+   "SEQ_SE_DP_DUMMY16"
+  ],
+  "SE_CONFIRM_sseq_21": [
+   1794,
+   "SEQ_SE_DP_DUMMY17"
+  ],
+  "SE_CONFIRM_sseq_3": [
+   1500,
+   "SEQ_SE_DP_SELECT"
+  ],
+  "SE_CONFIRM_sseq_4": [
+   1502,
+   "SEQ_SE_DP_DUMMY1"
+  ],
+  "SE_CONFIRM_sseq_5": [
+   1503,
+   "SEQ_SE_DP_DUMMY2"
+  ],
+  "SE_CONFIRM_sseq_6": [
+   1525,
+   "SEQ_SE_DP_SELECT_SLOT"
+  ],
+  "SE_CONFIRM_sseq_7": [
+   1546,
+   "SEQ_SE_DP_DUMMY3"
+  ],
+  "SE_CONFIRM_sseq_8": [
+   1555,
+   "SEQ_SE_DP_DUMMY4"
+  ],
+  "SE_CONFIRM_sseq_9": [
+   1582,
+   "SEQ_SE_DP_DUMMY5"
+  ],
+  "SE_DP_VS_SEEKER_BEEP_sseq": [
+   1568,
+   "SEQ_SE_DP_UG_005"
+  ],
+  "SE_PARTY_GAUGE_ARROW_IN_sseq": [
+   1809,
+   "SEQ_SE_DP_TB_START"
+  ],
+  "SE_PARTY_GAUGE_BALL_EMPTY_sseq": [
+   1811,
+   "SEQ_SE_DP_TB_KARA"
+  ],
+  "SE_PARTY_GAUGE_BALL_IN_sseq": [
+   1810,
+   "SEQ_SE_DP_TB_KON"
+  ],
+  "VICTORY_CHAMPION_sseq": [
+   1130,
+   "SEQ_WINCHAMP"
+  ],
+  "VICTORY_CYRUS_sseq": [
+   1132,
+   "SEQ_WINAKAGI"
+  ],
+  "VICTORY_ELITE_FOUR_sseq": [
+   1133,
+   "SEQ_WINTENNO"
+  ],
+  "VICTORY_FRONTIER_BRAIN_sseq": [
+   1203,
+   "SEQ_PL_WINBRAIN"
+  ],
+  "VICTORY_GALACTIC_GRUNT_sseq": [
+   1131,
+   "SEQ_WINGINGA"
+  ],
+  "VICTORY_GYM_LEADER_sseq": [
+   1129,
+   "SEQ_WINTGYM"
+  ],
+  "VICTORY_TRAINER_sseq": [
+   1128,
+   "SEQ_WINTRAIN"
+  ],
+  "VICTORY_WILD_POKEMON_sseq": [
+   1127,
+   "SEQ_WINPOKE"
+  ],
+  "WAVE_ARC_BASIC_swar": [
+   700,
+   "WAVE_ARC_BASIC"
+  ],
+  "WAVE_ARC_BGM_BATTLE_swar": [
+   702,
+   "WAVE_ARC_BGM_BATTLE"
+  ],
+  "WAVE_ARC_BGM_DEMO01_swar": [
+   705,
+   "WAVE_ARC_BGM_DEMO01"
+  ],
+  "WAVE_ARC_BGM_DUNGEON_swar": [
+   703,
+   "WAVE_ARC_BGM_DUNGEON"
+  ],
+  "WAVE_ARC_BGM_FIELD_swar": [
+   701,
+   "WAVE_ARC_BGM_FIELD"
+  ],
+  "WAVE_ARC_BGM_OPEND_swar": [
+   704,
+   "WAVE_ARC_BGM_OPEND"
+  ],
+  "WAVE_ARC_SE_BAG_swar": [
+   752,
+   "WAVE_ARC_SE_BAG"
+  ],
+  "WAVE_ARC_SE_BATTLE_swar": [
+   751,
+   "WAVE_ARC_SE_BATTLE"
+  ],
+  "WAVE_ARC_SE_CLIMAX_swar": [
+   753,
+   "WAVE_ARC_SE_CLIMAX"
+  ],
+  "WAVE_ARC_SE_CONTEST_swar": [
+   758,
+   "WAVE_ARC_SE_CONTEST"
+  ],
+  "WAVE_ARC_SE_CUSTOM_swar": [
+   763,
+   "WAVE_ARC_SE_CUSTOM"
+  ],
+  "WAVE_ARC_SE_DIG_swar": [
+   762,
+   "WAVE_ARC_SE_DIG"
+  ],
+  "WAVE_ARC_SE_FIELD_swar": [
+   750,
+   "WAVE_ARC_SE_FIELD"
+  ],
+  "WAVE_ARC_SE_HIROBA_swar": [
+   770,
+   "WAVE_ARC_SE_HIROBA"
+  ],
+  "WAVE_ARC_SE_IMAGE_swar": [
+   756,
+   "WAVE_ARC_SE_IMAGE"
+  ],
+  "WAVE_ARC_SE_NAMEIN_swar": [
+   755,
+   "WAVE_ARC_SE_NAMEIN"
+  ],
+  "WAVE_ARC_SE_NUTMIXER_swar": [
+   765,
+   "WAVE_ARC_SE_NUTMIXER"
+  ],
+  "WAVE_ARC_SE_POKELIST_swar": [
+   761,
+   "WAVE_ARC_SE_POKELIST"
+  ],
+  "WAVE_ARC_SE_SCRATCH_swar": [
+   769,
+   "WAVE_ARC_SE_SCRATCH"
+  ],
+  "WAVE_ARC_SE_SHINKA_swar": [
+   754,
+   "WAVE_ARC_SE_SHINKA"
+  ],
+  "WAVE_ARC_SE_SHIP_swar": [
+   767,
+   "WAVE_ARC_SE_SHIP"
+  ],
+  "WAVE_ARC_SE_SLOT_swar": [
+   768,
+   "WAVE_ARC_SE_SLOT"
+  ],
+  "WAVE_ARC_SE_TOWNMAP_swar": [
+   759,
+   "WAVE_ARC_SE_TOWNMAP"
+  ],
+  "WAVE_ARC_SE_TRADE_swar": [
+   764,
+   "WAVE_ARC_SE_TRADE"
+  ],
+  "WAVE_ARC_SE_TRAIN_swar": [
+   766,
+   "WAVE_ARC_SE_TRAIN"
+  ],
+  "WAVE_ARC_SE_TRCARD_swar": [
+   760,
+   "WAVE_ARC_SE_TRCARD"
+  ],
+  "WAVE_ARC_SE_ZUKAN_swar": [
+   757,
+   "WAVE_ARC_SE_ZUKAN"
+  ],
+  "abomasnow_cry_sbnk": [
+   460,
+   "BANK_PV476"
+  ],
+  "abomasnow_cry_swar": [
+   460,
+   "WAVE_ARC_PV476"
+  ],
+  "abra_cry_sbnk": [
+   63,
+   "BANK_PV063"
+  ],
+  "abra_cry_swar": [
+   63,
+   "WAVE_ARC_PV063"
+  ],
+  "absol_cry_sbnk": [
+   359,
+   "BANK_PV359"
+  ],
+  "absol_cry_swar": [
+   359,
+   "WAVE_ARC_PV359"
+  ],
+  "aerodactyl_cry_sbnk": [
+   142,
+   "BANK_PV142"
+  ],
+  "aerodactyl_cry_swar": [
+   142,
+   "WAVE_ARC_PV142"
+  ],
+  "aggron_cry_sbnk": [
+   306,
+   "BANK_PV306"
+  ],
+  "aggron_cry_swar": [
+   306,
+   "WAVE_ARC_PV306"
+  ],
+  "aipom_cry_sbnk": [
+   190,
+   "BANK_PV190"
+  ],
+  "aipom_cry_swar": [
+   190,
+   "WAVE_ARC_PV190"
+  ],
+  "alakazam_cry_sbnk": [
+   65,
+   "BANK_PV065"
+  ],
+  "alakazam_cry_swar": [
+   65,
+   "WAVE_ARC_PV065"
+  ],
+  "altaria_cry_sbnk": [
+   334,
+   "BANK_PV334"
+  ],
+  "altaria_cry_swar": [
+   334,
+   "WAVE_ARC_PV334"
+  ],
+  "ambipom_cry_sbnk": [
+   424,
+   "BANK_PV496"
+  ],
+  "ambipom_cry_swar": [
+   424,
+   "WAVE_ARC_PV496"
+  ],
+  "ampharos_cry_sbnk": [
+   181,
+   "BANK_PV181"
+  ],
+  "ampharos_cry_swar": [
+   181,
+   "WAVE_ARC_PV181"
+  ],
+  "anorith_cry_sbnk": [
+   347,
+   "BANK_PV347"
+  ],
+  "anorith_cry_swar": [
+   347,
+   "WAVE_ARC_PV347"
+  ],
+  "arbok_cry_sbnk": [
+   24,
+   "BANK_PV024"
+  ],
+  "arbok_cry_swar": [
+   24,
+   "WAVE_ARC_PV024"
+  ],
+  "arcanine_cry_sbnk": [
+   59,
+   "BANK_PV059"
+  ],
+  "arcanine_cry_swar": [
+   59,
+   "WAVE_ARC_PV059"
+  ],
+  "arceus_cry_sbnk": [
+   493,
+   "BANK_PV518"
+  ],
+  "arceus_cry_swar": [
+   493,
+   "WAVE_ARC_PV518"
+  ],
+  "ariados_cry_sbnk": [
+   168,
+   "BANK_PV168"
+  ],
+  "ariados_cry_swar": [
+   168,
+   "WAVE_ARC_PV168"
+  ],
+  "armaldo_cry_sbnk": [
+   348,
+   "BANK_PV348"
+  ],
+  "armaldo_cry_swar": [
+   348,
+   "WAVE_ARC_PV348"
+  ],
+  "aron_cry_sbnk": [
+   304,
+   "BANK_PV304"
+  ],
+  "aron_cry_swar": [
+   304,
+   "WAVE_ARC_PV304"
+  ],
+  "articuno_cry_sbnk": [
+   144,
+   "BANK_PV144"
+  ],
+  "articuno_cry_swar": [
+   144,
+   "WAVE_ARC_PV144"
+  ],
+  "azelf_cry_sbnk": [
+   482,
+   "BANK_PV513"
+  ],
+  "azelf_cry_swar": [
+   482,
+   "WAVE_ARC_PV513"
+  ],
+  "azumarill_cry_sbnk": [
+   184,
+   "BANK_PV184"
+  ],
+  "azumarill_cry_swar": [
+   184,
+   "WAVE_ARC_PV184"
+  ],
+  "azurill_cry_sbnk": [
+   298,
+   "BANK_PV298"
+  ],
+  "azurill_cry_swar": [
+   298,
+   "WAVE_ARC_PV298"
+  ],
+  "bagon_cry_sbnk": [
+   371,
+   "BANK_PV371"
+  ],
+  "bagon_cry_swar": [
+   371,
+   "WAVE_ARC_PV371"
+  ],
+  "baltoy_cry_sbnk": [
+   343,
+   "BANK_PV343"
+  ],
+  "baltoy_cry_swar": [
+   343,
+   "WAVE_ARC_PV343"
+  ],
+  "banette_cry_sbnk": [
+   354,
+   "BANK_PV354"
+  ],
+  "banette_cry_swar": [
+   354,
+   "WAVE_ARC_PV354"
+  ],
+  "barboach_cry_sbnk": [
+   339,
+   "BANK_PV339"
+  ],
+  "barboach_cry_swar": [
+   339,
+   "WAVE_ARC_PV339"
+  ],
+  "bastiodon_cry_sbnk": [
+   411,
+   "BANK_PV488"
+  ],
+  "bastiodon_cry_swar": [
+   411,
+   "WAVE_ARC_PV488"
+  ],
+  "bayleef_cry_sbnk": [
+   153,
+   "BANK_PV153"
+  ],
+  "bayleef_cry_swar": [
+   153,
+   "WAVE_ARC_PV153"
+  ],
+  "beautifly_cry_sbnk": [
+   267,
+   "BANK_PV267"
+  ],
+  "beautifly_cry_swar": [
+   267,
+   "WAVE_ARC_PV267"
+  ],
+  "beedrill_cry_sbnk": [
+   15,
+   "BANK_PV015"
+  ],
+  "beedrill_cry_swar": [
+   15,
+   "WAVE_ARC_PV015"
+  ],
+  "beldum_cry_sbnk": [
+   374,
+   "BANK_PV374"
+  ],
+  "beldum_cry_swar": [
+   374,
+   "WAVE_ARC_PV374"
+  ],
+  "bellossom_cry_sbnk": [
+   182,
+   "BANK_PV182"
+  ],
+  "bellossom_cry_swar": [
+   182,
+   "WAVE_ARC_PV182"
+  ],
+  "bellsprout_cry_sbnk": [
+   69,
+   "BANK_PV069"
+  ],
+  "bellsprout_cry_swar": [
+   69,
+   "WAVE_ARC_PV069"
+  ],
+  "bibarel_cry_sbnk": [
+   400,
+   "BANK_PV462"
+  ],
+  "bibarel_cry_swar": [
+   400,
+   "WAVE_ARC_PV462"
+  ],
+  "bidoof_cry_sbnk": [
+   399,
+   "BANK_PV461"
+  ],
+  "bidoof_cry_swar": [
+   399,
+   "WAVE_ARC_PV461"
+  ],
+  "blastoise_cry_sbnk": [
+   9,
+   "BANK_PV009"
+  ],
+  "blastoise_cry_swar": [
+   9,
+   "WAVE_ARC_PV009"
+  ],
+  "blaziken_cry_sbnk": [
+   257,
+   "BANK_PV257"
+  ],
+  "blaziken_cry_swar": [
+   257,
+   "WAVE_ARC_PV257"
+  ],
+  "blissey_cry_sbnk": [
+   242,
+   "BANK_PV242"
+  ],
+  "blissey_cry_swar": [
+   242,
+   "WAVE_ARC_PV242"
+  ],
+  "bonsly_cry_sbnk": [
+   438,
+   "BANK_PV413"
+  ],
+  "bonsly_cry_swar": [
+   438,
+   "WAVE_ARC_PV413"
+  ],
+  "breloom_cry_sbnk": [
+   286,
+   "BANK_PV286"
+  ],
+  "breloom_cry_swar": [
+   286,
+   "WAVE_ARC_PV286"
+  ],
+  "bronzong_cry_sbnk": [
+   437,
+   "BANK_PV479"
+  ],
+  "bronzong_cry_swar": [
+   437,
+   "WAVE_ARC_PV479"
+  ],
+  "bronzor_cry_sbnk": [
+   436,
+   "BANK_PV478"
+  ],
+  "bronzor_cry_swar": [
+   436,
+   "WAVE_ARC_PV478"
+  ],
+  "budew_cry_sbnk": [
+   406,
+   "BANK_PV428"
+  ],
+  "budew_cry_swar": [
+   406,
+   "WAVE_ARC_PV428"
+  ],
+  "buizel_cry_sbnk": [
+   418,
+   "BANK_PV418"
+  ],
+  "buizel_cry_swar": [
+   418,
+   "WAVE_ARC_PV418"
+  ],
+  "bulbasaur_cry_sbnk": [
+   1,
+   "BANK_PV001"
+  ],
+  "bulbasaur_cry_swar": [
+   1,
+   "WAVE_ARC_PV001"
+  ],
+  "buneary_cry_sbnk": [
+   427,
+   "BANK_PV420"
+  ],
+  "buneary_cry_swar": [
+   427,
+   "WAVE_ARC_PV420"
+  ],
+  "burmy_cry_sbnk": [
+   412,
+   "BANK_PV455"
+  ],
+  "burmy_cry_swar": [
+   412,
+   "WAVE_ARC_PV455"
+  ],
+  "butterfree_cry_sbnk": [
+   12,
+   "BANK_PV012"
+  ],
+  "butterfree_cry_swar": [
+   12,
+   "WAVE_ARC_PV012"
+  ],
+  "cacnea_cry_sbnk": [
+   331,
+   "BANK_PV331"
+  ],
+  "cacnea_cry_swar": [
+   331,
+   "WAVE_ARC_PV331"
+  ],
+  "cacturne_cry_sbnk": [
+   332,
+   "BANK_PV332"
+  ],
+  "cacturne_cry_swar": [
+   332,
+   "WAVE_ARC_PV332"
+  ],
+  "camerupt_cry_sbnk": [
+   323,
+   "BANK_PV323"
+  ],
+  "camerupt_cry_swar": [
+   323,
+   "WAVE_ARC_PV323"
+  ],
+  "carnivine_cry_sbnk": [
+   455,
+   "BANK_PV484"
+  ],
+  "carnivine_cry_swar": [
+   455,
+   "WAVE_ARC_PV484"
+  ],
+  "carvanha_cry_sbnk": [
+   318,
+   "BANK_PV318"
+  ],
+  "carvanha_cry_swar": [
+   318,
+   "WAVE_ARC_PV318"
+  ],
+  "cascoon_cry_sbnk": [
+   268,
+   "BANK_PV268"
+  ],
+  "cascoon_cry_swar": [
+   268,
+   "WAVE_ARC_PV268"
+  ],
+  "castform_cry_sbnk": [
+   351,
+   "BANK_PV351"
+  ],
+  "castform_cry_swar": [
+   351,
+   "WAVE_ARC_PV351"
+  ],
+  "caterpie_cry_sbnk": [
+   10,
+   "BANK_PV010"
+  ],
+  "caterpie_cry_swar": [
+   10,
+   "WAVE_ARC_PV010"
+  ],
+  "celebi_cry_sbnk": [
+   251,
+   "BANK_PV251"
+  ],
+  "celebi_cry_swar": [
+   251,
+   "WAVE_ARC_PV251"
+  ],
+  "chansey_cry_sbnk": [
+   113,
+   "BANK_PV113"
+  ],
+  "chansey_cry_swar": [
+   113,
+   "WAVE_ARC_PV113"
+  ],
+  "charizard_cry_sbnk": [
+   6,
+   "BANK_PV006"
+  ],
+  "charizard_cry_swar": [
+   6,
+   "WAVE_ARC_PV006"
+  ],
+  "charmander_cry_sbnk": [
+   4,
+   "BANK_PV004"
+  ],
+  "charmander_cry_swar": [
+   4,
+   "WAVE_ARC_PV004"
+  ],
+  "charmeleon_cry_sbnk": [
+   5,
+   "BANK_PV005"
+  ],
+  "charmeleon_cry_swar": [
+   5,
+   "WAVE_ARC_PV005"
+  ],
+  "chatot_cry_sbnk": [
+   441,
+   "BANK_PV419"
+  ],
+  "chatot_cry_swar": [
+   441,
+   "WAVE_ARC_PV419"
+  ],
+  "cherrim_cry_sbnk": [
+   421,
+   "BANK_PV483"
+  ],
+  "cherrim_cry_swar": [
+   421,
+   "WAVE_ARC_PV483"
+  ],
+  "cherubi_cry_sbnk": [
+   420,
+   "BANK_PV482"
+  ],
+  "cherubi_cry_swar": [
+   420,
+   "WAVE_ARC_PV482"
+  ],
+  "chikorita_cry_sbnk": [
+   152,
+   "BANK_PV152"
+  ],
+  "chikorita_cry_swar": [
+   152,
+   "WAVE_ARC_PV152"
+  ],
+  "chimchar_cry_sbnk": [
+   390,
+   "BANK_PV430"
+  ],
+  "chimchar_cry_swar": [
+   390,
+   "WAVE_ARC_PV430"
+  ],
+  "chimecho_cry_sbnk": [
+   358,
+   "BANK_PV358"
+  ],
+  "chimecho_cry_swar": [
+   358,
+   "WAVE_ARC_PV358"
+  ],
+  "chinchou_cry_sbnk": [
+   170,
+   "BANK_PV170"
+  ],
+  "chinchou_cry_swar": [
+   170,
+   "WAVE_ARC_PV170"
+  ],
+  "chingling_cry_sbnk": [
+   433,
+   "BANK_PV445"
+  ],
+  "chingling_cry_swar": [
+   433,
+   "WAVE_ARC_PV445"
+  ],
+  "clamperl_cry_sbnk": [
+   366,
+   "BANK_PV366"
+  ],
+  "clamperl_cry_swar": [
+   366,
+   "WAVE_ARC_PV366"
+  ],
+  "claydol_cry_sbnk": [
+   344,
+   "BANK_PV344"
+  ],
+  "claydol_cry_swar": [
+   344,
+   "WAVE_ARC_PV344"
+  ],
+  "clefable_cry_sbnk": [
+   36,
+   "BANK_PV036"
+  ],
+  "clefable_cry_swar": [
+   36,
+   "WAVE_ARC_PV036"
+  ],
+  "clefairy_cry_sbnk": [
+   35,
+   "BANK_PV035"
+  ],
+  "clefairy_cry_swar": [
+   35,
+   "WAVE_ARC_PV035"
+  ],
+  "cleffa_cry_sbnk": [
+   173,
+   "BANK_PV173"
+  ],
+  "cleffa_cry_swar": [
+   173,
+   "WAVE_ARC_PV173"
+  ],
+  "cloyster_cry_sbnk": [
+   91,
+   "BANK_PV091"
+  ],
+  "cloyster_cry_swar": [
+   91,
+   "WAVE_ARC_PV091"
+  ],
+  "combee_cry_sbnk": [
+   415,
+   "BANK_PV470"
+  ],
+  "combee_cry_swar": [
+   415,
+   "WAVE_ARC_PV470"
+  ],
+  "combusken_cry_sbnk": [
+   256,
+   "BANK_PV256"
+  ],
+  "combusken_cry_swar": [
+   256,
+   "WAVE_ARC_PV256"
+  ],
+  "corphish_cry_sbnk": [
+   341,
+   "BANK_PV341"
+  ],
+  "corphish_cry_swar": [
+   341,
+   "WAVE_ARC_PV341"
+  ],
+  "corsola_cry_sbnk": [
+   222,
+   "BANK_PV222"
+  ],
+  "corsola_cry_swar": [
+   222,
+   "WAVE_ARC_PV222"
+  ],
+  "cradily_cry_sbnk": [
+   346,
+   "BANK_PV346"
+  ],
+  "cradily_cry_swar": [
+   346,
+   "WAVE_ARC_PV346"
+  ],
+  "cranidos_cry_sbnk": [
+   408,
+   "BANK_PV489"
+  ],
+  "cranidos_cry_swar": [
+   408,
+   "WAVE_ARC_PV489"
+  ],
+  "crawdaunt_cry_sbnk": [
+   342,
+   "BANK_PV342"
+  ],
+  "crawdaunt_cry_swar": [
+   342,
+   "WAVE_ARC_PV342"
+  ],
+  "cresselia_cry_sbnk": [
+   488,
+   "BANK_PV507"
+  ],
+  "cresselia_cry_swar": [
+   488,
+   "WAVE_ARC_PV507"
+  ],
+  "croagunk_cry_sbnk": [
+   453,
+   "BANK_PV452"
+  ],
+  "croagunk_cry_swar": [
+   453,
+   "WAVE_ARC_PV452"
+  ],
+  "crobat_cry_sbnk": [
+   169,
+   "BANK_PV169"
+  ],
+  "crobat_cry_swar": [
+   169,
+   "WAVE_ARC_PV169"
+  ],
+  "croconaw_cry_sbnk": [
+   159,
+   "BANK_PV159"
+  ],
+  "croconaw_cry_swar": [
+   159,
+   "WAVE_ARC_PV159"
+  ],
+  "cubone_cry_sbnk": [
+   104,
+   "BANK_PV104"
+  ],
+  "cubone_cry_swar": [
+   104,
+   "WAVE_ARC_PV104"
+  ],
+  "cyndaquil_cry_sbnk": [
+   155,
+   "BANK_PV155"
+  ],
+  "cyndaquil_cry_swar": [
+   155,
+   "WAVE_ARC_PV155"
+  ],
+  "darkrai_cry_sbnk": [
+   491,
+   "BANK_PV517"
+  ],
+  "darkrai_cry_swar": [
+   491,
+   "WAVE_ARC_PV517"
+  ],
+  "delcatty_cry_sbnk": [
+   301,
+   "BANK_PV301"
+  ],
+  "delcatty_cry_swar": [
+   301,
+   "WAVE_ARC_PV301"
+  ],
+  "delibird_cry_sbnk": [
+   225,
+   "BANK_PV225"
+  ],
+  "delibird_cry_swar": [
+   225,
+   "WAVE_ARC_PV225"
+  ],
+  "deoxys_cry_sbnk": [
+   386,
+   "BANK_PV386"
+  ],
+  "deoxys_cry_swar": [
+   386,
+   "WAVE_ARC_PV386"
+  ],
+  "dewgong_cry_sbnk": [
+   87,
+   "BANK_PV087"
+  ],
+  "dewgong_cry_swar": [
+   87,
+   "WAVE_ARC_PV087"
+  ],
+  "dialga_cry_sbnk": [
+   483,
+   "BANK_PV514"
+  ],
+  "dialga_cry_swar": [
+   483,
+   "WAVE_ARC_PV514"
+  ],
+  "diglett_cry_sbnk": [
+   50,
+   "BANK_PV050"
+  ],
+  "diglett_cry_swar": [
+   50,
+   "WAVE_ARC_PV050"
+  ],
+  "ditto_cry_sbnk": [
+   132,
+   "BANK_PV132"
+  ],
+  "ditto_cry_swar": [
+   132,
+   "WAVE_ARC_PV132"
+  ],
+  "dodrio_cry_sbnk": [
+   85,
+   "BANK_PV085"
+  ],
+  "dodrio_cry_swar": [
+   85,
+   "WAVE_ARC_PV085"
+  ],
+  "doduo_cry_sbnk": [
+   84,
+   "BANK_PV084"
+  ],
+  "doduo_cry_swar": [
+   84,
+   "WAVE_ARC_PV084"
+  ],
+  "donphan_cry_sbnk": [
+   232,
+   "BANK_PV232"
+  ],
+  "donphan_cry_swar": [
+   232,
+   "WAVE_ARC_PV232"
+  ],
+  "dragonair_cry_sbnk": [
+   148,
+   "BANK_PV148"
+  ],
+  "dragonair_cry_swar": [
+   148,
+   "WAVE_ARC_PV148"
+  ],
+  "dragonite_cry_sbnk": [
+   149,
+   "BANK_PV149"
+  ],
+  "dragonite_cry_swar": [
+   149,
+   "WAVE_ARC_PV149"
+  ],
+  "drapion_cry_sbnk": [
+   452,
+   "BANK_PV486"
+  ],
+  "drapion_cry_swar": [
+   452,
+   "WAVE_ARC_PV486"
+  ],
+  "dratini_cry_sbnk": [
+   147,
+   "BANK_PV147"
+  ],
+  "dratini_cry_swar": [
+   147,
+   "WAVE_ARC_PV147"
+  ],
+  "drifblim_cry_sbnk": [
+   426,
+   "BANK_PV451"
+  ],
+  "drifblim_cry_swar": [
+   426,
+   "WAVE_ARC_PV451"
+  ],
+  "drifloon_cry_sbnk": [
+   425,
+   "BANK_PV450"
+  ],
+  "drifloon_cry_swar": [
+   425,
+   "WAVE_ARC_PV450"
+  ],
+  "drowzee_cry_sbnk": [
+   96,
+   "BANK_PV096"
+  ],
+  "drowzee_cry_swar": [
+   96,
+   "WAVE_ARC_PV096"
+  ],
+  "dugtrio_cry_sbnk": [
+   51,
+   "BANK_PV051"
+  ],
+  "dugtrio_cry_swar": [
+   51,
+   "WAVE_ARC_PV051"
+  ],
+  "dunsparce_cry_sbnk": [
+   206,
+   "BANK_PV206"
+  ],
+  "dunsparce_cry_swar": [
+   206,
+   "WAVE_ARC_PV206"
+  ],
+  "dusclops_cry_sbnk": [
+   356,
+   "BANK_PV356"
+  ],
+  "dusclops_cry_swar": [
+   356,
+   "WAVE_ARC_PV356"
+  ],
+  "dusknoir_cry_sbnk": [
+   477,
+   "BANK_PV423"
+  ],
+  "dusknoir_cry_swar": [
+   477,
+   "WAVE_ARC_PV423"
+  ],
+  "duskull_cry_sbnk": [
+   355,
+   "BANK_PV355"
+  ],
+  "duskull_cry_swar": [
+   355,
+   "WAVE_ARC_PV355"
+  ],
+  "dustox_cry_sbnk": [
+   269,
+   "BANK_PV269"
+  ],
+  "dustox_cry_swar": [
+   269,
+   "WAVE_ARC_PV269"
+  ],
+  "eevee_cry_sbnk": [
+   133,
+   "BANK_PV133"
+  ],
+  "eevee_cry_swar": [
+   133,
+   "WAVE_ARC_PV133"
+  ],
+  "ekans_cry_sbnk": [
+   23,
+   "BANK_PV023"
+  ],
+  "ekans_cry_swar": [
+   23,
+   "WAVE_ARC_PV023"
+  ],
+  "electabuzz_cry_sbnk": [
+   125,
+   "BANK_PV125"
+  ],
+  "electabuzz_cry_swar": [
+   125,
+   "WAVE_ARC_PV125"
+  ],
+  "electivire_cry_sbnk": [
+   466,
+   "BANK_PV427"
+  ],
+  "electivire_cry_swar": [
+   466,
+   "WAVE_ARC_PV427"
+  ],
+  "electrike_cry_sbnk": [
+   309,
+   "BANK_PV309"
+  ],
+  "electrike_cry_swar": [
+   309,
+   "WAVE_ARC_PV309"
+  ],
+  "electrode_cry_sbnk": [
+   101,
+   "BANK_PV101"
+  ],
+  "electrode_cry_swar": [
+   101,
+   "WAVE_ARC_PV101"
+  ],
+  "elekid_cry_sbnk": [
+   239,
+   "BANK_PV239"
+  ],
+  "elekid_cry_swar": [
+   239,
+   "WAVE_ARC_PV239"
+  ],
+  "empoleon_cry_sbnk": [
+   395,
+   "BANK_PV438"
+  ],
+  "empoleon_cry_swar": [
+   395,
+   "WAVE_ARC_PV438"
+  ],
+  "entei_cry_sbnk": [
+   244,
+   "BANK_PV244"
+  ],
+  "entei_cry_swar": [
+   244,
+   "WAVE_ARC_PV244"
+  ],
+  "espeon_cry_sbnk": [
+   196,
+   "BANK_PV196"
+  ],
+  "espeon_cry_swar": [
+   196,
+   "WAVE_ARC_PV196"
+  ],
+  "exeggcute_cry_sbnk": [
+   102,
+   "BANK_PV102"
+  ],
+  "exeggcute_cry_swar": [
+   102,
+   "WAVE_ARC_PV102"
+  ],
+  "exeggutor_cry_sbnk": [
+   103,
+   "BANK_PV103"
+  ],
+  "exeggutor_cry_swar": [
+   103,
+   "WAVE_ARC_PV103"
+  ],
+  "exploud_cry_sbnk": [
+   295,
+   "BANK_PV295"
+  ],
+  "exploud_cry_swar": [
+   295,
+   "WAVE_ARC_PV295"
+  ],
+  "farfetchd_cry_sbnk": [
+   83,
+   "BANK_PV083"
+  ],
+  "farfetchd_cry_swar": [
+   83,
+   "WAVE_ARC_PV083"
+  ],
+  "fearow_cry_sbnk": [
+   22,
+   "BANK_PV022"
+  ],
+  "fearow_cry_swar": [
+   22,
+   "WAVE_ARC_PV022"
+  ],
+  "feebas_cry_sbnk": [
+   349,
+   "BANK_PV349"
+  ],
+  "feebas_cry_swar": [
+   349,
+   "WAVE_ARC_PV349"
+  ],
+  "feraligatr_cry_sbnk": [
+   160,
+   "BANK_PV160"
+  ],
+  "feraligatr_cry_swar": [
+   160,
+   "WAVE_ARC_PV160"
+  ],
+  "finneon_cry_sbnk": [
+   456,
+   "BANK_PV466"
+  ],
+  "finneon_cry_swar": [
+   456,
+   "WAVE_ARC_PV466"
+  ],
+  "flaaffy_cry_sbnk": [
+   180,
+   "BANK_PV180"
+  ],
+  "flaaffy_cry_swar": [
+   180,
+   "WAVE_ARC_PV180"
+  ],
+  "flareon_cry_sbnk": [
+   136,
+   "BANK_PV136"
+  ],
+  "flareon_cry_swar": [
+   136,
+   "WAVE_ARC_PV136"
+  ],
+  "floatzel_cry_sbnk": [
+   419,
+   "BANK_PV440"
+  ],
+  "floatzel_cry_swar": [
+   419,
+   "WAVE_ARC_PV440"
+  ],
+  "flygon_cry_sbnk": [
+   330,
+   "BANK_PV330"
+  ],
+  "flygon_cry_swar": [
+   330,
+   "WAVE_ARC_PV330"
+  ],
+  "forretress_cry_sbnk": [
+   205,
+   "BANK_PV205"
+  ],
+  "forretress_cry_swar": [
+   205,
+   "WAVE_ARC_PV205"
+  ],
+  "froslass_cry_sbnk": [
+   478,
+   "BANK_PV425"
+  ],
+  "froslass_cry_swar": [
+   478,
+   "WAVE_ARC_PV425"
+  ],
+  "furret_cry_sbnk": [
+   162,
+   "BANK_PV162"
+  ],
+  "furret_cry_swar": [
+   162,
+   "WAVE_ARC_PV162"
+  ],
+  "gabite_cry_sbnk": [
+   444,
+   "BANK_PV492"
+  ],
+  "gabite_cry_swar": [
+   444,
+   "WAVE_ARC_PV492"
+  ],
+  "gallade_cry_sbnk": [
+   475,
+   "BANK_PV498"
+  ],
+  "gallade_cry_swar": [
+   475,
+   "WAVE_ARC_PV498"
+  ],
+  "garchomp_cry_sbnk": [
+   445,
+   "BANK_PV493"
+  ],
+  "garchomp_cry_swar": [
+   445,
+   "WAVE_ARC_PV493"
+  ],
+  "gardevoir_cry_sbnk": [
+   282,
+   "BANK_PV282"
+  ],
+  "gardevoir_cry_swar": [
+   282,
+   "WAVE_ARC_PV282"
+  ],
+  "gastly_cry_sbnk": [
+   92,
+   "BANK_PV092"
+  ],
+  "gastly_cry_swar": [
+   92,
+   "WAVE_ARC_PV092"
+  ],
+  "gastrodon_cry_sbnk": [
+   423,
+   "BANK_PV459"
+  ],
+  "gastrodon_cry_swar": [
+   423,
+   "WAVE_ARC_PV459"
+  ],
+  "gengar_cry_sbnk": [
+   94,
+   "BANK_PV094"
+  ],
+  "gengar_cry_swar": [
+   94,
+   "WAVE_ARC_PV094"
+  ],
+  "geodude_cry_sbnk": [
+   74,
+   "BANK_PV074"
+  ],
+  "geodude_cry_swar": [
+   74,
+   "WAVE_ARC_PV074"
+  ],
+  "gible_cry_sbnk": [
+   443,
+   "BANK_PV491"
+  ],
+  "gible_cry_swar": [
+   443,
+   "WAVE_ARC_PV491"
+  ],
+  "girafarig_cry_sbnk": [
+   203,
+   "BANK_PV203"
+  ],
+  "girafarig_cry_swar": [
+   203,
+   "WAVE_ARC_PV203"
+  ],
+  "giratina_cry_sbnk": [
+   487,
+   "BANK_PV509"
+  ],
+  "giratina_cry_swar": [
+   487,
+   "WAVE_ARC_PV509"
+  ],
+  "glaceon_cry_sbnk": [
+   471,
+   "BANK_PV506"
+  ],
+  "glaceon_cry_swar": [
+   471,
+   "WAVE_ARC_PV506"
+  ],
+  "glalie_cry_sbnk": [
+   362,
+   "BANK_PV362"
+  ],
+  "glalie_cry_swar": [
+   362,
+   "WAVE_ARC_PV362"
+  ],
+  "glameow_cry_sbnk": [
+   431,
+   "BANK_PV426"
+  ],
+  "glameow_cry_swar": [
+   431,
+   "WAVE_ARC_PV426"
+  ],
+  "gligar_cry_sbnk": [
+   207,
+   "BANK_PV207"
+  ],
+  "gligar_cry_swar": [
+   207,
+   "WAVE_ARC_PV207"
+  ],
+  "gliscor_cry_sbnk": [
+   472,
+   "BANK_PV447"
+  ],
+  "gliscor_cry_swar": [
+   472,
+   "WAVE_ARC_PV447"
+  ],
+  "gloom_cry_sbnk": [
+   44,
+   "BANK_PV044"
+  ],
+  "gloom_cry_swar": [
+   44,
+   "WAVE_ARC_PV044"
+  ],
+  "golbat_cry_sbnk": [
+   42,
+   "BANK_PV042"
+  ],
+  "golbat_cry_swar": [
+   42,
+   "WAVE_ARC_PV042"
+  ],
+  "goldeen_cry_sbnk": [
+   118,
+   "BANK_PV118"
+  ],
+  "goldeen_cry_swar": [
+   118,
+   "WAVE_ARC_PV118"
+  ],
+  "golduck_cry_sbnk": [
+   55,
+   "BANK_PV055"
+  ],
+  "golduck_cry_swar": [
+   55,
+   "WAVE_ARC_PV055"
+  ],
+  "golem_cry_sbnk": [
+   76,
+   "BANK_PV076"
+  ],
+  "golem_cry_swar": [
+   76,
+   "WAVE_ARC_PV076"
+  ],
+  "gorebyss_cry_sbnk": [
+   368,
+   "BANK_PV368"
+  ],
+  "gorebyss_cry_swar": [
+   368,
+   "WAVE_ARC_PV368"
+  ],
+  "granbull_cry_sbnk": [
+   210,
+   "BANK_PV210"
+  ],
+  "granbull_cry_swar": [
+   210,
+   "WAVE_ARC_PV210"
+  ],
+  "graveler_cry_sbnk": [
+   75,
+   "BANK_PV075"
+  ],
+  "graveler_cry_swar": [
+   75,
+   "WAVE_ARC_PV075"
+  ],
+  "grimer_cry_sbnk": [
+   88,
+   "BANK_PV088"
+  ],
+  "grimer_cry_swar": [
+   88,
+   "WAVE_ARC_PV088"
+  ],
+  "grotle_cry_sbnk": [
+   388,
+   "BANK_PV433"
+  ],
+  "grotle_cry_swar": [
+   388,
+   "WAVE_ARC_PV433"
+  ],
+  "groudon_cry_sbnk": [
+   383,
+   "BANK_PV383"
+  ],
+  "groudon_cry_swar": [
+   383,
+   "WAVE_ARC_PV383"
+  ],
+  "grovyle_cry_sbnk": [
+   253,
+   "BANK_PV253"
+  ],
+  "grovyle_cry_swar": [
+   253,
+   "WAVE_ARC_PV253"
+  ],
+  "growlithe_cry_sbnk": [
+   58,
+   "BANK_PV058"
+  ],
+  "growlithe_cry_swar": [
+   58,
+   "WAVE_ARC_PV058"
+  ],
+  "grumpig_cry_sbnk": [
+   326,
+   "BANK_PV326"
+  ],
+  "grumpig_cry_swar": [
+   326,
+   "WAVE_ARC_PV326"
+  ],
+  "gulpin_cry_sbnk": [
+   316,
+   "BANK_PV316"
+  ],
+  "gulpin_cry_swar": [
+   316,
+   "WAVE_ARC_PV316"
+  ],
+  "gyarados_cry_sbnk": [
+   130,
+   "BANK_PV130"
+  ],
+  "gyarados_cry_swar": [
+   130,
+   "WAVE_ARC_PV130"
+  ],
+  "happiny_cry_sbnk": [
+   440,
+   "BANK_PV444"
+  ],
+  "happiny_cry_swar": [
+   440,
+   "WAVE_ARC_PV444"
+  ],
+  "hariyama_cry_sbnk": [
+   297,
+   "BANK_PV297"
+  ],
+  "hariyama_cry_swar": [
+   297,
+   "WAVE_ARC_PV297"
+  ],
+  "haunter_cry_sbnk": [
+   93,
+   "BANK_PV093"
+  ],
+  "haunter_cry_swar": [
+   93,
+   "WAVE_ARC_PV093"
+  ],
+  "heatran_cry_sbnk": [
+   485,
+   "BANK_PV508"
+  ],
+  "heatran_cry_swar": [
+   485,
+   "WAVE_ARC_PV508"
+  ],
+  "heracross_cry_sbnk": [
+   214,
+   "BANK_PV214"
+  ],
+  "heracross_cry_swar": [
+   214,
+   "WAVE_ARC_PV214"
+  ],
+  "hippopotas_cry_sbnk": [
+   449,
+   "BANK_PV464"
+  ],
+  "hippopotas_cry_swar": [
+   449,
+   "WAVE_ARC_PV464"
+  ],
+  "hippowdon_cry_sbnk": [
+   450,
+   "BANK_PV465"
+  ],
+  "hippowdon_cry_swar": [
+   450,
+   "WAVE_ARC_PV465"
+  ],
+  "hitmonchan_cry_sbnk": [
+   107,
+   "BANK_PV107"
+  ],
+  "hitmonchan_cry_swar": [
+   107,
+   "WAVE_ARC_PV107"
+  ],
+  "hitmonlee_cry_sbnk": [
+   106,
+   "BANK_PV106"
+  ],
+  "hitmonlee_cry_swar": [
+   106,
+   "WAVE_ARC_PV106"
+  ],
+  "hitmontop_cry_sbnk": [
+   237,
+   "BANK_PV237"
+  ],
+  "hitmontop_cry_swar": [
+   237,
+   "WAVE_ARC_PV237"
+  ],
+  "ho_oh_cry_sbnk": [
+   250,
+   "BANK_PV250"
+  ],
+  "ho_oh_cry_swar": [
+   250,
+   "WAVE_ARC_PV250"
+  ],
+  "honchkrow_cry_sbnk": [
+   430,
+   "BANK_PV494"
+  ],
+  "honchkrow_cry_swar": [
+   430,
+   "WAVE_ARC_PV494"
+  ],
+  "hoothoot_cry_sbnk": [
+   163,
+   "BANK_PV163"
+  ],
+  "hoothoot_cry_swar": [
+   163,
+   "WAVE_ARC_PV163"
+  ],
+  "hoppip_cry_sbnk": [
+   187,
+   "BANK_PV187"
+  ],
+  "hoppip_cry_swar": [
+   187,
+   "WAVE_ARC_PV187"
+  ],
+  "horsea_cry_sbnk": [
+   116,
+   "BANK_PV116"
+  ],
+  "horsea_cry_swar": [
+   116,
+   "WAVE_ARC_PV116"
+  ],
+  "houndoom_cry_sbnk": [
+   229,
+   "BANK_PV229"
+  ],
+  "houndoom_cry_swar": [
+   229,
+   "WAVE_ARC_PV229"
+  ],
+  "houndour_cry_sbnk": [
+   228,
+   "BANK_PV228"
+  ],
+  "houndour_cry_swar": [
+   228,
+   "WAVE_ARC_PV228"
+  ],
+  "huntail_cry_sbnk": [
+   367,
+   "BANK_PV367"
+  ],
+  "huntail_cry_swar": [
+   367,
+   "WAVE_ARC_PV367"
+  ],
+  "hypno_cry_sbnk": [
+   97,
+   "BANK_PV097"
+  ],
+  "hypno_cry_swar": [
+   97,
+   "WAVE_ARC_PV097"
+  ],
+  "igglybuff_cry_sbnk": [
+   174,
+   "BANK_PV174"
+  ],
+  "igglybuff_cry_swar": [
+   174,
+   "WAVE_ARC_PV174"
+  ],
+  "illumise_cry_sbnk": [
+   314,
+   "BANK_PV314"
+  ],
+  "illumise_cry_swar": [
+   314,
+   "WAVE_ARC_PV314"
+  ],
+  "infernape_cry_sbnk": [
+   392,
+   "BANK_PV436"
+  ],
+  "infernape_cry_swar": [
+   392,
+   "WAVE_ARC_PV436"
+  ],
+  "ivysaur_cry_sbnk": [
+   2,
+   "BANK_PV002"
+  ],
+  "ivysaur_cry_swar": [
+   2,
+   "WAVE_ARC_PV002"
+  ],
+  "jigglypuff_cry_sbnk": [
+   39,
+   "BANK_PV039"
+  ],
+  "jigglypuff_cry_swar": [
+   39,
+   "WAVE_ARC_PV039"
+  ],
+  "jirachi_cry_sbnk": [
+   385,
+   "BANK_PV385"
+  ],
+  "jirachi_cry_swar": [
+   385,
+   "WAVE_ARC_PV385"
+  ],
+  "jolteon_cry_sbnk": [
+   135,
+   "BANK_PV135"
+  ],
+  "jolteon_cry_swar": [
+   135,
+   "WAVE_ARC_PV135"
+  ],
+  "jumpluff_cry_sbnk": [
+   189,
+   "BANK_PV189"
+  ],
+  "jumpluff_cry_swar": [
+   189,
+   "WAVE_ARC_PV189"
+  ],
+  "jynx_cry_sbnk": [
+   124,
+   "BANK_PV124"
+  ],
+  "jynx_cry_swar": [
+   124,
+   "WAVE_ARC_PV124"
+  ],
+  "kabuto_cry_sbnk": [
+   140,
+   "BANK_PV140"
+  ],
+  "kabuto_cry_swar": [
+   140,
+   "WAVE_ARC_PV140"
+  ],
+  "kabutops_cry_sbnk": [
+   141,
+   "BANK_PV141"
+  ],
+  "kabutops_cry_swar": [
+   141,
+   "WAVE_ARC_PV141"
+  ],
+  "kadabra_cry_sbnk": [
+   64,
+   "BANK_PV064"
+  ],
+  "kadabra_cry_swar": [
+   64,
+   "WAVE_ARC_PV064"
+  ],
+  "kakuna_cry_sbnk": [
+   14,
+   "BANK_PV014"
+  ],
+  "kakuna_cry_swar": [
+   14,
+   "WAVE_ARC_PV014"
+  ],
+  "kangaskhan_cry_sbnk": [
+   115,
+   "BANK_PV115"
+  ],
+  "kangaskhan_cry_swar": [
+   115,
+   "WAVE_ARC_PV115"
+  ],
+  "kecleon_cry_sbnk": [
+   352,
+   "BANK_PV352"
+  ],
+  "kecleon_cry_swar": [
+   352,
+   "WAVE_ARC_PV352"
+  ],
+  "kingdra_cry_sbnk": [
+   230,
+   "BANK_PV230"
+  ],
+  "kingdra_cry_swar": [
+   230,
+   "WAVE_ARC_PV230"
+  ],
+  "kingler_cry_sbnk": [
+   99,
+   "BANK_PV099"
+  ],
+  "kingler_cry_swar": [
+   99,
+   "WAVE_ARC_PV099"
+  ],
+  "kirlia_cry_sbnk": [
+   281,
+   "BANK_PV281"
+  ],
+  "kirlia_cry_swar": [
+   281,
+   "WAVE_ARC_PV281"
+  ],
+  "koffing_cry_sbnk": [
+   109,
+   "BANK_PV109"
+  ],
+  "koffing_cry_swar": [
+   109,
+   "WAVE_ARC_PV109"
+  ],
+  "krabby_cry_sbnk": [
+   98,
+   "BANK_PV098"
+  ],
+  "krabby_cry_swar": [
+   98,
+   "WAVE_ARC_PV098"
+  ],
+  "kricketot_cry_sbnk": [
+   401,
+   "BANK_PV480"
+  ],
+  "kricketot_cry_swar": [
+   401,
+   "WAVE_ARC_PV480"
+  ],
+  "kricketune_cry_sbnk": [
+   402,
+   "BANK_PV481"
+  ],
+  "kricketune_cry_swar": [
+   402,
+   "WAVE_ARC_PV481"
+  ],
+  "kyogre_cry_sbnk": [
+   382,
+   "BANK_PV382"
+  ],
+  "kyogre_cry_swar": [
+   382,
+   "WAVE_ARC_PV382"
+  ],
+  "lairon_cry_sbnk": [
+   305,
+   "BANK_PV305"
+  ],
+  "lairon_cry_swar": [
+   305,
+   "WAVE_ARC_PV305"
+  ],
+  "lanturn_cry_sbnk": [
+   171,
+   "BANK_PV171"
+  ],
+  "lanturn_cry_swar": [
+   171,
+   "WAVE_ARC_PV171"
+  ],
+  "lapras_cry_sbnk": [
+   131,
+   "BANK_PV131"
+  ],
+  "lapras_cry_swar": [
+   131,
+   "WAVE_ARC_PV131"
+  ],
+  "larvitar_cry_sbnk": [
+   246,
+   "BANK_PV246"
+  ],
+  "larvitar_cry_swar": [
+   246,
+   "WAVE_ARC_PV246"
+  ],
+  "latias_cry_sbnk": [
+   380,
+   "BANK_PV380"
+  ],
+  "latias_cry_swar": [
+   380,
+   "WAVE_ARC_PV380"
+  ],
+  "latios_cry_sbnk": [
+   381,
+   "BANK_PV381"
+  ],
+  "latios_cry_swar": [
+   381,
+   "WAVE_ARC_PV381"
+  ],
+  "leafeon_cry_sbnk": [
+   470,
+   "BANK_PV505"
+  ],
+  "leafeon_cry_swar": [
+   470,
+   "WAVE_ARC_PV505"
+  ],
+  "ledian_cry_sbnk": [
+   166,
+   "BANK_PV166"
+  ],
+  "ledian_cry_swar": [
+   166,
+   "WAVE_ARC_PV166"
+  ],
+  "ledyba_cry_sbnk": [
+   165,
+   "BANK_PV165"
+  ],
+  "ledyba_cry_swar": [
+   165,
+   "WAVE_ARC_PV165"
+  ],
+  "lickilicky_cry_sbnk": [
+   463,
+   "BANK_PV501"
+  ],
+  "lickilicky_cry_swar": [
+   463,
+   "WAVE_ARC_PV501"
+  ],
+  "lickitung_cry_sbnk": [
+   108,
+   "BANK_PV108"
+  ],
+  "lickitung_cry_swar": [
+   108,
+   "WAVE_ARC_PV108"
+  ],
+  "lileep_cry_sbnk": [
+   345,
+   "BANK_PV345"
+  ],
+  "lileep_cry_swar": [
+   345,
+   "WAVE_ARC_PV345"
+  ],
+  "linoone_cry_sbnk": [
+   264,
+   "BANK_PV264"
+  ],
+  "linoone_cry_swar": [
+   264,
+   "WAVE_ARC_PV264"
+  ],
+  "lombre_cry_sbnk": [
+   271,
+   "BANK_PV271"
+  ],
+  "lombre_cry_swar": [
+   271,
+   "WAVE_ARC_PV271"
+  ],
+  "lopunny_cry_sbnk": [
+   428,
+   "BANK_PV454"
+  ],
+  "lopunny_cry_swar": [
+   428,
+   "WAVE_ARC_PV454"
+  ],
+  "lotad_cry_sbnk": [
+   270,
+   "BANK_PV270"
+  ],
+  "lotad_cry_swar": [
+   270,
+   "WAVE_ARC_PV270"
+  ],
+  "loudred_cry_sbnk": [
+   294,
+   "BANK_PV294"
+  ],
+  "loudred_cry_swar": [
+   294,
+   "WAVE_ARC_PV294"
+  ],
+  "lucario_cry_sbnk": [
+   448,
+   "BANK_PV416"
+  ],
+  "lucario_cry_swar": [
+   448,
+   "WAVE_ARC_PV416"
+  ],
+  "ludicolo_cry_sbnk": [
+   272,
+   "BANK_PV272"
+  ],
+  "ludicolo_cry_swar": [
+   272,
+   "WAVE_ARC_PV272"
+  ],
+  "lugia_cry_sbnk": [
+   249,
+   "BANK_PV249"
+  ],
+  "lugia_cry_swar": [
+   249,
+   "WAVE_ARC_PV249"
+  ],
+  "lumineon_cry_sbnk": [
+   457,
+   "BANK_PV467"
+  ],
+  "lumineon_cry_swar": [
+   457,
+   "WAVE_ARC_PV467"
+  ],
+  "lunatone_cry_sbnk": [
+   337,
+   "BANK_PV337"
+  ],
+  "lunatone_cry_swar": [
+   337,
+   "WAVE_ARC_PV337"
+  ],
+  "luvdisc_cry_sbnk": [
+   370,
+   "BANK_PV370"
+  ],
+  "luvdisc_cry_swar": [
+   370,
+   "WAVE_ARC_PV370"
+  ],
+  "luxio_cry_sbnk": [
+   404,
+   "BANK_PV473"
+  ],
+  "luxio_cry_swar": [
+   404,
+   "WAVE_ARC_PV473"
+  ],
+  "luxray_cry_sbnk": [
+   405,
+   "BANK_PV474"
+  ],
+  "luxray_cry_swar": [
+   405,
+   "WAVE_ARC_PV474"
+  ],
+  "machamp_cry_sbnk": [
+   68,
+   "BANK_PV068"
+  ],
+  "machamp_cry_swar": [
+   68,
+   "WAVE_ARC_PV068"
+  ],
+  "machoke_cry_sbnk": [
+   67,
+   "BANK_PV067"
+  ],
+  "machoke_cry_swar": [
+   67,
+   "WAVE_ARC_PV067"
+  ],
+  "machop_cry_sbnk": [
+   66,
+   "BANK_PV066"
+  ],
+  "machop_cry_swar": [
+   66,
+   "WAVE_ARC_PV066"
+  ],
+  "magby_cry_sbnk": [
+   240,
+   "BANK_PV240"
+  ],
+  "magby_cry_swar": [
+   240,
+   "WAVE_ARC_PV240"
+  ],
+  "magcargo_cry_sbnk": [
+   219,
+   "BANK_PV219"
+  ],
+  "magcargo_cry_swar": [
+   219,
+   "WAVE_ARC_PV219"
+  ],
+  "magikarp_cry_sbnk": [
+   129,
+   "BANK_PV129"
+  ],
+  "magikarp_cry_swar": [
+   129,
+   "WAVE_ARC_PV129"
+  ],
+  "magmar_cry_sbnk": [
+   126,
+   "BANK_PV126"
+  ],
+  "magmar_cry_swar": [
+   126,
+   "WAVE_ARC_PV126"
+  ],
+  "magmortar_cry_sbnk": [
+   467,
+   "BANK_PV502"
+  ],
+  "magmortar_cry_swar": [
+   467,
+   "WAVE_ARC_PV502"
+  ],
+  "magnemite_cry_sbnk": [
+   81,
+   "BANK_PV081"
+  ],
+  "magnemite_cry_swar": [
+   81,
+   "WAVE_ARC_PV081"
+  ],
+  "magneton_cry_sbnk": [
+   82,
+   "BANK_PV082"
+  ],
+  "magneton_cry_swar": [
+   82,
+   "WAVE_ARC_PV082"
+  ],
+  "magnezone_cry_sbnk": [
+   462,
+   "BANK_PV443"
+  ],
+  "magnezone_cry_swar": [
+   462,
+   "WAVE_ARC_PV443"
+  ],
+  "makuhita_cry_sbnk": [
+   296,
+   "BANK_PV296"
+  ],
+  "makuhita_cry_swar": [
+   296,
+   "WAVE_ARC_PV296"
+  ],
+  "mamoswine_cry_sbnk": [
+   473,
+   "BANK_PV424"
+  ],
+  "mamoswine_cry_swar": [
+   473,
+   "WAVE_ARC_PV424"
+  ],
+  "manaphy_cry_sbnk": [
+   490,
+   "BANK_PV442"
+  ],
+  "manaphy_cry_swar": [
+   490,
+   "WAVE_ARC_PV442"
+  ],
+  "manectric_cry_sbnk": [
+   310,
+   "BANK_PV310"
+  ],
+  "manectric_cry_swar": [
+   310,
+   "WAVE_ARC_PV310"
+  ],
+  "mankey_cry_sbnk": [
+   56,
+   "BANK_PV056"
+  ],
+  "mankey_cry_swar": [
+   56,
+   "WAVE_ARC_PV056"
+  ],
+  "mantine_cry_sbnk": [
+   226,
+   "BANK_PV226"
+  ],
+  "mantine_cry_swar": [
+   226,
+   "WAVE_ARC_PV226"
+  ],
+  "mantyke_cry_sbnk": [
+   458,
+   "BANK_PV417"
+  ],
+  "mantyke_cry_swar": [
+   458,
+   "WAVE_ARC_PV417"
+  ],
+  "mareep_cry_sbnk": [
+   179,
+   "BANK_PV179"
+  ],
+  "mareep_cry_swar": [
+   179,
+   "WAVE_ARC_PV179"
+  ],
+  "marill_cry_sbnk": [
+   183,
+   "BANK_PV183"
+  ],
+  "marill_cry_swar": [
+   183,
+   "WAVE_ARC_PV183"
+  ],
+  "marowak_cry_sbnk": [
+   105,
+   "BANK_PV105"
+  ],
+  "marowak_cry_swar": [
+   105,
+   "WAVE_ARC_PV105"
+  ],
+  "marshtomp_cry_sbnk": [
+   259,
+   "BANK_PV259"
+  ],
+  "marshtomp_cry_swar": [
+   259,
+   "WAVE_ARC_PV259"
+  ],
+  "masquerain_cry_sbnk": [
+   284,
+   "BANK_PV284"
+  ],
+  "masquerain_cry_swar": [
+   284,
+   "WAVE_ARC_PV284"
+  ],
+  "mawile_cry_sbnk": [
+   303,
+   "BANK_PV303"
+  ],
+  "mawile_cry_swar": [
+   303,
+   "WAVE_ARC_PV303"
+  ],
+  "medicham_cry_sbnk": [
+   308,
+   "BANK_PV308"
+  ],
+  "medicham_cry_swar": [
+   308,
+   "WAVE_ARC_PV308"
+  ],
+  "meditite_cry_sbnk": [
+   307,
+   "BANK_PV307"
+  ],
+  "meditite_cry_swar": [
+   307,
+   "WAVE_ARC_PV307"
+  ],
+  "meganium_cry_sbnk": [
+   154,
+   "BANK_PV154"
+  ],
+  "meganium_cry_swar": [
+   154,
+   "WAVE_ARC_PV154"
+  ],
+  "meowth_cry_sbnk": [
+   52,
+   "BANK_PV052"
+  ],
+  "meowth_cry_swar": [
+   52,
+   "WAVE_ARC_PV052"
+  ],
+  "mesprit_cry_sbnk": [
+   481,
+   "BANK_PV512"
+  ],
+  "mesprit_cry_swar": [
+   481,
+   "WAVE_ARC_PV512"
+  ],
+  "metagross_cry_sbnk": [
+   376,
+   "BANK_PV376"
+  ],
+  "metagross_cry_swar": [
+   376,
+   "WAVE_ARC_PV376"
+  ],
+  "metang_cry_sbnk": [
+   375,
+   "BANK_PV375"
+  ],
+  "metang_cry_swar": [
+   375,
+   "WAVE_ARC_PV375"
+  ],
+  "metapod_cry_sbnk": [
+   11,
+   "BANK_PV011"
+  ],
+  "metapod_cry_swar": [
+   11,
+   "WAVE_ARC_PV011"
+  ],
+  "mew_cry_sbnk": [
+   151,
+   "BANK_PV151"
+  ],
+  "mew_cry_swar": [
+   151,
+   "WAVE_ARC_PV151"
+  ],
+  "mewtwo_cry_sbnk": [
+   150,
+   "BANK_PV150"
+  ],
+  "mewtwo_cry_swar": [
+   150,
+   "WAVE_ARC_PV150"
+  ],
+  "mightyena_cry_sbnk": [
+   262,
+   "BANK_PV262"
+  ],
+  "mightyena_cry_swar": [
+   262,
+   "WAVE_ARC_PV262"
+  ],
+  "milotic_cry_sbnk": [
+   350,
+   "BANK_PV350"
+  ],
+  "milotic_cry_swar": [
+   350,
+   "WAVE_ARC_PV350"
+  ],
+  "miltank_cry_sbnk": [
+   241,
+   "BANK_PV241"
+  ],
+  "miltank_cry_swar": [
+   241,
+   "WAVE_ARC_PV241"
+  ],
+  "mime_jr_cry_sbnk": [
+   439,
+   "BANK_PV414"
+  ],
+  "mime_jr_cry_swar": [
+   439,
+   "WAVE_ARC_PV414"
+  ],
+  "minun_cry_sbnk": [
+   312,
+   "BANK_PV312"
+  ],
+  "minun_cry_swar": [
+   312,
+   "WAVE_ARC_PV312"
+  ],
+  "misdreavus_cry_sbnk": [
+   200,
+   "BANK_PV200"
+  ],
+  "misdreavus_cry_swar": [
+   200,
+   "WAVE_ARC_PV200"
+  ],
+  "mismagius_cry_sbnk": [
+   429,
+   "BANK_PV500"
+  ],
+  "mismagius_cry_swar": [
+   429,
+   "WAVE_ARC_PV500"
+  ],
+  "moltres_cry_sbnk": [
+   146,
+   "BANK_PV146"
+  ],
+  "moltres_cry_swar": [
+   146,
+   "WAVE_ARC_PV146"
+  ],
+  "monferno_cry_sbnk": [
+   391,
+   "BANK_PV435"
+  ],
+  "monferno_cry_swar": [
+   391,
+   "WAVE_ARC_PV435"
+  ],
+  "mothim_cry_sbnk": [
+   414,
+   "BANK_PV456"
+  ],
+  "mothim_cry_swar": [
+   414,
+   "WAVE_ARC_PV456"
+  ],
+  "mr_mime_cry_sbnk": [
+   122,
+   "BANK_PV122"
+  ],
+  "mr_mime_cry_swar": [
+   122,
+   "WAVE_ARC_PV122"
+  ],
+  "mudkip_cry_sbnk": [
+   258,
+   "BANK_PV258"
+  ],
+  "mudkip_cry_swar": [
+   258,
+   "WAVE_ARC_PV258"
+  ],
+  "muk_cry_sbnk": [
+   89,
+   "BANK_PV089"
+  ],
+  "muk_cry_swar": [
+   89,
+   "WAVE_ARC_PV089"
+  ],
+  "munchlax_cry_sbnk": [
+   446,
+   "BANK_PV412"
+  ],
+  "munchlax_cry_swar": [
+   446,
+   "WAVE_ARC_PV412"
+  ],
+  "murkrow_cry_sbnk": [
+   198,
+   "BANK_PV198"
+  ],
+  "murkrow_cry_swar": [
+   198,
+   "WAVE_ARC_PV198"
+  ],
+  "natu_cry_sbnk": [
+   177,
+   "BANK_PV177"
+  ],
+  "natu_cry_swar": [
+   177,
+   "WAVE_ARC_PV177"
+  ],
+  "nidoking_cry_sbnk": [
+   34,
+   "BANK_PV034"
+  ],
+  "nidoking_cry_swar": [
+   34,
+   "WAVE_ARC_PV034"
+  ],
+  "nidoqueen_cry_sbnk": [
+   31,
+   "BANK_PV031"
+  ],
+  "nidoqueen_cry_swar": [
+   31,
+   "WAVE_ARC_PV031"
+  ],
+  "nidoran_f_cry_sbnk": [
+   29,
+   "BANK_PV029"
+  ],
+  "nidoran_f_cry_swar": [
+   29,
+   "WAVE_ARC_PV029"
+  ],
+  "nidoran_m_cry_sbnk": [
+   32,
+   "BANK_PV032"
+  ],
+  "nidoran_m_cry_swar": [
+   32,
+   "WAVE_ARC_PV032"
+  ],
+  "nidorina_cry_sbnk": [
+   30,
+   "BANK_PV030"
+  ],
+  "nidorina_cry_swar": [
+   30,
+   "WAVE_ARC_PV030"
+  ],
+  "nidorino_cry_sbnk": [
+   33,
+   "BANK_PV033"
+  ],
+  "nidorino_cry_swar": [
+   33,
+   "WAVE_ARC_PV033"
+  ],
+  "nincada_cry_sbnk": [
+   290,
+   "BANK_PV290"
+  ],
+  "nincada_cry_swar": [
+   290,
+   "WAVE_ARC_PV290"
+  ],
+  "ninetales_cry_sbnk": [
+   38,
+   "BANK_PV038"
+  ],
+  "ninetales_cry_swar": [
+   38,
+   "WAVE_ARC_PV038"
+  ],
+  "ninjask_cry_sbnk": [
+   291,
+   "BANK_PV291"
+  ],
+  "ninjask_cry_swar": [
+   291,
+   "WAVE_ARC_PV291"
+  ],
+  "noctowl_cry_sbnk": [
+   164,
+   "BANK_PV164"
+  ],
+  "noctowl_cry_swar": [
+   164,
+   "WAVE_ARC_PV164"
+  ],
+  "nosepass_cry_sbnk": [
+   299,
+   "BANK_PV299"
+  ],
+  "nosepass_cry_swar": [
+   299,
+   "WAVE_ARC_PV299"
+  ],
+  "numel_cry_sbnk": [
+   322,
+   "BANK_PV322"
+  ],
+  "numel_cry_swar": [
+   322,
+   "WAVE_ARC_PV322"
+  ],
+  "nuzleaf_cry_sbnk": [
+   274,
+   "BANK_PV274"
+  ],
+  "nuzleaf_cry_swar": [
+   274,
+   "WAVE_ARC_PV274"
+  ],
+  "octillery_cry_sbnk": [
+   224,
+   "BANK_PV224"
+  ],
+  "octillery_cry_swar": [
+   224,
+   "WAVE_ARC_PV224"
+  ],
+  "oddish_cry_sbnk": [
+   43,
+   "BANK_PV043"
+  ],
+  "oddish_cry_swar": [
+   43,
+   "WAVE_ARC_PV043"
+  ],
+  "omanyte_cry_sbnk": [
+   138,
+   "BANK_PV138"
+  ],
+  "omanyte_cry_swar": [
+   138,
+   "WAVE_ARC_PV138"
+  ],
+  "omastar_cry_sbnk": [
+   139,
+   "BANK_PV139"
+  ],
+  "omastar_cry_swar": [
+   139,
+   "WAVE_ARC_PV139"
+  ],
+  "onix_cry_sbnk": [
+   95,
+   "BANK_PV095"
+  ],
+  "onix_cry_swar": [
+   95,
+   "WAVE_ARC_PV095"
+  ],
+  "pachirisu_cry_sbnk": [
+   417,
+   "BANK_PV477"
+  ],
+  "pachirisu_cry_swar": [
+   417,
+   "WAVE_ARC_PV477"
+  ],
+  "palkia_cry_sbnk": [
+   484,
+   "BANK_PV515"
+  ],
+  "palkia_cry_swar": [
+   484,
+   "WAVE_ARC_PV515"
+  ],
+  "paras_cry_sbnk": [
+   46,
+   "BANK_PV046"
+  ],
+  "paras_cry_swar": [
+   46,
+   "WAVE_ARC_PV046"
+  ],
+  "parasect_cry_sbnk": [
+   47,
+   "BANK_PV047"
+  ],
+  "parasect_cry_swar": [
+   47,
+   "WAVE_ARC_PV047"
+  ],
+  "pelipper_cry_sbnk": [
+   279,
+   "BANK_PV279"
+  ],
+  "pelipper_cry_swar": [
+   279,
+   "WAVE_ARC_PV279"
+  ],
+  "persian_cry_sbnk": [
+   53,
+   "BANK_PV053"
+  ],
+  "persian_cry_swar": [
+   53,
+   "WAVE_ARC_PV053"
+  ],
+  "phanpy_cry_sbnk": [
+   231,
+   "BANK_PV231"
+  ],
+  "phanpy_cry_swar": [
+   231,
+   "WAVE_ARC_PV231"
+  ],
+  "phione_cry_sbnk": [
+   489,
+   "BANK_PV441"
+  ],
+  "phione_cry_swar": [
+   489,
+   "WAVE_ARC_PV441"
+  ],
+  "pichu_cry_sbnk": [
+   172,
+   "BANK_PV172"
+  ],
+  "pichu_cry_swar": [
+   172,
+   "WAVE_ARC_PV172"
+  ],
+  "pidgeot_cry_sbnk": [
+   18,
+   "BANK_PV018"
+  ],
+  "pidgeot_cry_swar": [
+   18,
+   "WAVE_ARC_PV018"
+  ],
+  "pidgeotto_cry_sbnk": [
+   17,
+   "BANK_PV017"
+  ],
+  "pidgeotto_cry_swar": [
+   17,
+   "WAVE_ARC_PV017"
+  ],
+  "pidgey_cry_sbnk": [
+   16,
+   "BANK_PV016"
+  ],
+  "pidgey_cry_swar": [
+   16,
+   "WAVE_ARC_PV016"
+  ],
+  "pikachu_cry_sbnk": [
+   25,
+   "BANK_PV025"
+  ],
+  "pikachu_cry_swar": [
+   25,
+   "WAVE_ARC_PV025"
+  ],
+  "piloswine_cry_sbnk": [
+   221,
+   "BANK_PV221"
+  ],
+  "piloswine_cry_swar": [
+   221,
+   "WAVE_ARC_PV221"
+  ],
+  "pineco_cry_sbnk": [
+   204,
+   "BANK_PV204"
+  ],
+  "pineco_cry_swar": [
+   204,
+   "WAVE_ARC_PV204"
+  ],
+  "pinsir_cry_sbnk": [
+   127,
+   "BANK_PV127"
+  ],
+  "pinsir_cry_swar": [
+   127,
+   "WAVE_ARC_PV127"
+  ],
+  "piplup_cry_sbnk": [
+   393,
+   "BANK_PV431"
+  ],
+  "piplup_cry_swar": [
+   393,
+   "WAVE_ARC_PV431"
+  ],
+  "plusle_cry_sbnk": [
+   311,
+   "BANK_PV311"
+  ],
+  "plusle_cry_swar": [
+   311,
+   "WAVE_ARC_PV311"
+  ],
+  "politoed_cry_sbnk": [
+   186,
+   "BANK_PV186"
+  ],
+  "politoed_cry_swar": [
+   186,
+   "WAVE_ARC_PV186"
+  ],
+  "poliwag_cry_sbnk": [
+   60,
+   "BANK_PV060"
+  ],
+  "poliwag_cry_swar": [
+   60,
+   "WAVE_ARC_PV060"
+  ],
+  "poliwhirl_cry_sbnk": [
+   61,
+   "BANK_PV061"
+  ],
+  "poliwhirl_cry_swar": [
+   61,
+   "WAVE_ARC_PV061"
+  ],
+  "poliwrath_cry_sbnk": [
+   62,
+   "BANK_PV062"
+  ],
+  "poliwrath_cry_swar": [
+   62,
+   "WAVE_ARC_PV062"
+  ],
+  "ponyta_cry_sbnk": [
+   77,
+   "BANK_PV077"
+  ],
+  "ponyta_cry_swar": [
+   77,
+   "WAVE_ARC_PV077"
+  ],
+  "poochyena_cry_sbnk": [
+   261,
+   "BANK_PV261"
+  ],
+  "poochyena_cry_swar": [
+   261,
+   "WAVE_ARC_PV261"
+  ],
+  "porygon2_cry_sbnk": [
+   233,
+   "BANK_PV233"
+  ],
+  "porygon2_cry_swar": [
+   233,
+   "WAVE_ARC_PV233"
+  ],
+  "porygon_cry_sbnk": [
+   137,
+   "BANK_PV137"
+  ],
+  "porygon_cry_swar": [
+   137,
+   "WAVE_ARC_PV137"
+  ],
+  "porygon_z_cry_sbnk": [
+   474,
+   "BANK_PV504"
+  ],
+  "porygon_z_cry_swar": [
+   474,
+   "WAVE_ARC_PV504"
+  ],
+  "primeape_cry_sbnk": [
+   57,
+   "BANK_PV057"
+  ],
+  "primeape_cry_swar": [
+   57,
+   "WAVE_ARC_PV057"
+  ],
+  "prinplup_cry_sbnk": [
+   394,
+   "BANK_PV437"
+  ],
+  "prinplup_cry_swar": [
+   394,
+   "WAVE_ARC_PV437"
+  ],
+  "probopass_cry_sbnk": [
+   476,
+   "BANK_PV497"
+  ],
+  "probopass_cry_swar": [
+   476,
+   "WAVE_ARC_PV497"
+  ],
+  "psyduck_cry_sbnk": [
+   54,
+   "BANK_PV054"
+  ],
+  "psyduck_cry_swar": [
+   54,
+   "WAVE_ARC_PV054"
+  ],
+  "pupitar_cry_sbnk": [
+   247,
+   "BANK_PV247"
+  ],
+  "pupitar_cry_swar": [
+   247,
+   "WAVE_ARC_PV247"
+  ],
+  "purugly_cry_sbnk": [
+   432,
+   "BANK_PV463"
+  ],
+  "purugly_cry_swar": [
+   432,
+   "WAVE_ARC_PV463"
+  ],
+  "quagsire_cry_sbnk": [
+   195,
+   "BANK_PV195"
+  ],
+  "quagsire_cry_swar": [
+   195,
+   "WAVE_ARC_PV195"
+  ],
+  "quilava_cry_sbnk": [
+   156,
+   "BANK_PV156"
+  ],
+  "quilava_cry_swar": [
+   156,
+   "WAVE_ARC_PV156"
+  ],
+  "qwilfish_cry_sbnk": [
+   211,
+   "BANK_PV211"
+  ],
+  "qwilfish_cry_swar": [
+   211,
+   "WAVE_ARC_PV211"
+  ],
+  "raichu_cry_sbnk": [
+   26,
+   "BANK_PV026"
+  ],
+  "raichu_cry_swar": [
+   26,
+   "WAVE_ARC_PV026"
+  ],
+  "raikou_cry_sbnk": [
+   243,
+   "BANK_PV243"
+  ],
+  "raikou_cry_swar": [
+   243,
+   "WAVE_ARC_PV243"
+  ],
+  "ralts_cry_sbnk": [
+   280,
+   "BANK_PV280"
+  ],
+  "ralts_cry_swar": [
+   280,
+   "WAVE_ARC_PV280"
+  ],
+  "rampardos_cry_sbnk": [
+   409,
+   "BANK_PV490"
+  ],
+  "rampardos_cry_swar": [
+   409,
+   "WAVE_ARC_PV490"
+  ],
+  "rapidash_cry_sbnk": [
+   78,
+   "BANK_PV078"
+  ],
+  "rapidash_cry_swar": [
+   78,
+   "WAVE_ARC_PV078"
+  ],
+  "raticate_cry_sbnk": [
+   20,
+   "BANK_PV020"
+  ],
+  "raticate_cry_swar": [
+   20,
+   "WAVE_ARC_PV020"
+  ],
+  "rattata_cry_sbnk": [
+   19,
+   "BANK_PV019"
+  ],
+  "rattata_cry_swar": [
+   19,
+   "WAVE_ARC_PV019"
+  ],
+  "rayquaza_cry_sbnk": [
+   384,
+   "BANK_PV384"
+  ],
+  "rayquaza_cry_swar": [
+   384,
+   "WAVE_ARC_PV384"
+  ],
+  "regice_cry_sbnk": [
+   378,
+   "BANK_PV378"
+  ],
+  "regice_cry_swar": [
+   378,
+   "WAVE_ARC_PV378"
+  ],
+  "regigigas_cry_sbnk": [
+   486,
+   "BANK_PV510"
+  ],
+  "regigigas_cry_swar": [
+   486,
+   "WAVE_ARC_PV510"
+  ],
+  "regirock_cry_sbnk": [
+   377,
+   "BANK_PV377"
+  ],
+  "regirock_cry_swar": [
+   377,
+   "WAVE_ARC_PV377"
+  ],
+  "registeel_cry_sbnk": [
+   379,
+   "BANK_PV379"
+  ],
+  "registeel_cry_swar": [
+   379,
+   "WAVE_ARC_PV379"
+  ],
+  "relicanth_cry_sbnk": [
+   369,
+   "BANK_PV369"
+  ],
+  "relicanth_cry_swar": [
+   369,
+   "WAVE_ARC_PV369"
+  ],
+  "remoraid_cry_sbnk": [
+   223,
+   "BANK_PV223"
+  ],
+  "remoraid_cry_swar": [
+   223,
+   "WAVE_ARC_PV223"
+  ],
+  "rhydon_cry_sbnk": [
+   112,
+   "BANK_PV112"
+  ],
+  "rhydon_cry_swar": [
+   112,
+   "WAVE_ARC_PV112"
+  ],
+  "rhyhorn_cry_sbnk": [
+   111,
+   "BANK_PV111"
+  ],
+  "rhyhorn_cry_swar": [
+   111,
+   "WAVE_ARC_PV111"
+  ],
+  "rhyperior_cry_sbnk": [
+   464,
+   "BANK_PV446"
+  ],
+  "rhyperior_cry_swar": [
+   464,
+   "WAVE_ARC_PV446"
+  ],
+  "riolu_cry_sbnk": [
+   447,
+   "BANK_PV439"
+  ],
+  "riolu_cry_swar": [
+   447,
+   "WAVE_ARC_PV439"
+  ],
+  "roselia_cry_sbnk": [
+   315,
+   "BANK_PV315"
+  ],
+  "roselia_cry_swar": [
+   315,
+   "WAVE_ARC_PV315"
+  ],
+  "roserade_cry_sbnk": [
+   407,
+   "BANK_PV421"
+  ],
+  "roserade_cry_swar": [
+   407,
+   "WAVE_ARC_PV421"
+  ],
+  "rotom_cry_sbnk": [
+   479,
+   "BANK_PV519"
+  ],
+  "rotom_cry_swar": [
+   479,
+   "WAVE_ARC_PV519"
+  ],
+  "sableye_cry_sbnk": [
+   302,
+   "BANK_PV302"
+  ],
+  "sableye_cry_swar": [
+   302,
+   "WAVE_ARC_PV302"
+  ],
+  "salamence_cry_sbnk": [
+   373,
+   "BANK_PV373"
+  ],
+  "salamence_cry_swar": [
+   373,
+   "WAVE_ARC_PV373"
+  ],
+  "sandshrew_cry_sbnk": [
+   27,
+   "BANK_PV027"
+  ],
+  "sandshrew_cry_swar": [
+   27,
+   "WAVE_ARC_PV027"
+  ],
+  "sandslash_cry_sbnk": [
+   28,
+   "BANK_PV028"
+  ],
+  "sandslash_cry_swar": [
+   28,
+   "WAVE_ARC_PV028"
+  ],
+  "sceptile_cry_sbnk": [
+   254,
+   "BANK_PV254"
+  ],
+  "sceptile_cry_swar": [
+   254,
+   "WAVE_ARC_PV254"
+  ],
+  "scizor_cry_sbnk": [
+   212,
+   "BANK_PV212"
+  ],
+  "scizor_cry_swar": [
+   212,
+   "WAVE_ARC_PV212"
+  ],
+  "scyther_cry_sbnk": [
+   123,
+   "BANK_PV123"
+  ],
+  "scyther_cry_swar": [
+   123,
+   "WAVE_ARC_PV123"
+  ],
+  "seadra_cry_sbnk": [
+   117,
+   "BANK_PV117"
+  ],
+  "seadra_cry_swar": [
+   117,
+   "WAVE_ARC_PV117"
+  ],
+  "seaking_cry_sbnk": [
+   119,
+   "BANK_PV119"
+  ],
+  "seaking_cry_swar": [
+   119,
+   "WAVE_ARC_PV119"
+  ],
+  "sealeo_cry_sbnk": [
+   364,
+   "BANK_PV364"
+  ],
+  "sealeo_cry_swar": [
+   364,
+   "WAVE_ARC_PV364"
+  ],
+  "seedot_cry_sbnk": [
+   273,
+   "BANK_PV273"
+  ],
+  "seedot_cry_swar": [
+   273,
+   "WAVE_ARC_PV273"
+  ],
+  "seel_cry_sbnk": [
+   86,
+   "BANK_PV086"
+  ],
+  "seel_cry_swar": [
+   86,
+   "WAVE_ARC_PV086"
+  ],
+  "sentret_cry_sbnk": [
+   161,
+   "BANK_PV161"
+  ],
+  "sentret_cry_swar": [
+   161,
+   "WAVE_ARC_PV161"
+  ],
+  "seviper_cry_sbnk": [
+   336,
+   "BANK_PV336"
+  ],
+  "seviper_cry_swar": [
+   336,
+   "WAVE_ARC_PV336"
+  ],
+  "sharpedo_cry_sbnk": [
+   319,
+   "BANK_PV319"
+  ],
+  "sharpedo_cry_swar": [
+   319,
+   "WAVE_ARC_PV319"
+  ],
+  "shaymin_cry_sbnk": [
+   492,
+   "BANK_PV516"
+  ],
+  "shaymin_cry_swar": [
+   492,
+   "WAVE_ARC_PV516"
+  ],
+  "shaymin_forms_sky_cry_sbnk": [
+   494,
+   "BANK_PV516_SKY"
+  ],
+  "shaymin_forms_sky_cry_swar": [
+   494,
+   "WAVE_ARC_PV516_SKY"
+  ],
+  "shedinja_cry_sbnk": [
+   292,
+   "BANK_PV292"
+  ],
+  "shedinja_cry_swar": [
+   292,
+   "WAVE_ARC_PV292"
+  ],
+  "shelgon_cry_sbnk": [
+   372,
+   "BANK_PV372"
+  ],
+  "shelgon_cry_swar": [
+   372,
+   "WAVE_ARC_PV372"
+  ],
+  "shellder_cry_sbnk": [
+   90,
+   "BANK_PV090"
+  ],
+  "shellder_cry_swar": [
+   90,
+   "WAVE_ARC_PV090"
+  ],
+  "shellos_cry_sbnk": [
+   422,
+   "BANK_PV458"
+  ],
+  "shellos_cry_swar": [
+   422,
+   "WAVE_ARC_PV458"
+  ],
+  "shieldon_cry_sbnk": [
+   410,
+   "BANK_PV487"
+  ],
+  "shieldon_cry_swar": [
+   410,
+   "WAVE_ARC_PV487"
+  ],
+  "shiftry_cry_sbnk": [
+   275,
+   "BANK_PV275"
+  ],
+  "shiftry_cry_swar": [
+   275,
+   "WAVE_ARC_PV275"
+  ],
+  "shinx_cry_sbnk": [
+   403,
+   "BANK_PV472"
+  ],
+  "shinx_cry_swar": [
+   403,
+   "WAVE_ARC_PV472"
+  ],
+  "shroomish_cry_sbnk": [
+   285,
+   "BANK_PV285"
+  ],
+  "shroomish_cry_swar": [
+   285,
+   "WAVE_ARC_PV285"
+  ],
+  "shuckle_cry_sbnk": [
+   213,
+   "BANK_PV213"
+  ],
+  "shuckle_cry_swar": [
+   213,
+   "WAVE_ARC_PV213"
+  ],
+  "shuppet_cry_sbnk": [
+   353,
+   "BANK_PV353"
+  ],
+  "shuppet_cry_swar": [
+   353,
+   "WAVE_ARC_PV353"
+  ],
+  "silcoon_cry_sbnk": [
+   266,
+   "BANK_PV266"
+  ],
+  "silcoon_cry_swar": [
+   266,
+   "WAVE_ARC_PV266"
+  ],
+  "skarmory_cry_sbnk": [
+   227,
+   "BANK_PV227"
+  ],
+  "skarmory_cry_swar": [
+   227,
+   "WAVE_ARC_PV227"
+  ],
+  "skiploom_cry_sbnk": [
+   188,
+   "BANK_PV188"
+  ],
+  "skiploom_cry_swar": [
+   188,
+   "WAVE_ARC_PV188"
+  ],
+  "skitty_cry_sbnk": [
+   300,
+   "BANK_PV300"
+  ],
+  "skitty_cry_swar": [
+   300,
+   "WAVE_ARC_PV300"
+  ],
+  "skorupi_cry_sbnk": [
+   451,
+   "BANK_PV485"
+  ],
+  "skorupi_cry_swar": [
+   451,
+   "WAVE_ARC_PV485"
+  ],
+  "skuntank_cry_sbnk": [
+   435,
+   "BANK_PV469"
+  ],
+  "skuntank_cry_swar": [
+   435,
+   "WAVE_ARC_PV469"
+  ],
+  "slaking_cry_sbnk": [
+   289,
+   "BANK_PV289"
+  ],
+  "slaking_cry_swar": [
+   289,
+   "WAVE_ARC_PV289"
+  ],
+  "slakoth_cry_sbnk": [
+   287,
+   "BANK_PV287"
+  ],
+  "slakoth_cry_swar": [
+   287,
+   "WAVE_ARC_PV287"
+  ],
+  "slowbro_cry_sbnk": [
+   80,
+   "BANK_PV080"
+  ],
+  "slowbro_cry_swar": [
+   80,
+   "WAVE_ARC_PV080"
+  ],
+  "slowking_cry_sbnk": [
+   199,
+   "BANK_PV199"
+  ],
+  "slowking_cry_swar": [
+   199,
+   "WAVE_ARC_PV199"
+  ],
+  "slowpoke_cry_sbnk": [
+   79,
+   "BANK_PV079"
+  ],
+  "slowpoke_cry_swar": [
+   79,
+   "WAVE_ARC_PV079"
+  ],
+  "slugma_cry_sbnk": [
+   218,
+   "BANK_PV218"
+  ],
+  "slugma_cry_swar": [
+   218,
+   "WAVE_ARC_PV218"
+  ],
+  "smeargle_cry_sbnk": [
+   235,
+   "BANK_PV235"
+  ],
+  "smeargle_cry_swar": [
+   235,
+   "WAVE_ARC_PV235"
+  ],
+  "smoochum_cry_sbnk": [
+   238,
+   "BANK_PV238"
+  ],
+  "smoochum_cry_swar": [
+   238,
+   "WAVE_ARC_PV238"
+  ],
+  "sneasel_cry_sbnk": [
+   215,
+   "BANK_PV215"
+  ],
+  "sneasel_cry_swar": [
+   215,
+   "WAVE_ARC_PV215"
+  ],
+  "snorlax_cry_sbnk": [
+   143,
+   "BANK_PV143"
+  ],
+  "snorlax_cry_swar": [
+   143,
+   "WAVE_ARC_PV143"
+  ],
+  "snorunt_cry_sbnk": [
+   361,
+   "BANK_PV361"
+  ],
+  "snorunt_cry_swar": [
+   361,
+   "WAVE_ARC_PV361"
+  ],
+  "snover_cry_sbnk": [
+   459,
+   "BANK_PV475"
+  ],
+  "snover_cry_swar": [
+   459,
+   "WAVE_ARC_PV475"
+  ],
+  "snubbull_cry_sbnk": [
+   209,
+   "BANK_PV209"
+  ],
+  "snubbull_cry_swar": [
+   209,
+   "WAVE_ARC_PV209"
+  ],
+  "solrock_cry_sbnk": [
+   338,
+   "BANK_PV338"
+  ],
+  "solrock_cry_swar": [
+   338,
+   "WAVE_ARC_PV338"
+  ],
+  "spearow_cry_sbnk": [
+   21,
+   "BANK_PV021"
+  ],
+  "spearow_cry_swar": [
+   21,
+   "WAVE_ARC_PV021"
+  ],
+  "spheal_cry_sbnk": [
+   363,
+   "BANK_PV363"
+  ],
+  "spheal_cry_swar": [
+   363,
+   "WAVE_ARC_PV363"
+  ],
+  "spinarak_cry_sbnk": [
+   167,
+   "BANK_PV167"
+  ],
+  "spinarak_cry_swar": [
+   167,
+   "WAVE_ARC_PV167"
+  ],
+  "spinda_cry_sbnk": [
+   327,
+   "BANK_PV327"
+  ],
+  "spinda_cry_swar": [
+   327,
+   "WAVE_ARC_PV327"
+  ],
+  "spiritomb_cry_sbnk": [
+   442,
+   "BANK_PV460"
+  ],
+  "spiritomb_cry_swar": [
+   442,
+   "WAVE_ARC_PV460"
+  ],
+  "spoink_cry_sbnk": [
+   325,
+   "BANK_PV325"
+  ],
+  "spoink_cry_swar": [
+   325,
+   "WAVE_ARC_PV325"
+  ],
+  "squirtle_cry_sbnk": [
+   7,
+   "BANK_PV007"
+  ],
+  "squirtle_cry_swar": [
+   7,
+   "WAVE_ARC_PV007"
+  ],
+  "stantler_cry_sbnk": [
+   234,
+   "BANK_PV234"
+  ],
+  "stantler_cry_swar": [
+   234,
+   "WAVE_ARC_PV234"
+  ],
+  "staraptor_cry_sbnk": [
+   398,
+   "BANK_PV449"
+  ],
+  "staraptor_cry_swar": [
+   398,
+   "WAVE_ARC_PV449"
+  ],
+  "staravia_cry_sbnk": [
+   397,
+   "BANK_PV448"
+  ],
+  "staravia_cry_swar": [
+   397,
+   "WAVE_ARC_PV448"
+  ],
+  "starly_cry_sbnk": [
+   396,
+   "BANK_PV429"
+  ],
+  "starly_cry_swar": [
+   396,
+   "WAVE_ARC_PV429"
+  ],
+  "starmie_cry_sbnk": [
+   121,
+   "BANK_PV121"
+  ],
+  "starmie_cry_swar": [
+   121,
+   "WAVE_ARC_PV121"
+  ],
+  "staryu_cry_sbnk": [
+   120,
+   "BANK_PV120"
+  ],
+  "staryu_cry_swar": [
+   120,
+   "WAVE_ARC_PV120"
+  ],
+  "steelix_cry_sbnk": [
+   208,
+   "BANK_PV208"
+  ],
+  "steelix_cry_swar": [
+   208,
+   "WAVE_ARC_PV208"
+  ],
+  "stunky_cry_sbnk": [
+   434,
+   "BANK_PV468"
+  ],
+  "stunky_cry_swar": [
+   434,
+   "WAVE_ARC_PV468"
+  ],
+  "sudowoodo_cry_sbnk": [
+   185,
+   "BANK_PV185"
+  ],
+  "sudowoodo_cry_swar": [
+   185,
+   "WAVE_ARC_PV185"
+  ],
+  "suicune_cry_sbnk": [
+   245,
+   "BANK_PV245"
+  ],
+  "suicune_cry_swar": [
+   245,
+   "WAVE_ARC_PV245"
+  ],
+  "sunflora_cry_sbnk": [
+   192,
+   "BANK_PV192"
+  ],
+  "sunflora_cry_swar": [
+   192,
+   "WAVE_ARC_PV192"
+  ],
+  "sunkern_cry_sbnk": [
+   191,
+   "BANK_PV191"
+  ],
+  "sunkern_cry_swar": [
+   191,
+   "WAVE_ARC_PV191"
+  ],
+  "surskit_cry_sbnk": [
+   283,
+   "BANK_PV283"
+  ],
+  "surskit_cry_swar": [
+   283,
+   "WAVE_ARC_PV283"
+  ],
+  "swablu_cry_sbnk": [
+   333,
+   "BANK_PV333"
+  ],
+  "swablu_cry_swar": [
+   333,
+   "WAVE_ARC_PV333"
+  ],
+  "swalot_cry_sbnk": [
+   317,
+   "BANK_PV317"
+  ],
+  "swalot_cry_swar": [
+   317,
+   "WAVE_ARC_PV317"
+  ],
+  "swampert_cry_sbnk": [
+   260,
+   "BANK_PV260"
+  ],
+  "swampert_cry_swar": [
+   260,
+   "WAVE_ARC_PV260"
+  ],
+  "swellow_cry_sbnk": [
+   277,
+   "BANK_PV277"
+  ],
+  "swellow_cry_swar": [
+   277,
+   "WAVE_ARC_PV277"
+  ],
+  "swinub_cry_sbnk": [
+   220,
+   "BANK_PV220"
+  ],
+  "swinub_cry_swar": [
+   220,
+   "WAVE_ARC_PV220"
+  ],
+  "taillow_cry_sbnk": [
+   276,
+   "BANK_PV276"
+  ],
+  "taillow_cry_swar": [
+   276,
+   "WAVE_ARC_PV276"
+  ],
+  "tangela_cry_sbnk": [
+   114,
+   "BANK_PV114"
+  ],
+  "tangela_cry_swar": [
+   114,
+   "WAVE_ARC_PV114"
+  ],
+  "tangrowth_cry_sbnk": [
+   465,
+   "BANK_PV422"
+  ],
+  "tangrowth_cry_swar": [
+   465,
+   "WAVE_ARC_PV422"
+  ],
+  "tauros_cry_sbnk": [
+   128,
+   "BANK_PV128"
+  ],
+  "tauros_cry_swar": [
+   128,
+   "WAVE_ARC_PV128"
+  ],
+  "teddiursa_cry_sbnk": [
+   216,
+   "BANK_PV216"
+  ],
+  "teddiursa_cry_swar": [
+   216,
+   "WAVE_ARC_PV216"
+  ],
+  "tentacool_cry_sbnk": [
+   72,
+   "BANK_PV072"
+  ],
+  "tentacool_cry_swar": [
+   72,
+   "WAVE_ARC_PV072"
+  ],
+  "tentacruel_cry_sbnk": [
+   73,
+   "BANK_PV073"
+  ],
+  "tentacruel_cry_swar": [
+   73,
+   "WAVE_ARC_PV073"
+  ],
+  "togekiss_cry_sbnk": [
+   468,
+   "BANK_PV495"
+  ],
+  "togekiss_cry_swar": [
+   468,
+   "WAVE_ARC_PV495"
+  ],
+  "togepi_cry_sbnk": [
+   175,
+   "BANK_PV175"
+  ],
+  "togepi_cry_swar": [
+   175,
+   "WAVE_ARC_PV175"
+  ],
+  "togetic_cry_sbnk": [
+   176,
+   "BANK_PV176"
+  ],
+  "togetic_cry_swar": [
+   176,
+   "WAVE_ARC_PV176"
+  ],
+  "torchic_cry_sbnk": [
+   255,
+   "BANK_PV255"
+  ],
+  "torchic_cry_swar": [
+   255,
+   "WAVE_ARC_PV255"
+  ],
+  "torkoal_cry_sbnk": [
+   324,
+   "BANK_PV324"
+  ],
+  "torkoal_cry_swar": [
+   324,
+   "WAVE_ARC_PV324"
+  ],
+  "torterra_cry_sbnk": [
+   389,
+   "BANK_PV434"
+  ],
+  "torterra_cry_swar": [
+   389,
+   "WAVE_ARC_PV434"
+  ],
+  "totodile_cry_sbnk": [
+   158,
+   "BANK_PV158"
+  ],
+  "totodile_cry_swar": [
+   158,
+   "WAVE_ARC_PV158"
+  ],
+  "toxicroak_cry_sbnk": [
+   454,
+   "BANK_PV453"
+  ],
+  "toxicroak_cry_swar": [
+   454,
+   "WAVE_ARC_PV453"
+  ],
+  "trapinch_cry_sbnk": [
+   328,
+   "BANK_PV328"
+  ],
+  "trapinch_cry_swar": [
+   328,
+   "WAVE_ARC_PV328"
+  ],
+  "treecko_cry_sbnk": [
+   252,
+   "BANK_PV252"
+  ],
+  "treecko_cry_swar": [
+   252,
+   "WAVE_ARC_PV252"
+  ],
+  "tropius_cry_sbnk": [
+   357,
+   "BANK_PV357"
+  ],
+  "tropius_cry_swar": [
+   357,
+   "WAVE_ARC_PV357"
+  ],
+  "turtwig_cry_sbnk": [
+   387,
+   "BANK_PV432"
+  ],
+  "turtwig_cry_swar": [
+   387,
+   "WAVE_ARC_PV432"
+  ],
+  "typhlosion_cry_sbnk": [
+   157,
+   "BANK_PV157"
+  ],
+  "typhlosion_cry_swar": [
+   157,
+   "WAVE_ARC_PV157"
+  ],
+  "tyranitar_cry_sbnk": [
+   248,
+   "BANK_PV248"
+  ],
+  "tyranitar_cry_swar": [
+   248,
+   "WAVE_ARC_PV248"
+  ],
+  "tyrogue_cry_sbnk": [
+   236,
+   "BANK_PV236"
+  ],
+  "tyrogue_cry_swar": [
+   236,
+   "WAVE_ARC_PV236"
+  ],
+  "umbreon_cry_sbnk": [
+   197,
+   "BANK_PV197"
+  ],
+  "umbreon_cry_swar": [
+   197,
+   "WAVE_ARC_PV197"
+  ],
+  "unown_cry_sbnk": [
+   201,
+   "BANK_PV201"
+  ],
+  "unown_cry_swar": [
+   201,
+   "WAVE_ARC_PV201"
+  ],
+  "ursaring_cry_sbnk": [
+   217,
+   "BANK_PV217"
+  ],
+  "ursaring_cry_swar": [
+   217,
+   "WAVE_ARC_PV217"
+  ],
+  "uxie_cry_sbnk": [
+   480,
+   "BANK_PV511"
+  ],
+  "uxie_cry_swar": [
+   480,
+   "WAVE_ARC_PV511"
+  ],
+  "vaporeon_cry_sbnk": [
+   134,
+   "BANK_PV134"
+  ],
+  "vaporeon_cry_swar": [
+   134,
+   "WAVE_ARC_PV134"
+  ],
+  "venomoth_cry_sbnk": [
+   49,
+   "BANK_PV049"
+  ],
+  "venomoth_cry_swar": [
+   49,
+   "WAVE_ARC_PV049"
+  ],
+  "venonat_cry_sbnk": [
+   48,
+   "BANK_PV048"
+  ],
+  "venonat_cry_swar": [
+   48,
+   "WAVE_ARC_PV048"
+  ],
+  "venusaur_cry_sbnk": [
+   3,
+   "BANK_PV003"
+  ],
+  "venusaur_cry_swar": [
+   3,
+   "WAVE_ARC_PV003"
+  ],
+  "vespiquen_cry_sbnk": [
+   416,
+   "BANK_PV471"
+  ],
+  "vespiquen_cry_swar": [
+   416,
+   "WAVE_ARC_PV471"
+  ],
+  "vibrava_cry_sbnk": [
+   329,
+   "BANK_PV329"
+  ],
+  "vibrava_cry_swar": [
+   329,
+   "WAVE_ARC_PV329"
+  ],
+  "victreebel_cry_sbnk": [
+   71,
+   "BANK_PV071"
+  ],
+  "victreebel_cry_swar": [
+   71,
+   "WAVE_ARC_PV071"
+  ],
+  "vigoroth_cry_sbnk": [
+   288,
+   "BANK_PV288"
+  ],
+  "vigoroth_cry_swar": [
+   288,
+   "WAVE_ARC_PV288"
+  ],
+  "vileplume_cry_sbnk": [
+   45,
+   "BANK_PV045"
+  ],
+  "vileplume_cry_swar": [
+   45,
+   "WAVE_ARC_PV045"
+  ],
+  "volbeat_cry_sbnk": [
+   313,
+   "BANK_PV313"
+  ],
+  "volbeat_cry_swar": [
+   313,
+   "WAVE_ARC_PV313"
+  ],
+  "voltorb_cry_sbnk": [
+   100,
+   "BANK_PV100"
+  ],
+  "voltorb_cry_swar": [
+   100,
+   "WAVE_ARC_PV100"
+  ],
+  "vulpix_cry_sbnk": [
+   37,
+   "BANK_PV037"
+  ],
+  "vulpix_cry_swar": [
+   37,
+   "WAVE_ARC_PV037"
+  ],
+  "wailmer_cry_sbnk": [
+   320,
+   "BANK_PV320"
+  ],
+  "wailmer_cry_swar": [
+   320,
+   "WAVE_ARC_PV320"
+  ],
+  "wailord_cry_sbnk": [
+   321,
+   "BANK_PV321"
+  ],
+  "wailord_cry_swar": [
+   321,
+   "WAVE_ARC_PV321"
+  ],
+  "walrein_cry_sbnk": [
+   365,
+   "BANK_PV365"
+  ],
+  "walrein_cry_swar": [
+   365,
+   "WAVE_ARC_PV365"
+  ],
+  "wartortle_cry_sbnk": [
+   8,
+   "BANK_PV008"
+  ],
+  "wartortle_cry_swar": [
+   8,
+   "WAVE_ARC_PV008"
+  ],
+  "weavile_cry_sbnk": [
+   461,
+   "BANK_PV415"
+  ],
+  "weavile_cry_swar": [
+   461,
+   "WAVE_ARC_PV415"
+  ],
+  "weedle_cry_sbnk": [
+   13,
+   "BANK_PV013"
+  ],
+  "weedle_cry_swar": [
+   13,
+   "WAVE_ARC_PV013"
+  ],
+  "weepinbell_cry_sbnk": [
+   70,
+   "BANK_PV070"
+  ],
+  "weepinbell_cry_swar": [
+   70,
+   "WAVE_ARC_PV070"
+  ],
+  "weezing_cry_sbnk": [
+   110,
+   "BANK_PV110"
+  ],
+  "weezing_cry_swar": [
+   110,
+   "WAVE_ARC_PV110"
+  ],
+  "whiscash_cry_sbnk": [
+   340,
+   "BANK_PV340"
+  ],
+  "whiscash_cry_swar": [
+   340,
+   "WAVE_ARC_PV340"
+  ],
+  "whismur_cry_sbnk": [
+   293,
+   "BANK_PV293"
+  ],
+  "whismur_cry_swar": [
+   293,
+   "WAVE_ARC_PV293"
+  ],
+  "wigglytuff_cry_sbnk": [
+   40,
+   "BANK_PV040"
+  ],
+  "wigglytuff_cry_swar": [
+   40,
+   "WAVE_ARC_PV040"
+  ],
+  "wingull_cry_sbnk": [
+   278,
+   "BANK_PV278"
+  ],
+  "wingull_cry_swar": [
+   278,
+   "WAVE_ARC_PV278"
+  ],
+  "wobbuffet_cry_sbnk": [
+   202,
+   "BANK_PV202"
+  ],
+  "wobbuffet_cry_swar": [
+   202,
+   "WAVE_ARC_PV202"
+  ],
+  "wooper_cry_sbnk": [
+   194,
+   "BANK_PV194"
+  ],
+  "wooper_cry_swar": [
+   194,
+   "WAVE_ARC_PV194"
+  ],
+  "wormadam_cry_sbnk": [
+   413,
+   "BANK_PV457"
+  ],
+  "wormadam_cry_swar": [
+   413,
+   "WAVE_ARC_PV457"
+  ],
+  "wurmple_cry_sbnk": [
+   265,
+   "BANK_PV265"
+  ],
+  "wurmple_cry_swar": [
+   265,
+   "WAVE_ARC_PV265"
+  ],
+  "wynaut_cry_sbnk": [
+   360,
+   "BANK_PV360"
+  ],
+  "wynaut_cry_swar": [
+   360,
+   "WAVE_ARC_PV360"
+  ],
+  "xatu_cry_sbnk": [
+   178,
+   "BANK_PV178"
+  ],
+  "xatu_cry_swar": [
+   178,
+   "WAVE_ARC_PV178"
+  ],
+  "yanma_cry_sbnk": [
+   193,
+   "BANK_PV193"
+  ],
+  "yanma_cry_swar": [
+   193,
+   "WAVE_ARC_PV193"
+  ],
+  "yanmega_cry_sbnk": [
+   469,
+   "BANK_PV499"
+  ],
+  "yanmega_cry_swar": [
+   469,
+   "WAVE_ARC_PV499"
+  ],
+  "zangoose_cry_sbnk": [
+   335,
+   "BANK_PV335"
+  ],
+  "zangoose_cry_swar": [
+   335,
+   "WAVE_ARC_PV335"
+  ],
+  "zapdos_cry_sbnk": [
+   145,
+   "BANK_PV145"
+  ],
+  "zapdos_cry_swar": [
+   145,
+   "WAVE_ARC_PV145"
+  ],
+  "zigzagoon_cry_sbnk": [
+   263,
+   "BANK_PV263"
+  ],
+  "zigzagoon_cry_swar": [
+   263,
+   "WAVE_ARC_PV263"
+  ],
+  "zubat_cry_sbnk": [
+   41,
+   "BANK_PV041"
+  ],
+  "zubat_cry_swar": [
+   41,
+   "WAVE_ARC_PV041"
+  ]
+ },
+ "groups_players": {
+  "GROUP_GLOBAL": 0,
+  "GROUP_SE_BAG": 3,
+  "GROUP_SE_BATTLE": 2,
+  "GROUP_SE_CLIMAX": 4,
+  "GROUP_SE_CONTEST": 11,
+  "GROUP_SE_CUSTOM": 15,
+  "GROUP_SE_DIG": 8,
+  "GROUP_SE_FIELD": 1,
+  "GROUP_SE_GURUGURU": 16,
+  "GROUP_SE_IMAGE": 9,
+  "GROUP_SE_NAMEIN": 5,
+  "GROUP_SE_NUTMIXER": 14,
+  "GROUP_SE_POKELIST": 7,
+  "GROUP_SE_SLOT": 6,
+  "GROUP_SE_TRADE": 13,
+  "GROUP_SE_TRCARD": 12,
+  "GROUP_SE_ZUKAN": 10,
+  "PLAYER_BGM": 7,
+  "PLAYER_FIELD": 1,
+  "PLAYER_ME": 2,
+  "PLAYER_PV": 0,
+  "PLAYER_SE_1": 3,
+  "PLAYER_SE_2": 4,
+  "PLAYER_SE_3": 5,
+  "PLAYER_SE_4": 6
+ }
+}

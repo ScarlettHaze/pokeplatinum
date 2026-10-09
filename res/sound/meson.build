@@ -1,54 +1,26 @@
-subdir('BANK')
-subdir('SEQ')
-subdir('WAVARC')
-subdir('kanto')
+# The sound archive is HGSS's (gs_sound_data.sdat, from pokeheartgold),
+# unchanged. hgss_sound.py writes pl_sound_data.naix, which names its sounds
+# by Platinum's names as well as HGSS's.
 
-# wave archives are duplicated in order to place them in the sdat private folder
+hgss_sound_py = find_program(meson.project_source_root() / 'tools/hgss_import/hgss_sound.py', native: true)
 
 pl_sound_data_sdat = custom_target('pl_sound_data.sdat',
     build_by_default: true,
     input: [
-        files(['pl_sound_data.json']),
-        sbnk_gen.process(sound_bank_files),
-        sbnk_gen.process(cry_banks, preserve_path_from: pokemon_data_root),
-        sseq_gen.process(sound_sequence_files),
-        swar_gen.process(cry_waves, extra_args: ['-pcm8'], preserve_path_from: pokemon_data_root),
-        copy_gen.process(kanto_sound_files),
-        copy_gen.process(WAVE_ARC_BASIC),
-        copy_gen.process(WAVE_ARC_BGM_BATTLE),
-        copy_gen.process(WAVE_ARC_BGM_DEMO01),
-        copy_gen.process(WAVE_ARC_BGM_DUNGEON),
-        copy_gen.process(WAVE_ARC_BGM_FIELD),
-        copy_gen.process(WAVE_ARC_BGM_OPEND),
-        copy_gen.process(WAVE_ARC_SE_BAG),
-        copy_gen.process(WAVE_ARC_SE_BATTLE),
-        copy_gen.process(WAVE_ARC_SE_CLIMAX),
-        copy_gen.process(WAVE_ARC_SE_CONTEST),
-        copy_gen.process(WAVE_ARC_SE_CUSTOM),
-        copy_gen.process(WAVE_ARC_SE_DIG),
-        copy_gen.process(WAVE_ARC_SE_FIELD),
-        copy_gen.process(WAVE_ARC_SE_HIROBA),
-        copy_gen.process(WAVE_ARC_SE_IMAGE),
-        copy_gen.process(WAVE_ARC_SE_NAMEIN),
-        copy_gen.process(WAVE_ARC_SE_NUTMIXER),
-        copy_gen.process(WAVE_ARC_SE_POKELIST),
-        copy_gen.process(WAVE_ARC_SE_SCRATCH),
-        copy_gen.process(WAVE_ARC_SE_SHINKA),
-        copy_gen.process(WAVE_ARC_SE_SHIP),
-        copy_gen.process(WAVE_ARC_SE_SLOT),
-        copy_gen.process(WAVE_ARC_SE_TOWNMAP),
-        copy_gen.process(WAVE_ARC_SE_TRADE),
-        copy_gen.process(WAVE_ARC_SE_TRAIN),
-        copy_gen.process(WAVE_ARC_SE_TRCARD),
-        copy_gen.process(WAVE_ARC_SE_ZUKAN),
+        files('gs_sound_data.sdat'),
+        files(meson.project_source_root() / 'tools/hgss_import/pl_sound_names.json'),
     ],
     output: [
         'pl_sound_data.sdat',
         'pl_sound_data.naix',
     ],
+    depend_files: files(
+        meson.project_source_root() / 'tools/hgss_import/hgss_sound.py',
+        meson.project_source_root() / 'tools/hgss_import/sdat.py',
+    ),
     command: [
-        nitrosfx_exe,
-        '@PRIVATE_DIR@', '@OUTPUT0@', '@INPUT0@', '-symb', '-naix',
+        hgss_sound_py,
+        '@INPUT0@', '@INPUT1@', '@OUTPUT0@', '@OUTPUT1@',
     ]
 )
 
