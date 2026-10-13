@@ -1,0 +1,29 @@
+{
+  "key": 55770,
+  "messages": [
+    {
+      "id": "ViridianCity_House_Text_NicknamingIsFun",
+      "en_US": [
+        "Coming up with nicknames is fun,\n",
+        "but it’s not so easy to do.\r",
+        "Clever names are nice, but simple\n",
+        "names are easier to remember."
+      ]
+    },
+    {
+      "id": "ViridianCity_House_Text_MyDaddyLovesMonsToo",
+      "en_US": "My daddy loves Pokémon, too."
+    },
+    {
+      "id": "ViridianCity_House_Text_Speary",
+      "en_US": "Speary: Tetweet!"
+    },
+    {
+      "id": "ViridianCity_House_Text_SpearowNameSpeary",
+      "en_US": [
+        "Spearow\n",
+        "Name: Speary"
+      ]
+    }
+  ]
+}

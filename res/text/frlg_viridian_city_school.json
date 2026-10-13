@@ -1,0 +1,149 @@
+{
+  "key": 36456,
+  "messages": [
+    {
+      "id": "ViridianCity_School_Text_TryingToMemorizeNotes",
+      "en_US": [
+        "Whew! I’m trying to memorize all my\n",
+        "notes."
+      ]
+    },
+    {
+      "id": "ViridianCity_School_Text_ReadBlackboardCarefully",
+      "en_US": [
+        "Okay!\r",
+        "Be sure to read what’s on the\n",
+        "blackboard carefully!"
+      ]
+    },
+    {
+      "id": "ViridianCity_School_Text_NotebookFirstPage",
+      "en_US": [
+        "Let’s check out the notebook.\r",
+        "First page…\r",
+        "Poké Balls are used to catch\n",
+        "Pokémon.\r",
+        "Up to six Pokémon can be carried\n",
+        "in your party.\r",
+        "People who raise and battle\n",
+        "with Pokémon are called Trainers."
+      ]
+    },
+    {
+      "id": "ViridianCity_School_Text_NotebookSecondPage",
+      "en_US": [
+        "Second page…\r",
+        "A healthy Pokémon may be hard to\n",
+        "catch, so weaken it first.\r",
+        "Poison, burn, or cause another\n",
+        "status problem to weaken it."
+      ]
+    },
+    {
+      "id": "ViridianCity_School_Text_NotebookThirdPage",
+      "en_US": [
+        "Third page…\r",
+        "Pokémon Trainers seek others to\n",
+        "engage in Pokémon battles.\r",
+        "To Trainers, the taste of victory\n",
+        "is sweet, indeed.\r",
+        "Battles are constantly waged at\n",
+        "Pokémon Gyms everywhere."
+      ]
+    },
+    {
+      "id": "ViridianCity_School_Text_NotebookFourthPage",
+      "en_US": [
+        "Fourth page…\r",
+        "The ultimate goal for all Pokémon\n",
+        "Trainers is simple.\r",
+        "It is to defeat the top eight\n",
+        "Pokémon Gym Leaders.\r",
+        "Do so to earn the right to face…\r",
+        "The Elite Four of the Pokémon\n",
+        "League!"
+      ]
+    },
+    {
+      "id": "ViridianCity_School_Text_TurnThePage",
+      "en_US": "Turn the page?"
+    },
+    {
+      "id": "ViridianCity_School_Text_HeyDontLookAtMyNotes",
+      "en_US": [
+        "Girl: Hey!\n",
+        "Don’t look at my notes!"
+      ]
+    },
+    {
+      "id": "ViridianCity_School_Text_BlackboardListsStatusProblems",
+      "en_US": [
+        "The blackboard lists Pokémon\n",
+        "Status problems during battles."
+      ]
+    },
+    {
+      "id": "ViridianCity_School_Text_ReadWhichTopic",
+      "en_US": "Which topic do you want to read?"
+    },
+    {
+      "id": "ViridianCity_School_Text_ExplainSleep",
+      "en_US": [
+        "A Pokémon can’t attack if it’s\n",
+        "asleep.\r",
+        "Pokémon will stay asleep even\n",
+        "after battles.\r",
+        "Use Awakening to awaken one\n",
+        "from sleep."
+      ]
+    },
+    {
+      "id": "ViridianCity_School_Text_ExplainBurn",
+      "en_US": [
+        "A burn reduces Attack power.\n",
+        "It also causes ongoing HP loss.\r",
+        "A burn remains after a battle.\n",
+        "Use Burn Heal to cure a burn."
+      ]
+    },
+    {
+      "id": "ViridianCity_School_Text_ExplainPoison",
+      "en_US": [
+        "When poisoned, a Pokémon’s health\n",
+        "steadily drops.\r",
+        "Poison lingers after battles.\n",
+        "Use an Antidote to cure poison!"
+      ]
+    },
+    {
+      "id": "ViridianCity_School_Text_ExplainFreeze",
+      "en_US": [
+        "A frozen Pokémon becomes\n",
+        "helplessly immobile.\r",
+        "It stays frozen even after the\n",
+        "battle ends.\r",
+        "Use Ice Heal to thaw out the\n",
+        "suffering Pokémon."
+      ]
+    },
+    {
+      "id": "ViridianCity_School_Text_ExplainParalysis",
+      "en_US": [
+        "Paralysis reduces Speed and may\n",
+        "prevent the Pokémon from moving.\r",
+        "Paralysis remains after battles.\n",
+        "Use Parlyz Heal for treatment."
+      ]
+    },
+    {
+      "id": "PokemonJournal_Text_SpecialFeatureProfOak",
+      "en_US": [
+        "Pokémon Journal\r",
+        "Special Feature: Prof. Oak,\n",
+        "the Pokémon Researcher!\r",
+        "Prof. Oak reportedly lives with his\n",
+        "grandchildren Daisy and {STRVAR_1 3, 1, 0}."
+      ]
+    }
+  ]
+}

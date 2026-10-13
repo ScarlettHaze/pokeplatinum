@@ -1,0 +1,49 @@
+{
+  "key": 31335,
+  "messages": [
+    {
+      "id": "ViridianCity_Mart_Text_YouCameFromPallet",
+      "en_US": [
+        "Hey!\n",
+        "You came from Pallet Town?"
+      ]
+    },
+    {
+      "id": "ViridianCity_Mart_Text_TakeThisToProfOak",
+      "en_US": [
+        "You know Prof. Oak, right?\r",
+        "His order came in.\n",
+        "Can I get you to take it to him?"
+      ]
+    },
+    {
+      "id": "ViridianCity_Mart_Text_ReceivedOaksParcelFromClerk",
+      "en_US": [
+        "{STRVAR_1 3, 0, 0} received Oak’s Parcel\n",
+        "from the Pokémon Mart clerk."
+      ]
+    },
+    {
+      "id": "ViridianCity_Mart_Text_SayHiToOakForMe",
+      "en_US": [
+        "Okay, thanks! Please say hi to\n",
+        "Prof. Oak for me, too."
+      ]
+    },
+    {
+      "id": "ViridianCity_Mart_Text_ShopDoesGoodBusinessInAntidotes",
+      "en_US": [
+        "This shop does good business in\n",
+        "Antidotes, I’ve heard."
+      ]
+    },
+    {
+      "id": "ViridianCity_Mart_Text_GotToBuySomePotions",
+      "en_US": [
+        "I’ve got to buy some Potions.\r",
+        "You never know when your Pokémon\n",
+        "will need quick healing."
+      ]
+    }
+  ]
+}

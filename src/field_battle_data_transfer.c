@@ -143,6 +143,8 @@ FieldBattleDTO *FieldBattleDTO_NewPalPark(enum HeapID heapID, int countParkBalls
     return dto;
 }
 
+#define COUNTERPART_NAME_OLD_MAN 2
+
 FieldBattleDTO *FieldBattleDTO_NewCatchingTutorial(enum HeapID heapID, const FieldSystem *fieldSystem)
 {
     TrainerInfo *trainerInfo = SaveData_GetTrainerInfo(fieldSystem->saveData);
@@ -152,12 +154,13 @@ FieldBattleDTO *FieldBattleDTO_NewCatchingTutorial(enum HeapID heapID, const Fie
     String *string = String_Init(TRAINER_NAME_LEN + 1, heapID);
     Pokemon *mon;
 
-    MessageLoader_GetString(msgLoader, TrainerInfo_Gender(trainerInfo) ^ 1, string);
+    // FRLG's Viridian City old man shows how to catch Pokémon.
+    MessageLoader_GetString(msgLoader, COUNTERPART_NAME_OLD_MAN, string);
     TrainerInfo_SetName(dto->trainerInfo[BATTLER_PLAYER_1], String_GetData(string));
     String_Free(string);
     MessageLoader_Free(msgLoader);
 
-    TrainerInfo_SetGender(dto->trainerInfo[BATTLER_PLAYER_1], TrainerInfo_Gender(trainerInfo) ^ 1);
+    TrainerInfo_SetGender(dto->trainerInfo[BATTLER_PLAYER_1], GENDER_MALE);
     SetBackgroundAndTerrain(dto, fieldSystem);
     Options_Copy(options, dto->options);
     dto->timeOfDay = FieldSystem_GetTimeOfDay(fieldSystem);
@@ -166,7 +169,7 @@ FieldBattleDTO *FieldBattleDTO_NewCatchingTutorial(enum HeapID heapID, const Fie
     mon = Pokemon_New(heapID);
     Pokemon_InitWith(mon, SystemVars_GetPlayerCounterpartStarter(SaveData_GetVarsFlags(fieldSystem->saveData)), 5, INIT_IVS_RANDOM, FALSE, 0, OTID_NOT_SHINY, 0);
     Party_AddPokemon(dto->parties[BATTLER_PLAYER_1], mon);
-    Pokemon_InitWith(mon, SPECIES_BIDOOF, 2, INIT_IVS_RANDOM, FALSE, 0, OTID_NOT_SHINY, 0);
+    Pokemon_InitWith(mon, SPECIES_WEEDLE, 5, INIT_IVS_RANDOM, FALSE, 0, OTID_NOT_SHINY, 0);
     Party_AddPokemon(dto->parties[BATTLER_ENEMY_1], mon);
     Heap_Free(mon);
 

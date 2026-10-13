@@ -1,11 +1,11 @@
 {
-  "name": "Parcel",
-  "plural": "Parcels",
-  "article": "a",
+  "name": "Oak’s Parcel",
+  "plural": "Oak’s Parcels",
+  "article": "an",
   "description": [
-    "A parcel entrusted in your care.\n",
-    "You are supposed to deliver it to your\n",
-    "childhood friend who left Twinleaf Town."
+    "A parcel to be delivered to Prof.\n",
+    "Oak from Viridian City’s Pokémon\n",
+    "Mart."
   ],
   "icon": {
     "sprite": "parcel_NCGR",

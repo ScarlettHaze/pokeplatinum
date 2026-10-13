@@ -1134,6 +1134,13 @@ scr_seq_files = files(
     'scripts_frlg_pallet_town_rivals_house.s',
     'scripts_frlg_pallet_town_professor_oaks_lab.s',
     'scripts_init_frlg_pallet_town_professor_oaks_lab.s',
+    'scripts_frlg_viridian_city.s',
+    'scripts_init_frlg_viridian_city.s',
+    'scripts_frlg_viridian_city_mart.s',
+    'scripts_init_frlg_viridian_city_mart.s',
+    'scripts_frlg_viridian_city_pokemon_center_1f.s',
+    'scripts_frlg_viridian_city_house.s',
+    'scripts_frlg_viridian_city_school.s',
     'scripts_frlg_route1.s',
 )
 

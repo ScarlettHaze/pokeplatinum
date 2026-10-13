@@ -1,0 +1,32 @@
+{
+  "key": 11633,
+  "messages": [
+    {
+      "id": "ViridianCity_PokemonCenter_1F_Text_FeelFreeToUsePC",
+      "en_US": [
+        "Please feel free to use that PC in\n",
+        "the corner.\r",
+        "The receptionist told me so.\n",
+        "It’s so kind of her!"
+      ]
+    },
+    {
+      "id": "ViridianCity_PokemonCenter_1F_Text_PokeCenterInEveryTown",
+      "en_US": [
+        "There’s a Pokémon Center in every\n",
+        "town ahead.\r",
+        "They charge no money, so don’t\n",
+        "be shy about healing Pokémon."
+      ]
+    },
+    {
+      "id": "ViridianCity_PokemonCenter_1F_Text_PokeCentersHealMons",
+      "en_US": [
+        "Pokémon Centers heal your tired,\n",
+        "hurt, or fainted Pokémon.\r",
+        "They make all Pokémon completely\n",
+        "healthy."
+      ]
+    }
+  ]
+}

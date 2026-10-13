@@ -17,7 +17,8 @@ walk and every trigger had to be fitted to HGSS's map. Events name their
 script by label; the label's place in the file's ScriptEntry list gives the
 number the events file needs.
 
-Coordinates are the events file's: overworld maps use world coordinates
+A number in place of a label is a shared script's ID (CUT_TREE for a Cut
+tree). Coordinates are the events file's: overworld maps use world coordinates
 (Pallet Town's top left tile is 352, 352), indoor maps their own.
 """
 import json
@@ -31,6 +32,14 @@ PL = Path(__file__).resolve().parents[2]
 EVENTS = PL / "res/field/events"
 SCRIPTS = PL / "res/field/scripts"
 HEADERS = PL / "include/data/kanto_map_headers.h"
+
+
+CUT_TREE = 10000
+
+
+def cut_tree(n, x, z):
+    return obj(f"LOCALID_CUT_TREE_{n}", "OBJ_EVENT_GFX_CUT_TREE", x, z, CUT_TREE,
+               flag=f"FLAG_MAP_LOCAL_HIDE_OBSTACLE_{n}")
 
 
 def obj(id, gfx, x, z, script, move="MOVEMENT_TYPE_NONE", dir=1, flag="0", rx=0, rz=0):
@@ -137,6 +146,98 @@ MAPS = {
                   "VAR_MAP_SCENE_PALLET_TOWN_PROFESSOR_OAKS_LAB", 3, width=6),
         ],
     },
+    "ViridianCity": {
+        "header": "MAP_HEADER_KANTO_VIRIDIAN",
+        "events": "kanto_events_047_t02",
+        "init": True,
+        "objects": [
+            # FRLG's old man who blocks the road north, then shows how to
+            # catch Pokémon. OnTransition moves him off the road.
+            obj("LOCALID_TUTORIAL_MAN", "OBJ_EVENT_GFX_KANTO_GSOLDMAN1", 355, 236, "ViridianCity_TutorialOldMan",
+                "MOVEMENT_TYPE_LOOK_SOUTH"),
+            obj("LOCALID_WOMAN", "OBJ_EVENT_GFX_KANTO_GSWOMAN3", 358, 238, "ViridianCity_Woman",
+                "MOVEMENT_TYPE_LOOK_NORTH", dir=0),
+            # By the Gym, as HGSS's old men.
+            obj("LOCALID_OLD_MAN", "OBJ_EVENT_GFX_KANTO_GSOLDMAN1", 375, 240, "ViridianCity_OldMan",
+                "MOVEMENT_TYPE_LOOK_NORTH", dir=0),
+            obj("LOCALID_YOUNGSTER", "OBJ_EVENT_GFX_KANTO_GSBOY1", 355, 255, "ViridianCity_Youngster",
+                "MOVEMENT_TYPE_WANDER_NORTH_AND_SOUTH", rz=1),
+            obj("LOCALID_BOY", "OBJ_EVENT_GFX_KANTO_GSBOY2", 365, 260, "ViridianCity_Boy",
+                "MOVEMENT_TYPE_WANDER_AROUND", rx=1, rz=1),
+            cut_tree(1, 347, 235),
+            cut_tree(2, 342, 261),
+        ],
+        "bgs": [
+            bg(352, 256, "ViridianCity_CitySign", "BG_EVENT_DIR_ALL"),
+            bg(357, 230, "ViridianCity_TrainerTips1", "BG_EVENT_DIR_ALL"),
+            bg(369, 239, "ViridianCity_GymSign", "BG_EVENT_DIR_ALL"),
+            bg(366, 254, "ViridianCity_TrainerTips2", "BG_EVENT_DIR_ALL"),
+        ],
+        # Row 236 holds every way north (x 336, 349, 353-356 and 360).
+        "coords": [
+            coord(349, 236, "ViridianCity_RoadBlocked", "VAR_MAP_SCENE_VIRIDIAN_CITY_OLD_MAN", 0, width=12),
+            coord(336, 236, "ViridianCity_RoadBlocked", "VAR_MAP_SCENE_VIRIDIAN_CITY_OLD_MAN", 0),
+            coord(349, 236, "ViridianCity_TutorialTrigger", "VAR_MAP_SCENE_VIRIDIAN_CITY_OLD_MAN", 1, width=12),
+            coord(336, 236, "ViridianCity_TutorialTrigger", "VAR_MAP_SCENE_VIRIDIAN_CITY_OLD_MAN", 1),
+            coord(373, 240, "ViridianCity_GymDoorLocked", "VAR_MAP_SCENE_VIRIDIAN_CITY_GYM_DOOR", 0),
+        ],
+    },
+    "ViridianCity_Mart": {
+        "header": "MAP_HEADER_KANTO_VIRIDIAN_POKEMART",
+        "events": "kanto_events_452_t02fs0101",
+        "init": True,
+        "objects": [
+            obj("LOCALID_CLERK", "OBJ_EVENT_GFX_KANTO_SHOPM1_2", 2, 6, "ViridianCity_Mart_Clerk",
+                "MOVEMENT_TYPE_LOOK_EAST", dir=3),
+            obj("LOCALID_WOMAN", "OBJ_EVENT_GFX_KANTO_GSWOMAN1", 10, 4, "ViridianCity_Mart_Woman",
+                "MOVEMENT_TYPE_WANDER_WEST_AND_EAST", dir=2, rx=1),
+            obj("LOCALID_YOUNGSTER", "OBJ_EVENT_GFX_KANTO_GSBOY1", 7, 9, "ViridianCity_Mart_Youngster",
+                "MOVEMENT_TYPE_LOOK_SOUTH"),
+        ],
+    },
+    "ViridianCity_PokemonCenter_1F": {
+        "header": "MAP_HEADER_KANTO_VIRIDIAN_POKECENTER_1F",
+        "events": "kanto_events_453_t02pc0101",
+        "objects": [
+            obj("LOCALID_NURSE", "OBJ_EVENT_GFX_POKECENTER_NURSE", 8, 11, "ViridianCity_PokemonCenter_1F_Nurse",
+                "MOVEMENT_TYPE_LOOK_SOUTH"),
+            obj("LOCALID_GENTLEMAN", "OBJ_EVENT_GFX_KANTO_GSGENTLEMAN", 14, 13, "ViridianCity_PokemonCenter_1F_Gentleman",
+                "MOVEMENT_TYPE_LOOK_SOUTH"),
+            obj("LOCALID_BOY", "OBJ_EVENT_GFX_KANTO_GSBOY1", 4, 17, "ViridianCity_PokemonCenter_1F_Boy",
+                "MOVEMENT_TYPE_LOOK_AROUND"),
+            obj("LOCALID_YOUNGSTER", "OBJ_EVENT_GFX_KANTO_GSBOY2", 6, 13, "ViridianCity_PokemonCenter_1F_Youngster",
+                "MOVEMENT_TYPE_WANDER_AROUND", rx=1, rz=1),
+        ],
+    },
+    "ViridianCity_House": {
+        "header": "MAP_HEADER_KANTO_VIRIDIAN_NORTHEAST_HOUSE",
+        "events": "kanto_events_449_t02r0201",
+        "objects": [
+            obj("LOCALID_BALDING_MAN", "OBJ_EVENT_GFX_KANTO_GSMIDDLEMAN1", 5, 6, "ViridianCity_House_BaldingMan",
+                "MOVEMENT_TYPE_LOOK_EAST", dir=3),
+            obj("LOCALID_LITTLE_GIRL", "OBJ_EVENT_GFX_KANTO_GSGIRL1", 8, 6, "ViridianCity_House_LittleGirl",
+                "MOVEMENT_TYPE_WANDER_NORTH_AND_SOUTH", dir=0, rz=1),
+            obj("LOCALID_SPEARY", "OBJ_EVENT_GFX_KANTO_FOLLOWER_MON_STATIC_SPEAROW", 6, 3, "ViridianCity_House_Speary",
+                "MOVEMENT_TYPE_WANDER_WEST_AND_EAST", rx=1),
+        ],
+    },
+    # FRLG's Trainer school is HGSS's Trainer House.
+    "ViridianCity_School": {
+        "header": "MAP_HEADER_KANTO_VIRIDIAN_TRAINER_HOUSE_1F",
+        "events": "kanto_events_450_t02r0301",
+        "shared": ["PokemonJournal_Text_SpecialFeatureProfOak"],
+        "objects": [
+            obj("LOCALID_WOMAN", "OBJ_EVENT_GFX_KANTO_GSWOMAN3", 10, 4, "ViridianCity_School_Woman",
+                "MOVEMENT_TYPE_LOOK_SOUTH"),
+            obj("LOCALID_LASS", "OBJ_EVENT_GFX_KANTO_GSGIRL1", 7, 10, "ViridianCity_School_Lass",
+                "MOVEMENT_TYPE_LOOK_NORTH", dir=0),
+        ],
+        "bgs": [
+            bg(7, 9, "ViridianCity_School_Notebook"),
+            bg(6, 2, "ViridianCity_School_Blackboard"),
+            bg(8, 2, "ViridianCity_School_PokemonJournal"),
+        ],
+    },
     "Route1": {
         "header": "MAP_HEADER_KANTO_ROUTE_1",
         "events": "kanto_events_006_r01",
@@ -169,6 +270,9 @@ def write_events(map_name, spec):
         out = []
         for e in events:
             e = dict(e)
+            if isinstance(e["script"], int):  # a shared script, such as a Cut tree's
+                out.append(e)
+                continue
             assert e["script"] in ids, f"{map_name}: {e['script']} is not a ScriptEntry"
             e["script"] = ids[e["script"]]
             out.append(e)

@@ -94,10 +94,95 @@ PalletTown_ProfessorOaksLab_ProfOak:
     LockAll
     FacePlayer
     BufferPlayerName 0
+    GoToIfGe VAR_MAP_SCENE_PALLET_TOWN_PROFESSOR_OAKS_LAB, 6, PalletTown_ProfessorOaksLab_OakMonsAroundWorldWait
+    GoToIfEq VAR_MAP_SCENE_VIRIDIAN_CITY_MART, 1, PalletTown_ProfessorOaksLab_ReceiveDexScene
     GoToIfGe VAR_MAP_SCENE_PALLET_TOWN_PROFESSOR_OAKS_LAB, 4, PalletTown_ProfessorOaksLab_OakBattleMonForItToGrow
     GoToIfEq VAR_MAP_SCENE_PALLET_TOWN_PROFESSOR_OAKS_LAB, 3, PalletTown_ProfessorOaksLab_OakCanReachNextTownWithMon
     Message PalletTown_ProfessorOaksLab_Text_OakWhichOneWillYouChoose
     GoTo PalletTown_ProfessorOaksLab_MessageEnd
+    End
+
+PalletTown_ProfessorOaksLab_OakMonsAroundWorldWait:
+    Message PalletTown_ProfessorOaksLab_Text_OakMonsAroundWorldWait
+    GoTo PalletTown_ProfessorOaksLab_MessageEnd
+    End
+
+// The player brings Oak's Parcel. The rival comes in from the door and stands
+// at (7, 7), beside wherever the player is talking to Oak from; Oak turns to
+// the desk behind him for the Pokédexes. FRLG's two Pokédexes on the desk
+// aren't placed: HGSS's desk holds the Poké Ball that's left.
+PalletTown_ProfessorOaksLab_ReceiveDexScene:
+    Message PalletTown_ProfessorOaksLab_Text_OakHaveSomethingForMe
+    WaitButton
+    PlayFanfare SEQ_FANFA4_sseq
+    Message PalletTown_ProfessorOaksLab_Text_DeliveredOaksParcel
+    WaitFanfare
+    WaitButton
+    RemoveItem ITEM_PARCEL, 1, VAR_RESULT
+    SetVar VAR_MAP_SCENE_VIRIDIAN_CITY_MART, 2
+    Message PalletTown_ProfessorOaksLab_Text_OakCustomBallIOrdered
+    WaitButton
+    PlayMusic SEQ_GS_E_RIVAL1_sseq
+    BufferRivalName 1
+    Message PalletTown_ProfessorOaksLab_Text_RivalGramps
+    WaitButton
+    CloseMessage
+    SetObjectEventPos LOCALID_RIVAL, 8, 13
+    SetObjectEventDir LOCALID_RIVAL, DIR_NORTH
+    ClearFlag FLAG_HIDE_RIVAL_IN_LAB
+    AddObject LOCALID_RIVAL
+    ApplyMovement LOCALID_RIVAL, PalletTown_ProfessorOaksLab_Movement_RivalEnterForDex
+    WaitMovement
+    Common_FadeToDefaultMusic
+    Message PalletTown_ProfessorOaksLab_Text_RivalWhatDidYouCallMeFor
+    WaitButton
+    CloseMessage
+    WaitTime 30, VAR_RESULT
+    ApplyMovement LOCALID_PROF_OAK, PalletTown_ProfessorOaksLab_Movement_Exclamation
+    WaitMovement
+    Message PalletTown_ProfessorOaksLab_Text_OakHaveRequestForYouTwo
+    WaitButton
+    CloseMessage
+    ApplyMovement LOCALID_PROF_OAK, PalletTown_ProfessorOaksLab_Movement_FaceNorth
+    WaitMovement
+    Message PalletTown_ProfessorOaksLab_Text_OakPokedexOnDesk
+    WaitButton
+    CloseMessage
+    WaitTime 40, VAR_RESULT
+    FacePlayer
+    Message PalletTown_ProfessorOaksLab_Text_OakTakeTheseWithYou
+    WaitButton
+    GivePokedex
+    SetFlag FLAG_HAS_POKEDEX
+    PlayFanfare SEQ_FANFA4_sseq
+    Message PalletTown_ProfessorOaksLab_Text_ReceivedPokedexFromOak
+    WaitFanfare
+    WaitButton
+    Message PalletTown_ProfessorOaksLab_Text_OakCatchMonsForDataTakeThese
+    WaitButton
+    AddItem ITEM_POKE_BALL, 5, VAR_RESULT
+    PlayFanfare SEQ_FANFA1_sseq
+    Message PalletTown_ProfessorOaksLab_Text_ReceivedFivePokeBalls
+    WaitFanfare
+    WaitButton
+    Message PalletTown_ProfessorOaksLab_Text_OakExplainCatching
+    WaitButton
+    Message PalletTown_ProfessorOaksLab_Text_OakCompleteMonGuideWasMyDream
+    WaitButton
+    Message PalletTown_ProfessorOaksLab_Text_RivalLeaveItToMeGramps
+    WaitButton
+    Message PalletTown_ProfessorOaksLab_Text_RivalTellSisNotToGiveYouMap
+    WaitButton
+    CloseMessage
+    ApplyMovement LOCALID_RIVAL, PalletTown_ProfessorOaksLab_Movement_RivalLeaveAfterDex
+    WaitMovement
+    RemoveObject LOCALID_RIVAL
+    PlaySE SEQ_SE_DP_KAIDAN2_sseq
+    SetVar VAR_MAP_SCENE_PALLET_TOWN_PROFESSOR_OAKS_LAB, 6
+    SetVar VAR_MAP_SCENE_VIRIDIAN_CITY_OLD_MAN, 1
+    SetVar VAR_MAP_SCENE_PALLET_TOWN_RIVALS_HOUSE, 1
+    SetVar VAR_MAP_SCENE_ROUTE22, 1
+    ReleaseAll
     End
 
 PalletTown_ProfessorOaksLab_OakBattleMonForItToGrow:
@@ -541,4 +626,24 @@ PalletTown_ProfessorOaksLab_Movement_RivalLeave:
     .balign 4, 0
 PalletTown_ProfessorOaksLab_Movement_PlayerWatchRivalLeave:
     WalkOnSpotFastSouth
+    EndMovement
+
+    .balign 4, 0
+PalletTown_ProfessorOaksLab_Movement_RivalEnterForDex:
+    WalkNormalNorth 4
+    WalkNormalWest
+    WalkNormalNorth 2
+    EndMovement
+
+    .balign 4, 0
+PalletTown_ProfessorOaksLab_Movement_RivalLeaveAfterDex:
+    WalkNormalSouth 2
+    WalkNormalEast
+    WalkNormalSouth 4
+    SetInvisible
+    EndMovement
+
+    .balign 4, 0
+PalletTown_ProfessorOaksLab_Movement_Exclamation:
+    EmoteExclamationMark
     EndMovement

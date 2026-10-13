@@ -32,6 +32,17 @@ fitted to HGSS's map; each script file says how.
   his starter, the first rival battle (win or lose), the aides, the e-mail
   and the bookshelves.
 - **Route 1:** the Poké Mart clerk's Potion, the boy and the sign.
+- **Oak's Parcel:** the Viridian Mart clerk hands it over on the first
+  visit; Oak takes it, the rival comes back, and both get a Pokédex (and
+  the player five Poké Balls); Daisy then gives the Town Map. Platinum's
+  Parcel is renamed Oak's Parcel, with FRLG's description.
+- **Viridian City:** the grumpy old man blocking the way north until the
+  player has a Pokédex, then his catching demonstration (Platinum's catching
+  tutorial, made his: "Old Man" catches a level 5 Weedle); the woman, the
+  old man by the locked Gym, the youngster, the boy, the signs and Cut trees.
+- **Viridian's buildings:** the Mart (Platinum's standard stock), the
+  Pokémon Center, Speary's house, and the Trainer school with its notebook
+  and blackboard (on HGSS's Trainer House).
 
 Also:
 
@@ -48,8 +59,18 @@ Also:
   are signs on the desk tiles (objects there can't be talked to), as in
   HGSS.
 - The rival's win line, shown in battle in FRLG, comes after the battle.
-- Mom's and Daisy's later scenes, the Town Map, Oak's Parcel, the Pokédex,
-  the bedroom PC's item storage and the sign lady blocking the sign aren't
-  ported yet.
+- Mom's later scenes, Daisy's grooming, the bedroom PC's item storage and
+  the sign lady blocking the sign aren't ported yet.
+- Oak's two Pokédexes aren't on his desk: HGSS's desk holds the last
+  Poké Ball. Oak turns to the desk instead.
+- HGSS's Viridian has several ways north, so a row of triggers stands in
+  for FRLG's one blocked road, with the old man standing (Platinum has no
+  lying-down old man).
+- The old man's demonstration shows Lucas's back picture and a Pokémon of
+  his own (Platinum's tutorial needs one), and ends without the Teachy TV,
+  which Platinum lacks.
+- Viridian's Gym stays locked; its Leader and FRLG's Dream Eater tutor
+  aren't ported. Speary's nickname sign is left out: HGSS's house has no
+  sign.
 - Music comes from HGSS: Oak's theme, and Silver's encounter theme for the
   rival.

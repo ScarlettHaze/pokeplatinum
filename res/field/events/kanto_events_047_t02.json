@@ -1,6 +1,145 @@
 {
-    "bg_events": [],
-    "object_events": [],
+    "bg_events": [
+        {
+            "script": 7,
+            "type": 0,
+            "x": 352,
+            "z": 256,
+            "y": 0,
+            "player_facing_dir": "BG_EVENT_DIR_ALL"
+        },
+        {
+            "script": 8,
+            "type": 0,
+            "x": 357,
+            "z": 230,
+            "y": 0,
+            "player_facing_dir": "BG_EVENT_DIR_ALL"
+        },
+        {
+            "script": 9,
+            "type": 0,
+            "x": 369,
+            "z": 239,
+            "y": 0,
+            "player_facing_dir": "BG_EVENT_DIR_ALL"
+        },
+        {
+            "script": 10,
+            "type": 0,
+            "x": 366,
+            "z": 254,
+            "y": 0,
+            "player_facing_dir": "BG_EVENT_DIR_ALL"
+        }
+    ],
+    "object_events": [
+        {
+            "id": "LOCALID_TUTORIAL_MAN",
+            "graphics_id": "OBJ_EVENT_GFX_KANTO_GSOLDMAN1",
+            "movement_type": "MOVEMENT_TYPE_LOOK_SOUTH",
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "hidden_flag": "0",
+            "script": 2,
+            "initial_dir": 1,
+            "data": [],
+            "movement_range_x": 0,
+            "movement_range_z": 0,
+            "x": 355,
+            "z": 236,
+            "y": 0
+        },
+        {
+            "id": "LOCALID_WOMAN",
+            "graphics_id": "OBJ_EVENT_GFX_KANTO_GSWOMAN3",
+            "movement_type": "MOVEMENT_TYPE_LOOK_NORTH",
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "hidden_flag": "0",
+            "script": 3,
+            "initial_dir": 0,
+            "data": [],
+            "movement_range_x": 0,
+            "movement_range_z": 0,
+            "x": 358,
+            "z": 238,
+            "y": 0
+        },
+        {
+            "id": "LOCALID_OLD_MAN",
+            "graphics_id": "OBJ_EVENT_GFX_KANTO_GSOLDMAN1",
+            "movement_type": "MOVEMENT_TYPE_LOOK_NORTH",
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "hidden_flag": "0",
+            "script": 4,
+            "initial_dir": 0,
+            "data": [],
+            "movement_range_x": 0,
+            "movement_range_z": 0,
+            "x": 375,
+            "z": 240,
+            "y": 0
+        },
+        {
+            "id": "LOCALID_YOUNGSTER",
+            "graphics_id": "OBJ_EVENT_GFX_KANTO_GSBOY1",
+            "movement_type": "MOVEMENT_TYPE_WANDER_NORTH_AND_SOUTH",
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "hidden_flag": "0",
+            "script": 5,
+            "initial_dir": 1,
+            "data": [],
+            "movement_range_x": 0,
+            "movement_range_z": 1,
+            "x": 355,
+            "z": 255,
+            "y": 0
+        },
+        {
+            "id": "LOCALID_BOY",
+            "graphics_id": "OBJ_EVENT_GFX_KANTO_GSBOY2",
+            "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "hidden_flag": "0",
+            "script": 6,
+            "initial_dir": 1,
+            "data": [],
+            "movement_range_x": 1,
+            "movement_range_z": 1,
+            "x": 365,
+            "z": 260,
+            "y": 0
+        },
+        {
+            "id": "LOCALID_CUT_TREE_1",
+            "graphics_id": "OBJ_EVENT_GFX_CUT_TREE",
+            "movement_type": "MOVEMENT_TYPE_NONE",
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "hidden_flag": "FLAG_MAP_LOCAL_HIDE_OBSTACLE_1",
+            "script": 10000,
+            "initial_dir": 1,
+            "data": [],
+            "movement_range_x": 0,
+            "movement_range_z": 0,
+            "x": 347,
+            "z": 235,
+            "y": 0
+        },
+        {
+            "id": "LOCALID_CUT_TREE_2",
+            "graphics_id": "OBJ_EVENT_GFX_CUT_TREE",
+            "movement_type": "MOVEMENT_TYPE_NONE",
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "hidden_flag": "FLAG_MAP_LOCAL_HIDE_OBSTACLE_2",
+            "script": 10000,
+            "initial_dir": 1,
+            "data": [],
+            "movement_range_x": 0,
+            "movement_range_z": 0,
+            "x": 342,
+            "z": 261,
+            "y": 0
+        }
+    ],
     "warp_events": [
         {
             "x": 373,
@@ -45,5 +184,56 @@
             "dest_warp_id": 1
         }
     ],
-    "coord_events": []
+    "coord_events": [
+        {
+            "script": 11,
+            "x": 349,
+            "z": 236,
+            "y": 0,
+            "width": 12,
+            "length": 1,
+            "var": "VAR_MAP_SCENE_VIRIDIAN_CITY_OLD_MAN",
+            "value": 0
+        },
+        {
+            "script": 11,
+            "x": 336,
+            "z": 236,
+            "y": 0,
+            "width": 1,
+            "length": 1,
+            "var": "VAR_MAP_SCENE_VIRIDIAN_CITY_OLD_MAN",
+            "value": 0
+        },
+        {
+            "script": 12,
+            "x": 349,
+            "z": 236,
+            "y": 0,
+            "width": 12,
+            "length": 1,
+            "var": "VAR_MAP_SCENE_VIRIDIAN_CITY_OLD_MAN",
+            "value": 1
+        },
+        {
+            "script": 12,
+            "x": 336,
+            "z": 236,
+            "y": 0,
+            "width": 1,
+            "length": 1,
+            "var": "VAR_MAP_SCENE_VIRIDIAN_CITY_OLD_MAN",
+            "value": 1
+        },
+        {
+            "script": 13,
+            "x": 373,
+            "z": 240,
+            "y": 0,
+            "width": 1,
+            "length": 1,
+            "var": "VAR_MAP_SCENE_VIRIDIAN_CITY_GYM_DOOR",
+            "value": 0
+        }
+    ]
 }

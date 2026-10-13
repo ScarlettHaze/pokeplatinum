@@ -1,0 +1,185 @@
+{
+  "key": 30920,
+  "messages": [
+    {
+      "id": "ViridianCity_Text_CanCarryMonsAnywhere",
+      "en_US": [
+        "Those Poké Balls at your waist!\n",
+        "You have Pokémon, don’t you?\r",
+        "It’s great that you can carry and\n",
+        "use Pokémon anytime, anywhere."
+      ]
+    },
+    {
+      "id": "ViridianCity_Text_GymClosedWonderWhoLeaderIs",
+      "en_US": [
+        "This Pokémon Gym is always closed.\r",
+        "I wonder who the Leader is?"
+      ]
+    },
+    {
+      "id": "ViridianCity_Text_ViridiansGymLeaderReturned",
+      "en_US": "Viridian Gym’s Leader returned!"
+    },
+    {
+      "id": "ViridianCity_Text_WantToKnowAboutCaterpillarMons",
+      "en_US": [
+        "You want to know about the two\n",
+        "kinds of caterpillar Pokémon?"
+      ]
+    },
+    {
+      "id": "ViridianCity_Text_OhOkayThen",
+      "en_US": "Oh, okay then!"
+    },
+    {
+      "id": "ViridianCity_Text_ExplainCaterpieWeedle",
+      "en_US": [
+        "Caterpie has no poison,\n",
+        "but Weedle does.\r",
+        "Watch that your Pokémon aren’t\n",
+        "stabbed by Weedle’s Poison Sting."
+      ]
+    },
+    {
+      "id": "ViridianCity_Text_GrandpaHasntHadCoffeeYet",
+      "en_US": [
+        "Oh, Grandpa!\n",
+        "Don’t be so mean!\r",
+        "I’m so sorry.\n",
+        "He hasn’t had his coffee yet."
+      ]
+    },
+    {
+      "id": "ViridianCity_Text_GoShoppingInPewterOccasionally",
+      "en_US": [
+        "I go shopping in Pewter City\n",
+        "occasionally.\r",
+        "I have to take the winding trail in\n",
+        "Viridian Forest when I go."
+      ]
+    },
+    {
+      "id": "ViridianCity_Text_ThisIsPrivateProperty",
+      "en_US": [
+        "I absolutely forbid you from\n",
+        "going through here!\r",
+        "This is private property!"
+      ]
+    },
+    {
+      "id": "ViridianCity_Text_ShowYouHowToCatchMons",
+      "en_US": [
+        "Well, now, I’ve had my coffee, and\n",
+        "that’s what I need to get going!\r",
+        "Hm?\n",
+        "What is that red box you have?\r",
+        "Ah, so you’re working on your\n",
+        "Pokédex.\r",
+        "Then let me give you a word of\n",
+        "advice.\r",
+        "Whenever you catch a Pokémon,\n",
+        "the Pokédex automatically updates\f",
+        "its data.\r",
+        "…You don’t know how to catch\n",
+        "a Pokémon?\r",
+        "I suppose I had better show you\n",
+        "then!"
+      ]
+    },
+    {
+      "id": "ViridianCity_Text_ThatWasEducationalTakeThis",
+      "en_US": [
+        "There! Now tell me, that was\n",
+        "educational, was it not?\r",
+        "And here, take this, too."
+      ]
+    },
+    {
+      "id": "ViridianCity_Text_WatchThatToLearnBasics",
+      "en_US": [
+        "If there’s something you don’t\n",
+        "understand, watch that.\r",
+        "It will teach you about the basics\n",
+        "of being a Pokémon Trainer."
+      ]
+    },
+    {
+      "id": "ViridianCity_Text_WeakenMonsFirstToCatch",
+      "en_US": [
+        "Well, now, I’ve had my coffee, and\n",
+        "that’s what I need to get going!\r",
+        "But I made it too strong.\n",
+        "It gave me a headache…\r",
+        "Incidentally, are you filling your\n",
+        "Pokédex?\r",
+        "At first, focus on weakening the\n",
+        "Pokémon before trying to catch it."
+      ]
+    },
+    {
+      "id": "ViridianCity_Text_HowsTeachyTVHelping",
+      "en_US": [
+        "Well, now, I’ve had my coffee, and\n",
+        "that’s what I need to get going!\r",
+        "But I made it too strong.\n",
+        "It gave me a headache…\r",
+        "Incidentally, is my old Teachy TV\n",
+        "helping you?"
+      ]
+    },
+    {
+      "id": "ViridianCity_Text_MyGrandsonOnTheShow",
+      "en_US": [
+        "Wahaha!\n",
+        "It’s my grandson on the show!\r",
+        "Since he’s the one doing the\n",
+        "teaching, you’re bound to learn."
+      ]
+    },
+    {
+      "id": "ViridianCity_Text_TooBusyForTeachyTV",
+      "en_US": [
+        "Hm… You’re too busy to not even\n",
+        "have the time for Teachy TV…\r",
+        "Time is money, and neither should\n",
+        "be ill spent…"
+      ]
+    },
+    {
+      "id": "ViridianCity_Text_CitySign",
+      "en_US": [
+        "Viridian City \n",
+        "The Eternally Green Paradise"
+      ]
+    },
+    {
+      "id": "ViridianCity_Text_CatchMonsForEasierBattles",
+      "en_US": [
+        "Trainer Tips\r",
+        "Catch Pokémon and expand your\n",
+        "collection.\r",
+        "The more you have, the easier it\n",
+        "is to battle."
+      ]
+    },
+    {
+      "id": "ViridianCity_Text_MovesLimitedByPP",
+      "en_US": [
+        "Trainer Tips\r",
+        "The battle moves of Pokémon are\n",
+        "limited by their Power Points, PP.\r",
+        "To replenish PP, rest your tired\n",
+        "Pokémon at a Pokémon Center."
+      ]
+    },
+    {
+      "id": "ViridianCity_Text_GymSign",
+      "en_US": "Viridian City Pokémon Gym"
+    },
+    {
+      "id": "ViridianCity_Text_GymDoorsAreLocked",
+      "en_US": "Viridian Gym’s doors are locked…"
+    }
+  ]
+}
