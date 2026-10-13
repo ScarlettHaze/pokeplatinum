@@ -1,0 +1,48 @@
+{
+  "key": 47570,
+  "messages": [
+    {
+      "id": "Route1_Text_WorkAtPokeMartTakeSample",
+      "en_US": [
+        "Hi!\n",
+        "I work at a Pokémon Mart.\r",
+        "It’s part of a convenient chain\n",
+        "selling all sorts of items.\r",
+        "Please, visit us in Viridian City.\r",
+        "I know, I’ll give you a sample.\n",
+        "Here you go!"
+      ]
+    },
+    {
+      "id": "Route1_Text_ComeSeeUsIfYouNeedPokeBalls",
+      "en_US": [
+        "Please come see us if you need\n",
+        "Poké Balls for catching Pokémon."
+      ]
+    },
+    {
+      "id": "Route1_Text_PutPotionAway",
+      "en_US": [
+        "{STRVAR_1 3, 0, 0} put the Potion away in\n",
+        "the Bag’s Items Pocket."
+      ]
+    },
+    {
+      "id": "Route1_Text_CanJumpFromLedges",
+      "en_US": [
+        "See those ledges along the road?\r",
+        "It’s a bit scary, but you can jump\n",
+        "from them.\r",
+        "You can get back to Pallet Town\n",
+        "quicker that way."
+      ]
+    },
+    {
+      "id": "Route1_Text_RouteSign",
+      "en_US": [
+        "Route 1\n",
+        "Pallet Town - Viridian City"
+      ]
+    }
+  ]
+}

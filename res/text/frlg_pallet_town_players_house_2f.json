@@ -1,0 +1,21 @@
+{
+  "key": 29066,
+  "messages": [
+    {
+      "id": "PalletTown_PlayersHouse_2F_Text_PlayedWithNES",
+      "en_US": [
+        "{STRVAR_1 3, 0, 0} played with the NES.\r",
+        "…Okay!\n",
+        "It’s time to go!"
+      ]
+    },
+    {
+      "id": "PalletTown_PlayersHouse_2F_Text_PressLRForHelp",
+      "en_US": [
+        "It’s a posted notice…\r",
+        "If you’re confused, ask for Help!\n",
+        "Press the L or R Button!"
+      ]
+    }
+  ]
+}

@@ -222,23 +222,20 @@
     {
       "id": "RowanIntro_Text_SoYoure",
       "en_US": [
-        "OK...\n",
-        "So, you’re {STRVAR_1 3, 0, 0}?\r",
-        "A fine name that is!\r",
-        "Now, this boy here...\n",
-        "I believe he’s your friend.\r"
+        "Right…\n",
+        "So your name is {STRVAR_1 3, 0, 0}.\r",
+        "This is my grandson.\r",
+        "He’s been your rival since you both\n",
+        "were babies.\r"
       ]
     },
     {
       "id": "RowanIntro_Text_RivalNameDialogue",
-      "en_US": "What might his name be?\r"
+      "en_US": "…Erm, what was his name now?\r"
     },
     {
       "id": "RowanIntro_Text_ConfirmRivalName",
-      "en_US": [
-        "{STRVAR_1 3, 1, 0}, is it?\n",
-        "That’s your friend’s name?\r"
-      ]
+      "en_US": "…Er, was it {STRVAR_1 3, 1, 0}?\r"
     },
     {
       "id": "RowanIntro_Text_EndDialogue",
@@ -282,19 +279,19 @@
     },
     {
       "id": "RowanIntro_Text_RivalChoiceBarry",
-      "en_US": "Barry"
+      "en_US": "Green"
     },
     {
       "id": "RowanIntro_Text_RivalChoiceNolan",
-      "en_US": "Nolan"
+      "en_US": "Gary"
     },
     {
       "id": "RowanIntro_Text_RivalChoiceRoy",
-      "en_US": "Roy"
+      "en_US": "Kaz"
     },
     {
       "id": "RowanIntro_Text_RivalChoiceGavin",
-      "en_US": "Gavin"
+      "en_US": "Toru"
     },
     {
       "id": "RowanIntro_Text_RivalChoiceClint",

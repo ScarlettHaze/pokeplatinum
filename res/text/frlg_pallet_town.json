@@ -1,0 +1,102 @@
+{
+  "key": 21946,
+  "messages": [
+    {
+      "id": "PalletTown_Text_OakDontGoOut",
+      "en_US": [
+        "Oak: Hey! Wait!\n",
+        "Don’t go out!"
+      ]
+    },
+    {
+      "id": "PalletTown_Text_OakGrassUnsafeNeedMon",
+      "en_US": [
+        "Oak: It’s unsafe!\n",
+        "Wild Pokémon live in tall grass!\r",
+        "You need your own Pokémon for\n",
+        "your protection.\r",
+        "I know!\n",
+        "Here, come with me!"
+      ]
+    },
+    {
+      "id": "PalletTown_Text_RaisingMonsToo",
+      "en_US": [
+        "I’m raising Pokémon, too.\r",
+        "When they get strong, they can\n",
+        "protect me."
+      ]
+    },
+    {
+      "id": "PalletTown_Text_CanStoreItemsAndMonsInPC",
+      "en_US": [
+        "Technology is incredible!\r",
+        "You can now store and recall items\n",
+        "and Pokémon as data via PC."
+      ]
+    },
+    {
+      "id": "PalletTown_Text_OakPokemonResearchLab",
+      "en_US": "Oak Pokémon Research Lab"
+    },
+    {
+      "id": "PalletTown_Text_PlayersHouse",
+      "en_US": "{STRVAR_1 3, 0, 0}’s house"
+    },
+    {
+      "id": "PalletTown_Text_RivalsHouse",
+      "en_US": "{STRVAR_1 3, 1, 0}’s house"
+    },
+    {
+      "id": "PalletTown_Text_TownSign",
+      "en_US": [
+        "Pallet Town\n",
+        "Shades of your journey await!"
+      ]
+    },
+    {
+      "id": "PalletTown_Text_OakLetMeSeePokedex",
+      "en_US": [
+        "Oak: Ah, {STRVAR_1 3, 0, 0}!\n",
+        "You’re back, are you?\r",
+        "How much have you filled in your\n",
+        "Pokédex?\r",
+        "May I see it?\r",
+        "Let’s see…"
+      ]
+    },
+    {
+      "id": "PalletTown_Text_CaughtXPuttingInHonestEffort",
+      "en_US": [
+        "You’ve caught {STRVAR_1 1, 3, 0}…\r",
+        "Hm, it looks as if you’re putting\n",
+        "in an honest effort.\r",
+        "When you manage to fill it some\n",
+        "more, come show me, please."
+      ]
+    },
+    {
+      "id": "PalletTown_Text_CaughtXImpressiveFollowMe",
+      "en_US": [
+        "You’ve caught… {STRVAR_1 1, 3, 0}!?\n",
+        "Now, this is impressive!\r",
+        "There’s something I wanted to ask\n",
+        "of you, {STRVAR_1 3, 0, 0}.\r",
+        "Come.\n",
+        "Follow me."
+      ]
+    },
+    {
+      "id": "PalletTown_Text_OakYouEnjoyingTraveling",
+      "en_US": [
+        "Oak: Ah, {STRVAR_1 3, 0, 0}!\n",
+        "You seem to be enjoying traveling.\r",
+        "Knowing you, {STRVAR_1 3, 0, 0}, I can easily\n",
+        "imagine you going out to even more\f",
+        "exotic locales.\r",
+        "Good for you, good for you.\n",
+        "Hohoho."
+      ]
+    }
+  ]
+}

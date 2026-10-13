@@ -1,0 +1,62 @@
+{
+  "key": 8777,
+  "messages": [
+    {
+      "id": "PalletTown_PlayersHouse_1F_Text_AllBoysLeaveOakLookingForYou",
+      "en_US": [
+        "Mom: …Right.\n",
+        "All boys leave home someday.\f",
+        "It said so on TV.\r",
+        "Oh, yes. Prof. Oak, next door, was\n",
+        "looking for you."
+      ]
+    },
+    {
+      "id": "PalletTown_PlayersHouse_1F_Text_AllGirlsLeaveOakLookingForYou",
+      "en_US": [
+        "Mom: …Right.\n",
+        "All girls dream of traveling.\f",
+        "It said so on TV.\r",
+        "Oh, yes. Prof. Oak, next door, was\n",
+        "looking for you."
+      ]
+    },
+    {
+      "id": "PalletTown_PlayersHouse_1F_Text_YouShouldTakeQuickRest",
+      "en_US": [
+        "Mom: {STRVAR_1 3, 0, 0}!\n",
+        "You should take a quick rest."
+      ]
+    },
+    {
+      "id": "PalletTown_PlayersHouse_1F_Text_LookingGreatTakeCare",
+      "en_US": [
+        "Mom: Oh, good! You and your\n",
+        "Pokémon are looking great.\f",
+        "Take care now!"
+      ]
+    },
+    {
+      "id": "PalletTown_PlayersHouse_1F_Text_MovieOnTVFourBoysOnRailroad",
+      "en_US": [
+        "There’s a movie on TV.\n",
+        "Four boys are walking on railroad\f",
+        "tracks.\r",
+        "…I better go, too."
+      ]
+    },
+    {
+      "id": "PalletTown_PlayersHouse_1F_Text_MovieOnTVGirlOnBrickRoad",
+      "en_US": [
+        "There’s a movie on TV.\n",
+        "A girl with her hair in pigtails is\f",
+        "walking up a brick road.\r",
+        "…I better go, too."
+      ]
+    },
+    {
+      "id": "PalletTown_PlayersHouse_1F_Text_OopsWrongSide",
+      "en_US": "Oops, wrong side…"
+    }
+  ]
+}

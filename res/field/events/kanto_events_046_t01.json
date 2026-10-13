@@ -1,6 +1,85 @@
 {
-    "bg_events": [],
-    "object_events": [],
+    "bg_events": [
+        {
+            "script": 4,
+            "type": 0,
+            "x": 364,
+            "z": 369,
+            "y": 0,
+            "player_facing_dir": "BG_EVENT_DIR_ALL"
+        },
+        {
+            "script": 5,
+            "type": 0,
+            "x": 359,
+            "z": 363,
+            "y": 0,
+            "player_facing_dir": "BG_EVENT_DIR_ALL"
+        },
+        {
+            "script": 6,
+            "type": 0,
+            "x": 370,
+            "z": 363,
+            "y": 0,
+            "player_facing_dir": "BG_EVENT_DIR_ALL"
+        },
+        {
+            "script": 7,
+            "type": 0,
+            "x": 373,
+            "z": 378,
+            "y": 0,
+            "player_facing_dir": "BG_EVENT_DIR_ALL"
+        }
+    ],
+    "object_events": [
+        {
+            "id": "LOCALID_SIGN_LADY",
+            "graphics_id": "OBJ_EVENT_GFX_KANTO_GSWOMAN1",
+            "movement_type": "MOVEMENT_TYPE_WANDER_WEST_AND_EAST",
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "hidden_flag": "0",
+            "script": 1,
+            "initial_dir": 2,
+            "data": [],
+            "movement_range_x": 1,
+            "movement_range_z": 0,
+            "x": 362,
+            "z": 367,
+            "y": 0
+        },
+        {
+            "id": "LOCALID_FAT_MAN",
+            "graphics_id": "OBJ_EVENT_GFX_KANTO_GSBIGMAN",
+            "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "hidden_flag": "0",
+            "script": 2,
+            "initial_dir": 1,
+            "data": [],
+            "movement_range_x": 0,
+            "movement_range_z": 0,
+            "x": 372,
+            "z": 380,
+            "y": 0
+        },
+        {
+            "id": "LOCALID_PROF_OAK",
+            "graphics_id": "OBJ_EVENT_GFX_KANTO_OOKIDO",
+            "movement_type": "MOVEMENT_TYPE_LOOK_NORTH",
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "hidden_flag": "FLAG_HIDE_OAK_IN_PALLET_TOWN",
+            "script": 3,
+            "initial_dir": 0,
+            "data": [],
+            "movement_range_x": 0,
+            "movement_range_z": 0,
+            "x": 367,
+            "z": 363,
+            "y": 0
+        }
+    ],
     "warp_events": [
         {
             "x": 361,
@@ -21,5 +100,16 @@
             "dest_warp_id": 0
         }
     ],
-    "coord_events": []
+    "coord_events": [
+        {
+            "script": 8,
+            "x": 366,
+            "z": 355,
+            "y": 0,
+            "width": 4,
+            "length": 1,
+            "var": "VAR_MAP_SCENE_PALLET_TOWN_OAK",
+            "value": 0
+        }
+    ]
 }

@@ -1,0 +1,541 @@
+{
+  "key": 28899,
+  "messages": [
+    {
+      "id": "PalletTown_ProfessorOaksLab_Text_RivalGrampsIsntAround",
+      "en_US": [
+        "{STRVAR_1 3, 1, 0}: What, it’s only {STRVAR_1 3, 0, 0}?\n",
+        "Gramps isn’t around."
+      ]
+    },
+    {
+      "id": "PalletTown_ProfessorOaksLab_Text_RivalFedUpWithWaiting",
+      "en_US": [
+        "{STRVAR_1 3, 1, 0}: Gramps!\n",
+        "I’m fed up with waiting!"
+      ]
+    },
+    {
+      "id": "PalletTown_ProfessorOaksLab_Text_RivalNoFairWhatAboutMe",
+      "en_US": [
+        "{STRVAR_1 3, 1, 0}: Hey! Gramps! No fair!\n",
+        "What about me?"
+      ]
+    },
+    {
+      "id": "PalletTown_ProfessorOaksLab_Text_RivalGoChoosePlayer",
+      "en_US": [
+        "{STRVAR_1 3, 1, 0}: Heh, I don’t need to be\n",
+        "greedy like you. I’m mature!\r",
+        "Go ahead and choose, {STRVAR_1 3, 0, 0}!"
+      ]
+    },
+    {
+      "id": "PalletTown_ProfessorOaksLab_Text_RivalIllTakeThisOneThen",
+      "en_US": "{STRVAR_1 3, 1, 0}: I’ll take this one, then!"
+    },
+    {
+      "id": "PalletTown_ProfessorOaksLab_Text_RivalReceivedMonFromOak",
+      "en_US": [
+        "{STRVAR_1 3, 1, 0} received the {STRVAR_1 1, 2, 0}\n",
+        "from Prof. Oak!"
+      ]
+    },
+    {
+      "id": "PalletTown_ProfessorOaksLab_Text_RivalMyMonLooksTougher",
+      "en_US": [
+        "{STRVAR_1 3, 1, 0}: My Pokémon looks a lot\n",
+        "tougher than yours."
+      ]
+    },
+    {
+      "id": "PalletTown_ProfessorOaksLab_Text_RivalLetsCheckOutMons",
+      "en_US": [
+        "{STRVAR_1 3, 1, 0}: Wait, {STRVAR_1 3, 0, 0}!\n",
+        "Let’s check out our Pokémon!\r",
+        "Come on, I’ll take you on!"
+      ]
+    },
+    {
+      "id": "PalletTown_ProfessorOaksLab_Text_RivalDefeat",
+      "en_US": [
+        "What?\n",
+        "Unbelievable!\f",
+        "I picked the wrong Pokémon!"
+      ]
+    },
+    {
+      "id": "Text_RivalVictory",
+      "en_US": [
+        "{STRVAR_1 3, 1, 0}: Yeah!\n",
+        "Am I great or what?"
+      ]
+    },
+    {
+      "id": "PalletTown_ProfessorOaksLab_Text_RivalGoToughenMyMon",
+      "en_US": [
+        "{STRVAR_1 3, 1, 0}: Okay! I’ll make my\n",
+        "Pokémon battle to toughen it up!\r",
+        "{STRVAR_1 3, 0, 0}! Gramps!\n",
+        "Smell you later!"
+      ]
+    },
+    {
+      "id": "PalletTown_ProfessorOaksLab_Text_RivalGramps",
+      "en_US": "{STRVAR_1 3, 1, 0}: Gramps!"
+    },
+    {
+      "id": "PalletTown_ProfessorOaksLab_Text_RivalWhatDidYouCallMeFor",
+      "en_US": [
+        "{STRVAR_1 3, 1, 0}: I almost forgot!\n",
+        "What did you call me for?"
+      ]
+    },
+    {
+      "id": "PalletTown_ProfessorOaksLab_Text_RivalLeaveItToMeGramps",
+      "en_US": [
+        "{STRVAR_1 3, 1, 0}: All right, Gramps!\n",
+        "Leave it all to me!"
+      ]
+    },
+    {
+      "id": "PalletTown_ProfessorOaksLab_Text_RivalTellSisNotToGiveYouMap",
+      "en_US": [
+        "{STRVAR_1 3, 0, 0}, I hate to say it, but you\n",
+        "won’t be necessary for this.\r",
+        "I know! I’ll borrow a Town Map\n",
+        "from my sis!\r",
+        "I’ll tell her not to lend you one,\n",
+        "{STRVAR_1 3, 0, 0}! Hahaha!\r",
+        "Don’t bother coming around to\n",
+        "my place after this!"
+      ]
+    },
+    {
+      "id": "PalletTown_ProfessorOaksLab_Text_OakThreeMonsChooseOne",
+      "en_US": [
+        "Oak: {STRVAR_1 3, 1, 0}?\n",
+        "Let me think…\r",
+        "Oh, that’s right, I told you to\n",
+        "come! Just wait!\r",
+        "Here, {STRVAR_1 3, 0, 0}.\r",
+        "There are three Pokémon here.\r",
+        "Haha!\r",
+        "The Pokémon are held inside\n",
+        "these Poké Balls.\r",
+        "When I was young, I was a serious\n",
+        "Pokémon Trainer.\r",
+        "But now, in my old age, I have\n",
+        "only these three left.\r",
+        "You can have one.\n",
+        "Go on, choose!"
+      ]
+    },
+    {
+      "id": "PalletTown_ProfessorOaksLab_Text_OakBePatientRival",
+      "en_US": [
+        "Oak: Be patient, {STRVAR_1 3, 1, 0}.\n",
+        "You can have one, too!"
+      ]
+    },
+    {
+      "id": "PalletTown_ProfessorOaksLab_Text_OakWhichOneWillYouChoose",
+      "en_US": [
+        "Oak: Now, {STRVAR_1 3, 0, 0}.\r",
+        "Inside those three Poké Balls are\n",
+        "Pokémon.\r",
+        "Which one will you choose for\n",
+        "yourself?"
+      ]
+    },
+    {
+      "id": "PalletTown_ProfessorOaksLab_Text_OakHeyDontGoAwayYet",
+      "en_US": [
+        "Oak: Hey!\n",
+        "Don’t go away yet!"
+      ]
+    },
+    {
+      "id": "PalletTown_ProfessorOaksLab_Text_OakChoosingCharmander",
+      "en_US": [
+        "Ah! Charmander is your choice.\n",
+        "You should raise it patiently.\r",
+        "So, {STRVAR_1 3, 0, 0}, you’re claiming the\n",
+        "Fire Pokémon Charmander?"
+      ]
+    },
+    {
+      "id": "PalletTown_ProfessorOaksLab_Text_OakChoosingSquirtle",
+      "en_US": [
+        "Hm! Squirtle is your choice.\n",
+        "It’s one worth raising.\r",
+        "So, {STRVAR_1 3, 0, 0}, you’ve decided on the\n",
+        "Water Pokémon Squirtle?"
+      ]
+    },
+    {
+      "id": "PalletTown_ProfessorOaksLab_Text_OakChoosingBulbasaur",
+      "en_US": [
+        "I see! Bulbasaur is your choice.\n",
+        "It’s very easy to raise.\r",
+        "So, {STRVAR_1 3, 0, 0}, you want to go with\n",
+        "the Grass Pokémon Bulbasaur?"
+      ]
+    },
+    {
+      "id": "PalletTown_ProfessorOaksLab_Text_OakThisMonIsEnergetic",
+      "en_US": [
+        "This Pokémon is really quite\n",
+        "energetic!"
+      ]
+    },
+    {
+      "id": "PalletTown_ProfessorOaksLab_Text_ReceivedMonFromOak",
+      "en_US": [
+        "{STRVAR_1 3, 0, 0} received the {STRVAR_1 1, 2, 0}\n",
+        "from Prof. Oak!"
+      ]
+    },
+    {
+      "id": "PalletTown_ProfessorOaksLab_Text_OakCanReachNextTownWithMon",
+      "en_US": [
+        "Oak: If a wild Pokémon appears,\n",
+        "your Pokémon can battle it.\r",
+        "With it at your side, you should be\n",
+        "able to reach the next town."
+      ]
+    },
+    {
+      "id": "PalletTown_ProfessorOaksLab_Text_OakBattleMonForItToGrow",
+      "en_US": [
+        "Oak: {STRVAR_1 3, 0, 0}, raise your young\n",
+        "Pokémon by making it battle.\r",
+        "It has to battle for it to grow."
+      ]
+    },
+    {
+      "id": "PalletTown_ProfessorOaksLab_Text_OakHaveSomethingForMe",
+      "en_US": [
+        "Oak: Oh, {STRVAR_1 3, 0, 0}!\n",
+        "How is my old Pokémon?\r",
+        "Well, it seems to be growing more\n",
+        "attached to you.\r",
+        "You must be talented as a Pokémon\n",
+        "Trainer.\r",
+        "What’s that?\n",
+        "You have something for me?"
+      ]
+    },
+    {
+      "id": "PalletTown_ProfessorOaksLab_Text_DeliveredOaksParcel",
+      "en_US": "{STRVAR_1 3, 0, 0} delivered Oak’s Parcel."
+    },
+    {
+      "id": "PalletTown_ProfessorOaksLab_Text_OakCustomBallIOrdered",
+      "en_US": [
+        "Ah! \n",
+        "It’s the custom Poké Ball!\r",
+        "I had it on order.\n",
+        "Thank you!"
+      ]
+    },
+    {
+      "id": "PalletTown_ProfessorOaksLab_Text_OakHaveRequestForYouTwo",
+      "en_US": [
+        "Oak: Oh, right!\n",
+        "I have a request for you two."
+      ]
+    },
+    {
+      "id": "PalletTown_ProfessorOaksLab_Text_OakPokedexOnDesk",
+      "en_US": [
+        "On the desk there is my invention,\n",
+        "the Pokédex!\r",
+        "It automatically records data on\n",
+        "Pokémon you’ve seen or caught.\r",
+        "It’s a high-tech encyclopedia!"
+      ]
+    },
+    {
+      "id": "PalletTown_ProfessorOaksLab_Text_OakTakeTheseWithYou",
+      "en_US": [
+        "Oak: {STRVAR_1 3, 0, 0} and {STRVAR_1 3, 1, 0}.\n",
+        "Take these with you."
+      ]
+    },
+    {
+      "id": "PalletTown_ProfessorOaksLab_Text_ReceivedPokedexFromOak",
+      "en_US": [
+        "{STRVAR_1 3, 0, 0} received the Pokédex\n",
+        "from Prof. Oak."
+      ]
+    },
+    {
+      "id": "PalletTown_ProfessorOaksLab_Text_OakCatchMonsForDataTakeThese",
+      "en_US": [
+        "Oak: You can’t get detailed data\n",
+        "on Pokémon by just seeing them.\r",
+        "You must catch them to obtain\n",
+        "complete data.\r",
+        "So, here are some tools for\n",
+        "catching wild Pokémon."
+      ]
+    },
+    {
+      "id": "PalletTown_ProfessorOaksLab_Text_ReceivedFivePokeBalls",
+      "en_US": "{STRVAR_1 3, 0, 0} received five Poké Balls."
+    },
+    {
+      "id": "PalletTown_ProfessorOaksLab_Text_OakExplainCatching",
+      "en_US": [
+        "When a wild Pokémon appears,\n",
+        "it’s fair game.\r",
+        "Just throw a Poké Ball at it and\n",
+        "try to catch it!\r",
+        "This won’t always work, however.\r",
+        "A healthy Pokémon can escape.\n",
+        "You have to be lucky!"
+      ]
+    },
+    {
+      "id": "PalletTown_ProfessorOaksLab_Text_OakCompleteMonGuideWasMyDream",
+      "en_US": [
+        "To make a complete guide on all\n",
+        "the Pokémon in the world…\r",
+        "That was my dream!\r",
+        "But, I’m too old.\n",
+        "I can’t get the job done.\r",
+        "So, I want you two to fulfill my\n",
+        "dream for me.\r",
+        "Get moving, you two.\r",
+        "This is a great undertaking in\n",
+        "Pokémon history!"
+      ]
+    },
+    {
+      "id": "PalletTown_ProfessorOaksLab_Text_OakMonsAroundWorldWait",
+      "en_US": [
+        "Pokémon around the world wait for\n",
+        "you, {STRVAR_1 3, 0, 0}!"
+      ]
+    },
+    {
+      "id": "PalletTown_ProfessorOaksLab_Text_OakAddedNothingToPokedex",
+      "en_US": [
+        "Ah, {STRVAR_1 3, 0, 0}!\n",
+        "How is your Pokédex shaping up?\r",
+        "{STRVAR_1 3, 1, 0} has already caught some\n",
+        "Pokémon and added to the data.\r",
+        "So, {STRVAR_1 3, 0, 0}, let’s have a look at\n",
+        "your Pokédex.\r",
+        "…What’s the matter?\n",
+        "You’ve added no new data at all.\r",
+        "I’ll give you these, so do try a\n",
+        "little harder."
+      ]
+    },
+    {
+      "id": "PalletTown_ProfessorOaksLab_Text_OakComeSeeMeSometime",
+      "en_US": [
+        "Oak: Come see me sometime.\r",
+        "After all, I want to know how your\n",
+        "Pokédex is coming along."
+      ]
+    },
+    {
+      "id": "PalletTown_ProfessorOaksLab_Text_BlankEncyclopedia",
+      "en_US": [
+        "It’s like an encyclopedia, but the\n",
+        "pages are blank."
+      ]
+    },
+    {
+      "id": "PalletTown_ProfessorOaksLab_Text_ThoseArePokeBalls",
+      "en_US": [
+        "Those are Poké Balls.\n",
+        "They contain Pokémon!"
+      ]
+    },
+    {
+      "id": "PalletTown_ProfessorOaksLab_Text_OaksLastMon",
+      "en_US": "That’s Prof. Oak’s last Pokémon."
+    },
+    {
+      "id": "PalletTown_ProfessorOaksLab_Text_PressStartToOpenMenu",
+      "en_US": "Press Start to open the Menu!"
+    },
+    {
+      "id": "PalletTown_ProfessorOaksLab_Text_SaveOptionInMenu",
+      "en_US": [
+        "The Save option is on the Menu.\n",
+        "Use it regularly."
+      ]
+    },
+    {
+      "id": "PalletTown_ProfessorOaksLab_Text_AllMonTypesHaveStrongAndWeakPoints",
+      "en_US": [
+        "All Pokémon types have strong and\n",
+        "weak points against others."
+      ]
+    },
+    {
+      "id": "PalletTown_ProfessorOaksLab_Text_EmailMessage",
+      "en_US": [
+        "There’s an e-mail message here.\r",
+        "…\r",
+        "Finally!\n",
+        "The ultimate Trainers of the\f",
+        "Pokémon League are ready to\f",
+        "take on all comers!\r",
+        "Bring your best Pokémon and see\n",
+        "how you rate as a Trainer!\r",
+        "Pokémon League HQ\n",
+        "Indigo Plateau\r",
+        "Prof. Oak, please visit us!\n",
+        "…"
+      ]
+    },
+    {
+      "id": "PalletTown_ProfessorOaksLab_Text_StudyAsOaksAide",
+      "en_US": [
+        "I study Pokémon as Prof. Oak’s\n",
+        "Aide."
+      ]
+    },
+    {
+      "id": "PalletTown_ProfessorOaksLab_Text_DaisyWillGroomMons",
+      "en_US": [
+        "Hi, {STRVAR_1 3, 0, 0}. I bet you’ve become\n",
+        "good friends with your Pokémon.\r",
+        "By the way, did you know about\n",
+        "Daisy?\r",
+        "If you show Daisy your Pokémon,\n",
+        "she can tell how much it likes you.\r",
+        "Occasionally, she will even groom\n",
+        "a Pokémon for you.\r",
+        "This is a secret, so please don’t\n",
+        "tell anyone."
+      ]
+    },
+    {
+      "id": "PalletTown_ProfessorOaksLab_Text_OakIsGoingToHaveRadioShow",
+      "en_US": [
+        "Prof. Oak is going to have his own\n",
+        "radio show soon.\r",
+        "The program will be called Prof.\n",
+        "Oak’s Pokémon Seminar."
+      ]
+    },
+    {
+      "id": "PalletTown_ProfessorOaksLab_Text_OakIsAuthorityOnMons",
+      "en_US": [
+        "Prof. Oak may not look like much,\n",
+        "but he’s the authority on Pokémon.\r",
+        "Many Pokémon Trainers hold him in\n",
+        "high regard."
+      ]
+    },
+    {
+      "id": "PalletTown_ProfessorOaksLab_Text_OakFavorToAskYouPlayer",
+      "en_US": [
+        "Ah, now this is excellent!\r",
+        "{STRVAR_1 3, 0, 0}, I have another important\n",
+        "favor to ask of you.\r",
+        "I need you to listen closely."
+      ]
+    },
+    {
+      "id": "PalletTown_ProfessorOaksLab_Text_OakSightingsOfRareMons",
+      "en_US": [
+        "Recently, there have been sightings\n",
+        "of many rare Pokémon species.\r",
+        "I’m talking about Pokémon that\n",
+        "have never been seen in Kanto.\r",
+        "I would love to go see things for\n",
+        "myself, but I’m much too old.\r",
+        "Since I can’t do it, {STRVAR_1 3, 0, 0}, I’d\n",
+        "like you to go in my place."
+      ]
+    },
+    {
+      "id": "PalletTown_ProfessorOaksLab_Text_RivalJustLetMeHandleEverything",
+      "en_US": [
+        "{STRVAR_1 3, 1, 0}: Hey, I heard that!\r",
+        "Gramps, what’s with favoring\n",
+        "{STRVAR_1 3, 0, 0} over me all the time?\r",
+        "I went and collected more Pokémon,\n",
+        "and faster, too.\r",
+        "You should just let me handle\n",
+        "everything."
+      ]
+    },
+    {
+      "id": "PalletTown_ProfessorOaksLab_Text_OakNeedYourHelpTooNeedToSeePokedexes",
+      "en_US": [
+        "Oak: I know, I know.\n",
+        "Of course I need your help, too.\r",
+        "Now, I need to see both your\n",
+        "Pokédexes."
+      ]
+    },
+    {
+      "id": "PalletTown_ProfessorOaksLab_Text_OakTookBothPokedexUnits",
+      "en_US": [
+        "Prof. Oak took both Pokédex\n",
+        "units."
+      ]
+    },
+    {
+      "id": "PalletTown_ProfessorOaksLab_Text_OakNowTheseUnitsCanRecordMoreData",
+      "en_US": [
+        "… … …  … … …\r",
+        "… … …  … … …\r",
+        "…And that’s done!\r",
+        "Now these units can record data on\n",
+        "a lot more Pokémon."
+      ]
+    },
+    {
+      "id": "PalletTown_ProfessorOaksLab_Text_PlayersPokedexWasUpgraded",
+      "en_US": "{STRVAR_1 3, 0, 0}’s Pokédex was upgraded!"
+    },
+    {
+      "id": "PalletTown_ProfessorOaksLab_Text_OakMustReallyWorkToFillPokedex",
+      "en_US": [
+        "Now, {STRVAR_1 3, 0, 0} and {STRVAR_1 3, 1, 0}!\r",
+        "This time, you really must work\n",
+        "towards filling your Pokédexes.\r",
+        "I urge you to make them the best\n",
+        "and the most complete of all time!\r",
+        "Truly, this is a monumentally great\n",
+        "undertaking in Pokémon history!"
+      ]
+    },
+    {
+      "id": "PalletTown_ProfessorOaksLab_Text_RivalIllCompleteThePokedex",
+      "en_US": [
+        "{STRVAR_1 3, 1, 0}: Gramps, calm down.\n",
+        "Don’t get so excited.\r",
+        "I’ll get the Pokédex completed,\n",
+        "don’t you worry about a thing.\r",
+        "I think I’ll try looking around\n",
+        "One Island first…\r",
+        "Anyways, I’m outta here!"
+      ]
+    },
+    {
+      "id": "Text_GiveNicknameToThisMon",
+      "en_US": [
+        "Do you want to give a nickname to\n",
+        "this {STRVAR_1 1, 2, 0}?"
+      ]
+    },
+    {
+      "id": "Text_Bookshelf",
+      "en_US": [
+        "It’s crammed full of Pokémon\n",
+        "books."
+      ]
+    }
+  ]
+}

@@ -127,12 +127,16 @@ HGSS's Kanto lacks or changed (Cinnabar, the Pokémon Tower, the Rocket
 Hideout, the S.S. Anne, Silph Co.'s floors, the Safari Zone) will reuse
 Johto maps from HGSS where they fit. The Sevii Islands are left out for now.
 
-- **The opening:** Oak stopping the player on Route 1, choosing a starter in
-  his lab, and the first rival battle. A new game has no Pokémon until then.
-- **NPCs, signs, items and hidden items** on every map, with FRLG's text.
+- **The opening: done** for Pallet Town, its houses, Oak's lab and Route 1
+  (see `tools/frlg_import/README.md`). What's left of it waits for the next
+  maps: Oak's Parcel, the Pokédex and Daisy's Town Map.
+- **NPCs, signs, items and hidden items** on every other map, with FRLG's
+  text.
 - **Trainers:** FRLG's trainers and parties, the gym leaders, the Elite Four
   and the rival. Platinum's trainers are JSON files in `res/trainers/data`.
-- **The rival:** Platinum's intro still names Barry and shows his picture.
+- **The rival:** Oak's intro offers FRLG's names (Green, Gary, Kaz, Toru)
+  with FRLG's lines, but still shows Barry's picture. In battle the rival
+  uses HGSS's Blue (the Gym Leader's picture).
 - **Missing items:** Platinum lacks some FRLG story items, such as the Oak's
   Parcel, the S.S. Ticket, the Silph Scope and the Poké Flute.
 - **Apricorn trees:** HGSS's apricorn trees still stand as bare trees, and
@@ -160,6 +164,12 @@ Johto maps from HGSS where they fit. The Sevii Islands are left out for now.
   World.
 
 ## Testing
+
+FRLG's opening has been played through: Oak stopping the player at Route 1
+and leading them to the lab, the lab scene, choosing Charmander (and naming
+it), the rival taking Squirtle, the battle, the rival leaving, then Route 1's
+Potion clerk. Not yet played: the other two starters, losing to the rival,
+Mom, Daisy, the signs.
 
 Only Pallet Town and Route 1 have been played. The test covered warps,
 lighting, animations, a wild battle, the Town Map and the sprites. With the

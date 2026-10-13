@@ -1128,6 +1128,13 @@ scr_seq_files = files(
     'scripts_route_226.s',
     'scripts_route_226_house.s',
     'scripts_route_230.s',
+    'scripts_frlg_pallet_town.s',
+    'scripts_frlg_pallet_town_players_house_1f.s',
+    'scripts_frlg_pallet_town_players_house_2f.s',
+    'scripts_frlg_pallet_town_rivals_house.s',
+    'scripts_frlg_pallet_town_professor_oaks_lab.s',
+    'scripts_init_frlg_pallet_town_professor_oaks_lab.s',
+    'scripts_frlg_route1.s',
 )
 
 scr_seq_narc = custom_target('scr_seq.narc',
