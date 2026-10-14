@@ -128,8 +128,9 @@ Hideout, the S.S. Anne, Silph Co.'s floors, the Safari Zone) will reuse
 Johto maps from HGSS where they fit. The Sevii Islands are left out for now.
 
 - **The opening: done** for Pallet Town, its houses, Oak's lab and Route 1
-  Viridian City, Route 22's first rival battle, Route 2 and Viridian
-  Forest (see `tools/frlg_import/README.md`).
+  Viridian City, Route 22's first rival battle, Route 2, Viridian
+  Forest, and Pewter City with Brock's Gym (see
+  `tools/frlg_import/README.md`).
 - **NPCs, signs, items and hidden items** on every other map, with FRLG's
   text.
 - **Trainers:** FRLG's trainers and parties, the gym leaders, the Elite Four
@@ -172,7 +173,8 @@ Potion clerk. Then, on the same save: the Viridian Mart's parcel, Oak's Pokédex
 Daisy's Town Map, Viridian's roadblock (before the Pokédex) and the old
 man's catching demonstration (after), the school's blackboard and the
 Pokémon Center nurse. On test saves started mid-story: Route 22's rival
-ambush and battle, and a Viridian Forest Bug Catcher spotting the player.
+ambush and battle, a Viridian Forest Bug Catcher spotting the player, and
+Pewter: the Gym guide, the Gym and Brock, the Boulder Badge.
 Not yet played: the other two starters, losing to the rival,
 Mom, Daisy, the signs.
 

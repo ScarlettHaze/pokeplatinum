@@ -1,0 +1,224 @@
+{
+  "key": 13661,
+  "messages": [
+    {
+      "id": "PewterCity_Museum_1F_Text_Its50YForChildsTicket",
+      "en_US": [
+        "Yes, yes.\n",
+        "It’s ¥50 for a child’s ticket.\r",
+        "Would you like to come in?"
+      ]
+    },
+    {
+      "id": "PewterCity_Museum_1F_Text_ComeAgain",
+      "en_US": "Come again!"
+    },
+    {
+      "id": "PewterCity_Museum_1F_Text_Right50YThankYou",
+      "en_US": [
+        "Right, ¥50!\n",
+        "Thank you!"
+      ]
+    },
+    {
+      "id": "PewterCity_Museum_1F_Text_DontHaveEnoughMoney",
+      "en_US": "You don’t have enough money."
+    },
+    {
+      "id": "PewterCity_Museum_1F_Text_PleaseEnjoyYourself",
+      "en_US": "Please enjoy yourself."
+    },
+    {
+      "id": "PewterCity_Museum_1F_Text_DoYouKnowWhatAmberIs",
+      "en_US": [
+        "You can’t sneak in the back way!\n",
+        "Nice try, kid, but no.\r",
+        "Oh, whatever!\n",
+        "Do you know what Amber is?"
+      ]
+    },
+    {
+      "id": "PewterCity_Museum_1F_Text_AmberContainsGeneticMatter",
+      "en_US": [
+        "Amber contains the genetic matter\n",
+        "of ancient Pokémon.\r",
+        "There’s a Lab somewhere trying to\n",
+        "resurrect Pokémon from Amber."
+      ]
+    },
+    {
+      "id": "PewterCity_Museum_1F_Text_AmberIsFossilizedSap",
+      "en_US": [
+        "Amber is actually sap, that gooey\n",
+        "stuff that oozes from trees.\r",
+        "The ancient sap fossilized over\n",
+        "time to become rock-hard Amber."
+      ]
+    },
+    {
+      "id": "PewterCity_Museum_1F_Text_ShouldBeGratefulForLongLife",
+      "en_US": [
+        "I should be grateful for my long\n",
+        "life.\r",
+        "Never did I think I would get to\n",
+        "see the bones of a dragon!"
+      ]
+    },
+    {
+      "id": "PewterCity_Museum_1F_Text_WantYouToGetAmberExamined",
+      "en_US": [
+        "Ssh! Listen, I need to share a\n",
+        "secret with someone.\r",
+        "I think that this chunk of Amber\n",
+        "contains Pokémon Dna!\r",
+        "It would be a shattering scientific\n",
+        "breakthrough if Pokémon could be\f",
+        "resurrected from it.\r",
+        "But, my colleagues just ignore\n",
+        "what I have to say.\r",
+        "So, I have a favor to ask!\r",
+        "I want you to get this examined at\n",
+        "a Pokémon Lab somewhere."
+      ]
+    },
+    {
+      "id": "PewterCity_Museum_1F_Text_ReceivedOldAmberFromMan",
+      "en_US": [
+        "{STRVAR_1 3, 0, 0} received the Old Amber\n",
+        "from the man."
+      ]
+    },
+    {
+      "id": "PewterCity_Museum_1F_Text_GetOldAmberChecked",
+      "en_US": [
+        "Ssh!\n",
+        "Get the Old Amber checked!"
+      ]
+    },
+    {
+      "id": "PewterCity_Museum_1F_Text_DontHaveSpaceForThis",
+      "en_US": "You don’t have space for this."
+    },
+    {
+      "id": "PewterCity_Museum_1F_Text_WeHaveTwoFossilsOnExhibit",
+      "en_US": [
+        "We have two fossils of rare,\n",
+        "prehistoric Pokémon on exhibit."
+      ]
+    },
+    {
+      "id": "PewterCity_Museum_1F_Text_BeautifulPieceOfAmber",
+      "en_US": [
+        "There is a beautiful piece of\n",
+        "Amber in a clear gold color."
+      ]
+    },
+    {
+      "id": "PewterCity_Museum_1F_Text_AerodactylFossil",
+      "en_US": [
+        "Aerodactyl Fossil\n",
+        "A primitive and rare Pokémon."
+      ]
+    },
+    {
+      "id": "PewterCity_Museum_1F_Text_KabutopsFossil",
+      "en_US": [
+        "Kabutops Fossil\n",
+        "A primitive and rare Pokémon."
+      ]
+    },
+    {
+      "id": "PokemonJournal_Text_SpecialFeatureBrock",
+      "en_US": [
+        "Pokémon Journal\r",
+        "Special Feature: Pewter Gym\n",
+        "Leader Brock!\r",
+        "Brock rarely laughs, but is said to\n",
+        "be unable to stop if he starts."
+      ]
+    },
+    {
+      "id": "Text_SeismicTossTeach",
+      "en_US": [
+        "The secrets of space…\n",
+        "The mysteries of earth…\r",
+        "There are so many things about\n",
+        "which we know so little.\r",
+        "But that should spur us to study\n",
+        "harder, not toss in the towel.\r",
+        "The only thing you should toss…\r",
+        "Well, how about Seismic Toss?\n",
+        "Should I teach that to a Pokémon?"
+      ]
+    },
+    {
+      "id": "Text_SeismicTossDeclined",
+      "en_US": [
+        "Is that so?\n",
+        "I’m sure you’ll be back for it."
+      ]
+    },
+    {
+      "id": "Text_SeismicTossWhichMon",
+      "en_US": [
+        "Which Pokémon wants to learn\n",
+        "Seismic Toss?"
+      ]
+    },
+    {
+      "id": "Text_SeismicTossTaught",
+      "en_US": [
+        "I hope you won’t toss in the towel.\n",
+        "Keep it up."
+      ]
+    },
+    {
+      "id": "PewterCity_Museum_1F_Text_WhatsSpecialAboutMoonStone",
+      "en_US": [
+        "Moon Stone, huh?\r",
+        "What’s so special about it?\n",
+        "Looks like an ordinary rock to me."
+      ]
+    },
+    {
+      "id": "PewterCity_Museum_1F_Text_BoughtColorTVForMoonLanding",
+      "en_US": [
+        "July 20, 1969!\r",
+        "Humankind first set foot on the\n",
+        "moon that day.\r",
+        "I bought a color TV just so I\n",
+        "could watch that news."
+      ]
+    },
+    {
+      "id": "PewterCity_Museum_1F_Text_RunningSpaceExhibitThisMonth",
+      "en_US": [
+        "This month, we’re running a space\n",
+        "exhibit."
+      ]
+    },
+    {
+      "id": "PewterCity_Museum_1F_Text_AskedDaddyToCatchPikachu",
+      "en_US": [
+        "I want a Pikachu!\n",
+        "It’s so cute!\r",
+        "I asked my daddy to catch me one!"
+      ]
+    },
+    {
+      "id": "PewterCity_Museum_1F_Text_PikachuSoonIPromise",
+      "en_US": "Yeah, a Pikachu soon, I promise!"
+    },
+    {
+      "id": "PewterCity_Museum_1F_Text_SpaceShuttle",
+      "en_US": "Space Shuttle"
+    },
+    {
+      "id": "PewterCity_Museum_1F_Text_MeteoriteThatFellOnMtMoon",
+      "en_US": [
+        "A meteorite that fell on Mt. Moon.\n",
+        "It is thought to be a Moon Stone."
+      ]
+    }
+  ]
+}

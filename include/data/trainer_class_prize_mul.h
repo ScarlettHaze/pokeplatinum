@@ -1,5 +1,7 @@
 #include "generated/trainer_classes.h"
 
+#include "data/kanto_trainer_classes.h"
+
 // clang-format off
 static u8 sTrainerClassPrizeMul[] = {
     [TRAINER_CLASS_PLAYER_MALE]             = 0,
@@ -107,5 +109,6 @@ static u8 sTrainerClassPrizeMul[] = {
     [TRAINER_CLASS_CASTLE_VALET]            = 0,
     [TRAINER_CLASS_DP_PLAYER_MALE_2]        = 0,
     [TRAINER_CLASS_DP_PLAYER_FEMALE_2]      = 0,
+    KANTO_TRAINER_CLASS_PRIZE_MUL
 };
 // clang-format on

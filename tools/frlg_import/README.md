@@ -4,7 +4,7 @@ FRLG's story on the Kanto maps that `tools/hgss_import` brings in from HGSS.
 FRLG's text, NPCs, signs and scripts come from
 [pokefirered](https://github.com/pret/pokefirered).
 
-    tools/frlg_import/import_frlg.py <path-to-pokefirered>
+    tools/frlg_import/import_frlg.py <path-to-pokefirered> <path-to-pokeheartgold>
 
 Run it after `tools/hgss_import` (which leaves the Kanto maps with warps
 only). For each map in its `MAPS` table it:
@@ -20,6 +20,11 @@ only). For each map in its `MAPS` table it:
 The scripts, `res/field/scripts/scripts_frlg_*.s`, are written by hand from
 FRLG's. HGSS's maps are laid out differently, so every walk and trigger is
 fitted to HGSS's map; each script file says how.
+
+Trainer classes FRLG needs and Platinum lacks, such as the Gym Leaders,
+come from HGSS (`frlg_classes.py`): each is `TRAINER_CLASS_KANTO_<class>`
+with HGSS's picture, name, gender and prize money, and a Gym Leader counts
+as one in battle (`include/data/kanto_trainer_classes.h`).
 
 Trainers come from FRLG's trainer and party data (`frlg_trainers.py`):
 each becomes `TRAINER_FRLG_<name>` in one of Platinum's unused dummy trainer
@@ -50,6 +55,14 @@ its trainers do), with its lines from the map's text.
 - **Route 2** (south half): its items, Cut trees and sign.
 - **Viridian Forest:** the five Bug Catchers as trainers, on HGSS's five
   bug catcher NPCs, the two other boys, the four items and Cut trees.
+- **Pewter City:** the townspeople and signs; the Gym guide who stops the
+  player going east before the Boulder Badge and takes them to the Gym; the
+  Museum guide; Oak's aide with the Running Shoes after the badge.
+- **Pewter Gym:** Brock (HGSS's Brock class) and Camper Liam, the Boulder
+  Badge (Platinum's first badge slot), TM39, the guide and statues.
+- **Pewter's buildings:** the Museum with its ticket, fossils (shown as
+  their Pokémon), Old Amber and FRLG's second-floor exhibits; the Mart, the
+  Pokémon Center and both houses.
 - **Viridian's buildings:** the Mart (Platinum's standard stock), the
   Pokémon Center, Speary's house, and the Trainer school with its notebook
   and blackboard (on HGSS's Trainer House).
@@ -88,3 +101,12 @@ Also:
   out, as are FRLG's hidden items. Route 22's later rival battle, Route 2's
   Diglett's Cave sign and its north half aren't ported yet.
 - FRLG text some maps keep in Japanese (unused) is skipped.
+- FRLG's guides walk the player across Pewter; here the screen fades and the
+  player is at the Gym's or the Museum's door. HGSS's Museum is one floor,
+  so FRLG's second floor shares it. The Jigglypuff only cries (FRLG's song
+  isn't in HGSS's sound archive under that name), and the Dream Eater and
+  Seismic Toss tutors aren't ported.
+- The Boulder Badge uses Platinum's first badge slot, so the Trainer Card
+  still shows the Coal Badge, and the badge's field move is Platinum's.
+- A Gym Leader's long defeat speech shows its first page in battle and the
+  rest after it.

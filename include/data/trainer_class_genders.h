@@ -1,6 +1,8 @@
 #include "generated/genders.h"
 #include "generated/trainer_classes.h"
 
+#include "data/kanto_trainer_classes.h"
+
 // clang-format off
 static const u8 sTrainerClassGender[] = {
     [TRAINER_CLASS_PLAYER_MALE]             = GENDER_MALE,
@@ -108,5 +110,6 @@ static const u8 sTrainerClassGender[] = {
     [TRAINER_CLASS_CASTLE_VALET]            = GENDER_MALE,
     [TRAINER_CLASS_DP_PLAYER_MALE_2]        = GENDER_MALE,
     [TRAINER_CLASS_DP_PLAYER_FEMALE_2]      = GENDER_FEMALE,
+    KANTO_TRAINER_CLASS_GENDERS
 };
 // clang-format on

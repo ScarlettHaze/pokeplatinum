@@ -65,11 +65,13 @@ def respell(text):
 def convert_string(raw):
     """One FRLG message (the .string pieces joined) -> Platinum's JSON lines."""
     raw = raw.removesuffix("$")
-    raw = re.sub(r"\{(?:COLOR|FONT|HIGHLIGHT|SHADOW)[^}]*\}", "", raw)
-    raw = re.sub(r"\{(\w+)\}", lambda m: PLACEHOLDERS.get(m.group(1), m.group(0)), raw)
+    raw = re.sub(r"\{(?:COLOR|FONT|HIGHLIGHT|SHADOW|PLAY_BGM|PAUSE|RESUME_MUSIC|MUS_|PLAY_SE|SE_)[^}]*\}", "", raw)
+    # Others, such as {KUN} (an honorific, empty in English), print nothing.
+    raw = re.sub(r"\{(\w+)\}", lambda m: PLACEHOLDERS.get(m.group(1), ""), raw)
     # FRLG: \n next line, \l scroll a line, \p new page.
     # Platinum: \n next line, \f scroll a line, \r new page.
     raw = raw.replace("\\n", "\n").replace("\\l", "\f").replace("\\p", "\r")
+    raw = re.sub(r"\b([A-Z]+)BADGE\b", r"\1 BADGE", raw)  # BOULDERBADGE is the Boulder Badge
     raw = respell(raw)
     lines = re.findall(r"[^\n\r\f]*[\n\r\f]|[^\n\r\f]+$", raw)
     return lines[0] if len(lines) == 1 else lines or ""
@@ -93,12 +95,34 @@ def parse_text_inc(path):
     return messages
 
 
+# Lines FRLG prints in one go that Platinum needs in pieces, such as a Gym
+# Leader's defeat speech: the first page shows in battle, the rest after.
+# The pieces are FRLG's words, in FRLG's text format.
+EXTRA = {
+    "PewterCity_Gym": [
+        ("PewterCity_Gym_Text_BrockDefeatInBattle", "I took you for granted, and so\\nI lost.$"),
+        ("PewterCity_Gym_Text_BrockConferBadge",
+         "As proof of your victory, I confer\\non you this…the official POKéMON\\lLEAGUE BOULDERBADGE.$"),
+        ("PewterCity_Gym_Text_ReceivedBoulderBadge", "{PLAYER} received the BOULDERBADGE\\nfrom BROCK!$"),
+        ("PewterCity_Gym_Text_BoulderBadgeExplanation",
+         "Just having the BOULDERBADGE makes\\nyour POKéMON more powerful.\\p"
+         "It also enables the use of the\\nmove FLASH outside of battle.\\p"
+         "Of course, a POKéMON must know the\\nmove FLASH to use it.$"),
+    ],
+}
+
+
+def map_messages(fr, map_name):
+    """{label: raw} for a map's text and its EXTRA pieces."""
+    return dict(parse_text_inc(Path(fr) / "data/maps" / map_name / "text.inc") + EXTRA.get(map_name, []))
+
+
 def convert_map(fr, map_name, extra=()):
     """FRLG map's messages, plus (label, raw) pairs from shared text files."""
     # Some maps keep unused Japanese text, which Platinum's English charmap
     # can't encode.
     rows = [{"id": label, "en_US": convert_string(raw)}
-            for label, raw in parse_text_inc(Path(fr) / "data/maps" / map_name / "text.inc") + list(extra)
+            for label, raw in list(map_messages(fr, map_name).items()) + list(extra)
             if not re.search(r"[\u3000-\u9fff\uff00-\uffef]", raw)]
     return {"key": zlib.crc32(bank_name(map_name).encode()) & 0xFFFF, "messages": rows}
 
@@ -116,11 +140,15 @@ def shared_messages(fr, labels):
 
 
 def import_text(fr, maps):
-    """maps: {map name: [shared labels]}. Writes the banks and lists them in text_banks.txt."""
+    """maps: {map name: ([shared labels], [other maps whose text it also holds])}.
+    Writes the banks and lists them in text_banks.txt."""
     for old in TEXT.glob("frlg_*.json"):
         old.unlink()
-    for map_name, shared in maps.items():
-        data = convert_map(fr, map_name, shared_messages(fr, shared))
+    for map_name, (shared, merged) in maps.items():
+        extra = shared_messages(fr, shared)
+        for other in merged:
+            extra += list(map_messages(fr, other).items())
+        data = convert_map(fr, map_name, extra)
         (TEXT / f"{bank_name(map_name)}.json").write_text(json.dumps(data, indent=2, ensure_ascii=False) + "\n")
     lines = [l for l in TEXT_BANKS.read_text().splitlines() if not l.startswith(PREFIX)]
     TEXT_BANKS.write_text("\n".join(lines + [bank_const(m) for m in maps]) + "\n")

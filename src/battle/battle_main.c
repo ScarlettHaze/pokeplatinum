@@ -12,6 +12,8 @@
 #include "generated/game_records.h"
 #include "generated/trainer_classes.h"
 
+#include "data/kanto_trainer_classes.h"
+
 #include "struct_decls/battle_system.h"
 #include "struct_defs/battle_system.h"
 #include "struct_defs/battler_data.h"
@@ -1389,6 +1391,9 @@ static BOOL TrainerIsGymLeaderE4OrChampion(u16 trainerClass)
     case TRAINER_CLASS_ELITE_FOUR_FLINT:
     case TRAINER_CLASS_ELITE_FOUR_LUCIAN:
     case TRAINER_CLASS_CHAMPION_CYNTHIA:
+    KANTO_GYM_LEADER_CLASS_CASES
+    KANTO_ELITE_FOUR_CLASS_CASES
+    KANTO_CHAMPION_CLASS_CASES
         return TRUE;
         break;
     }

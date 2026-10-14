@@ -1,0 +1,25 @@
+{
+  "key": 7969,
+  "messages": [
+    {
+      "id": "PewterCity_House1_Text_Nidoran",
+      "en_US": "Nidoran♂: Bowbow!"
+    },
+    {
+      "id": "PewterCity_House1_Text_NidoranSit",
+      "en_US": "Nidoran, sit!"
+    },
+    {
+      "id": "PewterCity_House1_Text_TradeMonsAreFinicky",
+      "en_US": [
+        "Our Pokémon’s an outsider, so it’s\n",
+        "finicky and hard to handle.\r",
+        "An outsider is a Pokémon that you\n",
+        "get in a trade.\r",
+        "It grows fast, but it may ignore an\n",
+        "unskilled Trainer in battle.\r",
+        "If only we had some Badges…"
+      ]
+    }
+  ]
+}

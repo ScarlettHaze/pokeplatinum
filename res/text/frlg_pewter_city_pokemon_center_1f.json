@@ -1,0 +1,45 @@
+{
+  "key": 26003,
+  "messages": [
+    {
+      "id": "PewterCity_PokemonCenter_1F_Text_TeamRocketMtMoonImOnPhone",
+      "en_US": [
+        "What!?\r",
+        "Team Rocket is at Mt. Moon?\n",
+        "Huh?\r",
+        "I’m on the phone!\n",
+        "Scram!"
+      ]
+    },
+    {
+      "id": "PewterCity_PokemonCenter_1F_Text_Jigglypuff",
+      "en_US": "Jigglypuff: Puu pupuu!"
+    },
+    {
+      "id": "PewterCity_PokemonCenter_1F_Text_WhenJiggylypuffSingsMonsGetDrowsy",
+      "en_US": [
+        "Yawn!\r",
+        "When Jigglypuff sings, Pokémon get\n",
+        "drowsy…\r",
+        "…Me, too…\n",
+        "Snore…"
+      ]
+    },
+    {
+      "id": "PewterCity_PokemonCenter_1F_Text_TradingMyClefairyForPikachu",
+      "en_US": [
+        "I really want a Pikachu, so I’m\n",
+        "trading my Clefairy for one."
+      ]
+    },
+    {
+      "id": "PewterCity_PokemonCenter_1F_Text_TradingPikachuWithKid",
+      "en_US": [
+        "I’m trading Pokémon with that kid\n",
+        "there.\r",
+        "I had two Pikachu, so I figured\n",
+        "I might as well trade one."
+      ]
+    }
+  ]
+}

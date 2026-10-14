@@ -1144,6 +1144,14 @@ scr_seq_files = files(
     'scripts_frlg_route22.s',
     'scripts_frlg_route2.s',
     'scripts_frlg_viridian_forest.s',
+    'scripts_frlg_pewter_city.s',
+    'scripts_init_frlg_pewter_city.s',
+    'scripts_frlg_pewter_city_gym.s',
+    'scripts_frlg_pewter_city_mart.s',
+    'scripts_frlg_pewter_city_pokemon_center_1f.s',
+    'scripts_frlg_pewter_city_house1.s',
+    'scripts_frlg_pewter_city_house2.s',
+    'scripts_frlg_pewter_city_museum_1f.s',
     'scripts_frlg_route1.s',
 )
 

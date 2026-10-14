@@ -16,6 +16,8 @@
 #include "generated/game_records.h"
 #include "generated/trainer_classes.h"
 
+#include "data/kanto_trainer_classes.h"
+
 #include "struct_decls/battle_system.h"
 #include "struct_defs/battler_data.h"
 #include "struct_defs/trainer.h"
@@ -4279,6 +4281,7 @@ static BOOL BattleControllerPlayer_CheckBattleOver(BattleSystem *battleSys, Batt
         case TRAINER_CLASS_LEADER_CANDICE:
         case TRAINER_CLASS_LEADER_BYRON:
         case TRAINER_CLASS_LEADER_VOLKNER:
+        KANTO_GYM_LEADER_CLASS_CASES
             Sound_PlayBGM(KANTO_LEADER_VICTORY_BGM);
             break;
 
@@ -4291,6 +4294,7 @@ static BOOL BattleControllerPlayer_CheckBattleOver(BattleSystem *battleSys, Batt
             break;
 
         case TRAINER_CLASS_CHAMPION_CYNTHIA:
+        KANTO_CHAMPION_CLASS_CASES
             Sound_PlayBGM(KANTO_LEADER_VICTORY_BGM);
             break;
 
@@ -4310,6 +4314,7 @@ static BOOL BattleControllerPlayer_CheckBattleOver(BattleSystem *battleSys, Batt
         case TRAINER_CLASS_ELITE_FOUR_BERTHA:
         case TRAINER_CLASS_ELITE_FOUR_FLINT:
         case TRAINER_CLASS_ELITE_FOUR_LUCIAN:
+        KANTO_ELITE_FOUR_CLASS_CASES
             Sound_PlayBGM(KANTO_LEADER_VICTORY_BGM);
             break;
 

@@ -1,0 +1,206 @@
+{
+  "key": 8,
+  "messages": [
+    {
+      "id": "PewterCity_Gym_Text_BrockIntro",
+      "en_US": [
+        "So, you’re here. I’m Brock.\n",
+        "I’m Pewter’s Gym Leader.\r",
+        "My rock-hard willpower is evident\n",
+        "even in my Pokémon.\r",
+        "My Pokémon are all rock hard, and\n",
+        "have true-grit determination.\r",
+        "That’s right - my Pokémon are all\n",
+        "the Rock type!\r",
+        "Fuhaha! You’re going to challenge\n",
+        "me knowing that you’ll lose?\r",
+        "That’s the Trainer’s honor that\n",
+        "compels you to challenge me.\r",
+        "Fine, then!\n",
+        "Show me your best!"
+      ]
+    },
+    {
+      "id": "PewterCity_Gym_Text_BrockDefeat",
+      "en_US": [
+        "I took you for granted, and so\n",
+        "I lost.\r",
+        "As proof of your victory, I confer\n",
+        "on you this…the official Pokémon\f",
+        "League Boulder Badge.\r",
+        "{STRVAR_1 3, 0, 0} received the Boulder Badge\n",
+        "from Brock!\r",
+        "Just having the Boulder Badge makes\n",
+        "your Pokémon more powerful.\r",
+        "It also enables the use of the\n",
+        "move Flash outside of battle.\r",
+        "Of course, a Pokémon must know the\n",
+        "move Flash to use it."
+      ]
+    },
+    {
+      "id": "PewterCity_Gym_Text_TakeThisWithYou",
+      "en_US": [
+        "Wait!\n",
+        "Take this with you."
+      ]
+    },
+    {
+      "id": "PewterCity_Gym_Text_ReceivedTM39FromBrock",
+      "en_US": [
+        "{STRVAR_1 3, 0, 0} received TM39\n",
+        "from Brock."
+      ]
+    },
+    {
+      "id": "PewterCity_Gym_Text_ExplainTM39",
+      "en_US": [
+        "A TM, Technical Machine, contains a\n",
+        "technique for Pokémon.\r",
+        "Using a TM teaches the move it\n",
+        "contains to a Pokémon.\r",
+        "A TM is good for only one use.\r",
+        "So, when you use one, pick the\n",
+        "Pokémon carefully.\r",
+        "Anyways…\n",
+        "TM39 contains Rock Tomb.\r",
+        "It hurls boulders at the foe and\n",
+        "lowers its Speed."
+      ]
+    },
+    {
+      "id": "PewterCity_Gym_Text_BrockPostBattle",
+      "en_US": [
+        "There are all kinds of Trainers in\n",
+        "this huge world of ours.\r",
+        "You appear to be very gifted as a\n",
+        "Pokémon Trainer.\r",
+        "So let me make a suggestion.\r",
+        "Go to the Gym in Cerulean and test\n",
+        "your abilities."
+      ]
+    },
+    {
+      "id": "PewterCity_Gym_Text_DontHaveRoomForThis",
+      "en_US": "You don’t have room for this."
+    },
+    {
+      "id": "PewterCity_Gym_Text_LiamIntro",
+      "en_US": [
+        "Stop right there, kid!\r",
+        "You’re ten thousand light-years \n",
+        "from facing Brock!"
+      ]
+    },
+    {
+      "id": "PewterCity_Gym_Text_LiamDefeat",
+      "en_US": [
+        "Darn!\r",
+        "Light-years isn’t time…\n",
+        "It measures distance!"
+      ]
+    },
+    {
+      "id": "PewterCity_Gym_Text_LiamPostBattle",
+      "en_US": [
+        "You’re pretty hot.\n",
+        "…But not as hot as Brock!"
+      ]
+    },
+    {
+      "id": "PewterCity_Gym_Text_LetMeTakeYouToTheTop",
+      "en_US": [
+        "Hiya!\n",
+        "Do you want to dream big?\r",
+        "Do you dare to dream of becoming\n",
+        "the Pokémon champ?\r",
+        "I’m no Trainer, but I can advise\n",
+        "you on how to win.\r",
+        "Let me take you to the top!"
+      ]
+    },
+    {
+      "id": "PewterCity_Gym_Text_LetsGetHappening",
+      "en_US": [
+        "All right!\n",
+        "Let’s get happening!"
+      ]
+    },
+    {
+      "id": "PewterCity_Gym_Text_TryDifferentPartyOrders",
+      "en_US": [
+        "The first Pokémon out in a match is\n",
+        "at the left of the Pokémon List.\r",
+        "By changing the order of Pokémon,\n",
+        "you may gain an advantage.\r",
+        "Try different orders to suit your\n",
+        "opponent’s party."
+      ]
+    },
+    {
+      "id": "PewterCity_Gym_Text_ItsFreeLetsGetHappening",
+      "en_US": [
+        "It’s a free service!\n",
+        "Let’s get happening!"
+      ]
+    },
+    {
+      "id": "PewterCity_Gym_Text_YoureChampMaterial",
+      "en_US": [
+        "Just as I thought!\n",
+        "You’re Pokémon champ material!"
+      ]
+    },
+    {
+      "id": "PewterCity_Gym_Text_GymStatue",
+      "en_US": [
+        "Pewter Pokémon Gym\n",
+        "Leader: Brock\r",
+        "Winning Trainers:\n",
+        "{STRVAR_1 3, 1, 0}"
+      ]
+    },
+    {
+      "id": "PewterCity_Gym_Text_GymStatuePlayerWon",
+      "en_US": [
+        "Pewter Pokémon Gym\n",
+        "Leader: Brock\r",
+        "Winning Trainers:\n",
+        "{STRVAR_1 3, 1, 0}, {STRVAR_1 3, 0, 0}"
+      ]
+    },
+    {
+      "id": "PewterCity_Gym_Text_BrockDefeatInBattle",
+      "en_US": [
+        "I took you for granted, and so\n",
+        "I lost."
+      ]
+    },
+    {
+      "id": "PewterCity_Gym_Text_BrockConferBadge",
+      "en_US": [
+        "As proof of your victory, I confer\n",
+        "on you this…the official Pokémon\f",
+        "League Boulder Badge."
+      ]
+    },
+    {
+      "id": "PewterCity_Gym_Text_ReceivedBoulderBadge",
+      "en_US": [
+        "{STRVAR_1 3, 0, 0} received the Boulder Badge\n",
+        "from Brock!"
+      ]
+    },
+    {
+      "id": "PewterCity_Gym_Text_BoulderBadgeExplanation",
+      "en_US": [
+        "Just having the Boulder Badge makes\n",
+        "your Pokémon more powerful.\r",
+        "It also enables the use of the\n",
+        "move Flash outside of battle.\r",
+        "Of course, a Pokémon must know the\n",
+        "move Flash to use it."
+      ]
+    }
+  ]
+}

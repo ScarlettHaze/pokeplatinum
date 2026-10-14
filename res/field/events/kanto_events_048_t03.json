@@ -1,6 +1,145 @@
 {
-    "bg_events": [],
-    "object_events": [],
+    "bg_events": [
+        {
+            "script": 8,
+            "type": 0,
+            "x": 392,
+            "z": 105,
+            "y": 0,
+            "player_facing_dir": "BG_EVENT_DIR_ALL"
+        },
+        {
+            "script": 9,
+            "type": 0,
+            "x": 373,
+            "z": 95,
+            "y": 0,
+            "player_facing_dir": "BG_EVENT_DIR_ALL"
+        },
+        {
+            "script": 10,
+            "type": 0,
+            "x": 379,
+            "z": 81,
+            "y": 0,
+            "player_facing_dir": "BG_EVENT_DIR_ALL"
+        },
+        {
+            "script": 11,
+            "type": 0,
+            "x": 373,
+            "z": 112,
+            "y": 0,
+            "player_facing_dir": "BG_EVENT_DIR_ALL"
+        }
+    ],
+    "object_events": [
+        {
+            "id": "LOCALID_LASS",
+            "graphics_id": "OBJ_EVENT_GFX_KANTO_GSGIRL1",
+            "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "hidden_flag": "0",
+            "script": 2,
+            "initial_dir": 1,
+            "data": [],
+            "movement_range_x": 1,
+            "movement_range_z": 1,
+            "x": 384,
+            "z": 89,
+            "y": 0
+        },
+        {
+            "id": "LOCALID_MUSEUM_GUIDE",
+            "graphics_id": "OBJ_EVENT_GFX_KANTO_GSMIDDLEMAN1",
+            "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "hidden_flag": "0",
+            "script": 3,
+            "initial_dir": 1,
+            "data": [],
+            "movement_range_x": 0,
+            "movement_range_z": 0,
+            "x": 375,
+            "z": 85,
+            "y": 0
+        },
+        {
+            "id": "LOCALID_FAT_MAN",
+            "graphics_id": "OBJ_EVENT_GFX_KANTO_GSBIGMAN",
+            "movement_type": "MOVEMENT_TYPE_LOOK_SOUTH",
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "hidden_flag": "0",
+            "script": 4,
+            "initial_dir": 1,
+            "data": [],
+            "movement_range_x": 0,
+            "movement_range_z": 0,
+            "x": 397,
+            "z": 94,
+            "y": 0
+        },
+        {
+            "id": "LOCALID_BUG_CATCHER",
+            "graphics_id": "OBJ_EVENT_GFX_KANTO_GSBOY3",
+            "movement_type": "MOVEMENT_TYPE_WANDER_WEST_AND_EAST",
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "hidden_flag": "0",
+            "script": 5,
+            "initial_dir": 1,
+            "data": [],
+            "movement_range_x": 1,
+            "movement_range_z": 0,
+            "x": 378,
+            "z": 111,
+            "y": 0
+        },
+        {
+            "id": "LOCALID_GYM_GUIDE",
+            "graphics_id": "OBJ_EVENT_GFX_KANTO_GSBOY1",
+            "movement_type": "MOVEMENT_TYPE_LOOK_SOUTH",
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "hidden_flag": "FLAG_HIDE_PEWTER_CITY_GYM_GUIDE",
+            "script": 6,
+            "initial_dir": 1,
+            "data": [],
+            "movement_range_x": 0,
+            "movement_range_z": 0,
+            "x": 403,
+            "z": 101,
+            "y": 0
+        },
+        {
+            "id": "LOCALID_AIDE",
+            "graphics_id": "OBJ_EVENT_GFX_KANTO_ASSISTANTM",
+            "movement_type": "MOVEMENT_TYPE_LOOK_WEST",
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "hidden_flag": "FLAG_HIDE_PEWTER_CITY_RUNNING_SHOES_GUY",
+            "script": 7,
+            "initial_dir": 2,
+            "data": [],
+            "movement_range_x": 0,
+            "movement_range_z": 0,
+            "x": 405,
+            "z": 101,
+            "y": 0
+        },
+        {
+            "id": "LOCALID_ROCK_SMASH_1",
+            "graphics_id": "OBJ_EVENT_GFX_ROCK_SMASH",
+            "movement_type": "MOVEMENT_TYPE_NONE",
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "hidden_flag": "FLAG_MAP_LOCAL_HIDE_OBSTACLE_1",
+            "script": 10001,
+            "initial_dir": 1,
+            "data": [],
+            "movement_range_x": 0,
+            "movement_range_z": 0,
+            "x": 363,
+            "z": 75,
+            "y": 0
+        }
+    ],
     "warp_events": [
         {
             "x": 376,
@@ -39,5 +178,26 @@
             "dest_warp_id": 0
         }
     ],
-    "coord_events": []
+    "coord_events": [
+        {
+            "script": 12,
+            "x": 404,
+            "z": 102,
+            "y": 0,
+            "width": 1,
+            "length": 4,
+            "var": "VAR_MAP_SCENE_PEWTER_CITY",
+            "value": 0
+        },
+        {
+            "script": 13,
+            "x": 404,
+            "z": 102,
+            "y": 0,
+            "width": 1,
+            "length": 4,
+            "var": "VAR_MAP_SCENE_PEWTER_CITY",
+            "value": 1
+        }
+    ]
 }

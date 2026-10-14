@@ -28,6 +28,12 @@ CLASSES = {
     "TRAINER_CLASS_LASS": "TRAINER_CLASS_LASS",
     "TRAINER_CLASS_RIVAL_EARLY": "TRAINER_CLASS_RIVAL",
     "TRAINER_CLASS_RIVAL_LATE": "TRAINER_CLASS_RIVAL",
+    "TRAINER_CLASS_CAMPER": "TRAINER_CLASS_CAMPER",
+    "TRAINER_CLASS_HIKER": "TRAINER_CLASS_HIKER",
+}
+# Gym Leaders and the like have a class of their own (frlg_classes.py).
+LEADER_CLASSES = {
+    "TRAINER_LEADER_BROCK": "TRAINER_CLASS_KANTO_LEADER_BROCK",
 }
 
 # FRLG trainer -> (map whose text has its lines, {message type: label} or None
@@ -41,6 +47,10 @@ TRAINERS = {
     "TRAINER_BUG_CATCHER_SAMMY": ("ViridianForest", None),
     "TRAINER_BUG_CATCHER_ANTHONY": ("ViridianForest", None),
     "TRAINER_BUG_CATCHER_CHARLIE": ("ViridianForest", None),
+    "TRAINER_CAMPER_LIAM": ("PewterCity_Gym", None),
+    # A Gym Leader's intro and the rest of the defeat speech are in the Gym's
+    # script, out of battle.
+    "TRAINER_LEADER_BROCK": ("PewterCity_Gym", {"TRMSG_DEFEAT": "PewterCity_Gym_Text_BrockDefeatInBattle"}),
 }
 
 
@@ -84,7 +94,7 @@ def read_parties(fr):
 
 
 def messages(fr, map_name, trainer, labels):
-    texts = dict(frlg_text.parse_text_inc(Path(fr) / "data/maps" / map_name / "text.inc"))
+    texts = frlg_text.map_messages(fr, map_name)
     if labels is None:
         who = trainer["name"].capitalize()
         labels = {"TRMSG_PRE_BATTLE": f"{map_name}_Text_{who}Intro",
@@ -99,13 +109,13 @@ def messages(fr, map_name, trainer, labels):
 
 def convert(fr, frlg, trainers, parties):
     t = trainers[frlg]
-    rival = t["class"].startswith("TRAINER_CLASS_RIVAL")
+    smart = t["class"].startswith("TRAINER_CLASS_RIVAL") or frlg in LEADER_CLASSES
     map_name, labels = TRAINERS[frlg]
     return {
         "name": t["name"].capitalize(),
-        "class": CLASSES[t["class"]],
+        "class": LEADER_CLASSES.get(frlg) or CLASSES[t["class"]],
         "items": [],
-        "ai_flags": ["AI_FLAG_BASIC", "AI_FLAG_EVAL_ATTACK"] if rival else ["AI_FLAG_BASIC"],
+        "ai_flags": ["AI_FLAG_BASIC", "AI_FLAG_EVAL_ATTACK"] if smart else ["AI_FLAG_BASIC"],
         "double_battle": t["double"],
         "party": [{
             "species": mon["species"],

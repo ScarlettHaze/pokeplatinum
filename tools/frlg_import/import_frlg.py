@@ -3,9 +3,10 @@
 
 Run after tools/hgss_import (which leaves the Kanto maps with warps only):
 
-    tools/frlg_import/import_frlg.py <path-to-pokefirered>
+    tools/frlg_import/import_frlg.py <path-to-pokefirered> <path-to-pokeheartgold>
 
-For each map in MAPS below this
+It brings in the HGSS trainer classes FRLG's trainers need (frlg_classes.py)
+and FRLG's trainers (frlg_trainers.py). For each map in MAPS below this
 - converts the FRLG map's text to res/text/frlg_<map>.json (frlg_text.py),
 - writes the NPCs, signs and triggers into the map's events file, keeping
   its warps,
@@ -26,6 +27,7 @@ import re
 import sys
 from pathlib import Path
 
+import frlg_classes
 import frlg_text
 import frlg_trainers
 
@@ -36,6 +38,7 @@ HEADERS = PL / "include/data/kanto_map_headers.h"
 
 
 CUT_TREE = 10000
+ROCK_SMASH = 10001
 VISIBLE_ITEMS = 7000
 
 
@@ -316,6 +319,142 @@ MAPS = {
             cut_tree(2, 42, 70),
         ],
     },
+    "PewterCity": {
+        "header": "MAP_HEADER_KANTO_PEWTER",
+        "events": "kanto_events_048_t03",
+        "init": True,
+        "objects": [
+            obj("LOCALID_LASS", "OBJ_EVENT_GFX_KANTO_GSGIRL1", 384, 89, "PewterCity_Lass",
+                "MOVEMENT_TYPE_WANDER_AROUND", rx=1, rz=1),
+            obj("LOCALID_MUSEUM_GUIDE", "OBJ_EVENT_GFX_KANTO_GSMIDDLEMAN1", 375, 85, "PewterCity_MuseumGuide",
+                "MOVEMENT_TYPE_LOOK_AROUND"),
+            obj("LOCALID_FAT_MAN", "OBJ_EVENT_GFX_KANTO_GSBIGMAN", 397, 94, "PewterCity_FatMan",
+                "MOVEMENT_TYPE_LOOK_SOUTH"),
+            obj("LOCALID_BUG_CATCHER", "OBJ_EVENT_GFX_KANTO_GSBOY3", 378, 111, "PewterCity_BugCatcher",
+                "MOVEMENT_TYPE_WANDER_WEST_AND_EAST", rx=1),
+            # By the way out to Route 3 (x 404, rows 102 to 105).
+            obj("LOCALID_GYM_GUIDE", "OBJ_EVENT_GFX_KANTO_GSBOY1", 403, 101, "PewterCity_GymGuide",
+                "MOVEMENT_TYPE_LOOK_SOUTH", flag="FLAG_HIDE_PEWTER_CITY_GYM_GUIDE"),
+            obj("LOCALID_AIDE", "OBJ_EVENT_GFX_KANTO_ASSISTANTM", 405, 101, "PewterCity_RunningShoesAide",
+                "MOVEMENT_TYPE_LOOK_WEST", dir=2, flag="FLAG_HIDE_PEWTER_CITY_RUNNING_SHOES_GUY"),
+            obj("LOCALID_ROCK_SMASH_1", "OBJ_EVENT_GFX_ROCK_SMASH", 363, 75, ROCK_SMASH,
+                flag="FLAG_MAP_LOCAL_HIDE_OBSTACLE_1"),
+        ],
+        "bgs": [
+            bg(392, 105, "PewterCity_CitySign", "BG_EVENT_DIR_ALL"),
+            bg(373, 95, "PewterCity_GymSign", "BG_EVENT_DIR_ALL"),
+            bg(379, 81, "PewterCity_MuseumSign", "BG_EVENT_DIR_ALL"),
+            bg(373, 112, "PewterCity_TrainerTips", "BG_EVENT_DIR_ALL"),
+        ],
+        "coords": [
+            coord(404, 102, "PewterCity_GymGuideTrigger", "VAR_MAP_SCENE_PEWTER_CITY", 0, length=4),
+            coord(404, 102, "PewterCity_RunningShoesAideTrigger", "VAR_MAP_SCENE_PEWTER_CITY", 1, length=4),
+        ],
+    },
+    "PewterCity_Gym": {
+        "header": "MAP_HEADER_KANTO_PEWTER_GYM",
+        "events": "kanto_events_426_t03gym0101",
+        "objects": [
+            obj("LOCALID_BROCK", "OBJ_EVENT_GFX_KANTO_GSLEADER14", 7, 4, "PewterCity_Gym_Brock",
+                "MOVEMENT_TYPE_LOOK_SOUTH"),
+            trainer("LOCALID_LIAM", "OBJ_EVENT_GFX_KANTO_CAMPBOY_2", 6, 20, "TRAINER_CAMPER_LIAM",
+                    "MOVEMENT_TYPE_LOOK_EAST", 3, 4),
+            obj("LOCALID_GYM_GUY", "OBJ_EVENT_GFX_KANTO_SUNGLASSES", 11, 25, "PewterCity_Gym_GymGuy",
+                "MOVEMENT_TYPE_LOOK_SOUTH"),
+        ],
+        "bgs": [bg(4, 25, "PewterCity_Gym_GymStatue"), bg(10, 25, "PewterCity_Gym_GymStatue")],
+    },
+    "PewterCity_Mart": {
+        "header": "MAP_HEADER_KANTO_PEWTER_POKEMART",
+        "events": "kanto_events_427_t03fs0101",
+        "objects": [
+            obj("LOCALID_CLERK", "OBJ_EVENT_GFX_KANTO_SHOPM1_2", 2, 6, "PewterCity_Mart_Clerk",
+                "MOVEMENT_TYPE_LOOK_EAST", dir=3),
+            obj("LOCALID_YOUNGSTER", "OBJ_EVENT_GFX_KANTO_GSBOY1", 6, 9, "PewterCity_Mart_Youngster",
+                "MOVEMENT_TYPE_WANDER_NORTH_AND_SOUTH", rz=1),
+            obj("LOCALID_BOY", "OBJ_EVENT_GFX_KANTO_GSMAN1", 10, 9, "PewterCity_Mart_Boy",
+                "MOVEMENT_TYPE_LOOK_WEST", dir=2),
+        ],
+    },
+    "PewterCity_PokemonCenter_1F": {
+        "header": "MAP_HEADER_KANTO_PEWTER_POKECENTER_1F",
+        "events": "kanto_events_428_t03pc0101",
+        "objects": [
+            obj("LOCALID_NURSE", "OBJ_EVENT_GFX_POKECENTER_NURSE", 8, 11, "PewterCity_PokemonCenter_1F_Nurse",
+                "MOVEMENT_TYPE_LOOK_SOUTH"),
+            obj("LOCALID_GENTLEMAN", "OBJ_EVENT_GFX_KANTO_GSGENTLEMAN", 4, 17, "PewterCity_PokemonCenter_1F_Gentleman",
+                "MOVEMENT_TYPE_LOOK_EAST", dir=3),
+            obj("LOCALID_JIGGLYPUFF", "OBJ_EVENT_GFX_KANTO_FOLLOWER_MON_STATIC_JIGGLYPUFF", 5, 13,
+                "PewterCity_PokemonCenter_1F_Jigglypuff", "MOVEMENT_TYPE_LOOK_SOUTH"),
+            obj("LOCALID_YOUNGSTER", "OBJ_EVENT_GFX_KANTO_GSBOY1", 6, 13, "PewterCity_PokemonCenter_1F_Youngster",
+                "MOVEMENT_TYPE_LOOK_SOUTH"),
+            obj("LOCALID_KID_1", "OBJ_EVENT_GFX_KANTO_GSBOY2", 10, 15, "PewterCity_PokemonCenter_1F_Kid1",
+                "MOVEMENT_TYPE_LOOK_EAST", dir=3),
+            obj("LOCALID_KID_2", "OBJ_EVENT_GFX_KANTO_GSBOY1", 11, 15, "PewterCity_PokemonCenter_1F_Kid2",
+                "MOVEMENT_TYPE_LOOK_WEST", dir=2),
+        ],
+    },
+    # FRLG's House1 (the Nidoran's) is HGSS's northeast house, House2 its
+    # southwest one.
+    "PewterCity_House1": {
+        "header": "MAP_HEADER_KANTO_PEWTER_NORTHEAST_HOUSE",
+        "events": "kanto_events_425_t03r0201",
+        "objects": [
+            obj("LOCALID_NIDORAN", "OBJ_EVENT_GFX_KANTO_FOLLOWER_MON_STATIC_NIDORAN_M", 3, 5,
+                "PewterCity_House1_Nidoran", "MOVEMENT_TYPE_LOOK_EAST", dir=3),
+            obj("LOCALID_LITTLE_BOY", "OBJ_EVENT_GFX_KANTO_GSBABYBOY1", 4, 5, "PewterCity_House1_LittleBoy",
+                "MOVEMENT_TYPE_LOOK_WEST", dir=2),
+            obj("LOCALID_BALDING_MAN", "OBJ_EVENT_GFX_KANTO_GSMIDDLEMAN1", 8, 7, "PewterCity_House1_BaldingMan",
+                "MOVEMENT_TYPE_LOOK_NORTH", dir=0),
+        ],
+    },
+    "PewterCity_House2": {
+        "header": "MAP_HEADER_KANTO_PEWTER_SOUTHWEST_HOUSE",
+        "events": "kanto_events_430_t03r0601",
+        "objects": [
+            obj("LOCALID_OLD_MAN", "OBJ_EVENT_GFX_KANTO_GSOLDMAN1", 8, 5, "PewterCity_House2_OldMan",
+                "MOVEMENT_TYPE_LOOK_WEST", dir=2),
+            obj("LOCALID_LITTLE_BOY", "OBJ_EVENT_GFX_KANTO_GSBABYBOY1", 2, 7, "PewterCity_House2_LittleBoy",
+                "MOVEMENT_TYPE_LOOK_NORTH", dir=0),
+        ],
+    },
+    # HGSS's Museum is one floor: FRLG's 2F people and exhibits join 1F's.
+    "PewterCity_Museum_1F": {
+        "header": "MAP_HEADER_KANTO_PEWTER_MUSEUM_OF_SCIENCE",
+        "events": "kanto_events_424_t03r0101",
+        "objects": [
+            obj("LOCALID_RECEPTIONIST", "OBJ_EVENT_GFX_KANTO_GSWOMAN6", 12, 15, "PewterCity_Museum_1F_Receptionist",
+                "MOVEMENT_TYPE_LOOK_WEST", dir=2),
+            obj("LOCALID_OLD_MAN", "OBJ_EVENT_GFX_KANTO_GSOLDMAN1", 6, 5, "PewterCity_Museum_1F_OldMan",
+                "MOVEMENT_TYPE_LOOK_SOUTH"),
+            obj("LOCALID_OLD_AMBER_SCIENTIST", "OBJ_EVENT_GFX_KANTO_GSASSISTANTM", 26, 9,
+                "PewterCity_Museum_1F_OldAmberScientist", "MOVEMENT_TYPE_LOOK_WEST", dir=2),
+            obj("LOCALID_SCIENTIST", "OBJ_EVENT_GFX_KANTO_GSASSISTANTM", 4, 13, "PewterCity_Museum_1F_Scientist2",
+                "MOVEMENT_TYPE_WANDER_AROUND", rx=1, rz=1),
+            obj("LOCALID_SPACE_SCIENTIST", "OBJ_EVENT_GFX_KANTO_GSASSISTANTM", 16, 4,
+                "PewterCity_Museum_2F_Scientist", "MOVEMENT_TYPE_LOOK_SOUTH"),
+            obj("LOCALID_MAN", "OBJ_EVENT_GFX_KANTO_MANIA", 17, 8, "PewterCity_Museum_2F_Man",
+                "MOVEMENT_TYPE_WANDER_NORTH_AND_SOUTH", rz=1),
+            obj("LOCALID_OLD_MAN_2", "OBJ_EVENT_GFX_KANTO_GSMIDDLEMAN1", 8, 8, "PewterCity_Museum_2F_OldMan",
+                "MOVEMENT_TYPE_LOOK_NORTH", dir=0),
+            obj("LOCALID_LITTLE_GIRL", "OBJ_EVENT_GFX_KANTO_GSGIRL1", 23, 7, "PewterCity_Museum_2F_LittleGirl",
+                "MOVEMENT_TYPE_LOOK_EAST", dir=3),
+            obj("LOCALID_BALDING_MAN", "OBJ_EVENT_GFX_KANTO_GSMAN1", 24, 8, "PewterCity_Museum_2F_BaldingMan",
+                "MOVEMENT_TYPE_LOOK_NORTH", dir=0),
+        ],
+        "bgs": [bg(x, z, "PewterCity_Museum_1F_AerodactylFossil", "BG_EVENT_DIR_ALL")
+                for x, z in ((9, 8), (10, 8), (11, 8), (9, 9), (10, 9), (11, 9))]
+        + [bg(x, z, "PewterCity_Museum_1F_KabutopsFossil", "BG_EVENT_DIR_ALL")
+           for x, z in ((15, 6), (15, 7), (15, 8), (13, 6), (14, 6))]
+        + [bg(x, 3, "PewterCity_Museum_2F_MoonStone", "BG_EVENT_DIR_ALL") for x in (14, 15, 16, 17)]
+        + [bg(x, z, "PewterCity_Museum_2F_SpaceShuttle", "BG_EVENT_DIR_ALL")
+           for x, z in ((3, 3), (4, 3), (5, 3), (6, 3), (1, 7), (2, 7))]
+        + [bg(x, z, "PewterCity_Museum_1F_PokemonJournalBrock", "BG_EVENT_DIR_ALL")
+           for x, z in ((24, 5), (25, 5), (26, 5), (27, 5), (1, 11), (2, 11))],
+        "coords": [coord(10, 16, "PewterCity_Museum_1F_EntranceTrigger", "VAR_MAP_SCENE_PEWTER_CITY_MUSEUM_1F", 0)],
+        "shared": ["PokemonJournal_Text_SpecialFeatureBrock"],
+        "merge": ["PewterCity_Museum_2F"],
+    },
     "Route1": {
         "header": "MAP_HEADER_KANTO_ROUTE_1",
         "events": "kanto_events_006_r01",
@@ -389,11 +528,12 @@ def register_scripts(names):
 
 
 def main():
-    if len(sys.argv) != 2:
+    if len(sys.argv) != 3:
         sys.exit(__doc__)
     fr = Path(sys.argv[1])
+    frlg_classes.import_classes(Path(sys.argv[2]))
     frlg_trainers.import_trainers(fr)
-    frlg_text.import_text(fr, {m: spec.get("shared", []) for m, spec in MAPS.items()})
+    frlg_text.import_text(fr, {m: (spec.get("shared", []), spec.get("merge", [])) for m, spec in MAPS.items()})
     names = []
     for map_name, spec in MAPS.items():
         write_events(map_name, spec)

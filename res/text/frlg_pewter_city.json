@@ -1,0 +1,210 @@
+{
+  "key": 9599,
+  "messages": [
+    {
+      "id": "Text_DreamEaterTeach",
+      "en_US": [
+        "Yawn!\n",
+        "I must have dozed off in the sun.\r",
+        "I had this weird dream about\n",
+        "a Drowzee eating my dream.\r",
+        "And…\n",
+        "I learned how to eat dreams…\r",
+        "Oogh, this is too spooky!\r",
+        "Let me teach it to a Pokémon so\n",
+        "I can forget about it!"
+      ]
+    },
+    {
+      "id": "Text_DreamEaterDeclined",
+      "en_US": "…Snore…"
+    },
+    {
+      "id": "Text_DreamEaterWhichMon",
+      "en_US": [
+        "Which Pokémon wants to learn\n",
+        "Dream Eater?"
+      ]
+    },
+    {
+      "id": "Text_DreamEaterTaught",
+      "en_US": [
+        "…Zzz…\n",
+        "I…can’t eat…anymore…"
+      ]
+    },
+    {
+      "id": "PewterCity_Text_ClefairyCameFromMoon",
+      "en_US": [
+        "Clefairy came from the moon.\n",
+        "That’s what the rumor is.\r",
+        "They appeared after Moon Stones\n",
+        "fell on Mt. Moon."
+      ]
+    },
+    {
+      "id": "PewterCity_Text_BrockOnlySeriousTrainerHere",
+      "en_US": [
+        "There aren’t many serious Pokémon\n",
+        "Trainers here.\r",
+        "They’re all like Bug Catchers,\n",
+        "you know, just hobbyists.\r",
+        "But Pewter Gym’s Brock isn’t like\n",
+        "that, not one bit."
+      ]
+    },
+    {
+      "id": "PewterCity_Text_DidYouCheckOutMuseum",
+      "en_US": "Did you check out the Museum?"
+    },
+    {
+      "id": "PewterCity_Text_WerentThoseFossilsAmazing",
+      "en_US": [
+        "Weren’t those fossils from Mt. Moon\n",
+        "amazing?"
+      ]
+    },
+    {
+      "id": "PewterCity_Text_ReallyYouHaveToGo",
+      "en_US": [
+        "Really?\n",
+        "You absolutely have to go!"
+      ]
+    },
+    {
+      "id": "PewterCity_Text_ThisIsTheMuseum",
+      "en_US": [
+        "This is it, the Museum.\r",
+        "You have to pay to get in, but it’s\n",
+        "worth it. See you around!"
+      ]
+    },
+    {
+      "id": "PewterCity_Text_DoYouKnowWhatImDoing",
+      "en_US": [
+        "Psssst!\n",
+        "Do you know what I’m doing?"
+      ]
+    },
+    {
+      "id": "PewterCity_Text_ThatsRightItsHardWork",
+      "en_US": [
+        "That’s right!\n",
+        "It’s hard work!"
+      ]
+    },
+    {
+      "id": "PewterCity_Text_SprayingRepelToKeepWildMonsOut",
+      "en_US": [
+        "I’m spraying Repel to keep wild\n",
+        "Pokémon out of my garden!"
+      ]
+    },
+    {
+      "id": "PewterCity_Text_BrocksLookingForChallengersFollowMe",
+      "en_US": [
+        "You’re a Trainer, right?\r",
+        "Brock’s looking for new\n",
+        "challengers. Follow me!"
+      ]
+    },
+    {
+      "id": "PewterCity_Text_GoTakeOnBrock",
+      "en_US": [
+        "If you have the right stuff,\n",
+        "go take on Brock!"
+      ]
+    },
+    {
+      "id": "PewterCity_Text_TrainerTipsEarningEXP",
+      "en_US": [
+        "Trainer Tips\r",
+        "All Pokémon that appear in battle,\n",
+        "however briefly, earn Exp Points."
+      ]
+    },
+    {
+      "id": "PewterCity_Text_CallPoliceIfInfoOnThieves",
+      "en_US": [
+        "Notice!\r",
+        "Thieves have been stealing Pokémon\n",
+        "fossils from Mt. Moon.\r",
+        "Please call the Pewter Police if\n",
+        "you have any information."
+      ]
+    },
+    {
+      "id": "PewterCity_Text_MuseumOfScience",
+      "en_US": "Pewter Museum Of Science"
+    },
+    {
+      "id": "PewterCity_Text_GymSign",
+      "en_US": [
+        "Pewter City Pokémon Gym\n",
+        "Leader: Brock\f",
+        "The Rock-Solid Pokémon Trainer!"
+      ]
+    },
+    {
+      "id": "PewterCity_Text_CitySign",
+      "en_US": [
+        "Pewter City\n",
+        "A Stone Gray City"
+      ]
+    },
+    {
+      "id": "PewterCity_Text_OhPlayer",
+      "en_US": "Oh, {STRVAR_1 3, 0, 0}!"
+    },
+    {
+      "id": "PewterCity_Text_AskedToDeliverThis",
+      "en_US": [
+        "I’m glad I caught up to you.\n",
+        "I’m Prof. Oak’s Aide.\r",
+        "I’ve been asked to deliver this,\n",
+        "so here you go."
+      ]
+    },
+    {
+      "id": "PewterCity_Text_ReceivedRunningShoesFromAide",
+      "en_US": [
+        "{STRVAR_1 3, 0, 0} received the\n",
+        "Running Shoes from the Aide."
+      ]
+    },
+    {
+      "id": "PewterCity_Text_SwitchedShoesWithRunningShoes",
+      "en_US": [
+        "{STRVAR_1 3, 0, 0} switched shoes with the\n",
+        "Running Shoes."
+      ]
+    },
+    {
+      "id": "PewterCity_Text_ExplainRunningShoes",
+      "en_US": [
+        "Press the B Button to run.\n",
+        "But only where there’s room to run!"
+      ]
+    },
+    {
+      "id": "PewterCity_Text_MustBeGoingBackToLab",
+      "en_US": [
+        "Well, I must be going back to\n",
+        "the Lab.\r",
+        "Bye-bye!"
+      ]
+    },
+    {
+      "id": "PewterCity_Text_RunningShoesLetterFromMom",
+      "en_US": [
+        "There’s a letter attached…\r",
+        "Dear {STRVAR_1 3, 0, 0},\r",
+        "Here is a pair of Running Shoes\n",
+        "for my beloved challenger.\r",
+        "Remember, I’ll always cheer for\n",
+        "you! Don’t ever give up!\r",
+        "From Mom"
+      ]
+    }
+  ]
+}
