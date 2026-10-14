@@ -1,0 +1,16 @@
+{
+  "key": 59496,
+  "messages": [
+    {
+      "id": "Route2_Text_RouteSign",
+      "en_US": [
+        "Route 2\n",
+        "Viridian City - Pewter City"
+      ]
+    },
+    {
+      "id": "Route2_Text_DiglettsCave",
+      "en_US": "Diglett’s Cave"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+    "name": "Rick",
+    "class": "TRAINER_CLASS_BUG_CATCHER",
+    "items": [],
+    "ai_flags": [
+        "AI_FLAG_BASIC"
+    ],
+    "double_battle": false,
+    "party": [
+        {
+            "species": "SPECIES_WEEDLE",
+            "form": 0,
+            "level": 6,
+            "item": null,
+            "moves": null,
+            "iv_scale": 0,
+            "ball_seal": 0
+        },
+        {
+            "species": "SPECIES_CATERPIE",
+            "form": 0,
+            "level": 6,
+            "item": null,
+            "moves": null,
+            "iv_scale": 0,
+            "ball_seal": 0
+        }
+    ],
+    "messages": [
+        {
+            "type": "TRMSG_PRE_BATTLE",
+            "en_US": [
+                "Hey! You have Pokémon!\n",
+                "Come on!\f",
+                "Let’s battle ’em!"
+            ]
+        },
+        {
+            "type": "TRMSG_DEFEAT",
+            "en_US": [
+                "No!\n",
+                "Caterpie can’t hack it!"
+            ]
+        },
+        {
+            "type": "TRMSG_POST_BATTLE",
+            "en_US": [
+                "Ssh! You’ll scare the bugs away.\n",
+                "Another time, okay?"
+            ]
+        }
+    ]
+}

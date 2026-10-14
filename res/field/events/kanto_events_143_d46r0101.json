@@ -1,6 +1,212 @@
 {
     "bg_events": [],
-    "object_events": [],
+    "object_events": [
+        {
+            "id": "LOCALID_YOUNGSTER",
+            "graphics_id": "OBJ_EVENT_GFX_KANTO_GSBOY1",
+            "movement_type": "MOVEMENT_TYPE_LOOK_NORTH",
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "hidden_flag": "0",
+            "script": 1,
+            "initial_dir": 0,
+            "data": [],
+            "movement_range_x": 0,
+            "movement_range_z": 0,
+            "x": 25,
+            "z": 71,
+            "y": 0
+        },
+        {
+            "id": "LOCALID_BOY",
+            "graphics_id": "OBJ_EVENT_GFX_KANTO_GSBOY2",
+            "movement_type": "MOVEMENT_TYPE_LOOK_WEST",
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "hidden_flag": "0",
+            "script": 2,
+            "initial_dir": 2,
+            "data": [],
+            "movement_range_x": 0,
+            "movement_range_z": 0,
+            "x": 46,
+            "z": 70,
+            "y": 0
+        },
+        {
+            "id": "LOCALID_RICK",
+            "graphics_id": "OBJ_EVENT_GFX_KANTO_GSBOY3",
+            "movement_type": "MOVEMENT_TYPE_LOOK_WEST",
+            "trainer_type": "TRAINER_TYPE_NORMAL",
+            "hidden_flag": "0",
+            "script": "TRAINER_FRLG_BUG_CATCHER_RICK",
+            "initial_dir": 2,
+            "data": [
+                5
+            ],
+            "movement_range_x": 0,
+            "movement_range_z": 0,
+            "x": 48,
+            "z": 73,
+            "y": 0
+        },
+        {
+            "id": "LOCALID_DOUG",
+            "graphics_id": "OBJ_EVENT_GFX_KANTO_GSBOY3",
+            "movement_type": "MOVEMENT_TYPE_LOOK_SOUTH",
+            "trainer_type": "TRAINER_TYPE_NORMAL",
+            "hidden_flag": "0",
+            "script": "TRAINER_FRLG_BUG_CATCHER_DOUG",
+            "initial_dir": 1,
+            "data": [
+                4
+            ],
+            "movement_range_x": 0,
+            "movement_range_z": 0,
+            "x": 47,
+            "z": 54,
+            "y": 0
+        },
+        {
+            "id": "LOCALID_SAMMY",
+            "graphics_id": "OBJ_EVENT_GFX_KANTO_GSBOY3",
+            "movement_type": "MOVEMENT_TYPE_LOOK_EAST",
+            "trainer_type": "TRAINER_TYPE_NORMAL",
+            "hidden_flag": "0",
+            "script": "TRAINER_FRLG_BUG_CATCHER_SAMMY",
+            "initial_dir": 3,
+            "data": [
+                4
+            ],
+            "movement_range_x": 0,
+            "movement_range_z": 0,
+            "x": 47,
+            "z": 39,
+            "y": 0
+        },
+        {
+            "id": "LOCALID_ANTHONY",
+            "graphics_id": "OBJ_EVENT_GFX_KANTO_GSBOY3",
+            "movement_type": "MOVEMENT_TYPE_LOOK_SOUTH",
+            "trainer_type": "TRAINER_TYPE_NORMAL",
+            "hidden_flag": "0",
+            "script": "TRAINER_FRLG_BUG_CATCHER_ANTHONY",
+            "initial_dir": 1,
+            "data": [
+                1
+            ],
+            "movement_range_x": 0,
+            "movement_range_z": 0,
+            "x": 37,
+            "z": 17,
+            "y": 0
+        },
+        {
+            "id": "LOCALID_CHARLIE",
+            "graphics_id": "OBJ_EVENT_GFX_KANTO_GSBOY3",
+            "movement_type": "MOVEMENT_TYPE_LOOK_EAST",
+            "trainer_type": "TRAINER_TYPE_NORMAL",
+            "hidden_flag": "0",
+            "script": "TRAINER_FRLG_BUG_CATCHER_CHARLIE",
+            "initial_dir": 3,
+            "data": [
+                1
+            ],
+            "movement_range_x": 0,
+            "movement_range_z": 0,
+            "x": 14,
+            "z": 28,
+            "y": 0
+        },
+        {
+            "id": "LOCALID_ITEM_POTION_2",
+            "graphics_id": "OBJ_EVENT_GFX_POKEBALL",
+            "movement_type": "MOVEMENT_TYPE_NONE",
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "hidden_flag": "FLAG_HIDE_VIRIDIAN_FOREST_POTION_2",
+            "script": 7000,
+            "initial_dir": 1,
+            "data": [],
+            "movement_range_x": 0,
+            "movement_range_z": 0,
+            "x": 50,
+            "z": 60,
+            "y": 0
+        },
+        {
+            "id": "LOCALID_ITEM_POTION",
+            "graphics_id": "OBJ_EVENT_GFX_POKEBALL",
+            "movement_type": "MOVEMENT_TYPE_NONE",
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "hidden_flag": "FLAG_HIDE_VIRIDIAN_FOREST_POTION",
+            "script": 7000,
+            "initial_dir": 1,
+            "data": [],
+            "movement_range_x": 0,
+            "movement_range_z": 0,
+            "x": 20,
+            "z": 49,
+            "y": 0
+        },
+        {
+            "id": "LOCALID_ITEM_ANTIDOTE",
+            "graphics_id": "OBJ_EVENT_GFX_POKEBALL",
+            "movement_type": "MOVEMENT_TYPE_NONE",
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "hidden_flag": "FLAG_HIDE_VIRIDIAN_FOREST_ANTIDOTE",
+            "script": 7018,
+            "initial_dir": 1,
+            "data": [],
+            "movement_range_x": 0,
+            "movement_range_z": 0,
+            "x": 42,
+            "z": 32,
+            "y": 0
+        },
+        {
+            "id": "LOCALID_ITEM_POKE_BALL",
+            "graphics_id": "OBJ_EVENT_GFX_POKEBALL",
+            "movement_type": "MOVEMENT_TYPE_NONE",
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "hidden_flag": "FLAG_HIDE_VIRIDIAN_FOREST_POKE_BALL",
+            "script": 7002,
+            "initial_dir": 1,
+            "data": [],
+            "movement_range_x": 0,
+            "movement_range_z": 0,
+            "x": 23,
+            "z": 17,
+            "y": 0
+        },
+        {
+            "id": "LOCALID_CUT_TREE_1",
+            "graphics_id": "OBJ_EVENT_GFX_CUT_TREE",
+            "movement_type": "MOVEMENT_TYPE_NONE",
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "hidden_flag": "FLAG_MAP_LOCAL_HIDE_OBSTACLE_1",
+            "script": 10000,
+            "initial_dir": 1,
+            "data": [],
+            "movement_range_x": 0,
+            "movement_range_z": 0,
+            "x": 23,
+            "z": 70,
+            "y": 0
+        },
+        {
+            "id": "LOCALID_CUT_TREE_2",
+            "graphics_id": "OBJ_EVENT_GFX_CUT_TREE",
+            "movement_type": "MOVEMENT_TYPE_NONE",
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "hidden_flag": "FLAG_MAP_LOCAL_HIDE_OBSTACLE_2",
+            "script": 10000,
+            "initial_dir": 1,
+            "data": [],
+            "movement_range_x": 0,
+            "movement_range_z": 0,
+            "x": 42,
+            "z": 70,
+            "y": 0
+        }
+    ],
     "warp_events": [
         {
             "x": 32,

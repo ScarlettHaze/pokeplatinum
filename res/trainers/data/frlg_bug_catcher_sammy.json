@@ -1,0 +1,45 @@
+{
+    "name": "Sammy",
+    "class": "TRAINER_CLASS_BUG_CATCHER",
+    "items": [],
+    "ai_flags": [
+        "AI_FLAG_BASIC"
+    ],
+    "double_battle": false,
+    "party": [
+        {
+            "species": "SPECIES_WEEDLE",
+            "form": 0,
+            "level": 9,
+            "item": null,
+            "moves": null,
+            "iv_scale": 0,
+            "ball_seal": 0
+        }
+    ],
+    "messages": [
+        {
+            "type": "TRMSG_PRE_BATTLE",
+            "en_US": [
+                "Hey, wait up!\n",
+                "What’s the hurry? Why the rush?"
+            ]
+        },
+        {
+            "type": "TRMSG_DEFEAT",
+            "en_US": [
+                "I give!\n",
+                "You’re good at this!"
+            ]
+        },
+        {
+            "type": "TRMSG_POST_BATTLE",
+            "en_US": [
+                "Sometimes, you can find stuff on\n",
+                "the ground.\r",
+                "I’m looking for the stuff I\n",
+                "dropped. Can you help me?"
+            ]
+        }
+    ]
+}

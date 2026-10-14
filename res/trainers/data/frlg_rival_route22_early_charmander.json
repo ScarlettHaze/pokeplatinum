@@ -1,0 +1,45 @@
+{
+    "name": "Terry",
+    "class": "TRAINER_CLASS_RIVAL",
+    "items": [],
+    "ai_flags": [
+        "AI_FLAG_BASIC",
+        "AI_FLAG_EVAL_ATTACK"
+    ],
+    "double_battle": false,
+    "party": [
+        {
+            "species": "SPECIES_PIDGEY",
+            "form": 0,
+            "level": 9,
+            "item": null,
+            "moves": [
+                "MOVE_TACKLE",
+                "MOVE_SAND_ATTACK"
+            ],
+            "iv_scale": 50,
+            "ball_seal": 0
+        },
+        {
+            "species": "SPECIES_CHARMANDER",
+            "form": 0,
+            "level": 9,
+            "item": null,
+            "moves": [
+                "MOVE_SCRATCH",
+                "MOVE_GROWL"
+            ],
+            "iv_scale": 50,
+            "ball_seal": 0
+        }
+    ],
+    "messages": [
+        {
+            "type": "TRMSG_DEFEAT",
+            "en_US": [
+                "Awww!\n",
+                "You just lucked out!"
+            ]
+        }
+    ]
+}

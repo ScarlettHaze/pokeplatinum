@@ -1141,6 +1141,9 @@ scr_seq_files = files(
     'scripts_frlg_viridian_city_pokemon_center_1f.s',
     'scripts_frlg_viridian_city_house.s',
     'scripts_frlg_viridian_city_school.s',
+    'scripts_frlg_route22.s',
+    'scripts_frlg_route2.s',
+    'scripts_frlg_viridian_forest.s',
     'scripts_frlg_route1.s',
 )
 

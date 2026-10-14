@@ -95,8 +95,11 @@ def parse_text_inc(path):
 
 def convert_map(fr, map_name, extra=()):
     """FRLG map's messages, plus (label, raw) pairs from shared text files."""
+    # Some maps keep unused Japanese text, which Platinum's English charmap
+    # can't encode.
     rows = [{"id": label, "en_US": convert_string(raw)}
-            for label, raw in parse_text_inc(Path(fr) / "data/maps" / map_name / "text.inc") + list(extra)]
+            for label, raw in parse_text_inc(Path(fr) / "data/maps" / map_name / "text.inc") + list(extra)
+            if not re.search(r"[\u3000-\u9fff\uff00-\uffef]", raw)]
     return {"key": zlib.crc32(bank_name(map_name).encode()) & 0xFFFF, "messages": rows}
 
 

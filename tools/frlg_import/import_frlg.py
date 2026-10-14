@@ -18,7 +18,7 @@ script by label; the label's place in the file's ScriptEntry list gives the
 number the events file needs.
 
 A number in place of a label is a shared script's ID (CUT_TREE for a Cut
-tree). Coordinates are the events file's: overworld maps use world coordinates
+tree, an item ball's), and a trainer's script is the trainer. Coordinates are the events file's: overworld maps use world coordinates
 (Pallet Town's top left tile is 352, 352), indoor maps their own.
 """
 import json
@@ -27,6 +27,7 @@ import sys
 from pathlib import Path
 
 import frlg_text
+import frlg_trainers
 
 PL = Path(__file__).resolve().parents[2]
 EVENTS = PL / "res/field/events"
@@ -35,6 +36,29 @@ HEADERS = PL / "include/data/kanto_map_headers.h"
 
 
 CUT_TREE = 10000
+VISIBLE_ITEMS = 7000
+
+
+def visible_item_script(item):
+    """The first of Platinum's item ball scripts that gives one of item."""
+    text = (PL / "res/field/scripts/scripts_visible_items.s").read_text()
+    labels = re.findall(r"^\s*ScriptEntry\s+(\w+)\s*$", text, re.M)
+    for i, label in enumerate(labels):
+        body = re.search(r"^" + label + r":\n(.*?)\n\n", text, re.M | re.S)
+        if body and f"VAR_0x8008, {item}\n" in body.group(1) + "\n" and "VAR_0x8009, 1\n" in body.group(1) + "\n":
+            return VISIBLE_ITEMS + i
+    raise KeyError(f"no item ball script gives one {item}")
+
+
+def item_ball(name, item, x, z, flag):
+    return obj(f"LOCALID_ITEM_{name}", "OBJ_EVENT_GFX_POKEBALL", x, z, visible_item_script(item), flag=flag)
+
+
+def trainer(name, gfx, x, z, frlg, move, dir, sight):
+    o = obj(name, gfx, x, z, frlg_trainers.platinum_name(frlg), move, dir=dir)
+    o["trainer_type"] = "TRAINER_TYPE_NORMAL"
+    o["data"] = [sight]
+    return o
 
 
 def cut_tree(n, x, z):
@@ -238,6 +262,60 @@ MAPS = {
             bg(8, 2, "ViridianCity_School_PokemonJournal"),
         ],
     },
+    # The rival waits out of sight below the way in from Viridian, rows 266 to
+    # 268, the three tiles tall FRLG's triggers span.
+    "Route22": {
+        "header": "MAP_HEADER_KANTO_ROUTE_22",
+        "events": "kanto_events_024_r22",
+        "objects": [
+            obj("LOCALID_RIVAL", "OBJ_EVENT_GFX_KANTO_GSLEADER16", 316, 270, "Route22_Rival",
+                "MOVEMENT_TYPE_LOOK_EAST", dir=3, flag="FLAG_HIDE_ROUTE_22_RIVAL"),
+        ],
+        "bgs": [bg(266, 264, "Route22_LeagueGateSign", "BG_EVENT_DIR_ALL")],
+        "coords": [
+            coord(319, 266, "Route22_EarlyRivalTrigger", "VAR_MAP_SCENE_ROUTE22", 1, length=3),
+        ],
+    },
+    "Route2": {
+        "header": "MAP_HEADER_KANTO_ROUTE_2",
+        "events": "kanto_events_007_r02",
+        "objects": [
+            item_ball("ETHER", "ITEM_ETHER", 373, 212, "FLAG_HIDE_ROUTE2_ETHER"),
+            item_ball("PARALYZE_HEAL", "ITEM_PARLYZ_HEAL", 366, 210, "FLAG_HIDE_ROUTE2_PARALYZE_HEAL"),
+            cut_tree(1, 369, 218),
+            cut_tree(2, 369, 210),
+            cut_tree(3, 369, 200),
+        ],
+        "bgs": [bg(357, 218, "Route2_RouteSign", "BG_EVENT_DIR_ALL")],
+    },
+    # HGSS's forest has five bug catchers along the path (not trainers in
+    # HGSS): FRLG's five, from the south entrance north.
+    "ViridianForest": {
+        "header": "MAP_HEADER_KANTO_VIRIDIAN_FOREST",
+        "events": "kanto_events_143_d46r0101",
+        "objects": [
+            obj("LOCALID_YOUNGSTER", "OBJ_EVENT_GFX_KANTO_GSBOY1", 25, 71, "ViridianForest_Youngster",
+                "MOVEMENT_TYPE_LOOK_NORTH", dir=0),
+            obj("LOCALID_BOY", "OBJ_EVENT_GFX_KANTO_GSBOY2", 46, 70, "ViridianForest_Boy",
+                "MOVEMENT_TYPE_LOOK_WEST", dir=2),
+            trainer("LOCALID_RICK", "OBJ_EVENT_GFX_KANTO_GSBOY3", 48, 73, "TRAINER_BUG_CATCHER_RICK",
+                    "MOVEMENT_TYPE_LOOK_WEST", 2, 5),
+            trainer("LOCALID_DOUG", "OBJ_EVENT_GFX_KANTO_GSBOY3", 47, 54, "TRAINER_BUG_CATCHER_DOUG",
+                    "MOVEMENT_TYPE_LOOK_SOUTH", 1, 4),
+            trainer("LOCALID_SAMMY", "OBJ_EVENT_GFX_KANTO_GSBOY3", 47, 39, "TRAINER_BUG_CATCHER_SAMMY",
+                    "MOVEMENT_TYPE_LOOK_EAST", 3, 4),
+            trainer("LOCALID_ANTHONY", "OBJ_EVENT_GFX_KANTO_GSBOY3", 37, 17, "TRAINER_BUG_CATCHER_ANTHONY",
+                    "MOVEMENT_TYPE_LOOK_SOUTH", 1, 1),
+            trainer("LOCALID_CHARLIE", "OBJ_EVENT_GFX_KANTO_GSBOY3", 14, 28, "TRAINER_BUG_CATCHER_CHARLIE",
+                    "MOVEMENT_TYPE_LOOK_EAST", 3, 1),
+            item_ball("POTION_2", "ITEM_POTION", 50, 60, "FLAG_HIDE_VIRIDIAN_FOREST_POTION_2"),
+            item_ball("POTION", "ITEM_POTION", 20, 49, "FLAG_HIDE_VIRIDIAN_FOREST_POTION"),
+            item_ball("ANTIDOTE", "ITEM_ANTIDOTE", 42, 32, "FLAG_HIDE_VIRIDIAN_FOREST_ANTIDOTE"),
+            item_ball("POKE_BALL", "ITEM_POKE_BALL", 23, 17, "FLAG_HIDE_VIRIDIAN_FOREST_POKE_BALL"),
+            cut_tree(1, 23, 70),
+            cut_tree(2, 42, 70),
+        ],
+    },
     "Route1": {
         "header": "MAP_HEADER_KANTO_ROUTE_1",
         "events": "kanto_events_006_r01",
@@ -270,7 +348,7 @@ def write_events(map_name, spec):
         out = []
         for e in events:
             e = dict(e)
-            if isinstance(e["script"], int):  # a shared script, such as a Cut tree's
+            if isinstance(e["script"], int) or e["script"].startswith("TRAINER_"):  # a shared script or a trainer
                 out.append(e)
                 continue
             assert e["script"] in ids, f"{map_name}: {e['script']} is not a ScriptEntry"
@@ -314,6 +392,7 @@ def main():
     if len(sys.argv) != 2:
         sys.exit(__doc__)
     fr = Path(sys.argv[1])
+    frlg_trainers.import_trainers(fr)
     frlg_text.import_text(fr, {m: spec.get("shared", []) for m, spec in MAPS.items()})
     names = []
     for map_name, spec in MAPS.items():

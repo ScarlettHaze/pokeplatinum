@@ -1,0 +1,176 @@
+{
+  "key": 901,
+  "messages": [
+    {
+      "id": "ViridianForest_Text_FriendsItchingToBattle",
+      "en_US": [
+        "I came here with some friends to\n",
+        "catch us some Bug Pokémon!\r",
+        "They’re all itching to get into\n",
+        "some Pokémon battles!"
+      ]
+    },
+    {
+      "id": "ViridianForest_Text_RickIntro",
+      "en_US": [
+        "Hey! You have Pokémon!\n",
+        "Come on!\f",
+        "Let’s battle ’em!"
+      ]
+    },
+    {
+      "id": "ViridianForest_Text_RickDefeat",
+      "en_US": [
+        "No!\n",
+        "Caterpie can’t hack it!"
+      ]
+    },
+    {
+      "id": "ViridianForest_Text_RickPostBattle",
+      "en_US": [
+        "Ssh! You’ll scare the bugs away.\n",
+        "Another time, okay?"
+      ]
+    },
+    {
+      "id": "ViridianForest_Text_DougIntro",
+      "en_US": [
+        "Yo!\n",
+        "You can’t jam out if you’re a\f",
+        "Pokémon Trainer!"
+      ]
+    },
+    {
+      "id": "ViridianForest_Text_DougDefeat",
+      "en_US": [
+        "Huh?\n",
+        "I ran out of Pokémon!"
+      ]
+    },
+    {
+      "id": "ViridianForest_Text_DougPostBattle",
+      "en_US": [
+        "That totally stinks! I’m going to\n",
+        "catch some stronger ones!"
+      ]
+    },
+    {
+      "id": "ViridianForest_Text_SammyIntro",
+      "en_US": [
+        "Hey, wait up!\n",
+        "What’s the hurry? Why the rush?"
+      ]
+    },
+    {
+      "id": "ViridianForest_Text_SammyDefeat",
+      "en_US": [
+        "I give!\n",
+        "You’re good at this!"
+      ]
+    },
+    {
+      "id": "ViridianForest_Text_SammyPostBattle",
+      "en_US": [
+        "Sometimes, you can find stuff on\n",
+        "the ground.\r",
+        "I’m looking for the stuff I\n",
+        "dropped. Can you help me?"
+      ]
+    },
+    {
+      "id": "ViridianForest_Text_AnthonyIntro",
+      "en_US": [
+        "I might be little, but I won’t like\n",
+        "it if you go easy on me!"
+      ]
+    },
+    {
+      "id": "ViridianForest_Text_AnthonyDefeat",
+      "en_US": [
+        "Oh, boo.\n",
+        "Nothing went right."
+      ]
+    },
+    {
+      "id": "ViridianForest_Text_AnthonyPostBattle",
+      "en_US": "I lost some of my allowance…"
+    },
+    {
+      "id": "ViridianForest_Text_CharlieIntro",
+      "en_US": "Did you know that Pokémon evolve?"
+    },
+    {
+      "id": "ViridianForest_Text_CharlieDefeat",
+      "en_US": [
+        "Oh!\n",
+        "I lost!"
+      ]
+    },
+    {
+      "id": "ViridianForest_Text_CharliePostBattle",
+      "en_US": [
+        "Bug Pokémon evolve quickly.\n",
+        "They’re a lot of fun!"
+      ]
+    },
+    {
+      "id": "ViridianForest_Text_RanOutOfPokeBalls",
+      "en_US": [
+        "I was throwing Poké Balls to\n",
+        "catch Pokémon, and I ran out.\r",
+        "That’s why you can never have too\n",
+        "many Poké Balls."
+      ]
+    },
+    {
+      "id": "ViridianForest_Text_AvoidGrassyAreasWhenWeak",
+      "en_US": [
+        "Trainer Tips\r",
+        "If your Pokémon are weak and you\n",
+        "want to avoid battles, stay away\f",
+        "from grassy areas!"
+      ]
+    },
+    {
+      "id": "ViridianForest_Text_UseAntidoteForPoison",
+      "en_US": [
+        "For poison, use Antidote!\n",
+        "Get it at Pokémon Marts!"
+      ]
+    },
+    {
+      "id": "ViridianForest_Text_ContactOakViaPCToRatePokedex",
+      "en_US": [
+        "Trainer Tips\r",
+        "Contact Prof. Oak via a PC to\n",
+        "get your Pokédex evaluated!"
+      ]
+    },
+    {
+      "id": "ViridianForest_Text_CantCatchOwnedMons",
+      "en_US": [
+        "Trainer Tips\r",
+        "You can’t catch a Pokémon that\n",
+        "belongs to someone else.\r",
+        "Throw Poké Balls only at wild\n",
+        "Pokémon to catch them!"
+      ]
+    },
+    {
+      "id": "ViridianForest_Text_WeakenMonsBeforeCapture",
+      "en_US": [
+        "Trainer Tips\r",
+        "Weaken Pokémon before attempting\n",
+        "capture!\r",
+        "When healthy, they may escape!"
+      ]
+    },
+    {
+      "id": "ViridianForest_Text_LeavingViridianForest",
+      "en_US": [
+        "Leaving Viridian Forest\n",
+        "Pewter City Ahead"
+      ]
+    }
+  ]
+}

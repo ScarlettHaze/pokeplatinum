@@ -21,6 +21,11 @@ The scripts, `res/field/scripts/scripts_frlg_*.s`, are written by hand from
 FRLG's. HGSS's maps are laid out differently, so every walk and trigger is
 fitted to HGSS's map; each script file says how.
 
+Trainers come from FRLG's trainer and party data (`frlg_trainers.py`):
+each becomes `TRAINER_FRLG_<name>` in one of Platinum's unused dummy trainer
+slots (every trainer needs a defeated flag, and Platinum's flags end where
+its trainers do), with its lines from the map's text.
+
 ## Done
 
 - **Pallet Town:** the two townspeople, the signs, and Oak stopping the
@@ -40,6 +45,11 @@ fitted to HGSS's map; each script file says how.
   player has a Pokédex, then his catching demonstration (Platinum's catching
   tutorial, made his: "Old Man" catches a level 5 Weedle); the woman, the
   old man by the locked Gym, the youngster, the boy, the signs and Cut trees.
+- **Route 22:** the rival's first ambush as the player comes in from
+  Viridian with a Pokédex (FRLG's three parties, by the player's starter).
+- **Route 2** (south half): its items, Cut trees and sign.
+- **Viridian Forest:** the five Bug Catchers as trainers, on HGSS's five
+  bug catcher NPCs, the two other boys, the four items and Cut trees.
 - **Viridian's buildings:** the Mart (Platinum's standard stock), the
   Pokémon Center, Speary's house, and the Trainer school with its notebook
   and blackboard (on HGSS's Trainer House).
@@ -74,3 +84,7 @@ Also:
   sign.
 - Music comes from HGSS: Oak's theme, and Silver's encounter theme for the
   rival.
+- HGSS's Viridian Forest has no signs, so FRLG's Trainer Tips there are left
+  out, as are FRLG's hidden items. Route 22's later rival battle, Route 2's
+  Diglett's Cave sign and its north half aren't ported yet.
+- FRLG text some maps keep in Japanese (unused) is skipped.
